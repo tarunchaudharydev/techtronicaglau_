@@ -23,7 +23,7 @@ const members: Member[] = [
     image: "/images/technovation/abhishek.jpg",
     shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
-      "Shiva coordinates Techtronica’s strategy, mentors student leaders, and ensures that every event delivers value to the campus tech community.",
+      "Abhishek Sharma serves as the President of Techtronica, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth. In his role, he works closely with core members and student leaders to design impactful technical initiatives, foster a culture of learning, and ensure that Techtronica remains a dynamic platform for skill development and experimentation.With a hands-on leadership approach, Abhishek actively mentors team members, oversees planning and execution of workshops, hackathons, and tech events, and ensures that every initiative aligns with the society’s long-term goals. He emphasizes practical learning, industry relevance, and inclusive participation, enabling students from diverse backgrounds to explore technology with confidence.Beyond operations, Abhishek plays a key role in strengthening partnerships, coordinating with faculty and external collaborators, and maintaining the society’s professional standards. His commitment to consistency, quality, and forward-thinking leadership continues to drive Techtronica as a respected and impactful technical community on campus.",
     instagram: "https://instagram.com/username",
     linkedin: "https://linkedin.com/in/username",
   },
@@ -34,7 +34,7 @@ const members: Member[] = [
     image: "/team/dheeraj.jpg",
     shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
-      "Shiva coordinates Techtronica’s strategy, mentors student leaders, and ensures that every event delivers value to the campus tech community.",
+      "Dheeraj Rajput serves as the Vice President of Techtronica, playing a key role in translating the society’s vision into actionable plans and measurable outcomes. He works closely with the President and core leadership team to coordinate strategy, streamline operations, and ensure smooth execution of all technical and community-driven initiatives.As Vice President, Dheeraj actively mentors student leaders, supports team coordination across various domains, and helps maintain high standards for events, workshops, and projects. He is deeply involved in planning and oversight, ensuring that every activity delivers meaningful learning experiences and real value to the campus tech community.Dheeraj also acts as a vital link between different teams, facilitating communication, resolving operational challenges, and stepping in wherever leadership support is required. His collaborative mindset, organizational discipline, and commitment to excellence contribute significantly to Techtronica’s growth, consistency, and long-term impact within the university.",
     instagram: "https://instagram.com/username",
     linkedin: "https://linkedin.com/in/username",
   },
@@ -45,7 +45,7 @@ const members: Member[] = [
     image: "/team/harshit.jpg",
     shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
-      "Shiva coordinates Techtronica’s strategy, mentors student leaders, and ensures that every event delivers value to the campus tech community.",
+      "Harshit Tiwari serves as the General Secretary of Techtronica, where he is responsible for ensuring the smooth coordination, documentation, and execution of the society’s activities. He plays a central role in organizing meetings, maintaining official records, and supporting the leadership team in implementing strategic decisions effectively.In his role, Harshit works closely with core members and student leaders to manage communication across teams, coordinate event planning, and ensure that timelines, responsibilities, and operational details are clearly defined and followed. His structured approach helps maintain consistency and accountability across all initiatives.Harshit also contributes to mentoring student volunteers, streamlining internal workflows, and ensuring that every event and activity reflects Techtronica’s commitment to quality and value for the campus tech community. His attention to detail, organizational discipline, and collaborative mindset make him an essential pillar of the society’s functioning and long-term success.",
     instagram: "https://instagram.com/username",
     linkedin: "https://linkedin.com/in/username",
   },
@@ -56,7 +56,7 @@ const members: Member[] = [
     image: "/team/ayushi.jpg",
     shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
-      "Shiva coordinates Techtronica’s strategy, mentors student leaders, and ensures that every event delivers value to the campus tech community.",
+      "Ayushi Richhariya coordinates Techtronica’s strategy, mentors student leaders, and ensures that every event delivers value to the campus tech community.",
     instagram: "https://instagram.com/username",
     linkedin: "https://linkedin.com/in/username",
   },
@@ -67,7 +67,7 @@ const members: Member[] = [
     image: "/team/utkarsh.jpg",
     shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
-      "Shiva coordinates Techtronica’s strategy, mentors student leaders, and ensures that every event delivers value to the campus tech community.",
+      "Utkarsh Saxena coordinates Techtronica’s strategy, mentors student leaders, and ensures that every event delivers value to the campus tech community.",
     instagram: "https://instagram.com/username",
     linkedin: "https://linkedin.com/in/username",
   },
@@ -78,7 +78,7 @@ const members: Member[] = [
     image: "/team/samriddhi.jpg",
     shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
-      "Shiva coordinates Techtronica’s strategy, mentors student leaders, and ensures that every event delivers value to the campus tech community.",
+      "Samriddhi Gaur coordinates Techtronica’s strategy, mentors student leaders, and ensures that every event delivers value to the campus tech community.",
     instagram: "https://instagram.com/username",
     linkedin: "https://linkedin.com/in/username",
   },
@@ -89,12 +89,12 @@ const members: Member[] = [
     image: "/team/astitva.jpg",
     shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
-      "Shiva coordinates Techtronica’s strategy, mentors student leaders, and ensures that every event delivers value to the campus tech community.",
+      "Astitva Johri coordinates Techtronica’s strategy, mentors student leaders, and ensures that every event delivers value to the campus tech community.",
     instagram: "https://instagram.com/username",
     linkedin: "https://linkedin.com/in/username",
   },
 
-  // ...other members
+  
 ];
 
 export default function CommunityPage() {
