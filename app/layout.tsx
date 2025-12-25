@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Techrronica",
-  description: "Created by Techrronica",
+  title: "Techtronica",
+  description: "Created by Techtronica",
 };
 
 export default function RootLayout({
