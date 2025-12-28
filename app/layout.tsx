@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Techtronica",
-  description: "Created by Techtronica",
+  description: "Made with ❤️ by Techtronica",
 };
 
 export default function RootLayout({
