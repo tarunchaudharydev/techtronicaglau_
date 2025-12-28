@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Techtronica Society
 
-## Getting Started
+A web-based platform for Techtronica Society.
 
-First, run the development server:
+## Problem Statement
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Our Alumini made a platform for Techtronica Society using wix. But it is too old and not responsive. So, we need to make a new platform which is responsive and uses modern technologies for Techtronica Society.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Solution
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+We will make a new platform for Techtronica Society using modern technologies.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tech Stack
 
-## Learn More
+-Next.js (as full stack framework)
+-React (as frontend framework)
+-TypeScript (as static typing)
+-Tailwind CSS (as CSS framework)
+-Superbase (as database)
 
-To learn more about Next.js, take a look at the following resources:
+## Key Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+-Responsive Design
+-Modern Technologies
+-Database Integration
+-Updates in real time
+-User-friendly Interface
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## System Architecture
 
-## Deploy on Vercel
+The system follows a client-server architecture. The client is the web browser and the server is the Next.js server. The database is the Superbase database.
+-Frontend handles UI and user interactions.
+-Backend handles business logic and database operations.
+-Database stores data.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Installation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Prerequisites
+
+-Git
+-React
+-TypeScript
+-Tailwind CSS
+-Superbase
+-Next.js
+-Node.js(if possible)
+-Visual Studio Code (recommended) / Any other code editor
+
+### Installation Steps
+
+-Clone the repository
+-Install dependencies
+-Configure environment variables
+-Run the development server
+-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Environment Variables
+
+Create a `.env.local` file in the root directory of the project and add the following variables:
+-DATABASE_URL
+
+-
+-
+
+## Contact
+
+For any queries, please contact us at techtronica@gla.ac.in
+
+## Contributors
+
+-Abhishek Sharma (Society President) (Lead)
+-Tarun Kumar (Core Member) (Developer & project manager)
+-Ridhima (Core Member) (Designer & Content writer)
+-Stuti (Core Member) (Designer & Content writer)
+-Samriddhi (Core Member) (Designer & Content writer)
+-Nandini (Club head) (Designer & Content writer)
+
+## Contribution
+
+Contributions, suggestions, and feedback are welcome. Please open an issue or submit a pull request.
