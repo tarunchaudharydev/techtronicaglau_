@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import DigitalClock from "./components/features/DigitalClock";
+
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import DigitalClock from "../components/features/DigitalClock";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,24 +23,28 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-slate-900`}
       >
+        {/* Site Header */}
         <Navbar />
-        
-        {children}
+
+        {/* Main content (ALL pages render here) */}
+        <main className="pt-30 min-h-screen bg-linear-to-br from-white via-sky-50 to-purple-100">
+          {children}
+        </main>
+
+        {/* Optional widgets */}
         <DigitalClock />
+
+        {/* Site Footer */}
         <Footer />
       </body>
     </html>
   );
 }
-
-
-
-

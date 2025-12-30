@@ -69,8 +69,11 @@ For any queries, please contact us at techtronica@gla.ac.in
 ## Contributors
 
 -Abhishek Sharma (Society President) (Lead)
+
 -Tarun Kumar (Core Member) (Developer & project manager)
+
 -Ridhima (Core Member) (Designer & Content writer)
+
 -Stuti (Core Member) (Designer & Content writer)
 -Samriddhi (Core Member) (Designer & Content writer)
 -Nandini (Club head) (Designer & Content writer)

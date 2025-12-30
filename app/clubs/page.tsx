@@ -5,28 +5,29 @@ import Image from "next/image";
 
 const clubs = [
   {
-    slug: "code-e-phobia",
-    name: "Code-E-Phobia",
-    tag: "Coding & Programming",
-    description:
-      "Overcome the fear of coding through DSA practice, contests, hackathons, and guided coding sessions.",
-    image: "/images/code-e-phobia/coding-laptop.jpg",
-  },
-  {
-    slug: "mindblogger",
-    name: "Mindblogger",
-    tag: "Creativity & Content",
-    description:
-      "A space for writers, designers, and storytellers to create blogs, posters, reels, and digital content.",
-    image: "/images/mindblogger/question.jpg",
-  },
-  {
     slug: "technovation",
     name: "Technovation",
     tag: "Projects & Innovation",
     description:
       "Build real-world tech projects, explore hardware–software integration, and present innovative prototypes.",
-    image: "/images/technovation/ai.jpg",
+    image: "/clubs/technovation/logo.jpeg",
+  },
+
+  {
+    slug: "gizmo",
+    name: "Gizmo",
+    tag: "Robotics & Electronics",
+    description:
+      "Dive into circuits, bots, and embedded systems with hands-on hardware experiments and competitions.",
+    image: "/clubs/gizmo/logo.jpeg",
+  },
+  {
+    slug: "code-e-phobia",
+    name: "Code-E-Phobia",
+    tag: "Coding & Programming",
+    description:
+      "Overcome the fear of coding through DSA practice, contests, hackathons, and guided coding sessions.",
+    image: "/clubs/code-e-phobia/logo.jpeg",
   },
   {
     slug: "unnati",
@@ -34,21 +35,21 @@ const clubs = [
     tag: "Cultural & Events",
     description:
       "Manage cultural events, fests, and celebrations that keep the campus energetic and connected.",
-    image: "/images/unnati/cube.jpg",
+    image: "/clubs/unnati/logo.jpeg",
   },
   {
-    slug: "gizmo",
-    name: "Gizmo",
-    tag: "Robotics & Electronics",
+    slug: "mindbogglers",
+    name: "Mindboggler",
+    tag: "Creativity & Content",
     description:
-      "Dive into circuits, bots, and embedded systems with hands-on hardware experiments and competitions.",
-    image: "/images/gizmo/car.jpg",
+      "A space for writers, designers, and storytellers to create blogs, posters, reels, and digital content.",
+    image: "/clubs/mindbogglers/logo.jpeg",
   },
 ];
 
 export default function ClubsPage() {
   return (
-    <main className="min-h-screen pt-28 px-4 flex justify-center bg-gradient-to-br from-white via-sky-50 to-purple-100">
+    <main className="min-h-screen flex justify-center bg-gradient-to-br from-white via-sky-50 to-purple-100">
       <section className="w-full max-w-5xl pb-16">
         {/* Top text section */}
         <header className="mb-8 text-center">
@@ -59,9 +60,9 @@ export default function ClubsPage() {
             Explore our clubs
           </h1>
           <p className="text-sm sm:text-base text-slate-700 max-w-2xl mx-auto">
-            Join the communities that match your interests—from coding and robotics
-            to creativity, culture, and hands-on innovation. Learn, collaborate, and
-            grow with like‑minded students.
+            Join the communities that match your interests—from coding and
+            robotics to creativity, culture, and hands-on innovation. Learn,
+            collaborate, and grow with like‑minded students.
           </p>
         </header>
 
@@ -101,16 +102,14 @@ export default function ClubsPage() {
                   {club.tag}
                 </p>
 
-                <h2 className="font-semibold text-slate-900">
-                  {club.name}
-                </h2>
+                <h2 className="font-semibold text-slate-900">{club.name}</h2>
 
                 <p className="text-sm text-slate-700 mt-1 flex-1">
                   {club.description}
                 </p>
 
                 <Link
-                  href={`/${club.slug}`}
+                  href={`/clubs/${club.slug}`}
                   className="mt-2 text-sm font-semibold text-sky-700 group-hover:text-sky-900 transition-colors"
                 >
                   Read more →
