@@ -24,7 +24,7 @@ export const members: Member[] = [
   {
     id: 1,
     name: "Abhishek Sharma",
-    roles: ["President", "Core Lead"],
+    roles: ["President", "Core"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/Abhishek Sharma.jpg",
     shortBio: "Leads Techtronica and core club initiatives.",
@@ -44,7 +44,7 @@ export const members: Member[] = [
     image: "/ourTeam/coreMembers/Dheeraj Rajput.jpg",
     shortBio: "Supports strategy and execution.",
     longBio:
-      "Dheeraj Rajput serves as the Vice President of Techtronica, translating vision into action.",
+      "Dheeraj Rajput serves as the Vice President of Code-E-Phobia, translating vision into action.",
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/dheeraj-rajput-62ab03285",
   },
@@ -54,7 +54,7 @@ export const members: Member[] = [
    {
     id: 3,
     name: "Aaditya Hridaya",
-    roles: ["President", "Core Lead"],
+    roles: ["President", "Core"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/Aaditya.jpg",
     shortBio: "Leads Techtronica and core club initiatives.",
@@ -68,12 +68,12 @@ export const members: Member[] = [
    {
     id: 4,
     name: "Adamya Vishwas Sharma",
-    roles: ["President", "Core Lead"],
-    categories: ["President"],
+    roles: ["Core"],
+    categories: ["core-member"],
     image: "/ourTeam/coreMembers/Adamya Vishwas sharma.jpg",
     shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
-      "Adamya Vishwas Sharma serves as the President of Techtronica, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+      "Adamya Vishwas Sharma serves as the Core Member of Techtronica, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://linkedin.com/in/username",
   },
@@ -82,7 +82,7 @@ export const members: Member[] = [
    {
     id: 5,
     name: "Aditya Kumar",
-    roles: ["President", "Core Lead"],
+    roles: ["President", "Core"],
     categories: ["GMC"],
     image: "/ourTeam/coreMembers/Aditya Kumar(GMC).jpg",
     shortBio: "Leads Techtronica and core club initiatives.",
@@ -97,7 +97,7 @@ export const members: Member[] = [
    {
     id: 6,
     name: "Aman Saraswat",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/AMAN SARASHWAT.jpg",    
     shortBio: "Leads Techtronica and core club initiatives.",
@@ -112,7 +112,7 @@ export const members: Member[] = [
    {
     id: 7,
     name: "Ankit Rawat",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/Ankit Rawat.jpg",    
     shortBio: "Leads Techtronica and core club initiatives.",
@@ -127,7 +127,7 @@ export const members: Member[] = [
    {
     id: 8,
     name: "Anshi",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["President"],
    image: "/ourTeam/coreMembers/Anshi.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -141,7 +141,7 @@ export const members: Member[] = [
    {
     id: 9,
     name: "Anshul Gupta",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["GMC"],
     image: "/ourTeam/coreMembers/Anshul Gupta(GMC).jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -155,7 +155,7 @@ export const members: Member[] = [
    {
     id: 10,
     name: "Anurag Sharma",
-    roles: ["President", "Core Lead"],
+    roles: ["President", "Core"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/Anurag sharma.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -169,7 +169,7 @@ export const members: Member[] = [
    {
     id: 11,
     name: "Astitva",
-    roles: ["President", "Core Lead"],
+    roles: ["President", "Core"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/Astitva.jpg",    
     shortBio: "Leads Techtronica and core club initiatives.",
@@ -184,7 +184,7 @@ export const members: Member[] = [
    {
     id: 12,
     name: "Avantika",
-    roles: ["President", "Core Lead"],
+    roles: ["President", "Core"],
     categories: ["President"],
    image: "/ourTeam/coreMembers/Avantika.jpg",
     shortBio: "Leads Techtronica and core club initiatives.",
@@ -199,7 +199,7 @@ export const members: Member[] = [
    {
     id: 13,
     name: "Ayushman",
-    roles: ["President", "Core Lead"],
+    roles: ["President", "Core"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/Ayushman.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -213,7 +213,7 @@ export const members: Member[] = [
    {
     id: 14,
     name: "Ayushman Mishra",
-    roles: ["President", "Core Lead"],
+    roles: ["President", "Core"],
     categories: ["President"],
    image: "/ourTeam/coreMembers/Ayushman Mishra.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -227,7 +227,7 @@ export const members: Member[] = [
    {
     id: 15,
     name: "Ayushi Ricchariya",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["GMC"],
     image: "/ourTeam/coreMembers/Ayushi Ricchariya.jpg",    
     shortBio: "Leads Techtronica and core club initiatives.",
@@ -243,7 +243,7 @@ export const members: Member[] = [
    {
     id: 16,
     name: "Bhumika",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/Bhumika kumari.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -257,7 +257,7 @@ export const members: Member[] = [
    {
     id: 17,
     name: "Brijesh",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/Brijesh.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -270,7 +270,7 @@ export const members: Member[] = [
    {
     id: 18,
     name: "Charvi Vijay",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["GMC"],
     image: "/ourTeam/coreMembers/Charvi vijay(GMC).jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -284,7 +284,7 @@ export const members: Member[] = [
    {
     id: 19,
     name: "Devang Shukla",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["GMC"],
    image: "/ourTeam/coreMembers/Devang Shukla(GMC).jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -298,7 +298,7 @@ export const members: Member[] = [
    {
     id: 20,
     name: "Dheeraj",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["President"],
    image: "/ourTeam/coreMembers/designAndMediaHead.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -312,7 +312,7 @@ export const members: Member[] = [
    {
     id: 21,
     name: "Gargi pal",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/Gargi pal.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -326,7 +326,7 @@ export const members: Member[] = [
    {
     id: 22,
     name: "HARSH SHARMA",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["GMC"],
     image: "/ourTeam/coreMembers/Harsh.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -340,7 +340,7 @@ export const members: Member[] = [
    {
     id: 23,
     name: "Harshit Ramrakhiyan",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["GMC"],
     image: "/ourTeam/coreMembers/Harshit Ramrakhiyan.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -354,7 +354,7 @@ export const members: Member[] = [
    {
     id: 24,
     name: "Harshit Tiwari",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["President"],
    image: "/ourTeam/coreMembers/Harshit.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -367,7 +367,7 @@ export const members: Member[] = [
    {
     id: 25,
     name: "Jeet Sinha",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["GMC"],
     image: "/ourTeam/coreMembers/Jeet Sinha.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -381,7 +381,7 @@ export const members: Member[] = [
    {
     id: 26,
     name: "Krishna Gupta",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["GMC"],
     image: "/ourTeam/coreMembers/Krishna Gupta(GMC).jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -395,7 +395,7 @@ export const members: Member[] = [
    {
     id: 27,
     name: "Mukul",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/Mukul.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -408,7 +408,7 @@ export const members: Member[] = [
    {
     id: 28,
     name: "Muskan Singh",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/Muskan.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -422,7 +422,7 @@ export const members: Member[] = [
    {
     id: 29,
     name: "Nandini Agarwal",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/Nandini.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -436,7 +436,7 @@ export const members: Member[] = [
    {
     id: 30,
     name: "Narayan",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/Narayan.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -451,7 +451,7 @@ export const members: Member[] = [
    {
     id: 31,
     name: "Nitin Singh",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/Nitin.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -465,7 +465,7 @@ export const members: Member[] = [
    {
     id: 32,
     name: "Piyush",
-    roles: ["President", "Core Lead"],
+    roles: ["President", "Core"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/Pyush.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -480,7 +480,7 @@ export const members: Member[] = [
    {
     id: 33,
     name: "Ridhima",
-    roles: ["President", "Core Lead"],
+    roles: ["President", "Core"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/Ridhima.jpeg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -495,7 +495,7 @@ export const members: Member[] = [
    {
     id: 34,
     name: "Sameeraj",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/Sameeraj.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -510,7 +510,7 @@ export const members: Member[] = [
    {
     id: 35,
     name: "Samriddhi",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/Samriddhi Gaur.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -524,7 +524,7 @@ export const members: Member[] = [
    {
     id: 36,
     name: "Shourya Pratap Singh",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/Shourya Pratap Singh.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -538,7 +538,7 @@ export const members: Member[] = [
    {
     id: 37,
     name: "Stuti Shukla",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/Stuti Shukla.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -553,7 +553,7 @@ export const members: Member[] = [
    {
     id: 38,
     name: "Tarun",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/Tarun.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -568,7 +568,7 @@ export const members: Member[] = [
    {
     id: 39,
     name: "Tushar Sharma",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/Tushar.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -582,7 +582,7 @@ export const members: Member[] = [
    {
     id: 40,
     name: "Utkarsh Saxena",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/Utkarsh.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -596,7 +596,7 @@ export const members: Member[] = [
    {
     id: 41,
     name: "Utkarsh Singhal",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/Utkarsh.jpeg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -610,7 +610,7 @@ export const members: Member[] = [
    {
     id: 42,
     name: "Vaibhav Jain",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/Vaibhav jain.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -624,7 +624,7 @@ export const members: Member[] = [
    {
     id: 43,
     name: "Vaibhav kaushik",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["President"],
    image: "/ourTeam/coreMembers/Vaibhav kaushik.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -638,7 +638,7 @@ export const members: Member[] = [
    {
     id: 44,
     name: "Vikram Singh",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/Vikram Singh.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -652,7 +652,7 @@ export const members: Member[] = [
    {
     id: 45,
     name: "Vinayak Mishra",
-     roles: ["President", "Core Lead"],
+     roles: ["President", "Core"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/Vinayak Mishra.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
@@ -666,7 +666,7 @@ export const members: Member[] = [
    {
     id: 46,
     name: "Yogesh",
-     roles: ["Core Lead"],
+     roles: ["Core"],
     categories: ["GMC"],
     image: "/ourTeam/coreMembers/Yogesh(GMC).jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:

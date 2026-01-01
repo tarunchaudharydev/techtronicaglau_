@@ -35,7 +35,7 @@ export default function RootLayout({
         <Navbar />
 
         {/* Main content (ALL pages render here) */}
-        <main className="pt-30 min-h-screen bg-linear-to-br from-white via-sky-50 to-purple-100">
+        <main className="pt-28 min-h-screen bg-linear-to-br from-white via-sky-50 to-purple-100">
           {children}
         </main>
 

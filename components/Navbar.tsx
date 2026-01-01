@@ -23,7 +23,7 @@ const navLinks = [
 
 const clubItems = [
   { href: "/clubs/code-e-phobia", label: "Code-E-Phobia" },
-  { href: "/clubs/mindbogglers", label: "Mindboggler" },
+  { href: "/clubs/mindboggler", label: "Mindboggler" },
   { href: "/clubs/technovation", label: "Technovation" },
   { href: "/clubs/unnati", label: "Unnati" },
   { href: "/clubs/gizmo", label: "Gizmo" },

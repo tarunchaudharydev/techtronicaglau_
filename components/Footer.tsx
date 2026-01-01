@@ -88,7 +88,7 @@ function Footer() {
               <ul className="space-y-2">
                 {[
                   { href: "/about", label: "About Techtronica" },
-                  { href: "/team", label: "Core Team" },
+                  { href: "/alumni", label: "Alumni" },
                   { href: "/contact", label: "Contact us" },
                 ].map((item) => (
                   <li key={item.href}>
@@ -110,12 +110,18 @@ function Footer() {
               </h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="https://www.instagram.com/techtronica_glau?igsh=Y244amc5ZzZmaTBw" className="text-slate-600 hover:text-purple-700">
+                  <a
+                    href="https://www.instagram.com/techtronica_glau?igsh=Y244amc5ZzZmaTBw"
+                    className="text-slate-600 hover:text-purple-700"
+                  >
                     Instagram
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/company/techtronica-society2016/" className="text-slate-600 hover:text-purple-700">
+                  <a
+                    href="https://www.linkedin.com/company/techtronica-society2016/"
+                    className="text-slate-600 hover:text-purple-700"
+                  >
                     LinkedIn
                   </a>
                 </li>
@@ -165,8 +171,8 @@ function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-slate-200 bg-slate-100/80">
         <div className="mx-auto max-w-6xl px-4 py-4 text-[11px] text-slate-500 text-center sm:text-left">
-          © {new Date().getFullYear()} Techtronica • GLA University • Electronics
-          and Communication Engineering
+          © {new Date().getFullYear()} Techtronica • GLA University •
+          Electronics and Communication Engineering
         </div>
       </div>
     </footer>

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="bg-gray-50 text-gray-700 min-h-screen">
+    <main className="bg-gray-50 text-gray-700 min-h-screen -pt-20">
       {/* HERO SECTION */}
       <section className="relative h-[70vh]">
         <Image

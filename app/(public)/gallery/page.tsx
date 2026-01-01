@@ -52,9 +52,7 @@ export default function GalleryPage() {
     observerRef.current = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting) {
-          setVisibleCount((prev) =>
-            Math.min(prev + BATCH_SIZE, images.length)
-          );
+          setVisibleCount((prev) => Math.min(prev + BATCH_SIZE, images.length));
         }
       },
       {
@@ -71,7 +69,7 @@ export default function GalleryPage() {
 
   return (
     <section
-      className="max-w-7xl mx-auto px-4 pt-32 pb-12 bg-linear-to-br from-white via-sky-50 to-purple-100"
+      className="max-w-7xl mx-auto px-4 pb-12 bg-linear-to-br from-white via-sky-50 to-purple-100"
       style={{ paddingTop: "calc(8rem + 29px)" }}
     >
       {/* ================= HEADER ================= */}

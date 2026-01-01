@@ -38,12 +38,12 @@ const clubs = [
     image: "/clubs/unnati/logo.jpeg",
   },
   {
-    slug: "mindbogglers",
+    slug: "mindboggler",
     name: "Mindboggler",
     tag: "Creativity & Content",
     description:
       "A space for writers, designers, and storytellers to create blogs, posters, reels, and digital content.",
-    image: "/clubs/mindbogglers/logo.jpeg",
+    image: "/clubs/mindboggler/logo.jpeg",
   },
 ];
 
