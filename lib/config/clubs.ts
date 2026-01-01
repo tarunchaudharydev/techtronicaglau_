@@ -46,6 +46,9 @@ export interface Club {
   };
 }
 
+
+
+
 export const clubs: Club[] = [
   {
     slug: "code-e-phobia",
@@ -458,7 +461,7 @@ export const clubs: Club[] = [
       {
         name: "Harshit Ramrakhyani",
         role: "General Secretary",
-        image: "/clubs/mindbogglers/team/GS.jpeg",
+        image: "/clubs/mindbogglers/team/GS.jpg",
       },
     ],
 
