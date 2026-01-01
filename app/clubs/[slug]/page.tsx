@@ -1,5 +1,4 @@
 import { clubs } from "@/lib/config/clubs";
-import ClubHero from "@/components/club/ClubHero";
 import ClubPurpose from "@/components/club/ClubPurpose";
 import ClubTracks from "@/components/club/ClubTracks";
 import ClubWhatYouDo from "@/components/club/ClubWhatYouDo";
