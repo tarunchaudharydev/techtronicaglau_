@@ -20,11 +20,11 @@ export const notes: Note[] = [
   },
   {
     id: "2",
-    title: "Operating Systems PYQs (Handwritten)",
-    subject: "OS",
-    category: "PYQs",
+    title: "Interview Questions",
+    subject: "General",
+    category: "Notes",
     year: "3rd Year",
-    slug: "os-pyqs",
-    pdfUrl: "/notes/os-pyqs.pdf",
+    slug: "interview-questions",
+    pdfUrl: "/notes/interviewQuestions.pdf",
   },
 ];

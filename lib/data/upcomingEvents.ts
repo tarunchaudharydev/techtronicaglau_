@@ -64,7 +64,7 @@ export const events: Event[] = [
       { name: "Team Beta", position: "2nd" },
     ],
     gallery: [
-      "/clubs/code-e-phobia/images/CodeX.jpg",
+      "/clubs/code-e-phobia/images/css.jpg",
     ],
   },
 
@@ -86,8 +86,8 @@ export const events: Event[] = [
       { name: "Team Beta", position: "2nd" },
     ],
     gallery: [
-      "/clubs/code-e-phobia/images/CodeQuest.jpg",
-      "/clubs/code-e-phobia/images/CodeQuest.jpg",
+      "/clubs/code-e-phobia/images/newtworking.jpg",
+      
     ],
   },
 
@@ -116,9 +116,8 @@ export const events: Event[] = [
       { name: "Team Beta", position: "2nd" },
     ],
     gallery: [
-      "/clubs/gizmo/images/gizmo.jpg",
-      "/clubs/gizmo/images/gizmo.jpg",
-      "/clubs/gizmo/images/gizmo.jpg",
+      "/clubs/gizmo/images/robort1.jpg",
+      
     ],
   },
 
@@ -157,7 +156,7 @@ export const events: Event[] = [
     date: "2024-04-10",
     time: "02:00 PM",
     location: "Innovation Lab",
-    coverImage: "/clubs/gizmo/images/gizmo.jpg",
+    coverImage: "/clubs/gizmo/images/righthand.jpg",
     description:
       "Compete in thrilling robotics challenges involving line followers, obstacle courses, and automation problem-solving.",
     winners: [
@@ -165,10 +164,8 @@ export const events: Event[] = [
       { name: "Team Beta", position: "2nd" },
     ],
     gallery: [
-      "/clubs/gizmo/images/gizmo.jpg",
-      "/clubs/gizmo/images/gizmo.jpg",
-      "/clubs/gizmo/images/gizmo.jpg",
-    ],
+      "/clubs/gizmo/images/robort2.jpg",
+    ]
   },
 
 
@@ -180,7 +177,7 @@ export const events: Event[] = [
     date: "2024-04-10",
     time: "02:00 PM",
     location: "Innovation Lab",
-    coverImage: "/clubs/gizmo/images/gizmo.jpg",
+    coverImage: "/clubs/gizmo/images/sitrobort.jpg",
     description:
       "Learn PCB design, circuit simulation, and practical electronics by building real-world electronic modules from scratch.",
     winners: [
@@ -188,9 +185,8 @@ export const events: Event[] = [
       { name: "Team Beta", position: "2nd" },
     ],
     gallery: [
-      "/clubs/gizmo/images/gizmo.jpg",
-      "/clubs/gizmo/images/gizmo.jpg",
-      "/clubs/gizmo/images/gizmo.jpg",
+      "/clubs/gizmo/images/roborthi.jpg",
+      
     ],
   },
 
@@ -206,7 +202,7 @@ export const events: Event[] = [
     date: "2024-04-10",
     time: "02:00 PM",
     location: "Innovation Lab",
-    coverImage: "/clubs/mindboggler/images/mindbogglerChip.jpg",
+    coverImage: "/clubs/mindbogglers/images/mindbogglerChip.jpg",
     description:
       "A fast-paced 3-round quiz testing knowledge, logic, and quick thinking—MCQ screening, team stage, and an intense rapid-fire finale.",
     winners: [
@@ -214,9 +210,8 @@ export const events: Event[] = [
       { name: "Team Beta", position: "2nd" },
     ],
     gallery: [
-      "/clubs/mindboggler/images/mindbogglerChip.jpg",
-      "/clubs/mindboggler/images/mindbogglerChip.jpg",
-      "/clubs/mindboggler/images/mindbogglerChip.jpg",
+      "/clubs/mindbogglers/images/mindboggler1.jpg",
+      
     ],
   },
 
@@ -231,7 +226,7 @@ export const events: Event[] = [
     date: "2024-04-10",
     time: "02:00 PM",
     location: "Innovation Lab",
-    coverImage: "/clubs/mindboggler/images/mindbogglerChip.jpg",
+    coverImage: "/clubs/mindbogglers/images/mindboggler2.jpg",
     description:
       "A two-round creative event combining writing and speaking—Pic to Pen challenges imagination, followed by Think & Talk to test confidence and communication.",
     winners: [
@@ -239,9 +234,7 @@ export const events: Event[] = [
       { name: "Team Beta", position: "2nd" },
     ],
     gallery: [
-      "/clubs/mindboggler/images/mindbogglerChip.jpg",
-      "/clubs/mindboggler/images/mindbogglerChip.jpg",
-      "/clubs/mindboggler/images/mindbogglerChip.jpg",
+      "/clubs/mindbogglers/images/mindboggler3.jpg",
     ],
   },
 
@@ -257,7 +250,7 @@ export const events: Event[] = [
     date: "2024-04-10",
     time: "02:00 PM",
     location: "Innovation Lab",
-    coverImage: "/clubs/mindboggler/images/mindbogglerChip.jpg",
+    coverImage: "/clubs/mindbogglers/images/mindboggler4.jpg",
     description:
       "Participants create blogs, articles, reels, or short-form content based on trending topics, judged on originality and impact.",
     winners: [
@@ -265,9 +258,7 @@ export const events: Event[] = [
       { name: "Team Beta", position: "2nd" },
     ],
     gallery: [
-      "/clubs/mindboggler/images/mindbogglerChip.jpg",
-      "/clubs/mindboggler/images/mindbogglerChip.jpg",
-      "/clubs/mindboggler/images/mindbogglerChip.jpg",
+      "/clubs/mindbogglers/images/mindboggler5.jpg",
     ],
   },
 
@@ -292,9 +283,8 @@ export const events: Event[] = [
       { name: "Team Beta", position: "2nd" },
     ],
     gallery: [
-      "/clubs/technovation/images/CadenceWorkshop.jpg",
-      "/clubs/technovation/images/CadenceWorkshop.jpg",
-      "/clubs/technovation/images/CadenceWorkshop.jpg",
+      "/clubs/technovation/images/technovation1.jpg",
+      
     ],
   },
 
@@ -316,9 +306,8 @@ export const events: Event[] = [
       { name: "Team Beta", position: "2nd" },
     ],
     gallery: [
-      "/clubs/technovation/images/motherboard.jpg",
-      "/clubs/technovation/images/motherboard.jpg",
-      "/clubs/technovation/images/motherboard.jpg",
+      "/clubs/technovation/images/technovatio2.jpg",
+      
     ],
   },
 
@@ -340,9 +329,8 @@ export const events: Event[] = [
       { name: "Team Beta", position: "2nd" },
     ],
     gallery: [
-      "/clubs/technovation/images/ram.jpg",
-      "/clubs/technovation/images/ram.jpg",
-      "/clubs/technovation/images/ram.jpg",
+      "/clubs/technovation/images/technovation3.jpg",
+    
     ],
   },
 
@@ -358,7 +346,7 @@ export const events: Event[] = [
     date: "2024-04-10",
     time: "02:00 PM",
     location: "Innovation Lab",
-    coverImage: "/clubs/unnati/images/IMG-20240410-121212.jpg",
+    coverImage: "/clubs/unnati/images/9.jpg",
     description:
       "A creative competition featuring Painting, Nail Art, Mehendi, and Rangoli, celebrating artistic expression and skill.",
     outcome: "",

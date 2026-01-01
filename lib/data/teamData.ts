@@ -56,7 +56,7 @@ export const members: Member[] = [
     name: "Aaditya Hridaya",
     roles: ["President", "Core"],
     categories: ["President"],
-    image: "/ourTeam/coreMembers/Aaditya.jpg",
+    image: "/ourTeam/coreMembers/user1.jpg",
     shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
       "Aaditya Hridaya serves as the President of Techtronica, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
@@ -114,7 +114,7 @@ export const members: Member[] = [
     name: "Ankit Rawat",
      roles: ["President", "Core"],
     categories: ["President"],
-    image: "/ourTeam/coreMembers/Ankit Rawat.jpg",    
+    image: "/ourTeam/coreMembers/user2.jpg",    
     shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
       "Ankit Rawat serves as the President of Techtronica, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
@@ -129,7 +129,7 @@ export const members: Member[] = [
     name: "Anshi",
      roles: ["President", "Core"],
     categories: ["President"],
-   image: "/ourTeam/coreMembers/Anshi.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
+   image: "/ourTeam/coreMembers/user3.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
       "Anshi serves as the President of Techtronica, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
     whatsApp: "wa.me/+910000000000",
@@ -201,7 +201,7 @@ export const members: Member[] = [
     name: "Ayushman",
     roles: ["President", "Core"],
     categories: ["President"],
-    image: "/ourTeam/coreMembers/Ayushman.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
+    image: "/ourTeam/coreMembers/user4.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
       "Ayushman serves as the President of Techtronica, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
     whatsApp: "wa.me/+910000000000",
@@ -229,7 +229,7 @@ export const members: Member[] = [
     name: "Ayushi Ricchariya",
      roles: ["President", "Core"],
     categories: ["GMC"],
-    image: "/ourTeam/coreMembers/Ayushi Ricchariya.jpg",    
+    image: "/ourTeam/coreMembers/user5.jpg",    
     shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
       "Ayushi Ricchariya serves as the President of Techtronica, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
@@ -342,7 +342,7 @@ export const members: Member[] = [
     name: "Harshit Ramrakhiyan",
      roles: ["President", "Core"],
     categories: ["GMC"],
-    image: "/ourTeam/coreMembers/Harshit Ramrakhiyan.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
+    image: "/ourTeam/coreMembers/user6.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
       "Harshit Ramrakhiyan serves as the President of Techtronica, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
     whatsApp: "wa.me/+910000000000",
@@ -356,7 +356,7 @@ export const members: Member[] = [
     name: "Harshit Tiwari",
      roles: ["President", "Core"],
     categories: ["President"],
-   image: "/ourTeam/coreMembers/Harshit.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
+   image: "/ourTeam/coreMembers/user7.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
       "Harshit Tiwari serves as the President of Techtronica, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
     whatsApp: "wa.me/+910000000000",
@@ -453,7 +453,7 @@ export const members: Member[] = [
     name: "Nitin Singh",
      roles: ["President", "Core"],
     categories: ["President"],
-    image: "/ourTeam/coreMembers/Nitin.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
+    image: "/ourTeam/coreMembers/user8.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
       "Nitin Singh serves as the President of Techtronica, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
     whatsApp: "wa.me/+910000000000",
@@ -497,7 +497,7 @@ export const members: Member[] = [
     name: "Sameeraj",
      roles: ["President", "Core"],
     categories: ["President"],
-    image: "/ourTeam/coreMembers/Sameeraj.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
+    image: "/ourTeam/coreMembers/user9.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
       "Sameeraj serves as the President of Techtronica, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
     whatsApp: "wa.me/+910000000000",
@@ -526,7 +526,7 @@ export const members: Member[] = [
     name: "Shourya Pratap Singh",
      roles: ["President", "Core"],
     categories: ["President"],
-    image: "/ourTeam/coreMembers/Shourya Pratap Singh.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
+    image: "/ourTeam/coreMembers/user10.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
       "Shourya Pratap Singh serves as the President of Techtronica, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
     whatsApp: "wa.me/+910000000000",
@@ -555,7 +555,7 @@ export const members: Member[] = [
     name: "Tarun",
      roles: ["President", "Core"],
     categories: ["President"],
-    image: "/ourTeam/coreMembers/Tarun.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
+    image: "/ourTeam/coreMembers/user11.jpg",    shortBio: "Leads Techtronica and core club initiatives.",
     longBio:
       "Tarun serves as the President of Techtronica, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
     whatsApp: "wa.me/+910000000000",
