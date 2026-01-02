@@ -24,7 +24,7 @@ export async function POST(req: Request) {
     // Send email to OVERALL mail id
     await transporter.sendMail({
       from: `"Techtronica Website" <${process.env.EMAIL_USER}>`,
-      to: process.env.CONTACT_RECEIVER, // 👈 central email
+      to: process.env.CONTACT_RECEIVER, //  central email
       replyTo: email, // so admin can reply directly to user
       subject: `New message from ${clubName}${topic ? ` — ${topic}` : ""}`,
       html: `

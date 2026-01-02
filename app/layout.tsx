@@ -21,6 +21,8 @@ export const metadata: Metadata = {
   description: "Made with ❤️ by Techtronica Society.",
 };
 
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 export default function RootLayout({
   children,
 }: {
@@ -37,6 +39,7 @@ export default function RootLayout({
         {/* Main content (ALL pages render here) */}
         <main className="pt-28 min-h-screen bg-linear-to-br from-white via-sky-50 to-purple-100">
           {children}
+          <SpeedInsights />
         </main>
 
         {/* Optional widgets */}
