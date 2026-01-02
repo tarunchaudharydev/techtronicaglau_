@@ -12,52 +12,52 @@ We will make a new platform for Techtronica Society using modern technologies.
 
 ## Tech Stack
 
--Next.js (as full stack framework)
--React (as frontend framework)
--TypeScript (as static typing)
--Tailwind CSS (as CSS framework)
--Superbase (as database)
+- Next.js (as full stack framework)
+- React (as frontend framework)
+- TypeScript (as static typing)
+- Tailwind CSS (as CSS framework)
+- Superbase (as database)
 
 ## Key Features
 
--Responsive Design
--Modern Technologies
--Database Integration
--Updates in real time
--User-friendly Interface
+- Responsive Design
+- Modern Technologies
+- Database Integration
+- Updates in real time
+- User-friendly Interface
 
 ## System Architecture
 
 The system follows a client-server architecture. The client is the web browser and the server is the Next.js server. The database is the Superbase database.
--Frontend handles UI and user interactions.
--Backend handles business logic and database operations.
--Database stores data.
+- Frontend handles UI and user interactions.
+- Backend handles business logic and database operations.
+- Database stores data.
 
 ## Installation
 
 ### Prerequisites
 
--Git
--React
--TypeScript
--Tailwind CSS
--Superbase
--Next.js
--Node.js(if possible)
--Visual Studio Code (recommended) / Any other code editor
+- Git
+- React
+- TypeScript
+- Tailwind CSS
+- Superbase
+- Next.js
+- Node.js(if possible)
+- Visual Studio Code (recommended) / Any other code editor
 
 ### Installation Steps
 
--Clone the repository
--Install dependencies
--Configure environment variables
--Run the development server
--Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Clone the repository
+- Install dependencies
+- Configure environment variables
+- Run the development server
+- Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Environment Variables
 
 Create a `.env.local` file in the root directory of the project and add the following variables:
--DATABASE_URL
+- DATABASE_URL
 
 -
 -
@@ -68,15 +68,15 @@ For any queries, please contact us at techtronica@gla.ac.in
 
 ## Contributors
 
--Abhishek Sharma (Society President) (Lead)
+- Abhishek Sharma (Society President) (Lead)
 
--Tarun Kumar (Core Member) (Developer & project manager)
+- Tarun Kumar (Core Member) (Developer & project manager)
 
--Ridhima (Core Member) (Designer & Content writer)
+- Ridhima (Core Member) (Designer & Content writer)
 
--Stuti (Core Member) (Designer & Content writer)
--Samriddhi (Core Member) (Designer & Content writer)
--Nandini (Club head) (Designer & Content writer)
+- Stuti (Core Member) (Designer & Content writer)
+- Samriddhi (Core Member) (Designer & Content writer)
+- Nandini (Club head) (Designer & Content writer)
 
 ## Contribution
 
