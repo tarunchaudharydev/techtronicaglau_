@@ -22,6 +22,7 @@ export const metadata: Metadata = {
 };
 
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function RootLayout({
   children,
@@ -36,7 +37,7 @@ export default function RootLayout({
         {/* Site Header */}
         <Navbar />
 
-        {/* Main content (ALL pages render here) */}
+        {/* Main content */}
         <main className="pt-28 min-h-screen bg-linear-to-br from-white via-sky-50 to-purple-100">
           {children}
         </main>
