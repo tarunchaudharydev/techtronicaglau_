@@ -195,7 +195,7 @@ export const clubs: Club[] = [
       {
         name: "Puspendra",
         role: "President",
-        image: "/clubs/gizmo/team/President.jpg",
+        image: "/clubs/gizmo/team/president.jpg",
       },
 
       {
