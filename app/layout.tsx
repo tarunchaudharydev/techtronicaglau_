@@ -41,6 +41,7 @@ export default function RootLayout({
         <main className="pt-28 min-h-screen bg-linear-to-br from-white via-sky-50 to-purple-100">
           {children}
         </main>
+        <Analytics />
 
         <SpeedInsights />
 

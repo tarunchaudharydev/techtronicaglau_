@@ -190,22 +190,24 @@ export const clubs: Club[] = [
     ],
 
     team: [
+      
+
       {
-        name: "Vaibhav Jain",
+        name: "Puspendra",
         role: "President",
-        image: "/clubs/gizmo/team/president.jpg",
+        image: "/clubs/gizmo/team/President.jpg",
       },
 
       {
-        name: "Pyush",
+        name: "Vaibhav Jain",
         role: "Vice President",
         image: "/clubs/gizmo/team/vicePresident.jpg",
       },
 
       {
         name: "Avantika",
-        role: "GeneralSecretary",
-        image: "/clubs/gizmo/team/GS.jpg",
+        role: "General Secretary",
+        image: "/clubs/gizmo/team/GS.jpeg",
       },
     ],
 
