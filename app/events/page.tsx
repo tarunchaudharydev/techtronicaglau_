@@ -34,24 +34,38 @@ function Section({ title, children }: any) {
 
 function EventCard({ event }: any) {
   return (
-    <Link href={`/events/${event.id}`}>
-      <article className="rounded-2xl bg-white shadow hover:-translate-y-1 transition overflow-hidden">
-        <div className="relative h-48">
-          <Image
-            src={event.coverImage}
-            alt={event.title}
-            fill
-            className="object-cover"
-          />
+    <article className="rounded-2xl bg-white shadow transition hover:-translate-y-1 hover:shadow-xl overflow-hidden flex flex-col">
+      {/* Cover Image */}
+      <div className="relative h-48 w-full">
+        <Image
+          src={event.coverImage}
+          alt={event.title}
+          fill
+          sizes="(max-width: 768px) 100vw, 33vw"
+          className="object-cover"
+        />
+      </div>
+
+      {/* Content */}
+      <div className="p-4 space-y-2 flex flex-col flex-1">
+        <p className="text-xs text-sky-600 font-medium">{event.club}</p>
+
+        <h3 className="font-semibold text-lg">{event.title}</h3>
+
+        <p className="text-sm text-gray-600">
+          {event.date} • {event.time}
+        </p>
+
+        {/* CTA */}
+        <div className="mt-auto pt-4">
+          <Link
+            href={`/events/${event.id}`}
+            className="inline-block text-sm font-semibold text-white bg-sky-600 px-4 py-2 rounded-lg hover:bg-sky-700 transition"
+          >
+            Read more →
+          </Link>
         </div>
-        <div className="p-4 space-y-2">
-          <p className="text-xs text-sky-600">{event.club}</p>
-          <h3 className="font-semibold">{event.title}</h3>
-          <p className="text-sm text-gray-600">
-            {event.date} • {event.time}
-          </p>
-        </div>
-      </article>
-    </Link>
+      </div>
+    </article>
   );
 }

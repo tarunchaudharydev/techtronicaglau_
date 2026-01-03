@@ -10,11 +10,11 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="bg-gray-50 text-gray-700 min-h-screen -pt-20">
+    <main className="bg-gray-50 text-gray-700 min-h-screen">
       {/* HERO SECTION */}
       <section className="relative h-[70vh]">
         <Image
-          src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+          src="/ourTeam/about.jpg"
           alt="Technology background"
           fill
           priority
@@ -52,7 +52,7 @@ export default function AboutPage() {
 
           <div className="relative h-80 w-full rounded-xl overflow-hidden shadow-lg">
             <Image
-              src="https://techtronica.vercel.app/_next/image?url=%2Fimages%2Foverview%2Fteam.jpg&w=828&q=75"
+              src="/ourTeam/techtronica group.jpg"
               alt="Techtronica team"
               fill
               className="object-cover"
