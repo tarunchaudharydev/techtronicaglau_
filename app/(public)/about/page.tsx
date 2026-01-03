@@ -52,7 +52,7 @@ export default function AboutPage() {
 
           <div className="relative h-80 w-full rounded-xl overflow-hidden shadow-lg">
             <Image
-              src="/ourTeam/techtronica group.jpg"
+              src="/ourTeam/group.jpg"
               alt="Techtronica team"
               fill
               className="object-cover"
