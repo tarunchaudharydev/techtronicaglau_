@@ -108,25 +108,6 @@ export const events: Event[] = [
 
 
 
-  {
-    id: "copy",
-    title: "second copy for testing",
-    club: "code-e-phobia",
-    date: "2026-01-20",
-    time: "10:00 AM",
-    location: "Seminar Hall A",
-    coverImage: "/clubs/code-e-phobia/images/Hackthon.jpg",
-       description: ["Something meaningful. Something impactful"],
-
-    registrationLink: "https://forms.gle/xyza",
-    registrationDeadline: "2026-01-11",
-  },
-
-
-
-
-
-
 
 
 
