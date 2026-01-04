@@ -27,7 +27,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Founding President",
     club: "Technovation",
     image: "/ourTeam/alumni/Abhirup Paul.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/abhirup-paul-a75a2b1b",
 
     currentRole: "SDE II",
     currentCompany: "Harman International",
@@ -51,7 +51,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Vice President",
     club: "Technovation",
     image: "/ourTeam/alumni/Mahima Goswami.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/mahima-goswami-51911a21b",
 
     currentRole: "2nd Line Data Engineer",
     currentCompany: "BT Group",
@@ -130,7 +130,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Associate head for Unnati",
     club: "Technovation",
     image: "/ourTeam/alumni/Arunima Saxena.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/arunima-saxena-779085116",
 
     currentRole: "Lead Cyber Risk Analyst",
     currentCompany: "UKG",
@@ -159,7 +159,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Associate head for software",
     club: "Technovation",
     image: "/ourTeam/alumni/Sumukh Shukla.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/sumukhshukla",
 
     currentRole: "Associate Manager Automation",
     currentCompany: "LBPL",
@@ -186,7 +186,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Gizo & Codephobia Club",
     club: "Technovation",
     image: "/ourTeam/alumni/Abhay Kulshrestha.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/abhay-kulshrestha",
 
     currentRole: "Senior Software Developer",
     currentCompany: "Tech Mahindra",
@@ -216,7 +216,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Society President",
     club: "Technovation",
     image: "/ourTeam/alumni/Shrey Pandey.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/shrey-pandey-7ab639172",
 
     currentRole: "Software Engineer",
     currentCompany: " Bosch Global Software Technology",
@@ -279,7 +279,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Society Vice-President ",
     club: "Technovation",
     image: "/ourTeam/alumni/Saurabh Gaur.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/saurabh-gaur-503634198",
 
     currentRole: "Network Engineer",
     currentCompany: "HCLTech",
@@ -308,7 +308,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Head Coordinator ",
     club: "Technovation",
     image: "/ourTeam/alumni/Surabhi Tripathi.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/surabhi-tripathi-435b60170",
 
     currentRole: "Connectivity Engineer ",
     currentCompany: "Opensystems",
@@ -403,10 +403,10 @@ export const alumni: Alumni[] = [
     roleInSociety: "Head Coordinator",
     club: "Technovation",
     image: "/ourTeam/alumni/Rohit Yadav.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/rohit-yadav-ec",
 
     currentRole: "Senior NOC engineer",
-    currentCompany: " Orange Business Services",
+    currentCompany: "Orange Business Services",
     currentLocation: "Pune, India",
 
     achievements: [
@@ -435,7 +435,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Head Coordinator",
     club: "Technovation",
     image: "/ourTeam/alumni/Rohit Tiwari.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/rohit-tiwari-85b330153",
 
     currentRole: "Junior Asscoiate",
     currentCompany: "SBI",
@@ -466,7 +466,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Society President",
     club: "Technovation",
     image: "/ourTeam/alumni/Priyansh Srivastava.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/priyansh-srivastava123",
 
     currentRole: "Senior Analys",
     currentCompany: " Cardinal Health",
@@ -500,7 +500,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Society Vice President",
     club: "Technovation",
     image: "/ourTeam/alumni/Hitesh Kukreja.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/hitesh-kukreja-216a1b173",
 
     currentRole: " L2 network Engineer",
     currentCompany: " Sify Technologies Limited",
@@ -530,7 +530,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Head Coordinator",
     club: "Technovation",
     image: "/ourTeam/alumni/Amit Tiwari.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/amit-tiwari-00690b1b7",
 
     currentRole: "Embedded Software Developer",
     currentCompany: "VVDN",
@@ -564,7 +564,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Head Coordinator",
     club: "Technovation",
     image: "/ourTeam/alumni/Chesta Saxena.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/chesta-saxena-210a92173",
 
     currentRole: "Application Development Analyst",
     currentCompany: "Accenture",
@@ -594,7 +594,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Head Coordinator",
     club: "Technovation",
     image: "/ourTeam/alumni/Utkarsh Khanna.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/utkarsh-khanna-5795a0104",
 
     currentRole: "Business Intelligence Consultant",
     currentCompany: "Congizant",
@@ -624,7 +624,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Head Coordinator ",
     club: "Technovation",
     image: "/ourTeam/alumni/Lata Bhatt.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/lata818",
 
     currentRole: "SAP ABAP Consultant",
     currentCompany: " Deloitte USI",
@@ -656,7 +656,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Head Coordinator",
     club: "Technovation",
     image: "/ourTeam/alumni/Saurabh Tripathi.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/iamsaurabhtripathi",
 
     currentRole: "Asscoiate",
     currentCompany: " Congizant",
@@ -687,7 +687,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Head Coordinator",
     club: "Technovation",
     image: "/ourTeam/alumni/Rupesh Raj Jaiswal.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/rupesh-jaiswal-r1712",
 
     currentRole: "Office Manager",
     currentCompany: " PubMatic India Pvt Ltd",
@@ -723,7 +723,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Head Coordinator",
     club: "Technovation",
     image: "/ourTeam/alumni/Vikram Dubey.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/dubey-vik24",
 
     currentRole: "SRE",
     currentCompany: "BT",
@@ -797,7 +797,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Head Coordinator",
     club: "Technovation",
     image: "/ourTeam/alumni/Komal Chhangani.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/komal-chhangani-2156ab179",
 
     currentRole: "Product Analyst",
     currentCompany: " Accenture",
@@ -833,7 +833,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Head Coordinator ",
     club: "Technovation",
     image: "/ourTeam/alumni/Shashank Yadav.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/sashank-yadav-90431133a",
 
     currentRole: "Application Development Associate",
     currentCompany: " Accenture",
@@ -898,7 +898,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Head Coordinator",
     club: "Technovation",
     image: "/ourTeam/alumni/Priyanshi Bansal.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/priyanshi-bansal-711a2519b",
 
     currentRole: "Embedded Software Engineer",
     currentCompany: "Silicon Labs",
@@ -934,7 +934,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Head Coordinator",
     club: "Technovation",
     image: "/ourTeam/alumni/Ishan Sakhuja.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/oishan-sakhujaa",
 
     currentRole: "Application Development Analyst",
     currentCompany: "Accenture",
@@ -973,7 +973,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Head Coordinator",
     club: "Technovation",
     image: "/ourTeam/alumni/Dev Nohwar.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/dev-nohwar-231a77179",
 
     currentRole: " Data Analytics Engineer",
     currentCompany: "TechstyleOS",
@@ -1002,7 +1002,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Society President",
     club: "Technovation",
     image: "/ourTeam/alumni/Salil Dixit.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/salil-dixit-612860211",
 
     currentRole: "Embedded Enginee",
     currentCompany: "AgVa Healthcare",
@@ -1031,7 +1031,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Society Vice President",
     club: "Technovation",
     image: "/ourTeam/alumni/Rohit Tiwari.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/rohit-tiwari-85b330153",
 
     currentRole: "Senior Design Engineer",
     currentCompany: " UNO MINDA",
@@ -1066,7 +1066,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Head Coordinator",
     club: "Technovation",
     image: "/ourTeam/alumni/Shruti Gupta.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/shruti-gupta-01511019b",
 
     currentRole: "Senior Application Engineer",
     currentCompany: " Synopsys Inc.",
@@ -1102,7 +1102,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Head Coordinator",
     club: "Technovation",
     image: "/ourTeam/alumni/Gaurangna Singh.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/gaurangna-singh-a3ab1319b",
 
     currentRole: "Engineer",
     currentCompany: "Orange Business",
@@ -1135,7 +1135,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Head Coordinator",
     club: "Technovation",
     image: "/ourTeam/alumni/Hritik Mittal.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/hritik-mittal-508bbb1b3",
 
     currentRole: "Growth & Digital Strategy",
     currentCompany: "noon Food",
@@ -1173,7 +1173,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Society President",
     club: "Technovation",
     image: "/ourTeam/alumni/Shubham Yadav.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/shubhamyadav0811",
 
     currentRole: "Embedded Software Developer",
     currentCompany: "Surfytech",
@@ -1206,7 +1206,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Society Vice President",
     club: "Technovation",
     image: "/ourTeam/alumni/Shikhar Agarwal.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/shikhar-agarwal-5a6976226",
 
     currentRole: "Operational Specialist",
     currentCompany: " Xelec",
@@ -1238,7 +1238,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Club President ",
     club: "Technovation",
     image: "/ourTeam/alumni/Vaishali Verma.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/vaishali-verma-bb8b37209",
 
     currentRole: "Engineer Trainee",
     currentCompany: " Sify Technologies Ltd",
@@ -1304,7 +1304,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Club President",
     club: "Technovation",
     image: "/ourTeam/alumni/Chirag Saxena.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/chiragsaxena3",
 
     currentRole: "Executive ORM",
     currentCompany: " Netimpact Solutions Private Limited",
@@ -1343,7 +1343,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Society President",
     club: "Technovation",
     image: "/ourTeam/alumni/Diksha Gupta.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/diksha-gupta-02aa7b262",
 
     currentRole: "Graduate Engineer Trainee",
     currentCompany: "UNO MINDA",
@@ -1380,7 +1380,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Society Vice - President",
     club: "Technovation",
     image: "/ourTeam/alumni/Ritik Pal.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/rithik-pal-780a95226",
 
     currentRole: "___",
     currentCompany: "___",
@@ -1413,7 +1413,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Society Vice - President",
     club: "Technovation",
     image: "/ourTeam/alumni/Srijita Srivastava.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/srijita-srivastava-1b919b305",
 
     currentRole: "Graduate Engineer Trainee",
     currentCompany: "UNO MINDA",
@@ -1455,7 +1455,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Club President",
     club: "Technovation",
     image: "/ourTeam/alumni/Anubhav Srivastava.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/anubhav-srivastava-487042237",
 
     currentRole: "Audio Video Design Engineer",
     currentCompany: " Havi Design India Llp",
@@ -1489,7 +1489,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Club President",
     club: "Technovation",
     image: "/ourTeam/alumni/Anjali Baghel.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/anjali-baghel-492351242",
 
     currentRole: "Graduate Engineer Trainee",
     currentCompany: "Amber Enterprises India Ltd",
@@ -1522,7 +1522,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Club President",
     club: "Technovation",
     image: "/ourTeam/alumni/Harsh Misra.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/harsh-misra-295308213",
 
     currentRole: "___",
     currentCompany: "___",
@@ -1560,7 +1560,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Club President",
     club: "Technovation",
     image: "/ourTeam/alumni/Devansh.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/devansh-3660ab228",
 
     currentRole: "SWE Intern",
     currentCompany: "NI",
@@ -1597,7 +1597,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Society President",
     club: "Technovation",
     image: "/ourTeam/alumni/Abhishek Sharma.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/abhishek-sharma-19april1965",
 
     currentRole: "___",
     currentCompany: "___",
@@ -1632,7 +1632,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Society Vice President",
     club: "Technovation",
     image: "/ourTeam/alumni/Dheeraj Rajput.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/dheeraj-rajput-62ab03285",
 
     currentRole: "___",
     currentCompany: "___",
@@ -1665,7 +1665,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Club President",
     club: "Technovation",
     image: "/ourTeam/alumni/Brijesh Maurya.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/brijesh-maurya-794015283",
 
     currentRole: "___",
     currentCompany: "___",
@@ -1700,7 +1700,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Club President",
     club: "Technovation",
     image: "/ourTeam/alumni/Astitva Johri.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/astitva-johri-6a2a38236",
 
     currentRole: "___",
     currentCompany: "___",
@@ -1734,7 +1734,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Club President",
     club: "Technovation",
     image: "/ourTeam/alumni/Mukul Sharma.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/mukul-sharma-4763722a1",
 
     currentRole: "___",
     currentCompany: "___",
@@ -1770,7 +1770,7 @@ export const alumni: Alumni[] = [
     roleInSociety: "Club President",
     club: "Technovation",
     image: "/ourTeam/alumni/Puspender.jpg",
-    linkedin: "https://linkedin.com/in/rohitverma",
+    linkedin: "https://www.linkedin.com/in/puspender911",
 
     currentRole: "___",
     currentCompany: "___",

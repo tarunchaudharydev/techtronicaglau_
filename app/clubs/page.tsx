@@ -43,7 +43,7 @@ const clubs = [
     tag: "Creativity & Content",
     description:
       "A space for writers, designers, and storytellers to create blogs, posters, reels, and digital content.",
-    image: "/clubs/mindboggler/logo.jpeg",
+    image: "/clubs/mindbogglers/logo.jpeg",
   },
 ];
 

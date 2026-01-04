@@ -24,15 +24,34 @@ export const members: Member[] = [
 
 
 
+
+
+   {
+    id: 30,
+    name: "Abhishek Sharma",
+    roles: ["President", "Techtronica Society"],
+    categories: ["President"],
+    image: "/ourTeam/coreMembers/Abhishek Sharma.jpg",
+    shortBio: "President of Techtronica Society.",
+    longBio:
+      "Abhishek Sharma serves as the President of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    whatsApp: "wa.me/+910000000000",
+    linkedin: "https://www.linkedin.com/in/abhishek-sharma-19april1965",
+  },
+
+  
+
+
+
    {
     id: 1,
     name: "Dheeraj Rajput",
-    roles: ["President", "Techtronica Society,Code-e-phobia"],
-    categories: ["President"],
+    roles: ["Vice President", "Techtronica Society, Code-e-phobia"],
+    categories: ["Vice President"],
     image: "/ourTeam/coreMembers/Dheeraj Rajput.jpg",
     shortBio: "Supports strategy and execution.",
     longBio:
-      "Dheeraj Rajput serves as the President of Techtronica Society Society and Code-e-phobia Club, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+      "Dheeraj Rajput serves as the Vice President of Techtronica Society Society and Code-e-phobia Club, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/dheeraj-rajput-62ab03285",
   },
@@ -41,12 +60,12 @@ export const members: Member[] = [
    {
     id: 2,
     name: "Astitva",
-    roles: ["Vice President", "Techtronica Society,Unnati"],
+    roles: ["Vice President", "Unnati"],
     categories: ["Vice President"],
     image: "/ourTeam/coreMembers/Astitva.jpg",    
-    shortBio: "Leads Techtronica Society and Unnati and core club initiatives.",
+    shortBio: "Leads Unnati and core club initiatives.",
     longBio:
-      "Astitva serves as the Vice President of Techtronica Society Society and President ofUnnati Club, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+      "Astitva serves as the Vice President of Unnati Club, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/astitva-johri-6a2a38236",
   },
@@ -430,20 +449,7 @@ export const members: Member[] = [
 
 
 
-  {
-    id: 30,
-    name: "Abhishek Sharma",
-    roles: ["Core Member"],
-    categories: ["core-member"],
-    image: "/ourTeam/coreMembers/Abhishek Sharma.jpg",
-    shortBio: "Core Member of Techtronica Society Society.",
-    longBio:
-      "Abhishek Sharma serves as the Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
-    whatsApp: "wa.me/+910000000000",
-    linkedin: "https://www.linkedin.com/in/abhishek-sharma-19april1965",
-  },
-
-  
+ 
 
 
 

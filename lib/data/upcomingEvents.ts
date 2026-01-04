@@ -15,7 +15,7 @@ export interface Event {
   location: string;
 
   coverImage: string;
-  description: string;
+  description: string[];
 
   // UPCOMING only
   registrationLink?: string;
@@ -33,18 +33,102 @@ export interface Event {
 
 export const events: Event[] = [
   {
-    id: "web",
-    title: "Web Development Bootcamp",
+    id: "udan",
+    title: "TECHTRONICA SOCIETY PRESENTS — IDEA UDAAN",
     club: "code-e-phobia",
     date: "2026-01-20",
     time: "10:00 AM",
     location: "Seminar Hall A",
     coverImage: "/clubs/code-e-phobia/images/Hackthon.jpg",
-    description:
-      "Hands-on workshop on React, Next.js, Tailwind and real-world projects.",
+       description: [
+        "Something meaningful. Something impactful.",
+
+
+        "🌱⚙️ ECOVATION  ",
+        "A Sustainability-Focused Tech Competition  ",
+
+
+
+        "Where technology meets responsibility and ideas turn into action.",
+
+
+
+        "💡 What is ECOVATION?  ",
+
+
+
+        "ECOVATION is a technology-driven competition built purely around the theme of Sustainability.  ",
+
+
+        "It’s a platform to present innovative, practical, and future-ready solutions for real-world ",
+        "problems using technology.",
+
+
+
+        "📌 Event Structure  ",
+
+
+
+        "• Round 1: Online PPT Submission  ",
+        "• Round 2: Offline Exhibition (Final Round)  ",
+
+
+
+
+        "🗓 Online PPT Submission Starts: 15th January 2026  ",
+        "🗓 Final Offline Exhibition: 6th February 2026  ",
+
+
+
+
+        "👥 Who Can Participate?  ",
+
+        "• Any student from any year  ",
+        "• Team-based participation (3–5 members)  ",
+        "• Teams can include students from different years  ",
+        "• Teams can include students from different courses  ",
+        "• Outside college participants are not allowed  ",
+
+
+        "⚠️ Important Guidelines  ",
+
+        "• The theme Sustainability must be strictly followed  ",
+        "• Original ideas only — copied or AI-generated content is not allowed  ",
+        "• One team can submit only one idea",
+       ],
+
+
+
     registrationLink: "https://forms.gle/xyz",
     registrationDeadline: "2026-01-15",
   },
+
+
+
+
+
+
+  {
+    id: "copy",
+    title: "second copy for testing",
+    club: "code-e-phobia",
+    date: "2026-01-20",
+    time: "10:00 AM",
+    location: "Seminar Hall A",
+    coverImage: "/clubs/code-e-phobia/images/Hackthon.jpg",
+       description: ["Something meaningful. Something impactful"],
+
+    registrationLink: "https://forms.gle/xyza",
+    registrationDeadline: "2026-01-11",
+  },
+
+
+
+
+
+
+
+
 
 
   {
@@ -55,8 +139,7 @@ export const events: Event[] = [
     time: "10:00 AM",
     location: "Seminar Hall A",
     coverImage: "/clubs/code-e-phobia/images/CodeX.jpg",
-    description:
-      "A multi-round competitive coding event where participants raced to solve problem statements first. Speed and accuracy decided the winners.",
+    description: ["A multi-round competitive coding event where participants raced to solve problem statements first. Speed and accuracy decided the winners."],
     
     outcome: "",
     winners: [
@@ -77,8 +160,7 @@ export const events: Event[] = [
     time: "10:00 AM",
     location: "Seminar Hall A",
     coverImage: "/clubs/code-e-phobia/images/CodeQuest.jpg",
-    description:
-      "A daily GitHub-based coding challenge where correct, original solutions earned points, while AI-generated code resulted in penalties.",
+    description: ["A daily GitHub-based coding challenge where correct, original solutions earned points, while AI-generated code resulted in penalties."],
     
     outcome: "",
     winners: [
@@ -107,8 +189,7 @@ export const events: Event[] = [
     time: "10:00 AM",
     location: "Seminar Hall A",
     coverImage: "/clubs/gizmo/images/gizmo.jpg",
-    description:
-      "A multi-round competitive coding event where participants raced to solve problem statements first. Speed and accuracy decided the winners.",
+    description: ["A multi-round competitive coding event where participants raced to solve problem statements first. Speed and accuracy decided the winners."],
     
     outcome: "",
     winners: [
@@ -157,8 +238,7 @@ export const events: Event[] = [
     time: "02:00 PM",
     location: "Innovation Lab",
     coverImage: "/clubs/gizmo/images/righthand.jpg",
-    description:
-      "Compete in thrilling robotics challenges involving line followers, obstacle courses, and automation problem-solving.",
+    description: ["Compete in thrilling robotics challenges involving line followers, obstacle courses, and automation problem-solving."],
     winners: [
       { name: "Team Alpha", position: "1st" },
       { name: "Team Beta", position: "2nd" },
@@ -178,8 +258,7 @@ export const events: Event[] = [
     time: "02:00 PM",
     location: "Innovation Lab",
     coverImage: "/clubs/gizmo/images/sitrobort.jpg",
-    description:
-      "Learn PCB design, circuit simulation, and practical electronics by building real-world electronic modules from scratch.",
+    description: ["Learn PCB design, circuit simulation, and practical electronics by building real-world electronic modules from scratch."],
     winners: [
       { name: "Team Alpha", position: "1st" },
       { name: "Team Beta", position: "2nd" },
@@ -203,8 +282,7 @@ export const events: Event[] = [
     time: "02:00 PM",
     location: "Innovation Lab",
     coverImage: "/clubs/mindbogglers/images/mindbogglerChip.jpg",
-    description:
-      "A fast-paced 3-round quiz testing knowledge, logic, and quick thinking—MCQ screening, team stage, and an intense rapid-fire finale.",
+    description: ["A fast-paced 3-round quiz testing knowledge, logic, and quick thinking—MCQ screening, team stage, and an intense rapid-fire finale."],
     winners: [
       { name: "Team Alpha", position: "1st" },
       { name: "Team Beta", position: "2nd" },
@@ -227,8 +305,7 @@ export const events: Event[] = [
     time: "02:00 PM",
     location: "Innovation Lab",
     coverImage: "/clubs/mindbogglers/images/mindboggler2.jpg",
-    description:
-      "A two-round creative event combining writing and speaking—Pic to Pen challenges imagination, followed by Think & Talk to test confidence and communication.",
+    description: ["A two-round creative event combining writing and speaking—Pic to Pen challenges imagination, followed by Think & Talk to test confidence and communication."],
     winners: [
       { name: "Team Alpha", position: "1st" },
       { name: "Team Beta", position: "2nd" },
@@ -251,8 +328,7 @@ export const events: Event[] = [
     time: "02:00 PM",
     location: "Innovation Lab",
     coverImage: "/clubs/mindbogglers/images/mindboggler4.jpg",
-    description:
-      "Participants create blogs, articles, reels, or short-form content based on trending topics, judged on originality and impact.",
+    description: ["Participants create blogs, articles, reels, or short-form content based on trending topics, judged on originality and impact."],
     winners: [
       { name: "Team Alpha", position: "1st" },
       { name: "Team Beta", position: "2nd" },
@@ -276,8 +352,7 @@ export const events: Event[] = [
     time: "02:00 PM",
     location: "Innovation Lab",
     coverImage: "/clubs/technovation/images/CadenceWorkshop.jpg",
-    description:
-      "A hands-on workshop introducing students to Cadence EDA tools, covering circuit design, simulation, layout, and verification for real-world VLSI applications.",
+    description: ["A hands-on workshop introducing students to Cadence EDA tools, covering circuit design, simulation, layout, and verification for real-world VLSI applications."],
     winners: [
       { name: "Team Alpha", position: "1st" },
       { name: "Team Beta", position: "2nd" },
@@ -299,8 +374,7 @@ export const events: Event[] = [
     time: "02:00 PM",
     location: "Innovation Lab",
     coverImage: "/clubs/technovation/images/motherboard.jpg",
-    description:
-      "Teams build integrated systems using sensors, microcontrollers, and software platforms to solve practical engineering problems.",
+    description: ["Teams build integrated systems using sensors, microcontrollers, and software platforms to solve practical engineering problems."],
     winners: [
       { name: "Team Alpha", position: "1st" },
       { name: "Team Beta", position: "2nd" },
@@ -322,8 +396,7 @@ export const events: Event[] = [
     time: "02:00 PM",
     location: "Innovation Lab",
     coverImage: "/clubs/technovation/images/ram.jpg",
-    description:
-      "Participants present working prototypes and project ideas to a panel of judges, industry mentors, and fellow students.",
+    description: ["Participants present working prototypes and project ideas to a panel of judges, industry mentors, and fellow students."],
     winners: [
       { name: "Team Alpha", position: "1st" },
       { name: "Team Beta", position: "2nd" },
@@ -347,9 +420,7 @@ export const events: Event[] = [
     time: "02:00 PM",
     location: "Innovation Lab",
     coverImage: "/clubs/unnati/images/9.jpg",
-    description:
-      "A creative competition featuring Painting, Nail Art, Mehendi, and Rangoli, celebrating artistic expression and skill.",
-    outcome: "",
+    description: ["A creative competition featuring Painting, Nail Art, Mehendi, and Rangoli, celebrating artistic expression and skill."],
     winners: [
       { name: "Team Alpha", position: "1st" },
       { name: "Team Beta", position: "2nd" },
@@ -383,8 +454,7 @@ export const events: Event[] = [
     time: "02:00 PM",
     location: "Innovation Lab",
     coverImage: "/clubs/unnati/images/1.jpg",
-    description:
-      "A fun fusion of a mental quiz and talent showcase, where participants answer a surprise question and then perform their unique talent.",
+    description: ["A fun fusion of a mental quiz and talent showcase, where participants answer a surprise question and then perform their unique talent."],
     winners: [
       { name: "Team Alpha", position: "1st" },
       { name: "Team Beta", position: "2nd" },
@@ -408,8 +478,7 @@ export const events: Event[] = [
     time: "02:00 PM",
     location: "Innovation Lab",
     coverImage: "/clubs/unnati/images/1.jpg",
-    description:
-      "Organize an interactive visit to a school, including games and activities with the students.",
+    description: ["Organize an interactive visit to a school, including games and activities with the students."],
     winners: [
       { name: "Team Alpha", position: "1st" },
       { name: "Team Beta", position: "2nd" },
@@ -432,8 +501,7 @@ export const events: Event[] = [
     time: "02:00 PM",
     location: "Innovation Lab",
     coverImage: "/clubs/unnati/images/6.jpg",
-    description:
-      "A fashion show where participants showcase cultural diversity by walking the ramp in traditional outfits.",
+    description: ["A fashion show where participants showcase cultural diversity by walking the ramp in traditional outfits."],
     winners: [
       { name: "Team Alpha", position: "1st" },
       { name: "Team Beta", position: "2nd" },
@@ -456,8 +524,7 @@ export const events: Event[] = [
     time: "02:00 PM",
     location: "Innovation Lab",
     coverImage: "/clubs/unnati/images/5.jpg",
-    description:
-      "A creative event where waste materials are transformed into innovative and useful creations.",
+    description: ["A creative event where waste materials are transformed into innovative and useful creations."],
     winners: [
       { name: "Team Alpha", position: "1st" },
       { name: "Team Beta", position: "2nd" },

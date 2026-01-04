@@ -59,7 +59,11 @@ export default async function EventDetailPage({ params }: PageProps) {
       </h1>
 
       {/* Description */}
-      <p className="text-slate-700 mb-6">{event.description}</p>
+      {event.description.map((line, index) => (
+        <p key={index} className="mb-2">
+          {line}
+        </p>
+      ))}
 
       {/* Meta Info */}
       <div className="grid sm:grid-cols-2 gap-4 text-sm text-slate-600 mb-8">

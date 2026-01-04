@@ -33,8 +33,11 @@ export default async function EventDetailPage({
       {/* Live countdown (if applicable) */}
       <EventCountdown deadline={event.registrationDeadline} />
 
-      <p className="text-slate-700">{event.description}</p>
-
+      {event.description.map((line, index) => (
+        <p key={index} className="mb-2">
+          {line}
+        </p>
+      ))}
       {/* Winners */}
       {event.winners && event.winners.length > 0 && (
         <section>

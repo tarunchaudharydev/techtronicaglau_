@@ -31,7 +31,7 @@ export default async function ClubEventsPage({
         {slug.replace(/-/g, " ")} Events
       </h1>
 
-      {/* UPCOMING EVENTS */}
+      {/* ================= UPCOMING EVENTS ================= */}
       {upcoming.length > 0 && (
         <section>
           <h2 className="text-xl font-semibold mb-4">Upcoming Events</h2>
@@ -40,7 +40,7 @@ export default async function ClubEventsPage({
             {upcoming.map((e) => (
               <div
                 key={e.id}
-                className="border rounded-2xl overflow-hidden bg-white shadow-sm"
+                className="border rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-md transition"
               >
                 <div className="relative h-44">
                   <Image
@@ -51,29 +51,39 @@ export default async function ClubEventsPage({
                   />
                 </div>
 
-                <div className="p-4 space-y-2">
-                  <h3 className="font-semibold">{e.title}</h3>
+                <div className="p-4 space-y-3">
+                  <h3 className="font-semibold text-lg">{e.title}</h3>
 
-                  {/* Live countdown (updates every second) */}
+                  {/* Live countdown */}
                   <EventCountdown deadline={e.registrationDeadline} />
 
-                  {e.registrationLink ? (
-                    <a
-                      href={e.registrationLink}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="block text-center rounded-full bg-yellow-300 py-2 font-semibold hover:bg-yellow-400 transition"
+                  <div className="flex flex-col gap-2">
+                    {e.registrationLink ? (
+                      <a
+                        href={e.registrationLink}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="block text-center rounded-full bg-yellow-300 py-2 font-semibold hover:bg-yellow-400 transition"
+                      >
+                        Register Now
+                      </a>
+                    ) : (
+                      <button
+                        disabled
+                        className="w-full py-2 bg-gray-200 rounded-full text-sm text-gray-600"
+                      >
+                        Registration Closed
+                      </button>
+                    )}
+
+                    {/* 👇 View Details */}
+                    <Link
+                      href={`/clubs/${slug}/events/${e.id}`}
+                      className="block text-center rounded-full border border-slate-300 py-2 text-sm font-medium hover:bg-slate-50 transition"
                     >
-                      Register Now
-                    </a>
-                  ) : (
-                    <button
-                      disabled
-                      className="w-full py-2 bg-gray-200 rounded-full"
-                    >
-                      Registration Closed
-                    </button>
-                  )}
+                      View Details →
+                    </Link>
+                  </div>
                 </div>
               </div>
             ))}
@@ -81,7 +91,7 @@ export default async function ClubEventsPage({
         </section>
       )}
 
-      {/* PAST EVENTS */}
+      {/* ================= PAST EVENTS ================= */}
       {past.length > 0 && (
         <section>
           <h2 className="text-xl font-semibold mb-4">Past Events</h2>
@@ -104,9 +114,7 @@ export default async function ClubEventsPage({
 
                 <div className="p-4">
                   <h3 className="font-semibold">{e.title}</h3>
-                  <p className="text-xs text-slate-500 mt-1">
-                    Click to view details →
-                  </p>
+                  <p className="text-xs text-slate-500 mt-1">View details →</p>
                 </div>
               </Link>
             ))}
