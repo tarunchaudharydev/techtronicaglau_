@@ -12,7 +12,7 @@ export default function AboutPage() {
   return (
     <main className="bg-gray-50 text-gray-700 min-h-screen">
       {/* HERO SECTION */}
-      <section className="relative h-[70vh] -mt-20">
+      <section className="relative h-[70vh] -mt-32">
         <Image
           src="/ourTeam/about.jpg"
           alt="Technology background"
