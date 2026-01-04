@@ -1,5 +1,3 @@
-// lib/utils/time.ts
-
 export function nowIST(): Date {
   return new Date(
     new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" })
