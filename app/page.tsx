@@ -395,8 +395,8 @@
 
 import { useRef } from "react";
 import { aboutSociety } from "../lib/data/home-data";
-// import HomeSlider from "@/components/HomeSlider";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+import SponsorsMarquee from "@/components/home/SponsorsMarquee";
 import HomeHero from "@/components/home/HomeHero";
 import StatsGrid from "@/components/home/StatsGrid";
 import ClubsOverview from "@/components/home/ClubsOverview";
@@ -428,53 +428,55 @@ function Home() {
         <FeatureSection
           setSectionRef={setSectionRef}
           index={1}
-          title="Build real technical projects"
-          p1="Join coding marathons, electronics builds, and hackathons that push you beyond the classroom."
-          p2="From basic problem solving to full‑stack/web, IoT and automation, the technical club is your launchpad into engineering practice."
+          title="Build real-world technical projects"
+          p1="Move beyond theory through coding sprints, electronics builds, and hackathons designed to solve real problems."
+          p2="From core problem-solving to full-stack development, IoT, and automation, this is where engineering turns practical."
           imgSrc="/images/technovation/ai.jpg"
-          imgAlt="Students working on laptops and circuits"
+          imgAlt="Students collaborating on laptops and electronics projects"
         />
 
         <FeatureSection
           setSectionRef={setSectionRef}
           index={2}
-          title="Showcase culture, art, and design"
-          p1="Whether you dance, sing, act, paint, or design, the cultural and arts clubs give you a stage and a team that backs your creativity."
-          p2="Take part in stage shows, design college branding, and curate exhibitions that transform the campus vibe."
+          title="Express creativity through culture & design"
+          p1="Dance, music, drama, art, and design—find a space where creativity is taken seriously and showcased with pride."
+          p2="Perform on stage, design college branding, and curate cultural events that define the campus identity."
           imgSrc="/images/unnati/event.jpg"
-          imgAlt="Stage performance and art displayed on walls"
+          imgAlt="Cultural performance and student artwork on display"
         />
 
         <FeatureSection
           setSectionRef={setSectionRef}
           index={3}
-          title="Compete, play, and stay fit"
-          p1="The sports club runs tournaments, selection trials, and practice sessions across multiple games."
-          p2="Balance academics with fitness and discipline, and represent your college on the field."
+          title="Compete, train, and represent your college"
+          p1="Participate in tournaments, selection trials, and regular practice sessions across multiple sports."
+          p2="Build discipline, teamwork, and resilience while representing your college on and off the field."
           imgSrc="/images/unnati/event.jpg"
-          imgAlt="Students playing sports"
+          imgAlt="Students actively participating in sports"
         />
 
         <FeatureSection
           setSectionRef={setSectionRef}
           index={4}
-          title="Create real impact outside campus"
-          p1="Take part in teaching drives, cleanliness campaigns, blood donation camps, and awareness events."
-          p2="The social impact club turns ideas into action by partnering with NGOs and local communities."
+          title="Create impact beyond the campus"
+          p1="Contribute to teaching drives, cleanliness initiatives, blood donation camps, and awareness programs."
+          p2="Work with NGOs and local communities to turn empathy and ideas into measurable social impact."
           imgSrc="/images/unnati/event.jpg"
-          imgAlt="Volunteers doing community service"
+          imgAlt="Students volunteering in community outreach programs"
         />
 
         <FeatureSection
           setSectionRef={setSectionRef}
           index={5}
-          title="Step into leadership roles"
-          p1="From event coordinators to presidents and media leads, the society offers structured roles."
-          p2="Plan budgets, manage teams, talk to sponsors, and host events that the campus remembers."
+          title="Develop leadership that actually matters"
+          p1="Take on structured roles—from coordinators and leads to core executives and presidents."
+          p2="Plan events, manage teams, handle budgets, work with sponsors, and lead initiatives that leave a legacy.
+         
+           Plan events, manage teams, handle budgets, work with sponsors, and lead initiatives that leave a legacy. Plan events, manage teams, handle budgets, work with sponsors, and lead initiatives that leave a legacy. Plan events, manage teams, handle budgets, work with sponsors, and lead initiatives that leave a legacy. Plan events, manage teams, handle budgets, work with sponsors, and lead initiatives that leave a legacy."
           imgSrc="/images/overview/team.jpg"
-          imgAlt="Core team standing together"
-          // showTeamLink
+          imgAlt="Core society team standing together"
         />
+        <SponsorsMarquee />
 
         <HowToGetInvolved />
 

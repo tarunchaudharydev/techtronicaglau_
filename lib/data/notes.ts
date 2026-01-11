@@ -18,6 +18,7 @@ export const notes: Note[] = [
     slug: "frontend-interview-questions",
     pdfUrl: "/notes/frontendInterviewQuestions.pdf",
   },
+  
   {
     id: "2",
     title: "Interview Questions",
