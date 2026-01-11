@@ -395,7 +395,7 @@
 
 import { useRef } from "react";
 import { aboutSociety } from "../lib/data/home-data";
-import HomeSlider from "@/components/HomeSlider";
+// import HomeSlider from "@/components/HomeSlider";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import HomeHero from "@/components/home/HomeHero";
 import StatsGrid from "@/components/home/StatsGrid";
@@ -473,7 +473,7 @@ function Home() {
           p2="Plan budgets, manage teams, talk to sponsors, and host events that the campus remembers."
           imgSrc="/images/overview/team.jpg"
           imgAlt="Core team standing together"
-          showTeamLink
+          // showTeamLink
         />
 
         <HowToGetInvolved />

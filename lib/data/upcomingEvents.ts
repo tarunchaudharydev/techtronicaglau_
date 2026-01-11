@@ -100,7 +100,7 @@ export const events: Event[] = [
 
 
     registrationLink: "https://forms.gle/xyz",
-    registrationDeadline: "2026-01-15",
+    registrationDeadline: "2026-01-20",
   },
 
 
@@ -211,23 +211,7 @@ export const events: Event[] = [
 
 
 
-  {
-    id: "RoboRaceAutomationChallenge",
-    title: "Robo Race & Automation Challenge",
-    club: "gizmo",
-    date: "2024-04-10",
-    time: "02:00 PM",
-    location: "Innovation Lab",
-    coverImage: "/clubs/gizmo/images/righthand.jpg",
-    description: ["Compete in thrilling robotics challenges involving line followers, obstacle courses, and automation problem-solving."],
-    winners: [
-      { name: "Team Alpha", position: "1st" },
-      { name: "Team Beta", position: "2nd" },
-    ],
-    gallery: [
-      "/clubs/gizmo/images/robort2.jpg",
-    ]
-  },
+ 
 
 
 
@@ -255,69 +239,20 @@ export const events: Event[] = [
   // mindboggler
 
 
-  {
-    id: "QuizQuestUltimate",
-    title: "QuizQuest Ultimate",
-    club: "mindboggler",
-    date: "2024-04-10",
-    time: "02:00 PM",
-    location: "Innovation Lab",
-    coverImage: "/clubs/mindbogglers/images/mindbogglerChip.jpg",
-    description: ["A fast-paced 3-round quiz testing knowledge, logic, and quick thinking—MCQ screening, team stage, and an intense rapid-fire finale."],
-    winners: [
-      { name: "Team Alpha", position: "1st" },
-      { name: "Team Beta", position: "2nd" },
-    ],
-    gallery: [
-      "/clubs/mindbogglers/images/mindboggler1.jpg",
-      
-    ],
-  },
+  
 
 
 
 
   
-  {
-    id: "PenToPodium",
-    title: "Pen to Podium",
-    club: "mindboggler",
-    date: "2024-04-10",
-    time: "02:00 PM",
-    location: "Innovation Lab",
-    coverImage: "/clubs/mindbogglers/images/mindboggler2.jpg",
-    description: ["A two-round creative event combining writing and speaking—Pic to Pen challenges imagination, followed by Think & Talk to test confidence and communication."],
-    winners: [
-      { name: "Team Alpha", position: "1st" },
-      { name: "Team Beta", position: "2nd" },
-    ],
-    gallery: [
-      "/clubs/mindbogglers/images/mindboggler3.jpg",
-    ],
-  },
+ 
 
 
 
 
 
   
-  {
-    id: "BloggingContentCreationChallenge",
-    title: "Blogging & Content Creation Challenge",
-    club: "mindboggler",
-    date: "2024-04-10",
-    time: "02:00 PM",
-    location: "Innovation Lab",
-    coverImage: "/clubs/mindbogglers/images/mindboggler4.jpg",
-    description: ["Participants create blogs, articles, reels, or short-form content based on trending topics, judged on originality and impact."],
-    winners: [
-      { name: "Team Alpha", position: "1st" },
-      { name: "Team Beta", position: "2nd" },
-    ],
-    gallery: [
-      "/clubs/mindbogglers/images/mindboggler5.jpg",
-    ],
-  },
+  
 
 
 
@@ -347,24 +282,8 @@ export const events: Event[] = [
 
   
 
-  {
-    id: "HardwareIntegrationChallenge",
-    title: "Hardware–Software Integration Challenge",
-    club: "technovation",
-    date: "2024-04-10",
-    time: "02:00 PM",
-    location: "Innovation Lab",
-    coverImage: "/clubs/technovation/images/motherboard.jpg",
-    description: ["Teams build integrated systems using sensors, microcontrollers, and software platforms to solve practical engineering problems."],
-    winners: [
-      { name: "Team Alpha", position: "1st" },
-      { name: "Team Beta", position: "2nd" },
-    ],
-    gallery: [
-      "/clubs/technovation/images/technovatio2.jpg",
-      
-    ],
-  },
+  
+  
 
 
 
@@ -427,95 +346,16 @@ export const events: Event[] = [
 
 
 
-  {
-    id: "Tarang",
-    title: "Tarang",
-    club: "unnati",
-    date: "2024-04-10",
-    time: "02:00 PM",
-    location: "Innovation Lab",
-    coverImage: "/clubs/unnati/images/1.jpg",
-    description: ["A fun fusion of a mental quiz and talent showcase, where participants answer a surprise question and then perform their unique talent."],
-    winners: [
-      { name: "Team Alpha", position: "1st" },
-      { name: "Team Beta", position: "2nd" },
-    ],
-    gallery: [
-      "/clubs/unnati/images/1.jpg",
-      "/clubs/unnati/images/2.jpg",
-      "/clubs/unnati/images/3.jpg",
-    ],
-  },
+  
+
+
+  
 
 
 
 
-
-  {
-    id: "Udaan",
-    title: "Udaan",
-    club: "unnati",
-    date: "2024-04-10",
-    time: "02:00 PM",
-    location: "Innovation Lab",
-    coverImage: "/clubs/unnati/images/1.jpg",
-    description: ["Organize an interactive visit to a school, including games and activities with the students."],
-    winners: [
-      { name: "Team Alpha", position: "1st" },
-      { name: "Team Beta", position: "2nd" },
-    ],
-    gallery: [
-      "/clubs/unnati/images/1.jpg",
-      "/clubs/unnati/images/2.jpg",
-      "/clubs/unnati/images/3.jpg",
-    ],
-  },
-
-
-
-
-  {
-    id: "CultureWalk",
-    title: "CultureWalk",
-    club: "unnati",
-    date: "2024-04-10",
-    time: "02:00 PM",
-    location: "Innovation Lab",
-    coverImage: "/clubs/unnati/images/6.jpg",
-    description: ["A fashion show where participants showcase cultural diversity by walking the ramp in traditional outfits."],
-    winners: [
-      { name: "Team Alpha", position: "1st" },
-      { name: "Team Beta", position: "2nd" },
-    ],
-    gallery: [
-      "/clubs/unnati/images/6.jpg",
-      "/clubs/unnati/images/7.jpg",
-      "/clubs/unnati/images/8.jpg",
-    ],
-  },
-
-
-
-
-  {
-    id: "Trash-To-Treasure",
-    title: "Trash-To-Treasure",
-    club: "unnati",
-    date: "2024-04-10",
-    time: "02:00 PM",
-    location: "Innovation Lab",
-    coverImage: "/clubs/unnati/images/5.jpg",
-    description: ["A creative event where waste materials are transformed into innovative and useful creations."],
-    winners: [
-      { name: "Team Alpha", position: "1st" },
-      { name: "Team Beta", position: "2nd" },
-    ],
-    gallery: [
-      "/clubs/unnati/images/5.jpg",
-      "/clubs/unnati/images/6.jpg",
-      "/clubs/unnati/images/7.jpg",
-    ],
-  },
+ 
+  
 
 
 

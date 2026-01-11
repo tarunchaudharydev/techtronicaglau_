@@ -5,34 +5,23 @@ import Image from "next/image";
 
 function Footer() {
   return (
-    <footer className="bg-white text-black border-gray-300">
-      {/* Top area */}
-      <div className="mx-auto max-w-6xl px-4 py-10">
-        <div className="flex flex-col gap-10 md:flex-row">
-          {/* Brand + college info */}
-          <div className="flex-1 space-y-4">
-            <div className="flex flex-col sm:flex-row sm:items-center gap-3">
-              <div className="relative h-14 w-40 sm:h-16 sm:w-48 overflow-hidden rounded-2xl bg-white">
-                <Image
-                  src="/logo.png"
-                  alt="Techtronica Logo"
-                  fill
-                  sizes="(max-width: 640px) 160px, (max-width: 1024px) 192px, 224px"
-                  className="object-contain"
-                />
-              </div>
-              <div>
-                <p className="text-[11px] font-semibold tracking-[0.22em] uppercase">
-                  Techtronica
-                </p>
-                <h2 className="text-base sm:text-lg font-bold">
-                  Society of Electronics & Communication
-                </h2>
-              </div>
+    <footer className="bg-white border-t border-slate-200 ">
+      {/* Top */}
+      <div className="mx-auto max-w-6xl px-4 py-14">
+        <div className="flex flex-col gap-12 lg:flex-row ">
+          {/* Brand */}
+          <div className="flex-1 space-y-5">
+            <div className="relative h-14 w-40 sm:h-16 sm:w-48">
+              <Image
+                src="/logo.png"
+                alt="Techtronica Logo"
+                fill
+                className="object-contain"
+              />
             </div>
 
-            <div className="space-y-1 text-xs sm:text-sm">
-              <p className="font-semibold text-yellow-600">
+            <div className="space-y-2 text-xs sm:text-sm max-w-md">
+              <p className="font-semibold text-sky-700">
                 GLA UNIVERSITY, Mathura
               </p>
               <p className="text-slate-700">
@@ -41,78 +30,103 @@ function Footer() {
                   Electronics and Communication Engineering
                 </span>
               </p>
-              <p className="text-slate-500">
-                A student society that connects circuits, communication, and
+              <p className="text-slate-500 leading-relaxed">
+                A student society connecting circuits, communication, and
                 creativity through hands-on projects, events, and collaboration.
               </p>
             </div>
           </div>
 
-          {/* Links area */}
-          <div
-            className="
-              flex-1
-              grid grid-cols-2 gap-6
-              md:flex md:flex-row md:flex-wrap md:justify-end md:gap-10
-            "
-          >
-            {/* Navigate (top-left) */}
-            <div className="space-y-3 text-xs sm:text-sm">
-              <h3 className="text-[11px] font-semibold uppercase tracking-wide text-sky-700">
+          {/* Links */}
+          <div className="flex-1 grid grid-cols-2 gap-y-10 gap-x-8 sm:grid-cols-4 ">
+            {/* Navigate */}
+            <div>
+              <h3 className="mb-4 text-[11px] font-semibold uppercase tracking-wider text-sky-700">
                 Navigate
               </h3>
-              <ul className="space-y-2">
-                {[
-                  { href: "/", label: "Home" },
-                  { href: "/clubs", label: "Clubs" },
-                  { href: "/gallery", label: "Gallery" },
-                  { href: "/events", label: "Events" },
-                ].map((item) => (
-                  <li key={item.href}>
-                    <Link
-                      href={item.href}
-                      className="text-slate-600 hover:text-sky-700 transition-colors"
-                    >
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
+              <ul className="space-y-2 text-xs sm:text-sm">
+                <li>
+                  <Link href="/" className="footer-link">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/clubs" className="footer-link">
+                    Clubs
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/gallery" className="footer-link">
+                    Gallery
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/events" className="footer-link">
+                    Events
+                  </Link>
+                </li>
               </ul>
             </div>
 
-            {/* About (top-right) */}
-            <div className="space-y-3 text-xs sm:text-sm">
-              <h3 className="text-[11px] font-semibold uppercase tracking-wide text-sky-700">
+            {/* About */}
+            <div>
+              <h3 className="mb-4 text-[11px] font-semibold uppercase tracking-wider text-sky-700">
                 About
               </h3>
-              <ul className="space-y-2">
-                {[
-                  { href: "/about", label: "About Techtronica" },
-                  { href: "/alumni", label: "Alumni" },
-                  { href: "/contact", label: "Contact us" },
-                ].map((item) => (
-                  <li key={item.href}>
-                    <Link
-                      href={item.href}
-                      className="text-slate-600 hover:text-sky-700 transition-colors"
-                    >
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
+              <ul className="space-y-2 text-xs sm:text-sm">
+                <li>
+                  <Link href="/about" className="footer-link">
+                    About Techtronica
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/alumni" className="footer-link">
+                    Alumni
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact" className="footer-link">
+                    Contact Us
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/privacy-policy" className="footer-link">
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/terms" className="footer-link">
+                    Terms
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/code-of-conduct" className="footer-link">
+                    Code of Conduct
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/faq" className="footer-link">
+                    FAQ
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/refund-policy" className="footer-link">
+                    Refund Policy
+                  </Link>
+                </li>
               </ul>
             </div>
 
-            {/* Connect  */}
-            <div className="space-y-3 text-xs sm:text-sm col-start-1 row-start-2 md:col-auto md:row-auto">
-              <h3 className="text-[11px] font-semibold uppercase tracking-wide text-sky-700">
+            {/* Connect */}
+            <div>
+              <h3 className="mb-4 text-[11px] font-semibold uppercase tracking-wider text-sky-700">
                 Connect
               </h3>
-              <ul className="space-y-2">
+              <ul className="space-y-2 text-xs sm:text-sm">
                 <li>
                   <a
-                    href="https://www.instagram.com/techtronica_glau?igsh=Y244amc5ZzZmaTBw"
-                    className="text-slate-600 hover:text-purple-700"
+                    href="https://www.instagram.com/techtronica_glau"
+                    className="footer-link"
                   >
                     Instagram
                   </a>
@@ -120,7 +134,7 @@ function Footer() {
                 <li>
                   <a
                     href="https://www.linkedin.com/company/techtronica-society2016/"
-                    className="text-slate-600 hover:text-purple-700"
+                    className="footer-link"
                   >
                     LinkedIn
                   </a>
@@ -128,7 +142,7 @@ function Footer() {
                 <li>
                   <a
                     href="mailto:techtronica@gla.ac.in"
-                    className="text-slate-600 hover:text-purple-700"
+                    className="footer-link break-all"
                   >
                     techtronica@gla.ac.in
                   </a>
@@ -136,18 +150,17 @@ function Footer() {
               </ul>
             </div>
 
-            {/* Official links */}
-            <div className="space-y-3 text-xs sm:text-sm col-start-2 row-start-2 md:col-auto md:row-auto">
-              <h3 className="text-[11px] font-semibold uppercase tracking-wide text-sky-700">
-                Official links
+            {/* Official */}
+            <div>
+              <h3 className="mb-4 text-[11px] font-semibold uppercase tracking-wider text-sky-700 ">
+                Official Links
               </h3>
-              <ul className="space-y-2">
+              <ul className="space-y-2 text-xs sm:text-sm">
                 <li>
                   <a
                     href="https://www.gla.ac.in"
                     target="_blank"
-                    rel="noreferrer"
-                    className="text-slate-600 hover:text-sky-700"
+                    className="footer-link"
                   >
                     GLA University Website
                   </a>
@@ -156,8 +169,7 @@ function Footer() {
                   <a
                     href="https://www.gla.ac.in/academics/department-of-electronics-communication-engineering"
                     target="_blank"
-                    rel="noreferrer"
-                    className="text-slate-600 hover:text-sky-700"
+                    className="footer-link"
                   >
                     ECE Department Page
                   </a>
@@ -168,11 +180,11 @@ function Footer() {
         </div>
       </div>
 
-      {/* Bottom bar */}
-      <div className="border-t border-slate-200 bg-slate-100/80">
+      {/* Bottom */}
+      <div className="border-t border-slate-200">
         <div className="mx-auto max-w-6xl px-4 py-4 text-[11px] text-slate-500 text-center sm:text-left">
           © {new Date().getFullYear()} Techtronica • GLA University •
-          Electronics and Communication Engineering
+          Electronics & Communication Engineering
         </div>
       </div>
     </footer>

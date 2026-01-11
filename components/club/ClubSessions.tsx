@@ -6,7 +6,7 @@ import { Club } from "@/lib/config/clubs";
 
 export default function ClubHero({ club }: { club: Club }) {
   return (
-    <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 sm:pt-24 pb-12 sm:pb-16">
+    <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 sm:pt-12 pb-12 sm:pb-16">
       <div className="grid gap-8 sm:gap-10 lg:grid-cols-2 items-center">
         {/* LEFT */}
         <div className="space-y-4 sm:space-y-6 text-center lg:text-left">
