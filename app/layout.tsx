@@ -23,6 +23,8 @@ export const metadata: Metadata = {
 
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
+import EventPopup from "@/components/EventPopup";
+import { upcomingEvent } from "@/lib/data/upcomingEvents";
 
 export default function RootLayout({
   children,
@@ -39,6 +41,7 @@ export default function RootLayout({
 
         {/* Main content */}
         <main className="pt-28 min-h-screen bg-linear-to-br from-white via-sky-50 to-purple-100">
+          <EventPopup event={upcomingEvent} eventSlug={""} />
           {children}
         </main>
         <Analytics />

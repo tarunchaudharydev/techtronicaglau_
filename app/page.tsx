@@ -431,7 +431,7 @@ function Home() {
           title="Build real-world technical projects"
           p1="Move beyond theory through coding sprints, electronics builds, and hackathons designed to solve real problems."
           p2="From core problem-solving to full-stack development, IoT, and automation, this is where engineering turns practical."
-          imgSrc="/images/technovation/ai.jpg"
+          imgSrc="/homeImages/3dcoding.jpg"
           imgAlt="Students collaborating on laptops and electronics projects"
         />
 
@@ -441,7 +441,7 @@ function Home() {
           title="Express creativity through culture & design"
           p1="Dance, music, drama, art, and design—find a space where creativity is taken seriously and showcased with pride."
           p2="Perform on stage, design college branding, and curate cultural events that define the campus identity."
-          imgSrc="/images/unnati/event.jpg"
+          imgSrc="/homeImages/design.jpg"
           imgAlt="Cultural performance and student artwork on display"
         />
 
@@ -451,7 +451,7 @@ function Home() {
           title="Compete, train, and represent your college"
           p1="Participate in tournaments, selection trials, and regular practice sessions across multiple sports."
           p2="Build discipline, teamwork, and resilience while representing your college on and off the field."
-          imgSrc="/images/unnati/event.jpg"
+          imgSrc="/homeImages/represent_your_college.jpg"
           imgAlt="Students actively participating in sports"
         />
 
@@ -470,10 +470,8 @@ function Home() {
           index={5}
           title="Develop leadership that actually matters"
           p1="Take on structured roles—from coordinators and leads to core executives and presidents."
-          p2="Plan events, manage teams, handle budgets, work with sponsors, and lead initiatives that leave a legacy.
-         
-           Plan events, manage teams, handle budgets, work with sponsors, and lead initiatives that leave a legacy. Plan events, manage teams, handle budgets, work with sponsors, and lead initiatives that leave a legacy. Plan events, manage teams, handle budgets, work with sponsors, and lead initiatives that leave a legacy. Plan events, manage teams, handle budgets, work with sponsors, and lead initiatives that leave a legacy."
-          imgSrc="/images/overview/team.jpg"
+          p2="Plan events, manage teams, handle budgets, work with sponsors, and lead initiatives that leave a legacy."
+          imgSrc="/homeImages/leadership.jpg"
           imgAlt="Core society team standing together"
         />
         <SponsorsMarquee />
