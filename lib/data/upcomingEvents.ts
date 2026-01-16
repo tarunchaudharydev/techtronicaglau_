@@ -71,7 +71,7 @@ export const events: Event[] = [
 
 
 
-    registrationLink: "https://forms.gle/xyz",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeW5pXjVxfEVG0h8rvFKkDyFT8aTIILiC5KvcZJVaWs_8llwQ/viewform",
     registrationDeadline: "2026-01-20",
   },
 
