@@ -37,7 +37,7 @@ const ClubsOverview = ({ aboutSociety, setSectionRef }: ClubsOverviewProps) => {
 
         <div className="w-full md:w-1/2">
           <Image
-            src="/images/overview/team.jpg"
+            src="/homeImages/team_image.jpg"
             alt="Students collaborating in different clubs"
             width={800}
             height={500}

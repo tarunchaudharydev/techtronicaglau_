@@ -461,7 +461,7 @@ function Home() {
           title="Create impact beyond the campus"
           p1="Contribute to teaching drives, cleanliness initiatives, blood donation camps, and awareness programs."
           p2="Work with NGOs and local communities to turn empathy and ideas into measurable social impact."
-          imgSrc="/images/unnati/event.jpg"
+          imgSrc="/homeImages/impact.jpg"
           imgAlt="Students volunteering in community outreach programs"
         />
 
