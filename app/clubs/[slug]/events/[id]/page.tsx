@@ -16,51 +16,91 @@ export default async function EventDetailPage({
   if (!event) return notFound();
 
   return (
-    <main className="max-w-4xl mx-auto px-4 py-20 space-y-8">
-      {/* Back button */}
-      <Link
-        href={`/clubs/${slug}/events`}
-        className="inline-block text-sm text-purple-700 hover:underline"
-      >
-        ← Back to Club Events
-      </Link>
+    <main className="min-h-screen bg-emerald-50 pt-28 -mt-30 pb-20 px-4">
+      <div className="max-w-5xl mx-auto space-y-8">
+        {/* Back */}
+        <Link
+          href={`/clubs/${slug}/events`}
+          className="inline-block text-sm font-medium text-emerald-700 hover:underline"
+        >
+          ← Back to Club Events
+        </Link>
 
-      <h1 className="text-3xl font-bold">{event.title}</h1>
+        {/* Header Card */}
+        <section className="rounded-3xl bg-white shadow-sm overflow-hidden">
+          {/* Cover */}
+          {event.coverImage && (
+            <div className="relative h-72 w-full">
+              <Image
+                src={event.coverImage}
+                alt={event.title}
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+          )}
 
-      <p className="text-slate-600">
-        {event.date} • {event.time} • {event.location}
-      </p>
+          {/* Content */}
+          <div className="p-6 space-y-4">
+            <h1 className="text-3xl md:text-4xl font-bold text-emerald-900">
+              {event.title}
+            </h1>
 
-      {/* Live countdown (if applicable) */}
-      <EventCountdown deadline={event.registrationDeadline} />
-
-      {event.description.map((line, index) => (
-        <p key={index} className="mb-2">
-          {line}
-        </p>
-      ))}
-      {/* Winners */}
-      {event.winners && event.winners.length > 0 && (
-        <section>
-          <h2 className="text-xl font-semibold mb-2">Winners</h2>
-          <ul className="list-disc pl-5 space-y-1">
-            {event.winners.map((w, i) => (
-              <li key={`${w.name}-${i}`}>
-                {w.position} — {w.name}
-              </li>
-            ))}
-          </ul>
+            <p className="text-sm text-slate-600">
+              {event.date} • {event.time} • {event.location}
+            </p>
+          </div>
         </section>
-      )}
 
-      {/* Gallery */}
-      {/* Gallery */}
-      {event.gallery && event.gallery.length > 0 && (
-        <section>
-          <h2 className="text-xl font-semibold mb-4">Event Gallery</h2>
-          <EventGallery images={event.gallery} />
+        {/* Countdown Card */}
+        {event.registrationDeadline && (
+          <section className="rounded-2xl bg-white p-6 shadow-sm">
+            <p className="text-lg font-semibold text-emerald-900 mb-2">
+              Event Status
+            </p>
+            <EventCountdown deadline={event.registrationDeadline} />
+            <p className="text-sm text-slate-600 mt-2">
+              Stay tuned — actions will unlock as the event approaches.
+            </p>
+          </section>
+        )}
+
+        {/* Description */}
+        <section className="rounded-2xl bg-white p-6 shadow-sm space-y-3">
+          {event.description.map((line, index) => (
+            <p key={index} className="text-slate-700">
+              {line}
+            </p>
+          ))}
         </section>
-      )}
+
+        {/* Winners */}
+        {event.winners && event.winners.length > 0 && (
+          <section className="rounded-2xl bg-white p-6 shadow-sm">
+            <h2 className="text-xl font-semibold mb-3 text-emerald-900">
+              Winners
+            </h2>
+            <ul className="list-disc pl-5 space-y-1 text-slate-700">
+              {event.winners.map((w, i) => (
+                <li key={`${w.name}-${i}`}>
+                  {w.position} — {w.name}
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        {/* Gallery */}
+        {event.gallery && event.gallery.length > 0 && (
+          <section className="rounded-2xl bg-white p-6 shadow-sm">
+            <h2 className="text-xl font-semibold mb-4 text-emerald-900">
+              Event Gallery
+            </h2>
+            <EventGallery images={event.gallery} />
+          </section>
+        )}
+      </div>
     </main>
   );
 }

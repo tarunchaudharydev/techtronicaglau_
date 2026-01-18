@@ -5,134 +5,152 @@ import { events } from "@/lib/data/upcomingEvents";
 import EventCountdown from "@/components/events/EventCountdown";
 import EventGallery from "@/components/events/EventGallery";
 
-// react-icons
 import { FiArrowLeft, FiCalendar, FiClock, FiMapPin } from "react-icons/fi";
 
 type PageProps = {
-  params: Promise<{
-    id: string;
-  }>;
+  params: Promise<{ id: string }>;
 };
 
 export default async function EventDetailPage({ params }: PageProps) {
   const { id } = await params;
-
   const event = events.find((e) => e.id === id);
-
-  if (!event) {
-    notFound();
-  }
+  if (!event) notFound();
 
   const isUpcoming = Boolean(event.registrationLink);
 
   return (
-    <main className="pt-32 pb-20 px-6 max-w-4xl mx-auto">
-      {/* Back Button */}
-      <div className="mb-6">
+    <main className="min-h-screen bg-emerald-50 pt-28 -mt-31 pb-20 px-4">
+      {/* Back */}
+      <div className="max-w-6xl mx-auto mb-6">
         <Link
           href="/events"
-          className="inline-flex items-center gap-2 text-sm font-medium text-slate-600 hover:text-sky-600 transition"
+          className="inline-flex items-center gap-2 text-sm font-medium text-slate-600 hover:text-emerald-700"
         >
           <FiArrowLeft />
           Back to Events
         </Link>
       </div>
 
-      {/* Cover */}
-      <div className="relative h-72 w-full rounded-3xl overflow-hidden mb-8">
-        <Image
-          src={event.coverImage}
-          alt={event.title}
-          fill
-          className="object-cover"
-          priority
-        />
-      </div>
+      <section className="max-w-6xl mx-auto grid lg:grid-cols-[380px_1fr] gap-8">
+        {/* LEFT COLUMN */}
+        <aside className="space-y-6">
+          {/* Poster */}
+          <div className="rounded-2xl overflow-hidden shadow-lg">
+            <Image
+              src={event.coverImage}
+              alt={event.title}
+              width={400}
+              height={520}
+              className="w-full h-auto object-cover"
+              priority
+            />
+          </div>
 
-      {/* Club */}
-      <p className="text-xs uppercase tracking-widest text-sky-600 mb-2">
-        {event.club}
-      </p>
+          {/* Host */}
+          <div className="rounded-xl bg-white p-4 shadow-sm">
+            <p className="text-xs text-slate-500 mb-2">Hosted By</p>
+            <p className="font-semibold text-slate-800">{event.club}</p>
+          </div>
+        </aside>
 
-      {/* Title */}
-      <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-        {event.title}
-      </h1>
+        {/* RIGHT COLUMN */}
+        <div className="space-y-6">
+          {/* Title Section */}
+          <div>
+            <h1 className="text-3xl md:text-4xl font-bold text-emerald-900 mb-3">
+              {event.title}
+            </h1>
 
-      {/* Description */}
-      {event.description.map((line, index) => (
-        <p key={index} className="mb-2">
-          {line}
-        </p>
-      ))}
+            <div className="space-y-2 text-sm text-emerald-900/80">
+              <p className="flex items-center gap-2">
+                <FiCalendar />
+                {event.date}
+              </p>
+              <p className="flex items-center gap-2">
+                <FiClock />
+                {event.time}
+              </p>
+              <p className="flex items-center gap-2">
+                <FiMapPin />
+                {event.location}
+              </p>
+            </div>
+          </div>
 
-      {/* Meta Info */}
-      <div className="grid sm:grid-cols-2 gap-4 text-sm text-slate-600 mb-8">
-        <p className="flex items-center gap-2">
-          <FiCalendar className="text-sky-600" />
-          {event.date}
-        </p>
-        <p className="flex items-center gap-2">
-          <FiClock className="text-sky-600" />
-          {event.time}
-        </p>
-        <p className="flex items-center gap-2 sm:col-span-2">
-          <FiMapPin className="text-sky-600" />
-          {event.location}
-        </p>
-      </div>
+          {/* STATUS CARD */}
+          {isUpcoming && (
+            <div className="rounded-2xl bg-white p-6 shadow-sm space-y-4">
+              <p className="text-lg font-semibold text-emerald-900">
+                Time Left
+              </p>
 
-      {/* UPCOMING EVENT */}
-      {isUpcoming && (
-        <div className="mt-8 space-y-4">
-          {/* Countdown */}
-          {event.registrationDeadline && (
-            <EventCountdown deadline={event.registrationDeadline} />
+              {event.registrationDeadline && (
+                <EventCountdown deadline={event.registrationDeadline} />
+              )}
+
+              {/* <p className="text-sm text-slate-600">
+                The join button will be shown when the event is about to start.
+              </p> */}
+
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href={event.registrationLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-full bg-emerald-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-emerald-700 transition"
+                >
+                  Register / Join
+                </a>
+
+                <button className="rounded-full border border-emerald-200 px-5 py-2.5 text-sm font-medium text-emerald-700 hover:bg-emerald-50">
+                  Add to Calendar
+                </button>
+              </div>
+            </div>
           )}
 
-          {/* Apply Button */}
-          <a
-            href={event.registrationLink}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center justify-center rounded-full bg-sky-600 px-6 py-3 text-sm font-semibold text-white hover:bg-sky-700 transition"
-          >
-            Apply Now
-          </a>
+          {/* DESCRIPTION */}
+          <div className="rounded-2xl bg-white p-6 shadow-sm space-y-3">
+            {event.description.map((line, i) => (
+              <p key={i} className="text-slate-700">
+                {line}
+              </p>
+            ))}
+          </div>
+
+          {/* PAST EVENT CONTENT */}
+          {!isUpcoming && (
+            <div className="space-y-6">
+              {event.outcome && (
+                <div className="rounded-2xl bg-white p-6 shadow-sm">
+                  <h2 className="text-xl font-semibold mb-2">Event Outcome</h2>
+                  <p className="text-slate-700">{event.outcome}</p>
+                </div>
+              )}
+
+              {event.winners && (
+                <div className="rounded-2xl bg-white p-6 shadow-sm">
+                  <h2 className="text-xl font-semibold mb-2">Winners</h2>
+                  <ul className="list-disc ml-6 text-slate-700">
+                    {event.winners.map((w) => (
+                      <li key={w.name}>
+                        {w.position} — {w.name}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {event.gallery && event.gallery.length > 0 && (
+                <div className="rounded-2xl bg-white p-6 shadow-sm">
+                  <h2 className="text-xl font-semibold mb-4">Event Gallery</h2>
+                  <EventGallery images={event.gallery} />
+                </div>
+              )}
+            </div>
+          )}
         </div>
-      )}
-
-      {/* PAST EVENT */}
-      {!isUpcoming && (
-        <section className="mt-12 space-y-6">
-          {event.outcome && (
-            <div>
-              <h2 className="text-xl font-semibold mb-2">Event Outcome</h2>
-              <p className="text-slate-700">{event.outcome}</p>
-            </div>
-          )}
-
-          {event.winners && (
-            <div>
-              <h2 className="text-xl font-semibold mb-2">Winners</h2>
-              <ul className="list-disc ml-6 text-slate-700">
-                {event.winners.map((w) => (
-                  <li key={w.name}>
-                    {w.position} — {w.name}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-
-          {event.gallery && event.gallery.length > 0 && (
-            <section>
-              <h2 className="text-xl font-semibold mb-4">Event Gallery</h2>
-              <EventGallery images={event.gallery} />
-            </section>
-          )}
-        </section>
-      )}
+      </section>
     </main>
   );
 }
