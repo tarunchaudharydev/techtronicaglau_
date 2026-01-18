@@ -225,11 +225,11 @@ export const clubs: Club[] = [
     name: "Technovation",
     tagline: "A Step Towards Evolving Innovators.",
     shortDescription:
-      "Technovation is the core technical club under Techtronica where electronics students learn by working hands-on with real tools and technologies. It offers a practical space to explore essential electronics concepts using platforms like Arduino, Cadence, and circuit design software through engaging workshops and interactive sessions.",
+      "A premier technical hub under the Techtronica Society at GLA University, this club is dedicated to bridging the gap between theoretical knowledge and practical expertise. We specialize in organizing high-impact technical workshops, ranging from PCB Designing and IoT development to advanced industrial tools like Cadence. Our mission is to empower students with the hands-on skills necessary to excel in the modern technological landscape.",
 
     purposeTitle: "Why & Purpose of Technovation",
     purposeDescription:
-      "Technovation was created to make electronics learning more practical, engaging, and meaningful. The club helps students move beyond theory by encouraging them to experiment, build, and solve real problems. Through workshops and collaborative activities, students gain confidence with core electronics tools, strengthen their technical foundation, and develop an innovative way of thinking. The purpose of Technovation is to support electronics students in becoming skilled, curious, and industry-ready engineers who are prepared for future technologies and real-world challenges.",
+      "Technovation was founded on the principle that true engineering mastery comes from doing, not just studying. In an era where technology evolves rapidly, we recognized the need for a dedicated space where students could transition seamlessly from classroom theory to real-world application. By providing access to industry-standard tools and expert-led sessions, we aim to cultivate a generation of innovators who are not only academically sound but also technically proficient and confident in their abilities to shape the future.",
 
     heroImage: "/clubs/technovation/images/pcb.jpg",
     galleryImage: "/clubs/technovation/images/ram.jpg",
@@ -277,6 +277,14 @@ export const clubs: Club[] = [
     ],
 
     team: [
+
+      {
+        name: "Dr. Saurabh Singh",
+        role: "Faculty Mentor",
+        image: "/clubs/technovation/team/mentor.jpg",
+      },
+
+
       {
         name: "Brijesh Maurya",
         role: "President",
@@ -310,7 +318,7 @@ export const clubs: Club[] = [
     name: "Unnati",
     tagline: "Where Everyone Adapts Culture with Creativity.",
     shortDescription:
-      "Unnati is the cultural and personality development club under Techtronica society that celebrates expression, creativity, and growth. It offers students a welcoming space to showcase their talents, participate in cultural activities, and build confidence while developing essential life and interpersonal skills.",
+      "Unnati Club is a part of Techtronica Society. It is all about progress through creativity and connection. From colorful rangoli and drawing competitions to engaging with schools and local events, every moment at Unnati is about inspiring growth, expression, and compassion.Each gathering at Unnati is a celebration of art, community, and collective growth.",
 
     purposeTitle: "Why & Purpose of Unnati",
     purposeDescription:
@@ -359,6 +367,13 @@ export const clubs: Club[] = [
     ],
 
     team: [
+
+      {
+        name: "Dr. Shweta",
+        role: "Faculty Mentor",
+        image: "/clubs/unnati/team/mentor.jpg",
+      },
+
       {
         name: "Astitva Johri",
         role: "President",
@@ -372,7 +387,7 @@ export const clubs: Club[] = [
       },
 
       {
-        name: "Ridhima",
+        name: "Ridhima Srivastava",
         role: "General Secretary",
         image: "/clubs/unnati/team/GS.jpeg",
       },
@@ -394,7 +409,7 @@ export const clubs: Club[] = [
     name: "MindBloggers",
     tagline: "The Quest for Zero Defeat.",
     shortDescription:
-      "MindBloggers is the creative and knowledge-driven club under Techtronica that encourages students to think, express, and explore ideas beyond the technical space. As the name suggests, the club focuses on engaging minds through quizzes, creative activities, and interactive learning experiences that make knowledge fun and meaningful.",
+      "Mind Bogglers is a quiz club which is to encourage the students to look beyond the textual knowledge, so that it will be helpful to relate between theory and application of the learnt concept.Its aim to promote fun way learning and improves ones general knowledge.It promotes a healthy debate amongst participants in order to learn from each other.The main purpose of club is to update the knowledge of students in various fields like academics, G.K, analytical abilities etc.These are conducted for the betterment of participants.",
 
     purposeTitle: "Why & Purpose of MindBloggers",
     purposeDescription:
@@ -447,8 +462,15 @@ export const clubs: Club[] = [
     ],
 
     team: [
+
       {
-        name: "Mukul",
+        name: "Mrs. Jharna Agarwal",
+        role: "Faculty Mentor",
+        image: "/clubs/mindbogglers/team/mentor.jpg",
+      },
+
+      {
+        name: "Mukul Sharma",
         role: "President",
         image: "/clubs/mindbogglers/team/president.jpg",
       },

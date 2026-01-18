@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { events } from "@/lib/data/upcomingEvents";
 import EventCountdown from "@/components/events/EventCountdown";
+import EventGallery from "@/components/events/EventGallery";
 
 // react-icons
 import { FiArrowLeft, FiCalendar, FiClock, FiMapPin } from "react-icons/fi";
@@ -124,25 +125,11 @@ export default async function EventDetailPage({ params }: PageProps) {
             </div>
           )}
 
-          {event.gallery && (
-            <div>
+          {event.gallery && event.gallery.length > 0 && (
+            <section>
               <h2 className="text-xl font-semibold mb-4">Event Gallery</h2>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                {event.gallery.map((img) => (
-                  <div
-                    key={img}
-                    className="relative h-40 rounded-xl overflow-hidden"
-                  >
-                    <Image
-                      src={img}
-                      alt="Event image"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
+              <EventGallery images={event.gallery} />
+            </section>
           )}
         </section>
       )}

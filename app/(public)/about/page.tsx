@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import AboutAnimatedSection from "@/components/about/AboutAnimatedSection";
+import MissionVisionValue from "@/components/about/MissionVisionValue";
 import AboutTeamSection from "@/components/AboutTeamSection";
 
 export const metadata: Metadata = {
@@ -12,7 +14,7 @@ export default function AboutPage() {
   return (
     <main className="bg-gray-50 text-gray-700 min-h-screen">
       {/* HERO SECTION */}
-      <section className="relative h-[70vh] -mt-32">
+      <section className="relative h-[100vh] -mt-32">
         <Image
           src="/ourTeam/about.jpg"
           alt="Technology background"
@@ -21,11 +23,31 @@ export default function AboutPage() {
           className="object-cover"
         />
         <div className="absolute inset-0 bg-indigo-900/70 flex items-center justify-center text-center px-6">
-          <div>
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+          <div className="text-center">
+            <h1
+              className="
+      text-5xl md:text-7xl lg:text-8xl
+      font-extrabold
+      text-white
+      mb-6
+      tracking-tight
+      animate-[fadeUp_1s_ease-out_forwards]
+      opacity-0
+    "
+            >
               Techtronica Society
             </h1>
-            <p className="text-lg md:text-xl text-indigo-100 max-w-3xl mx-auto">
+
+            <p
+              className="
+      text-lg md:text-xl
+      text-indigo-100
+      max-w-3xl
+      mx-auto
+      animate-[fadeUp_1.2s_ease-out_forwards]
+      opacity-0
+    "
+            >
               A student-driven technical society fostering innovation and
               collaboration.
             </p>
@@ -34,62 +56,13 @@ export default function AboutPage() {
       </section>
 
       {/* WHO WE ARE */}
-      <section className="py-20">
-        <div className="mx-auto max-w-6xl px-6 grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Who We Are
-            </h2>
-            <p className="text-lg mb-4">
-              Techtronica Society is a community of enthusiastic students
-              passionate about technology, innovation, and problem-solving.
-            </p>
-            <p className="text-lg">
-              We bridge the gap between classroom learning and real-world skills
-              through workshops, projects, hackathons, and industry exposure.
-            </p>
-          </div>
-
-          <div className="relative h-80 w-full rounded-xl overflow-hidden shadow-lg">
-            <Image
-              src="/ourTeam/group.JPG"
-              alt="Techtronica team"
-              fill
-              className="object-cover"
-            />
-          </div>
-        </div>
+      <section className="py-20 overflow-hidden">
+        <AboutAnimatedSection />
       </section>
 
       {/* MISSION / VISION / VALUES */}
       <section className="py-20 bg-white">
-        <div className="mx-auto max-w-6xl px-6 grid md:grid-cols-3 gap-8 text-center">
-          <div className="p-8 bg-gray-50 rounded-xl shadow-md">
-            <h3 className="text-xl font-semibold text-indigo-600 mb-3">
-              Our Mission
-            </h3>
-            <p>
-              To empower students with technical expertise and leadership
-              skills.
-            </p>
-          </div>
-
-          <div className="p-8 bg-gray-50 rounded-xl shadow-md">
-            <h3 className="text-xl font-semibold text-indigo-600 mb-3">
-              Our Vision
-            </h3>
-            <p>
-              To build a strong, innovative, and future-ready tech community.
-            </p>
-          </div>
-
-          <div className="p-8 bg-gray-50 rounded-xl shadow-md">
-            <h3 className="text-xl font-semibold text-indigo-600 mb-3">
-              Our Values
-            </h3>
-            <p>Innovation, teamwork, integrity, and continuous learning.</p>
-          </div>
-        </div>
+        <MissionVisionValue />
       </section>
 
       {/* MEET THE TEAM */}

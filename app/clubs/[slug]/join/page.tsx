@@ -35,12 +35,13 @@ export default async function JoinClub({
 
         {/* Action */}
         <a
-          href={club.joinFormUrl ?? "#"}
+          // href={club.joinFormUrl ?? "#"}
           target="_blank"
           rel="noreferrer"
           className="block w-full text-center rounded-full bg-yellow-400 hover:bg-yellow-500 transition-colors py-3 text-sm sm:text-base font-semibold text-slate-900 shadow-sm"
         >
-          Open Interest Form
+          {/* Open Interest Form */}
+          Oops! You missed it.
         </a>
 
         {/* Back link */}

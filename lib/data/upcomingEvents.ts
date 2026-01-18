@@ -135,22 +135,22 @@ export const events: Event[] = [
 
 
   {
-    id: "RoboticsBootcamp",
-    title: "Robotics Bootcamp",
+    id: "iotWorkshop",
+    title: "IoT Workshop",
     club: "gizmo",
-    date: "2022-04-11",
+    date: "2025-04-11",
     time: "10:00 AM",
     location: "Seminar Hall A",
-    coverImage: "/clubs/gizmo/images/gizmo.jpg",
-    description: ["A multi-round competitive coding event where participants raced to solve problem statements first. Speed and accuracy decided the winners."],
+    coverImage: "/clubs/gizmo/events/iothome.jpg",
+    description: ["A workshop on Internet of Things. this workshop is about how to make a smart home using IoT."],
     
-    outcome: "",
-    winners: [
-      { name: "Team Alpha", position: "1st" },
-      { name: "Team Beta", position: "2nd" },
-    ],
+    outcome: "Learn how to make a smart home using IoT.",
+    // winners: [
+    //   { name: "Team Alpha", position: "1st" },
+    //   { name: "Team Beta", position: "2nd" },
+    // ],
     gallery: [
-      "/clubs/gizmo/images/robort1.jpg",
+      "/clubs/gizmo/events/iotworkshop.jpeg",
       
     ],
   },
@@ -188,9 +188,34 @@ export const events: Event[] = [
 
 
   {
-    id: "ElectronicsCircuitDesignWorkshop",
-    title: "Electronics & Circuit Design Workshop",
+    id: "pcbworkshop",
+    title: "PCB Workshop",
     club: "gizmo",
+    date: "2025-05-20",
+    time: "02:00 PM",
+    location: "Innovation Lab",
+    coverImage: "/clubs/gizmo/events/pcbhome.jpg",
+    description: ["Learn PCB design, circuit simulation, and practical electronics by building real-world electronic modules from scratch."],
+    // winners: [
+    //   { name: "Team Alpha", position: "1st" },
+    //   { name: "Team Beta", position: "2nd" },
+    // ],
+    gallery: [
+      "/clubs/gizmo/events/pcbworkshop.jpeg",
+      
+    ],
+  },
+
+
+
+  // mindboggler
+
+
+
+  {
+    id: "mindboggler",
+    title: "Electronics & Circuit Design Workshop",
+    club: "mindboggler",
     date: "2024-04-10",
     time: "02:00 PM",
     location: "Innovation Lab",
@@ -205,10 +230,6 @@ export const events: Event[] = [
       
     ],
   },
-
-
-
-  // mindboggler
 
 
   
