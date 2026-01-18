@@ -8,10 +8,10 @@ export const events: Event[] = [
     id: "udan",
     title: "TECHTRONICA SOCIETY PRESENTS — IDEA UDAAN",
     club: "code-e-phobia",
-    date: "2026-01-20",
+    date: "2026-02-07",
     time: "10:00 AM",
     location: "Seminar Hall A",
-    coverImage: "/clubs/code-e-phobia/images/Hackthon.jpg",
+    coverImage: "/clubs/code-e-phobia/events/poster.png",
        description: [
         "Something meaningful. Something impactful.",
 
@@ -47,8 +47,8 @@ export const events: Event[] = [
 
 
 
-        "🗓 Online PPT Submission Starts: 15th January 2026  ",
-        "🗓 Final Offline Exhibition: 6th February 2026  ",
+        "🗓 Online PPT Submission Starts: 28th January 2026  ",
+        "🗓 Final Offline Exhibition: 7th February 2026  ",
 
 
 
