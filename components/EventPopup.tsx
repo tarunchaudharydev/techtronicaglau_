@@ -43,15 +43,16 @@ export default function EventPopup({ event }: Props) {
         </button>
 
         {/* Image */}
-        <div className="relative h-40 sm:h-48 w-full">
+        {/* Image */}
+        <div className="relative h-40 sm:h-48 w-full bg-black">
           <Image
             src={event.coverImage}
             alt={event.title}
             fill
-            className="object-cover"
+            className="object-contain bg-black"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent pointer-events-none" />
         </div>
 
         {/* Content */}
