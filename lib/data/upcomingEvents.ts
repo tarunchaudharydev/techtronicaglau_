@@ -216,22 +216,16 @@ export const events: Event[] = [
 
 
   {
-    id: "mindboggler",
-    title: "Electronics & Circuit Design Workshop",
+    id: "testing",
+    title: "No events right now",
     club: "mindboggler",
-    date: "2024-04-10",
+    date: "2024-04-01",
     time: "02:00 PM",
     location: "Innovation Lab",
     coverImage: "/clubs/gizmo/images/sitrobort.jpg",
-    description: ["Learn PCB design, circuit simulation, and practical electronics by building real-world electronic modules from scratch."],
-    winners: [
-      { name: "Team Alpha", position: "1st" },
-      { name: "Team Beta", position: "2nd" },
-    ],
-    gallery: [
-      "/clubs/gizmo/images/roborthi.jpg",
-      
-    ],
+    description: ["No events right now"],
+    winners: [],
+    gallery: [],
   },
 
 
@@ -263,14 +257,15 @@ export const events: Event[] = [
     date: "2024-04-10",
     time: "02:00 PM",
     location: "Innovation Lab",
-    coverImage: "/clubs/technovation/images/CadenceWorkshop.jpg",
+    coverImage: "/clubs/technovation/events/cadenceworkshop.jpeg",
     description: ["A hands-on workshop introducing students to Cadence EDA tools, covering circuit design, simulation, layout, and verification for real-world VLSI applications."],
     winners: [
       { name: "Team Alpha", position: "1st" },
       { name: "Team Beta", position: "2nd" },
     ],
     gallery: [
-      "/clubs/technovation/images/technovation1.jpg",
+      "/clubs/technovation/events/cadenceworkshop.jpeg",
+      "/clubs/technovation/events/cadencework.jpeg",
       
     ],
   },
@@ -284,24 +279,24 @@ export const events: Event[] = [
 
 
 
-  {
-    id: "InnovationExpo",
-    title: "Innovation Expo & Prototype Showcase",
-    club: "technovation",
-    date: "2024-04-10",
-    time: "02:00 PM",
-    location: "Innovation Lab",
-    coverImage: "/clubs/technovation/images/ram.jpg",
-    description: ["Participants present working prototypes and project ideas to a panel of judges, industry mentors, and fellow students."],
-    winners: [
-      { name: "Team Alpha", position: "1st" },
-      { name: "Team Beta", position: "2nd" },
-    ],
-    gallery: [
-      "/clubs/technovation/images/technovation3.jpg",
+  // {
+  //   id: "InnovationExpo",
+  //   title: "Innovation Expo & Prototype Showcase",
+  //   club: "technovation",
+  //   date: "2024-04-10",
+  //   time: "02:00 PM",
+  //   location: "Innovation Lab",
+  //   coverImage: "/clubs/technovation/images/ram.jpg",
+  //   description: ["Participants present working prototypes and project ideas to a panel of judges, industry mentors, and fellow students."],
+  //   winners: [
+  //     { name: "Team Alpha", position: "1st" },
+  //     { name: "Team Beta", position: "2nd" },
+  //   ],
+  //   gallery: [
+  //     "/clubs/technovation/images/technovation3.jpg",
     
-    ],
-  },
+  //   ],
+  // },
 
 
 
