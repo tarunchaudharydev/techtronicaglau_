@@ -1,7 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Lottie from "lottie-react";
+import researchLoading from "@/public/researchloading.json";
+
 import {
   FiBookOpen,
   FiFileText,
@@ -54,6 +57,8 @@ const item = {
 };
 
 export default function ResearchAndPatentSection() {
+  const [loading, setLoading] = useState(true);
+
   const [form, setForm] = useState<ResearchFormData>({
     name: "",
     email: "",
@@ -63,10 +68,16 @@ export default function ResearchAndPatentSection() {
     description: "",
   });
 
+  // ⏳ 2-second loader
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
+    >,
   ) => {
     const { name, value } = e.target;
     setForm((prev) => ({ ...prev, [name]: value }));
@@ -77,6 +88,21 @@ export default function ResearchAndPatentSection() {
     console.log("Submitted:", form);
   };
 
+  /* 🔄 LOADING VIEW */
+  if (loading) {
+    return (
+      <section className="min-h-[60vh] flex flex-col items-center justify-center bg-gradient-to-br from-white via-sky-50 to-purple-100">
+        <div className="w-64">
+          <Lottie animationData={researchLoading} loop autoplay />
+        </div>
+        <p className="mt-4 text-sm font-medium text-slate-600">
+          Preparing Research & Patent Cell…
+        </p>
+      </section>
+    );
+  }
+
+  /* ✅ MAIN CONTENT (UNCHANGED) */
   return (
     <section className="bg-gradient-to-br from-white via-sky-50 to-purple-100 py-16 lg:py-20">
       <div className="max-w-6xl mx-auto px-4 space-y-14">
@@ -97,14 +123,13 @@ export default function ResearchAndPatentSection() {
 
         {/* Grid */}
         <div className="grid gap-10 lg:grid-cols-[1.2fr,1.4fr] items-start">
-          {/* LEFT: Showcase */}
+          {/* LEFT */}
           <motion.div
             variants={container}
             initial="hidden"
             animate="show"
             className="space-y-8"
           >
-            {/* Stats */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               {[
                 { icon: <FiFileText />, label: "Papers", value: "15+" },
@@ -130,7 +155,6 @@ export default function ResearchAndPatentSection() {
               ))}
             </div>
 
-            {/* Existing work */}
             <div className="space-y-4">
               <h3 className="text-base sm:text-lg font-semibold text-slate-900">
                 Recent Patents & Research
@@ -158,7 +182,7 @@ export default function ResearchAndPatentSection() {
             </div>
           </motion.div>
 
-          {/* RIGHT: Form */}
+          {/* RIGHT FORM */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -169,7 +193,9 @@ export default function ResearchAndPatentSection() {
             </h3>
 
             <form className="space-y-5" onSubmit={handleSubmit}>
+              {" "}
               <div className="grid gap-4 sm:grid-cols-2">
+                {" "}
                 <input
                   name="name"
                   placeholder="Your name"
@@ -177,7 +203,7 @@ export default function ResearchAndPatentSection() {
                   onChange={handleChange}
                   className="input"
                   required
-                />
+                />{" "}
                 <input
                   name="email"
                   type="email"
@@ -186,28 +212,28 @@ export default function ResearchAndPatentSection() {
                   onChange={handleChange}
                   className="input"
                   required
-                />
-              </div>
-
+                />{" "}
+              </div>{" "}
               <div className="grid gap-4 sm:grid-cols-2">
+                {" "}
                 <select
                   name="type"
                   value={form.type}
                   onChange={handleChange}
                   className="input"
                 >
-                  <option value="research">Research / Paper</option>
-                  <option value="patent">Patent / IP</option>
-                </select>
+                  {" "}
+                  <option value="research">Research / Paper</option>{" "}
+                  <option value="patent">Patent / IP</option>{" "}
+                </select>{" "}
                 <input
                   name="domain"
                   placeholder="Domain (AI, IoT, VLSI, etc.)"
                   value={form.domain}
                   onChange={handleChange}
                   className="input"
-                />
-              </div>
-
+                />{" "}
+              </div>{" "}
               <input
                 name="title"
                 placeholder="Project / idea title"
@@ -215,8 +241,7 @@ export default function ResearchAndPatentSection() {
                 onChange={handleChange}
                 className="input"
                 required
-              />
-
+              />{" "}
               <textarea
                 name="description"
                 rows={4}
@@ -225,15 +250,14 @@ export default function ResearchAndPatentSection() {
                 onChange={handleChange}
                 className="input"
                 required
-              />
-
+              />{" "}
               <button
                 type="submit"
                 className="inline-flex items-center gap-2 rounded-full bg-purple-600 hover:bg-purple-700 px-6 py-2.5 text-sm font-semibold text-white shadow-md transition"
               >
-                <FiSend />
-                Submit idea
-              </button>
+                {" "}
+                <FiSend /> Submit idea{" "}
+              </button>{" "}
             </form>
           </motion.div>
         </div>
