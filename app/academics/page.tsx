@@ -1,18 +1,40 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { notes } from "@/lib/data/notes";
 import { FiSearch, FiFileText } from "react-icons/fi";
+import Lottie from "lottie-react";
+import bookLoading from "@/public/bookloading.json";
 
 export default function AcademicsPage() {
   const [query, setQuery] = useState("");
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 1500);
+    return () => clearTimeout(timer);
+  }, []);
 
   const filteredNotes = notes.filter((note) => {
     const text =
       `${note.title} ${note.subject} ${note.category} ${note.year}`.toLowerCase();
     return text.includes(query.toLowerCase());
   });
+
+  // 🔄 Loading Screen
+  if (loading) {
+    return (
+      <main className="min-h-screen flex flex-col items-center justify-center bg-white">
+        <div className="w-64">
+          <Lottie animationData={bookLoading} loop autoplay />
+        </div>
+        <p className="mt-4 text-sm font-medium text-slate-600">
+          Loading academic resources………
+        </p>
+      </main>
+    );
+  }
 
   return (
     <main className="pt-28 pb-20 px-4 sm:px-6 max-w-6xl mx-auto">
