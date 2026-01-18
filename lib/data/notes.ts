@@ -10,22 +10,95 @@ export type Note = {
 
 export const notes: Note[] = [
   {
-    id: "1",
-    title: "Frontend Interview Questions",
-    subject: "Frontend",
+    id: "sns",
+    title: "Signal And System",
+    subject: "Electronics",
     category: "Notes",
     year: "2nd Year",
-    slug: "frontend-interview-questions",
-    pdfUrl: "/notes/frontendInterviewQuestions.pdf",
+    slug: "signal-and-system",
+    pdfUrl: "/notes/signal.pdf",
   },
   
   {
-    id: "2",
-    title: "Interview Questions",
+    id: "ssdc",
+    title: "SSDC",
+    subject: "Electronics",
+    category: "Notes",
+    year: "2nd Year",
+    slug: "ssdc",
+    pdfUrl: "/notes/ssdc.pdf",
+  },
+
+  {
+    id: "aic",
+    title: "analog integrated circuit",
+    subject: "Electronics",
+    category: "Notes",
+    year: "2nd Year",
+    slug: "analog-integrated-circuit",
+    pdfUrl: "/notes/analogintegrated.pdf",
+  },
+
+
+  {
+    id: "cs",
+    title: "Communication System",
+    subject: "Electronics",
+    category: "Notes",
+    year: "2nd Year",
+    slug: "communication-system",
+    pdfUrl: "/notes/communication.pdf",
+  },
+
+
+
+  {
+    id: "ds",
+    title: "Data Structure",
     subject: "General",
     category: "Notes",
     year: "3rd Year",
-    slug: "interview-questions",
-    pdfUrl: "/notes/interviewQuestions.pdf",
+    slug: "data-structure",
+    pdfUrl: "/notes/data structure.pdf",
   },
+
+
+
+  {
+    id: "nas",
+    title: "Network Analysis",
+    subject: "Electronics",
+    category: "Notes",
+    year: "2nd Year",
+    slug: "network-analysis",
+    pdfUrl: "/notes/nas.pdf",
+  },
+
+
+
+  {
+    id: "physics",
+    title: "Physics",
+    subject: "General",
+    category: "Notes",
+    year: "3rd Year",
+    slug: "physics",
+    pdfUrl: "/notes/physics.pdf",
+  },
+
+
+
+
+  {
+    id: "micro",
+    title: "Microprocessor",
+    subject: "Electronics",
+    category: "Notes",
+    year: "2nd Year",
+    slug: "microprocessor",
+    pdfUrl: "/notes/micro.pdf",
+  },
+
+
+
 ];
