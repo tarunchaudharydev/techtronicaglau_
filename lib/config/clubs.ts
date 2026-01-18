@@ -485,7 +485,7 @@ export const clubs: Club[] = [
       {
         name: "Harshit Ramrakhyani",
         role: "General Secretary",
-        image: "/clubs/mindbogglers/team/GS.jpg",
+        image: "/clubs/mindbogglers/team/GS.jpeg",
       },
     ],
 

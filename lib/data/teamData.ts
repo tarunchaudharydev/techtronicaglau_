@@ -8,6 +8,12 @@ export type MemberCategory =
   | "mentor"
   | "faculty";
 
+
+  export type BioParagraph = {
+  text: string;
+  bold?: boolean;
+};
+
 export interface Member {
   categories: MemberCategory[];
   id: number;
@@ -15,7 +21,7 @@ export interface Member {
   roles: string[];
   image: string;
   shortBio: string;
-  longBio: string;
+  longBio: BioParagraph[];
   linkedin?: string;
   whatsApp?: string;
 }
@@ -33,8 +39,26 @@ export const members: Member[] = [
     categories: ["President"],
     image: "/ourTeam/coreMembers/Abhishek Sharma.jpg",
     shortBio: "President of Techtronica Society.",
-    longBio:
-      "Abhishek Sharma serves as the President of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio: [
+      { text: "I currently lead Techtronica ( Group of 5 Clubs), the technical society of ECE at GLA University, where I focus on building an environment that encourages hands-on learning, innovation, and student-driven growth in core domains like VLSI, Embedded Systems, and AI/ML.", bold: false },
+
+      { text: "I believe that an organization grows best when it's driven by a group of committed people working together with shared vision, responsibility, and purpose. My focus has been to create such a culture within the society.", bold: false },
+
+      { text: "Key Contributions:", bold: true },
+
+      { text: "Built a structured team system with a Core Team and a General Members Council (GMC) to ensure smooth functioning, collaboration, and leadership development.", bold: false },
+
+      { text: "Drafted the first official society constitution, providing a clear framework for roles, decision-making, and continuity for future batches.", bold: false },
+
+      { text: "Initiated a Research and Patent Cell to help students explore research writing, paper publishing, and intellectual property creation.", bold: false },
+
+      { text: "Actively connected with alumni to foster mentorship, industry insight sessions, and real-world career guidance.", bold: false },
+
+      { text: "Ensured society efforts align with emerging tech trends and national initiatives like Atmanirbhar Bharat, especially in semiconductors and electronics.", bold: false },
+
+      { text: "I believe in creating long-term systems, not just one-time events—and that’s what I’ve consistently worked towards with Techtronica.", bold: true },
+],
+
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/abhishek-sharma-19april1965",
   },
@@ -50,8 +74,8 @@ export const members: Member[] = [
     categories: ["Vice President"],
     image: "/ourTeam/coreMembers/Dheeraj Rajput.jpg",
     shortBio: "Supports strategy and execution.",
-    longBio:
-      "Dheeraj Rajput serves as the Vice President of Techtronica Society Society and Code-e-phobia Club, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Dheeraj Rajput serves as the Vice President of Techtronica Society Society and Code-e-phobia Club, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/dheeraj-rajput-62ab03285",
   },
@@ -64,8 +88,8 @@ export const members: Member[] = [
     categories: ["Vice President"],
     image: "/ourTeam/coreMembers/Astitva.jpg",    
     shortBio: "Leads Unnati and core club initiatives.",
-    longBio:
-      "Astitva serves as the Vice President of Unnati Club, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Astitva serves as the Vice President of Unnati Club, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/astitva-johri-6a2a38236",
   },
@@ -78,8 +102,8 @@ export const members: Member[] = [
     categories: ["General Secratory"],
    image: "/ourTeam/coreMembers/Harsh.jpg",    
    shortBio: "Leads Techtronica Society and core club initiatives.",
-    longBio:
-      "Harshit Tiwari serves as the General Secratory of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Harshit Tiwari serves as the General Secretary of the Techtronica Society, responsible for maintaining all event-related documentation, ensuring discipline, overseeing all society activities, ensuring the successful completion of events, and managing official records and communications"}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/harshit-tiwari-690420322",
   },
@@ -93,8 +117,8 @@ export const members: Member[] = [
     categories: ["President"],
     image: "/ourTeam/coreMembers/Brijesh.jpg",    
     shortBio: "Leads Code-e-phobia and core club initiatives.",
-    longBio:
-      "Brijesh serves as the President of Code-e-phobia, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Brijesh serves as the President of Code-e-phobia, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/brijesh-maurya-794015283",
   },
@@ -109,8 +133,8 @@ export const members: Member[] = [
     categories: ["Vice President"],
     image: "/ourTeam/coreMembers/Tushar.jpg",    
     shortBio: "Leads Code-e-phobia and core club initiatives.",
-    longBio:
-      "Tushar Sharma serves as the Vice President of Code-e-phobia, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Tushar Sharma serves as the Vice President of Code-e-phobia, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/tushar-sharma-009860359",
   },
@@ -123,8 +147,8 @@ export const members: Member[] = [
      roles: ["General Secratory", "Code-e-phobia"],
     categories: ["General Secratory"],
     image: "/ourTeam/coreMembers/Utkarsh.jpeg",    shortBio: "Leads Code-e-phobia and core club initiatives.",
-    longBio:
-      "Utkarsh Singhal serves as the General Secratory of Code-e-phobia, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Utkarsh Singhal serves as the General Secratory of Code-e-phobia, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/utkarsh-singhal-b89b55343",
   },
@@ -136,8 +160,8 @@ export const members: Member[] = [
      roles: ["Vice President", "Unnati"],
     categories: ["Vice President"],
     image: "/ourTeam/coreMembers/Nandini.jpg",    shortBio: "Leads Unnati and core club initiatives.",
-    longBio:
-      "Nandini Agarwal serves as the Vice President of Unnati, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Nandini Agarwal serves as the Vice President of Unnati, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/nandini-agarwal-106668249",
   },
@@ -149,8 +173,8 @@ export const members: Member[] = [
     roles: ["General Secratory", "Unnati"],
     categories: ["General Secratory"],
     image: "/ourTeam/coreMembers/Ridhima.jpeg",    shortBio: "Leads Unnati and core club initiatives.",
-    longBio:
-      "Ridhima serves as the General Secratory of Unnati, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Ridhima serves as the General Secratory of Unnati, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/ridhima-srivastava-3740b4314",
   },
@@ -163,8 +187,8 @@ export const members: Member[] = [
     roles: ["President", "Gizmo"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/Pyush.jpg",    shortBio: "Leads Gizmo and core club initiatives.",
-    longBio:
-      "Puspendra serves as the President of Gizmo, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Puspendra serves as the President of Gizmo, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://linkedin.com/in/username",
   },
@@ -177,8 +201,8 @@ export const members: Member[] = [
      roles: ["Vice President", "Gizmo"],
     categories: ["Vice President"],
     image: "/ourTeam/coreMembers/Vaibhav jain.jpg",    shortBio: "Leads Gizmo and core club initiatives.",
-    longBio:
-      "Vaibhav Jain serves as the Vice President of Gizmo, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Vaibhav Jain serves as the Vice President of Gizmo, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/vaibhav-jain-0aa1a1383",
   },
@@ -191,8 +215,8 @@ export const members: Member[] = [
     categories: ["General Secratory"],
    image: "/clubs/gizmo/team/GS.jpeg",
     shortBio: "Leads Gizmo and core club initiatives.",
-    longBio:
-      "Avantika serves as the General Secratory of Gizmo, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Avantika serves as the General Secratory of Gizmo, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/avantika-yadav-95a9aa341",
   },
@@ -203,8 +227,8 @@ export const members: Member[] = [
      roles: ["President", "Mindboggler"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/Mukul.jpg",    shortBio: "Leads Mindboggler and core club initiatives.",
-    longBio:
-      "Mukul serves as the President of Mindboggler, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Mukul serves as the President of Mindboggler, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://linkedin.com/in/username",
   },
@@ -216,8 +240,8 @@ export const members: Member[] = [
      roles: ["Vice President", "Mindboggler"],
     categories: ["Vice President"],
     image: "/ourTeam/coreMembers/Vikram Singh.jpg",    shortBio: "Leads Mindboggler and core club initiatives.",
-    longBio:
-      "Vikram Singh serves as the Vice President of Mindboggler, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Vikram Singh serves as the Vice President of Mindboggler, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/vikram-singh-b8a0631b8",
   },
@@ -228,8 +252,8 @@ export const members: Member[] = [
      roles: ["General Secratory", "Mindboggler"],
     categories: ["General Secratory"],
     image: "/ourTeam/coreMembers/harshit ramrakhyani.jpg",    shortBio: "Leads Mindboggler and core club initiatives.",
-    longBio:
-      "Harshit Ramrakhiyan serves as the General Secratory of Mindboggler, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Harshit Ramrakhiyan serves as the General Secratory of Mindboggler, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/tushar-sharma-009860359",
   },
@@ -241,8 +265,8 @@ export const members: Member[] = [
      roles: ["Vice President", "Code-e-phobia"],
     categories: ["Vice President"],
     image: "/ourTeam/coreMembers/Utkarsh.jpg",    shortBio: "Leads Code-e-phobia and core club initiatives.",
-    longBio:
-      "Utkarsh Saxena serves as the Vice President of Code-e-phobia, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Utkarsh Saxena serves as the Vice President of Code-e-phobia, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/utkarsh-saxena-3b0314222",
   },
@@ -254,8 +278,8 @@ export const members: Member[] = [
      roles: ["General Secratory", "Code-e-phobia"],
     categories: ["General Secratory"],
     image: "/ourTeam/coreMembers/Samriddhi Gaur.jpg",    shortBio: "Leads Code-e-phobia and core club initiatives.",
-    longBio:
-      "Samriddhi serves as the General Secratory of Code-e-phobia, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Samriddhi serves as the General Secratory of Code-e-phobia, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/samriddhi-gaur-775bb8358",
   },
@@ -268,8 +292,8 @@ export const members: Member[] = [
     categories: ["core-member"],
     image: "/ourTeam/coreMembers/Jeet Sinha.jpg",    
     shortBio: "Core Member of Techtronica Society.",
-    longBio:
-      "Jeet Sinha is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Jeet Sinha is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/jeet-sinha-747778324",
   },
@@ -280,8 +304,8 @@ export const members: Member[] = [
      roles: ["Core Member"],
     categories: ["core-member"],
     image: "/ourTeam/coreMembers/Stuti Shukla.jpg",    shortBio: "Core Member of Techtronica Society.",
-    longBio:
-      "Stuti Shukla is a Core Member of Techtronica Society, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Stuti Shukla is a Core Member of Techtronica Society, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/stuti-shukla17",
   },
@@ -292,8 +316,8 @@ export const members: Member[] = [
      roles: ["Core Member"],
     categories: ["core-member"],
     image: "/ourTeam/coreMembers/Muskan.jpg",    shortBio: "Core Member of Techtronica Society.",
-    longBio:
-      "Muskan Singh is a Core Member of Techtronica Society, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Muskan Singh is a Core Member of Techtronica Society, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/muskan-singh-454405314",
   },
@@ -304,8 +328,8 @@ export const members: Member[] = [
      roles: ["Core Member"],
     categories: ["core-member"],
    image: "/ourTeam/coreMembers/user3.jpg",    shortBio: "Core Member of Techtronica Society.",
-    longBio:
-      "Anshi serves is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Anshi serves is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/anshi-agrawal-9554ba329",
   },
@@ -316,8 +340,8 @@ export const members: Member[] = [
      roles: ["Core"],
     categories: ["core-member"],
     image: "/ourTeam/coreMembers/Gargi pal.jpg",    shortBio: "Core Member of Techtronica Society.",
-    longBio:
-      "Gargi Pal is a Core Member of Techtronica Society, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Gargi Pal is a Core Member of Techtronica Society, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/gargi-pal-366112349",
   },
@@ -328,8 +352,8 @@ export const members: Member[] = [
      roles: ["Core Member"],
     categories: ["core-member"],
     image: "/ourTeam/coreMembers/Vinayak Mishra.jpg",    shortBio: "Core Member of Techtronica Society.",
-    longBio:
-      "Vinayak Mishra is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Vinayak Mishra is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/vinayak-mishra-b31a72298",
   },
@@ -340,8 +364,8 @@ export const members: Member[] = [
      roles: ["Core Member"],
     categories: ["core-member"],
     image: "/ourTeam/coreMembers/user11.jpg",    shortBio: "Core Member of Techtronica Society.",
-    longBio:
-      "Tarun is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Tarun is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/tarun-kumar-338aa7341",
   },
@@ -352,8 +376,8 @@ export const members: Member[] = [
      roles: ["Core Member"],
     categories: ["core-member"],
     image: "/ourTeam/coreMembers/Nitin Singh.jpg",    shortBio: "Core Member of Techtronica Society.",
-    longBio:
-      "Nitin Singh is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Nitin Singh is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/nitin-singh-60895737b",
   },
@@ -365,8 +389,8 @@ export const members: Member[] = [
      roles: ["Core Member"],
     categories: ["core-member"],
     image: "/ourTeam/coreMembers/Bhumika kumari.jpg",    shortBio: "Core Member of Techtronica Society.",
-    longBio:
-      "Bhumika is a Core Member of Techtronica Society, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Bhumika is a Core Member of Techtronica Society, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/bhumika-kumari-4a6050386",
   },
@@ -378,8 +402,8 @@ export const members: Member[] = [
     categories: ["core-member"],
     image: "/ourTeam/coreMembers/Adamya Vishwas sharma.jpg",
     shortBio: "Core Member of Techtronica Society.",
-    longBio:
-      "Adamya Vishwas Sharma serves as the Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Adamya Vishwas Sharma serves as the Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://linkedin.com/in/username",
   },
@@ -390,8 +414,8 @@ export const members: Member[] = [
      roles: ["Core Member"],
     categories: ["core-member"],
     image: "/ourTeam/coreMembers/Narayan.jpg",    shortBio: "Core Member of Techtronica Society.",
-    longBio:
-      "Narayan is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Narayan is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://linkedin.com/in/username",
   },
@@ -404,8 +428,8 @@ export const members: Member[] = [
     categories: ["core-member"],
     image: "/ourTeam/coreMembers/AMAN SARASHWAT.jpg",    
     shortBio: "Core Member of Techtronica Society.",
-    longBio:
-      "Aman Saraswat is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Aman Saraswat is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/aman-saraswat-22b685309",
   },
@@ -417,8 +441,8 @@ export const members: Member[] = [
     roles: [ "Core Member"],
     categories: ["core-member"],
     image: "/ourTeam/coreMembers/Anurag sharma.jpg",    shortBio: "Core Member of Techtronica Society.",
-    longBio:
-      "Anurag Sharma is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Anurag Sharma is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/anurag-sharma-756a713a1",
   },
@@ -482,8 +506,8 @@ export const members: Member[] = [
     categories: ["core-member"],
     image: "/ourTeam/coreMembers/ankit rawat.jpeg",    
     shortBio: "Core Member of Techtronica Society.",
-    longBio:
-      "Ankit Rawat is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "I’m Ankit Rawat, the Design and Media Head at Techtronica. I believe that every great tech innovation needs a great story. My mission is to translate complex technical concepts into stunning visuals that inspire and engage our college community."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/ankit-rawat-25b3b3278",
   },
@@ -513,8 +537,8 @@ export const members: Member[] = [
     roles: ["Core Member"],
     categories: ["core-member"],
     image: "/ourTeam/coreMembers/user4.jpg",    shortBio: "Core Member of Techtronica Society.",
-    longBio:
-      "Ayushman is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Ayushman is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/",
   },
@@ -527,8 +551,8 @@ export const members: Member[] = [
     roles: ["Core Member"],
     categories: ["core-member"],
    image: "/ourTeam/coreMembers/Ayushman Mishra.jpg",    shortBio: "Core Member of Techtronica Society.",
-    longBio:
-      "Ayushman Mishra is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Ayushman Mishra is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/ayushman-mishra-a45676309",
   },
@@ -542,8 +566,8 @@ export const members: Member[] = [
     categories: ["core-member"],
     image: "/ourTeam/coreMembers/ayushi.jpeg",    
     shortBio: "Core Member of Techtronica Society.",
-    longBio:
-      "Ayushi Ricchariya is a Core Member of Techtronica Society, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Ayushi Ricchariya is a Core Member of Techtronica Society, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/ayushi-richhariya-96a268306",
   },
@@ -661,8 +685,8 @@ export const members: Member[] = [
      roles: ["Core Member"],
     categories: ["core-member"],
    image: "/ourTeam/coreMembers/Vaibhav kaushik.jpg",    shortBio: "Core Member of Techtronica Society.",
-    longBio:
-      "Vaibhav Kaushik is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Vaibhav Kaushik is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/vaibhav-kaushik-5a55943a3",
   },
@@ -703,8 +727,8 @@ export const members: Member[] = [
     categories: ["GMC"],
     image: "/ourTeam/coreMembers/user1.jpg",
     shortBio: "General member council of Techtronica Society.",
-    longBio:
-      "Aaditya Hridaya serves as the General member council of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Aaditya Hridaya serves as the General member council of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/aaditya-hridaya-31730630a/",
   },
@@ -716,8 +740,8 @@ export const members: Member[] = [
     categories: ["GMC"],
     image: "/ourTeam/coreMembers/Aditya Kumar(GMC).jpg",
     shortBio: "General member council of Techtronica Society.",
-    longBio:
-      "Aditya Kumar serves as the General member council of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Aditya Kumar serves as the General member council of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/aditya-kumar-061499297",
   },
@@ -728,8 +752,8 @@ export const members: Member[] = [
      roles: ["General member council"],
     categories: ["GMC"],
     image: "/ourTeam/coreMembers/Anshul Gupta(GMC).jpg",    shortBio: "General member council of Techtronica Society.",
-    longBio:
-      "Anshul Gupta serves as the General member council of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Anshul Gupta serves as the General member council of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://linkedin.com/in/username",
   },
@@ -740,8 +764,8 @@ export const members: Member[] = [
      roles: ["General member council"],
     categories: ["GMC"],
     image: "/ourTeam/coreMembers/Charvi vijay(GMC).jpg",    shortBio: "General member council of Techtronica Society.",
-    longBio:
-      "Charvi Vijay serves as the General member council of Techtronica Society, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Charvi Vijay serves as the General member council of Techtronica Society, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/charvi-vijay-644446303",
   },
@@ -752,8 +776,8 @@ export const members: Member[] = [
      roles: ["General member council"],
     categories: ["GMC"],
    image: "/ourTeam/coreMembers/Devang Shukla(GMC).jpg",    shortBio: "General member council of Techtronica Society.",
-    longBio:
-      "Devang Shukla serves as the General member council of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Devang Shukla serves as the General member council of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/devang-shukla-3a19a629a",
   },
@@ -765,8 +789,8 @@ export const members: Member[] = [
      roles: ["General member council"],
     categories: ["GMC"],
     image: "/ourTeam/coreMembers/Harsh.jpg",    shortBio: "General member council of Techtronica Society.",
-    longBio:
-      "Harsh Sharma serves as the General member council of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Harsh Sharma serves as the General member council of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/harsh-sharma-343999290",
   },
@@ -779,8 +803,8 @@ export const members: Member[] = [
      roles: ["General member council"],
     categories: ["GMC"],
     image: "/ourTeam/coreMembers/Krishna Gupta(GMC).jpg",    shortBio: "General member council of Techtronica Society.",
-    longBio:
-      "Krishna Gupta serves as the General member council of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Krishna Gupta serves as the General member council of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/krishna-gupta001",
   },
@@ -790,8 +814,8 @@ export const members: Member[] = [
      roles: ["General member council"],
     categories: ["GMC"],
     image: "/ourTeam/coreMembers/user9.jpg",    shortBio: "General member council of Techtronica Society.",
-    longBio:
-      "Sameeraj serves as the General member council of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Hi! I'm Sameeraj, one of the four heads of GMC. Under our guidance the GMC continues to host learning sessions, R&D for hackathons and mentorship sessions for freshers."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/sameeraj-bard1",
   },
@@ -802,8 +826,8 @@ export const members: Member[] = [
      roles: ["General member council"],
     categories: ["GMC"],
     image: "/ourTeam/coreMembers/user10.jpg",    shortBio: "General member council of Techtronica Society.",
-    longBio:
-      "Shourya Pratap Singh serves as the General member council of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Shourya Pratap Singh serves as the General member council of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/shourya-pratap-singh-1a52952b3",
   },
@@ -814,8 +838,8 @@ export const members: Member[] = [
      roles: ["General member council"],
     categories: ["GMC"],
     image: "/ourTeam/coreMembers/Yogesh(GMC).jpg",    shortBio: "General member council of Techtronica Society.",
-    longBio:
-      "Yogesh serves as the General member council of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
+    longBio:[
+      { text: "Yogesh serves as the General member council of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/yogeshupadhyay0775",
   },

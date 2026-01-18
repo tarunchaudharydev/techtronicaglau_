@@ -104,7 +104,7 @@ export default function AboutTeamSection() {
 
           return (
             <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center px-4">
-              <div className="bg-white rounded-3xl max-w-3xl w-full p-6 relative">
+              <div className="bg-white rounded-3xl max-w-3xl w-full p-6 relative max-h-[90vh] overflow-y-auto">
                 {/* Close */}
                 <button
                   onClick={() => setSelected(null)}
@@ -135,9 +135,18 @@ export default function AboutTeamSection() {
                       {member.roles.join(" • ")}
                     </p>
 
-                    <p className="text-sm text-gray-700 mt-4">
-                      {member.longBio}
-                    </p>
+                    {member.longBio.map((para, index) => (
+                      <p
+                        key={index}
+                        className={`text-sm leading-relaxed ${
+                          para.bold
+                            ? "font-semibold text-slate-900"
+                            : "text-gray-700"
+                        }`}
+                      >
+                        {para.text}
+                      </p>
+                    ))}
 
                     {/* Categories */}
                     <div className="mt-4 flex flex-wrap gap-2">
