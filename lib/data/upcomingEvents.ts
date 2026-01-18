@@ -105,6 +105,7 @@ export const events: Event[] = [
   },
 
 
+
    {
     id: "CodeQuest",
     title: "Code Quest",
@@ -125,6 +126,8 @@ export const events: Event[] = [
       
     ],
   },
+
+
 
 
 
@@ -306,13 +309,38 @@ export const events: Event[] = [
 
 
   {
+    id: "udan",
+    title: "Udan",
+    club: "unnati",
+    date: "2024-04-10",
+    time: "02:00 PM",
+    location: "Innovation Lab",
+    coverImage: "/clubs/unnati/events/udan.jpeg",
+    description: ["A creative competition featuring Painting, Nail Art, Mehendi, and Rangoli, celebrating artistic expression and skill."],
+    winners: [
+      { name: "Team Alpha", position: "1st" },
+      { name: "Team Beta", position: "2nd" },
+    ],
+    gallery: [
+      "/clubs/unnati/events/udan.jpeg",
+      
+      
+
+    ],
+  },
+
+
+
+
+
+  {
     id: "Kratikala",
     title: "Kratikala",
     club: "unnati",
     date: "2024-04-10",
     time: "02:00 PM",
     location: "Innovation Lab",
-    coverImage: "/clubs/unnati/images/9.jpg",
+    coverImage: "/clubs/unnati/images/kratikala25.jpg",
     description: ["A creative competition featuring Painting, Nail Art, Mehendi, and Rangoli, celebrating artistic expression and skill."],
     winners: [
       { name: "Team Alpha", position: "1st" },
@@ -328,6 +356,70 @@ export const events: Event[] = [
       "/clubs/unnati/images/7.jpg",
       "/clubs/unnati/images/8.jpg",
       "/clubs/unnati/images/9.jpg",
+      "/clubs/unnati/images/10.jpg",
+      "/clubs/unnati/images/11.jpg",
+      "/clubs/unnati/images/12.jpg",
+      "/clubs/unnati/images/13.jpg",
+      "/clubs/unnati/images/14.jpg",
+      "/clubs/unnati/images/15.jpg",
+      "/clubs/unnati/images/16.jpg",
+      "/clubs/unnati/images/17.jpg",
+      "/clubs/unnati/images/18.jpg",
+      "/clubs/unnati/images/19.jpg",
+      "/clubs/unnati/images/20.jpg",
+      "/clubs/unnati/images/21.jpg",
+      "/clubs/unnati/images/22.jpg",
+      "/clubs/unnati/images/23.jpg",
+      "/clubs/unnati/images/24.jpg",
+      "/clubs/unnati/images/25.jpg",
+      "/clubs/unnati/images/26.jpg",
+      "/clubs/unnati/images/27.jpg",
+      "/clubs/unnati/images/28.jpg",
+      "/clubs/unnati/images/29.jpg",
+      "/clubs/unnati/images/30.jpg",
+      "/clubs/unnati/images/31.jpg",
+      "/clubs/unnati/images/32.jpg",
+      "/clubs/unnati/images/33.jpg",
+      "/clubs/unnati/images/34.jpg",
+      "/clubs/unnati/images/35.jpg",
+      "/clubs/unnati/images/36.jpg",
+      "/clubs/unnati/images/37.jpg",
+      "/clubs/unnati/images/38.jpg",
+      "/clubs/unnati/images/39.jpg",
+      "/clubs/unnati/images/40.jpg",
+      "/clubs/unnati/images/41.jpg",
+      "/clubs/unnati/images/42.jpg",
+      "/clubs/unnati/images/43.jpg",
+      "/clubs/unnati/images/44.jpg",
+      "/clubs/unnati/images/45.jpg",
+      "/clubs/unnati/images/46.jpg",
+      "/clubs/unnati/images/47.jpg",
+      "/clubs/unnati/images/48.jpg",
+      "/clubs/unnati/images/49.jpg",
+      "/clubs/unnati/images/50.jpg",
+      "/clubs/unnati/images/51.jpg",
+      "/clubs/unnati/images/52.jpg",
+      "/clubs/unnati/images/53.jpg",
+      "/clubs/unnati/images/54.jpg",
+      "/clubs/unnati/images/55.jpg",
+      "/clubs/unnati/images/56.jpg",
+      "/clubs/unnati/images/57.jpg",
+      "/clubs/unnati/images/58.jpg",
+      "/clubs/unnati/images/59.jpg",
+      "/clubs/unnati/images/60.jpg",
+      "/clubs/unnati/images/61.jpg",
+      "/clubs/unnati/images/62.jpg",
+      "/clubs/unnati/images/63.jpg",
+      "/clubs/unnati/images/64.jpg",
+      "/clubs/unnati/images/65.jpg",
+      "/clubs/unnati/images/66.jpg",
+      "/clubs/unnati/images/67.jpg",
+      "/clubs/unnati/images/68.jpg",
+      "/clubs/unnati/images/69.jpg",
+      "/clubs/unnati/images/70.jpg",
+      "/clubs/unnati/images/71.jpg",
+      "/clubs/unnati/images/72.jpg",
+      "/clubs/unnati/images/73.jpg",
       
 
     ],
