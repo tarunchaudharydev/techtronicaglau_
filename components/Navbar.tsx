@@ -11,7 +11,11 @@ const navLinks = [
   { href: "/about", label: "About us" },
   { href: "/events", label: "Events" },
   { href: "/academics", label: "Academics" },
-  { href: "/projects", label: "Projects" },
+  {
+    href: "/projects",
+    label: "Projects",
+    badge: "NEW", // added
+  },
   { href: "/research", label: "Research & Patents" },
   { href: "/alumni", label: "Alumni" },
   { href: "/contact", label: "Contact us" },
@@ -128,13 +132,28 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`transition-colors ${
+                  className={`relative inline-flex items-center transition-colors ${
                     active
                       ? "text-blue-600"
                       : "text-slate-900 hover:text-yellow-500"
                   }`}
                 >
-                  {link.label}
+                  <span>{link.label}</span>
+
+                  {link.badge && (
+                    <span
+                      className="
+        absolute -top-3 -right-3
+        rounded-full
+        bg-gradient-to-r from-pink-500 to-red-500
+        px-1.5 py-[2px]
+        text-[9px] font-semibold text-white
+        animate-pulse
+      "
+                    >
+                      {link.badge}
+                    </span>
+                  )}
                 </Link>
               );
             })}
@@ -196,9 +215,15 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsMobileOpen(false)}
-                  className="hover:text-sky-600"
+                  className="flex items-center gap-2 hover:text-sky-600"
                 >
-                  {link.label}
+                  <span>{link.label}</span>
+
+                  {link.badge && (
+                    <span className="rounded-full bg-pink-500 px-2 py-[2px] text-[10px] font-semibold text-white">
+                      {link.badge}
+                    </span>
+                  )}
                 </Link>
               );
             })}
