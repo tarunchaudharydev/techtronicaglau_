@@ -788,7 +788,7 @@ export const members: Member[] = [
     name: "HARSH SHARMA",
      roles: ["General member council"],
     categories: ["GMC"],
-    image: "/ourTeam/coreMembers/Harsh.jpg",    shortBio: "General member council of Techtronica Society.",
+    image: "/ourTeam/coreMembers/HARSH SHARMA(GMC).jpg",    shortBio: "General member council of Techtronica Society.",
     longBio:[
       { text: "Harsh Sharma serves as the General member council of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
