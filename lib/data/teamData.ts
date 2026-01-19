@@ -118,7 +118,7 @@ export const members: Member[] = [
     image: "/ourTeam/coreMembers/Brijesh.jpg",    
     shortBio: "Leads Code-e-phobia and core club initiatives.",
     longBio:[
-      { text: "Brijesh serves as the President of Code-e-phobia, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+      { text: "Currently, I am serving as the President of the Technovation Club under Techtronica Society, where I actively work towards fostering innovation, technical skill development, and collaborative learning among students. Prior to assuming this leadership role, I successfully organized and coordinated two hands-on technical workshops for the society. I served as Co-Instructor for the workshop “Smart Solutions with Arduino and Raspberry Pi,” providing practical exposure to embedded systems and IoT-based applications. Additionally, I worked as the Main Coordinator for the PCB Designing Workshop, managing planning, coordination, and execution. These experiences have strengthened my ability to lead, organize, and promote industry-oriented, practical learning within the society."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/brijesh-maurya-794015283",
   },
