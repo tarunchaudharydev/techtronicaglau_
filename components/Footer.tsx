@@ -5,7 +5,7 @@ import Image from "next/image";
 
 function Footer() {
   return (
-    <footer className="mt-24">
+    <footer className="mt-0">
       {/* OUTER BACKGROUND (page separation) */}
       <div className="bg-slate-100 px-4">
         {/* INNER ROUNDED FOOTER CARD */}
