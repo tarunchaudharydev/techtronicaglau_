@@ -216,7 +216,7 @@ export const members: Member[] = [
    image: "/clubs/gizmo/team/GS.jpeg",
     shortBio: "Leads Gizmo and core club initiatives.",
     longBio:[
-      { text: "Avantika serves as the General Secratory of Gizmo, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+      { text: "A motivated, fun-loving individual with a passion for learning, teamwork, and positive communication, always eager to contribute, grow, and enjoy the journey."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/avantika-yadav-95a9aa341",
   },
