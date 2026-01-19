@@ -804,7 +804,7 @@ export const members: Member[] = [
     categories: ["GMC"],
     image: "/ourTeam/coreMembers/Krishna Gupta(GMC).jpg",    shortBio: "General member council of Techtronica Society.",
     longBio:[
-      { text: "Krishna Gupta serves as the General member council of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+      { text: "I am Krishna Gupta, an Electronics and Communication Engineering student with a strong passion for VLSI design, semiconductor technologies, and core electronics innovation. I am deeply focused on bridging the gap between theoretical concepts and real-world hardware implementation through hands-on projects and continuous learning."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/krishna-gupta001",
   },
