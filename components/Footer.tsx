@@ -195,7 +195,7 @@ function Footer() {
               </span>
 
               {/* BRAND NAME */}
-              <span className="select-none text-[22vw] sm:text-[18vw] md:text-[16vw] font-extrabold tracking-tight text-slate-200 leading-none -mb-6">
+              <span className="select-none text-[22vw] sm:text-[18vw] md:text-[16vw] font-extrabold tracking-tight text-slate-200 leading-none -mb-8">
                 Techtronica
               </span>
             </div>
