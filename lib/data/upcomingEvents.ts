@@ -11,7 +11,7 @@ export const events: Event[] = [
     date: "2026-02-07",
     time: "10:00 AM",
     location: "Seminar Hall A",
-    coverImage: "/clubs/code-e-phobia/events/poster.png",
+    coverImage: "/clubs/code-e-phobia/events/poster.jpeg",
        description: [
         "Something meaningful. Something impactful.",
 
