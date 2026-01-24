@@ -1,5 +1,6 @@
 export type MemberCategory =
   | "core-member"
+  | "Design Team"
   | "GMC"
   | "President"
   | "Vice President"
@@ -75,7 +76,11 @@ export const members: Member[] = [
     image: "/ourTeam/coreMembers/Dheeraj Rajput.jpg",
     shortBio: "Supports strategy and execution.",
     longBio:[
-      { text: "Dheeraj Rajput serves as the Vice President of Techtronica Society Society and Code-e-phobia Club, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+      { text: "I serve as the Vice President of Techtronica, the technical society of the ECE department at GLA University, where I actively contribute to strengthening the society’s operational structure, technical depth, and student engagement.", bold: false }, 
+
+      { text: "In my role, I focus on bridging ideas with execution—supporting technical initiatives, mentoring teams, and ensuring that projects move from planning to real-world implementation. I work closely with club leads and members to encourage participation in core engineering domains such as Embedded Systems, IOT, and AI-driven technologies.", bold: false },
+
+      { text: "I believe effective leadership lies in empowering people, streamlining processes, and creating opportunities for growth. My efforts are centered on helping the society function efficiently, adopt forward-looking technical practices, and provide meaningful exposure that prepares students for industry and research-oriented careers.", bold: true }],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/dheeraj-rajput-62ab03285",
   },
@@ -216,7 +221,7 @@ export const members: Member[] = [
    image: "/clubs/gizmo/team/GS.jpeg",
     shortBio: "Leads Gizmo and core club initiatives.",
     longBio:[
-      { text: "A motivated, fun-loving individual with a passion for learning, teamwork, and positive communication, always eager to contribute, grow, and enjoy the journey."}],
+      { text: "I am the GS of Gizmo Club, responsible for coordinating activities and communication. I work to ensure smooth functioning while promoting teamwork and innovation."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/avantika-yadav-95a9aa341",
   },
@@ -279,7 +284,7 @@ export const members: Member[] = [
     categories: ["General Secratory"],
     image: "/ourTeam/coreMembers/Samriddhi Gaur.jpg",    shortBio: "Leads Code-e-phobia and core club initiatives.",
     longBio:[
-      { text: "Samriddhi serves as the General Secratory of Code-e-phobia, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+      { text: "I am the GS of Code-e-Phobia, where I manage our club's activities and keep everyone connected. My goal is to create a great environment for coding, teamwork, and new ideas."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/samriddhi-gaur-775bb8358",
   },
@@ -502,10 +507,10 @@ export const members: Member[] = [
    {
     id: 31,
     name: "Ankit Rawat",
-     roles: ["Core Member"],
-    categories: ["core-member"],
+     roles: ["Design Team"],
+    categories: ["Design Team"],
     image: "/ourTeam/coreMembers/ankit rawat.jpeg",    
-    shortBio: "Core Member of Techtronica Society.",
+    shortBio: "Design Head of Techtronica Society.",
     longBio:[
       { text: "I’m Ankit Rawat, the Design and Media Head at Techtronica. I believe that every great tech innovation needs a great story. My mission is to translate complex technical concepts into stunning visuals that inspire and engage our college community."}],
     whatsApp: "wa.me/+910000000000",

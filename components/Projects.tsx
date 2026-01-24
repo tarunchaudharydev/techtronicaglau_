@@ -25,7 +25,7 @@ export default function Projects() {
   const launchDate = new Date(
     new Date().getFullYear(),
     0, // January (0-based)
-    25,
+    26,
     0,
     0,
     0,
@@ -69,7 +69,7 @@ export default function Projects() {
         {/* Launch Date */}
         <p className="mt-4 text-sm font-medium text-slate-700">
           Expected Launch:{" "}
-          <span className="font-semibold text-slate-900">25 January</span>
+          <span className="font-semibold text-slate-900">26 January</span>
         </p>
 
         {/* Countdown */}
@@ -139,7 +139,7 @@ export default function Projects() {
             transition={{ duration: 0.4 }}
             className="mt-6 text-base font-semibold text-green-600"
           >
-            🚀 We’re live!
+            We’re live in an hour!
           </motion.p>
         )}
 
