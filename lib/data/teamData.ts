@@ -527,7 +527,124 @@ export const members: Member[] = [
 
 
 
+  {
+    id: 38,
+    name: "Aditya Kumar",
+    roles: ["General member council"],
+    categories: ["GMC"],
+    image: "/ourTeam/coreMembers/Aditya Kumar(GMC).jpg",
+    shortBio: "General member council of Techtronica Society.",
+    longBio:[
+      { text: "Aditya Kumar serves as the General member council of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+    whatsApp: "wa.me/+910000000000",
+    linkedin: "https://www.linkedin.com/in/aditya-kumar-061499297",
+  },
 
+
+  {
+    id: 41,
+    name: "Devang Shukla",
+     roles: ["General member council"],
+    categories: ["GMC"],
+   image: "/ourTeam/coreMembers/Devang Shukla(GMC).jpg",    shortBio: "General member council of Techtronica Society.",
+    longBio:[
+      { text: "Devang Shukla serves as the General member council of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+    whatsApp: "wa.me/+910000000000",
+    linkedin: "https://www.linkedin.com/in/devang-shukla-3a19a629a",
+  },
+
+
+  {
+    id: 46,
+    name: "Yogesh",
+     roles: ["General member council"],
+    categories: ["GMC"],
+    image: "/ourTeam/coreMembers/Yogesh(GMC).jpg",    shortBio: "General member council of Techtronica Society.",
+    longBio:[
+      { text: "Yogesh serves as the General member council of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+    whatsApp: "wa.me/+910000000000",
+    linkedin: "https://www.linkedin.com/in/yogeshupadhyay0775",
+  },
+
+
+
+   {
+    id: 42,
+    name: "HARSH SHARMA",
+     roles: ["General member council"],
+    categories: ["GMC"],
+    image: "/ourTeam/coreMembers/HARSH SHARMA(GMC).jpg",    shortBio: "General member council of Techtronica Society.",
+    longBio:[
+      { text: "Harsh Sharma serves as the General member council of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+    whatsApp: "wa.me/+910000000000",
+    linkedin: "https://www.linkedin.com/in/harsh-sharma-343999290",
+  },
+
+
+
+  {
+    id: 39,
+    name: "Anshul Gupta",
+     roles: ["General member council"],
+    categories: ["GMC"],
+    image: "/ourTeam/coreMembers/Anshul Gupta(GMC).jpg",    shortBio: "General member council of Techtronica Society.",
+    longBio:[
+      { text: "Anshul Gupta serves as the General member council of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+    whatsApp: "wa.me/+910000000000",
+    linkedin: "https://linkedin.com/in/username",
+  },
+
+
+  {
+    id: 40,
+    name: "Charvi Vijay",
+     roles: ["General member council"],
+    categories: ["GMC"],
+    image: "/ourTeam/coreMembers/Charvi vijay(GMC).jpg",    shortBio: "General member council of Techtronica Society.",
+    longBio:[
+      { text: "Charvi Vijay serves as the General member council of Techtronica Society, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+    whatsApp: "wa.me/+910000000000",
+    linkedin: "https://www.linkedin.com/in/charvi-vijay-644446303",
+  },
+
+
+
+   {
+    id: 43,
+    name: "Krishna Gupta",
+     roles: ["General member council"],
+    categories: ["GMC"],
+    image: "/ourTeam/coreMembers/Krishna Gupta(GMC).jpg",    shortBio: "General member council of Techtronica Society.",
+    longBio:[
+      { text: "I am Krishna Gupta, an Electronics and Communication Engineering student with a strong passion for VLSI design, semiconductor technologies, and core electronics innovation. I am deeply focused on bridging the gap between theoretical concepts and real-world hardware implementation through hands-on projects and continuous learning."}],
+    whatsApp: "wa.me/+910000000000",
+    linkedin: "https://www.linkedin.com/in/krishna-gupta001",
+  },
+
+  {
+    id: 37,
+    name: "Aaditya Hridaya",
+    roles: ["General member council"],
+    categories: ["GMC"],
+    image: "/ourTeam/coreMembers/user1.jpg",
+    shortBio: "General member council of Techtronica Society.",
+    longBio:[
+      { text: "Aaditya Hridaya serves as the General member council of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+    whatsApp: "wa.me/+910000000000",
+    linkedin: "https://www.linkedin.com/in/aaditya-hridaya-31730630a/",
+  },
+  
+  {
+    id: 44,
+    name: "Sameeraj",
+     roles: ["General member council"],
+    categories: ["GMC"],
+    image: "/ourTeam/coreMembers/user9.jpg",    shortBio: "General member council of Techtronica Society.",
+    longBio:[
+      { text: "Hi! I'm Sameeraj, one of the four heads of GMC. Under our guidance the GMC continues to host learning sessions, R&D for hackathons and mentorship sessions for freshers."}],
+    whatsApp: "wa.me/+910000000000",
+    linkedin: "https://www.linkedin.com/in/sameeraj-bard1",
+  },
    
 
 
@@ -546,105 +663,20 @@ export const members: Member[] = [
 
 
 
-   {
-    id: 37,
-    name: "Aaditya Hridaya",
-    roles: ["General member council"],
-    categories: ["GMC"],
-    image: "/ourTeam/coreMembers/user1.jpg",
-    shortBio: "General member council of Techtronica Society.",
-    longBio:[
-      { text: "Aaditya Hridaya serves as the General member council of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
-    whatsApp: "wa.me/+910000000000",
-    linkedin: "https://www.linkedin.com/in/aaditya-hridaya-31730630a/",
-  },
+   
+   
+
+    
+
   
-   {
-    id: 38,
-    name: "Aditya Kumar",
-    roles: ["General member council"],
-    categories: ["GMC"],
-    image: "/ourTeam/coreMembers/Aditya Kumar(GMC).jpg",
-    shortBio: "General member council of Techtronica Society.",
-    longBio:[
-      { text: "Aditya Kumar serves as the General member council of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
-    whatsApp: "wa.me/+910000000000",
-    linkedin: "https://www.linkedin.com/in/aditya-kumar-061499297",
-  },
 
-    {
-    id: 39,
-    name: "Anshul Gupta",
-     roles: ["General member council"],
-    categories: ["GMC"],
-    image: "/ourTeam/coreMembers/Anshul Gupta(GMC).jpg",    shortBio: "General member council of Techtronica Society.",
-    longBio:[
-      { text: "Anshul Gupta serves as the General member council of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
-    whatsApp: "wa.me/+910000000000",
-    linkedin: "https://linkedin.com/in/username",
-  },
-
-  {
-    id: 40,
-    name: "Charvi Vijay",
-     roles: ["General member council"],
-    categories: ["GMC"],
-    image: "/ourTeam/coreMembers/Charvi vijay(GMC).jpg",    shortBio: "General member council of Techtronica Society.",
-    longBio:[
-      { text: "Charvi Vijay serves as the General member council of Techtronica Society, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
-    whatsApp: "wa.me/+910000000000",
-    linkedin: "https://www.linkedin.com/in/charvi-vijay-644446303",
-  },
-
-  {
-    id: 41,
-    name: "Devang Shukla",
-     roles: ["General member council"],
-    categories: ["GMC"],
-   image: "/ourTeam/coreMembers/Devang Shukla(GMC).jpg",    shortBio: "General member council of Techtronica Society.",
-    longBio:[
-      { text: "Devang Shukla serves as the General member council of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
-    whatsApp: "wa.me/+910000000000",
-    linkedin: "https://www.linkedin.com/in/devang-shukla-3a19a629a",
-  },
-
-
-    {
-    id: 42,
-    name: "HARSH SHARMA",
-     roles: ["General member council"],
-    categories: ["GMC"],
-    image: "/ourTeam/coreMembers/HARSH SHARMA(GMC).jpg",    shortBio: "General member council of Techtronica Society.",
-    longBio:[
-      { text: "Harsh Sharma serves as the General member council of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
-    whatsApp: "wa.me/+910000000000",
-    linkedin: "https://www.linkedin.com/in/harsh-sharma-343999290",
-  },
+  
+   
 
 
 
-  {
-    id: 43,
-    name: "Krishna Gupta",
-     roles: ["General member council"],
-    categories: ["GMC"],
-    image: "/ourTeam/coreMembers/Krishna Gupta(GMC).jpg",    shortBio: "General member council of Techtronica Society.",
-    longBio:[
-      { text: "I am Krishna Gupta, an Electronics and Communication Engineering student with a strong passion for VLSI design, semiconductor technologies, and core electronics innovation. I am deeply focused on bridging the gap between theoretical concepts and real-world hardware implementation through hands-on projects and continuous learning."}],
-    whatsApp: "wa.me/+910000000000",
-    linkedin: "https://www.linkedin.com/in/krishna-gupta001",
-  },
-  {
-    id: 44,
-    name: "Sameeraj",
-     roles: ["General member council"],
-    categories: ["GMC"],
-    image: "/ourTeam/coreMembers/user9.jpg",    shortBio: "General member council of Techtronica Society.",
-    longBio:[
-      { text: "Hi! I'm Sameeraj, one of the four heads of GMC. Under our guidance the GMC continues to host learning sessions, R&D for hackathons and mentorship sessions for freshers."}],
-    whatsApp: "wa.me/+910000000000",
-    linkedin: "https://www.linkedin.com/in/sameeraj-bard1",
-  },
+ 
+  
 
   {
     id: 45,
@@ -658,23 +690,7 @@ export const members: Member[] = [
     linkedin: "https://www.linkedin.com/in/shourya-pratap-singh-1a52952b3",
   },
 
-    {
-    id: 46,
-    name: "Yogesh",
-     roles: ["General member council"],
-    categories: ["GMC"],
-    image: "/ourTeam/coreMembers/Yogesh(GMC).jpg",    shortBio: "General member council of Techtronica Society.",
-    longBio:[
-      { text: "Yogesh serves as the General member council of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
-    whatsApp: "wa.me/+910000000000",
-    linkedin: "https://www.linkedin.com/in/yogeshupadhyay0775",
-  },
-
-
-
-
-
-
+    
 
 
 
