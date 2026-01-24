@@ -66,6 +66,19 @@ export const members: Member[] = [
 
   
 
+  {
+    id: 2,
+    name: "Astitva",
+    roles: ["Vice President", "Unnati"],
+    categories: ["Vice President"],
+    image: "/ourTeam/coreMembers/Astitva.jpg",    
+    shortBio: "Leads Unnati and core club initiatives.",
+    longBio:[
+      { text: "Astitva serves as the Vice President of Unnati Club, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+    whatsApp: "wa.me/+910000000000",
+    linkedin: "https://www.linkedin.com/in/astitva-johri-6a2a38236",
+  },
+
 
 
    {
@@ -86,33 +99,6 @@ export const members: Member[] = [
   },
 
 
-   {
-    id: 2,
-    name: "Astitva",
-    roles: ["Vice President", "Unnati"],
-    categories: ["Vice President"],
-    image: "/ourTeam/coreMembers/Astitva.jpg",    
-    shortBio: "Leads Unnati and core club initiatives.",
-    longBio:[
-      { text: "Astitva serves as the Vice President of Unnati Club, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
-    whatsApp: "wa.me/+910000000000",
-    linkedin: "https://www.linkedin.com/in/astitva-johri-6a2a38236",
-  },
-
-
-  {
-    id: 3,
-    name: "Harshit Tiwari",
-     roles: ["General Secratory", "Techtronica Society"],
-    categories: ["General Secratory"],
-   image: "/ourTeam/coreMembers/Harsh.jpg",    
-   shortBio: "Leads Techtronica Society and core club initiatives.",
-    longBio:[
-      { text: "Harshit Tiwari serves as the General Secretary of the Techtronica Society, responsible for maintaining all event-related documentation, ensuring discipline, overseeing all society activities, ensuring the successful completion of events, and managing official records and communications"}],
-    whatsApp: "wa.me/+910000000000",
-    linkedin: "https://www.linkedin.com/in/harshit-tiwari-690420322",
-  },
-
 
   
    {
@@ -130,34 +116,84 @@ export const members: Member[] = [
 
 
 
-
   {
-    id: 5,
-    name: "Tushar Sharma",
-     roles: ["Vice President", "Code-e-phobia"],
-    categories: ["Vice President"],
-    image: "/ourTeam/coreMembers/Tushar.jpg",    
-    shortBio: "Leads Code-e-phobia and core club initiatives.",
+    id: 9,
+    name: "Puspendra",
+    roles: ["President", "Gizmo"],
+    categories: ["President"],
+    image: "/ourTeam/coreMembers/Pyush.jpg",    shortBio: "Leads Gizmo and core club initiatives.",
     longBio:[
-      { text: "Tushar Sharma serves as the Vice President of Code-e-phobia, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+      { text: "Puspendra serves as the President of Gizmo, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
-    linkedin: "https://www.linkedin.com/in/tushar-sharma-009860359",
+    linkedin: "https://linkedin.com/in/username",
   },
 
 
+  {
+    id: 12,
+    name: "Mukul",
+     roles: ["President", "Mindboggler"],
+    categories: ["President"],
+    image: "/ourTeam/coreMembers/Mukul.jpg",    shortBio: "Leads Mindboggler and core club initiatives.",
+    longBio:[
+      { text: "Mukul serves as the President of Mindboggler, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+    whatsApp: "wa.me/+910000000000",
+    linkedin: "https://linkedin.com/in/username",
+  },
+
+   
+
 
   {
-    id: 6,
-    name: "Utkarsh Singhal",
-     roles: ["General Secratory", "Code-e-phobia"],
+    id: 3,
+    name: "Harshit Tiwari",
+     roles: ["General Secratory", "Techtronica Society"],
     categories: ["General Secratory"],
-    image: "/ourTeam/coreMembers/Utkarsh.jpeg",    shortBio: "Leads Code-e-phobia and core club initiatives.",
+   image: "/ourTeam/coreMembers/Harsh.jpg",    
+   shortBio: "Leads Techtronica Society and core club initiatives.",
     longBio:[
-      { text: "Utkarsh Singhal serves as the General Secratory of Code-e-phobia, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+      { text: "Harshit Tiwari serves as the General Secretary of the Techtronica Society, responsible for maintaining all event-related documentation, ensuring discipline, overseeing all society activities, ensuring the successful completion of events, and managing official records and communications"}],
     whatsApp: "wa.me/+910000000000",
-    linkedin: "https://www.linkedin.com/in/utkarsh-singhal-b89b55343",
+    linkedin: "https://www.linkedin.com/in/harshit-tiwari-690420322",
   },
 
+
+  {
+    id: 31,
+    name: "Ankit Rawat",
+     roles: ["Design Team"],
+    categories: ["Design Team"],
+    image: "/ourTeam/coreMembers/ankit rawat.jpeg",    
+    shortBio: "Design Head of Techtronica Society.",
+    longBio:[
+      { text: "I’m Ankit Rawat, the Design and Media Head at Techtronica. I believe that every great tech innovation needs a great story. My mission is to translate complex technical concepts into stunning visuals that inspire and engage our college community."}],
+    whatsApp: "wa.me/+910000000000",
+    linkedin: "https://www.linkedin.com/in/ankit-rawat-25b3b3278",
+  },
+
+   {
+    id: 10,
+    name: "Vaibhav Jain",
+     roles: ["Vice President", "Gizmo"],
+    categories: ["Vice President"],
+    image: "/ourTeam/coreMembers/Vaibhav jain.jpg",    shortBio: "Leads Gizmo and core club initiatives.",
+    longBio:[
+      { text: "Vaibhav Jain serves as the Vice President of Gizmo, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+    whatsApp: "wa.me/+910000000000",
+    linkedin: "https://www.linkedin.com/in/vaibhav-jain-0aa1a1383",
+  },
+
+  {
+    id: 13,
+    name: "Vikram Singh",
+     roles: ["Vice President", "Mindboggler"],
+    categories: ["Vice President"],
+    image: "/ourTeam/coreMembers/Vikram Singh.jpg",    shortBio: "Leads Mindboggler and core club initiatives.",
+    longBio:[
+      { text: "Vikram Singh serves as the Vice President of Mindboggler, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+    whatsApp: "wa.me/+910000000000",
+    linkedin: "https://www.linkedin.com/in/vikram-singh-b8a0631b8",
+  },
 
   {
     id: 7,
@@ -172,46 +208,32 @@ export const members: Member[] = [
   },
 
 
-    {
-    id: 8,
-    name: "Ridhima Srivastava",
-    roles: ["General Secratory", "Unnati"],
-    categories: ["General Secratory"],
-    image: "/ourTeam/coreMembers/Ridhima.jpeg",    shortBio: "Leads Unnati and core club initiatives.",
+  
+  {
+    id: 5,
+    name: "Tushar Sharma",
+     roles: ["Vice President", "Code-e-phobia"],
+    categories: ["Vice President"],
+    image: "/ourTeam/coreMembers/Tushar.jpg",    
+    shortBio: "Leads Code-e-phobia and core club initiatives.",
     longBio:[
-      { text: "Ridhima serves as the General Secratory of Unnati, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+      { text: "Tushar Sharma serves as the Vice President of Code-e-phobia, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
-    linkedin: "https://www.linkedin.com/in/ridhima-srivastava-3740b4314",
+    linkedin: "https://www.linkedin.com/in/tushar-sharma-009860359",
   },
-
-
-
-   {
-    id: 9,
-    name: "Puspendra",
-    roles: ["President", "Gizmo"],
-    categories: ["President"],
-    image: "/ourTeam/coreMembers/Pyush.jpg",    shortBio: "Leads Gizmo and core club initiatives.",
-    longBio:[
-      { text: "Puspendra serves as the President of Gizmo, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
-    whatsApp: "wa.me/+910000000000",
-    linkedin: "https://linkedin.com/in/username",
-  },
-
 
 
   {
-    id: 10,
-    name: "Vaibhav Jain",
-     roles: ["Vice President", "Gizmo"],
+    id: 15,
+    name: "Utkarsh Saxena",
+     roles: ["Vice President", "Code-e-phobia"],
     categories: ["Vice President"],
-    image: "/ourTeam/coreMembers/Vaibhav jain.jpg",    shortBio: "Leads Gizmo and core club initiatives.",
+    image: "/ourTeam/coreMembers/Utkarsh.jpg",    shortBio: "Leads Code-e-phobia and core club initiatives.",
     longBio:[
-      { text: "Vaibhav Jain serves as the Vice President of Gizmo, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+      { text: "Utkarsh Saxena serves as the Vice President of Code-e-phobia, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
-    linkedin: "https://www.linkedin.com/in/vaibhav-jain-0aa1a1383",
+    linkedin: "https://www.linkedin.com/in/utkarsh-saxena-3b0314222",
   },
-
 
   {
     id: 11,
@@ -227,28 +249,41 @@ export const members: Member[] = [
   },
 
   {
-    id: 12,
-    name: "Mukul",
-     roles: ["President", "Mindboggler"],
-    categories: ["President"],
-    image: "/ourTeam/coreMembers/Mukul.jpg",    shortBio: "Leads Mindboggler and core club initiatives.",
+    id: 16,
+    name: "Samriddhi Gaur",
+     roles: ["General Secratory", "Code-e-phobia"],
+    categories: ["General Secratory"],
+    image: "/ourTeam/coreMembers/Samriddhi Gaur.jpg",    shortBio: "Leads Code-e-phobia and core club initiatives.",
     longBio:[
-      { text: "Mukul serves as the President of Mindboggler, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+      { text: "I am the GS of Code-e-Phobia, where I manage our club's activities and keep everyone connected. My goal is to create a great environment for coding, teamwork, and new ideas."}],
     whatsApp: "wa.me/+910000000000",
-    linkedin: "https://linkedin.com/in/username",
+    linkedin: "https://www.linkedin.com/in/samriddhi-gaur-775bb8358",
   },
 
 
   {
-    id: 13,
-    name: "Vikram Singh",
-     roles: ["Vice President", "Mindboggler"],
-    categories: ["Vice President"],
-    image: "/ourTeam/coreMembers/Vikram Singh.jpg",    shortBio: "Leads Mindboggler and core club initiatives.",
+    id: 8,
+    name: "Ridhima Srivastava",
+    roles: ["General Secratory", "Unnati"],
+    categories: ["General Secratory"],
+    image: "/ourTeam/coreMembers/Ridhima.jpeg",    shortBio: "Leads Unnati and core club initiatives.",
     longBio:[
-      { text: "Vikram Singh serves as the Vice President of Mindboggler, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+      { text: "Ridhima serves as the General Secratory of Unnati, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
-    linkedin: "https://www.linkedin.com/in/vikram-singh-b8a0631b8",
+    linkedin: "https://www.linkedin.com/in/ridhima-srivastava-3740b4314",
+  },
+
+
+   {
+    id: 6,
+    name: "Utkarsh Singhal",
+     roles: ["General Secratory", "Code-e-phobia"],
+    categories: ["General Secratory"],
+    image: "/ourTeam/coreMembers/Utkarsh.jpeg",    shortBio: "Leads Code-e-phobia and core club initiatives.",
+    longBio:[
+      { text: "Utkarsh Singhal serves as the General Secratory of Code-e-phobia, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+    whatsApp: "wa.me/+910000000000",
+    linkedin: "https://www.linkedin.com/in/utkarsh-singhal-b89b55343",
   },
 
   {
@@ -263,32 +298,60 @@ export const members: Member[] = [
     linkedin: "https://www.linkedin.com/in/tushar-sharma-009860359",
   },
 
-  
-   {
-    id: 15,
-    name: "Utkarsh Saxena",
-     roles: ["Vice President", "Code-e-phobia"],
-    categories: ["Vice President"],
-    image: "/ourTeam/coreMembers/Utkarsh.jpg",    shortBio: "Leads Code-e-phobia and core club initiatives.",
+
+
+
+  // Core Members
+
+  {
+    id: 20,
+    name: "Anshi",
+     roles: ["Core Member"],
+    categories: ["core-member"],
+   image: "/ourTeam/coreMembers/user3.jpg",    shortBio: "Core Member of Techtronica Society.",
     longBio:[
-      { text: "Utkarsh Saxena serves as the Vice President of Code-e-phobia, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+      { text: "Anshi serves is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
-    linkedin: "https://www.linkedin.com/in/utkarsh-saxena-3b0314222",
+    linkedin: "https://www.linkedin.com/in/anshi-agrawal-9554ba329",
+  },
+
+  {
+    id: 32,
+    name: "Ayushman",
+    roles: ["Core Member"],
+    categories: ["core-member"],
+    image: "/ourTeam/coreMembers/user4.jpg",    shortBio: "Core Member of Techtronica Society.",
+    longBio:[
+      { text: "Ayushman is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+    whatsApp: "wa.me/+910000000000",
+    linkedin: "https://www.linkedin.com/in/",
   },
 
 
   {
-    id: 16,
-    name: "Samriddhi Gaur",
-     roles: ["General Secratory", "Code-e-phobia"],
-    categories: ["General Secratory"],
-    image: "/ourTeam/coreMembers/Samriddhi Gaur.jpg",    shortBio: "Leads Code-e-phobia and core club initiatives.",
+    id: 33,
+    name: "Ayushman Mishra",
+    roles: ["Core Member"],
+    categories: ["core-member"],
+   image: "/ourTeam/coreMembers/Ayushman Mishra.jpg",    shortBio: "Core Member of Techtronica Society.",
     longBio:[
-      { text: "I am the GS of Code-e-Phobia, where I manage our club's activities and keep everyone connected. My goal is to create a great environment for coding, teamwork, and new ideas."}],
+      { text: "Ayushman Mishra is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
-    linkedin: "https://www.linkedin.com/in/samriddhi-gaur-775bb8358",
+    linkedin: "https://www.linkedin.com/in/ayushman-mishra-a45676309",
   },
 
+
+  {
+    id: 21,
+    name: "Gargi pal",
+     roles: ["Core"],
+    categories: ["core-member"],
+    image: "/ourTeam/coreMembers/Gargi pal.jpg",    shortBio: "Core Member of Techtronica Society.",
+    longBio:[
+      { text: "Gargi Pal is a Core Member of Techtronica Society, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+    whatsApp: "wa.me/+910000000000",
+    linkedin: "https://www.linkedin.com/in/gargi-pal-366112349",
+  },
 
   {
     id: 17,
@@ -304,18 +367,6 @@ export const members: Member[] = [
   },
 
   {
-    id: 18,
-    name: "Stuti Shukla",
-     roles: ["Core Member"],
-    categories: ["core-member"],
-    image: "/ourTeam/coreMembers/Stuti Shukla.jpg",    shortBio: "Core Member of Techtronica Society.",
-    longBio:[
-      { text: "Stuti Shukla is a Core Member of Techtronica Society, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
-    whatsApp: "wa.me/+910000000000",
-    linkedin: "https://www.linkedin.com/in/stuti-shukla17",
-  },
-
-  {
     id: 19,
     name: "Muskan Singh",
      roles: ["Core Member"],
@@ -328,39 +379,15 @@ export const members: Member[] = [
   },
 
    {
-    id: 20,
-    name: "Anshi",
+    id: 18,
+    name: "Stuti Shukla",
      roles: ["Core Member"],
     categories: ["core-member"],
-   image: "/ourTeam/coreMembers/user3.jpg",    shortBio: "Core Member of Techtronica Society.",
+    image: "/ourTeam/coreMembers/Stuti Shukla.jpg",    shortBio: "Core Member of Techtronica Society.",
     longBio:[
-      { text: "Anshi serves is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+      { text: "Stuti Shukla is a Core Member of Techtronica Society, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
-    linkedin: "https://www.linkedin.com/in/anshi-agrawal-9554ba329",
-  },
-
-  {
-    id: 21,
-    name: "Gargi pal",
-     roles: ["Core"],
-    categories: ["core-member"],
-    image: "/ourTeam/coreMembers/Gargi pal.jpg",    shortBio: "Core Member of Techtronica Society.",
-    longBio:[
-      { text: "Gargi Pal is a Core Member of Techtronica Society, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
-    whatsApp: "wa.me/+910000000000",
-    linkedin: "https://www.linkedin.com/in/gargi-pal-366112349",
-  },
-
-  {
-    id: 22,
-    name: "Vinayak Mishra",
-     roles: ["Core Member"],
-    categories: ["core-member"],
-    image: "/ourTeam/coreMembers/Vinayak Mishra.jpg",    shortBio: "Core Member of Techtronica Society.",
-    longBio:[
-      { text: "Vinayak Mishra is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
-    whatsApp: "wa.me/+910000000000",
-    linkedin: "https://www.linkedin.com/in/vinayak-mishra-b31a72298",
+    linkedin: "https://www.linkedin.com/in/stuti-shukla17",
   },
 
   {
@@ -375,32 +402,22 @@ export const members: Member[] = [
     linkedin: "https://www.linkedin.com/in/tarun-kumar-338aa7341",
   },
 
+
    {
-    id: 24,
-    name: "Nitin Singh",
+    id: 22,
+    name: "Vinayak Mishra",
      roles: ["Core Member"],
     categories: ["core-member"],
-    image: "/ourTeam/coreMembers/Nitin Singh.jpg",    shortBio: "Core Member of Techtronica Society.",
+    image: "/ourTeam/coreMembers/Vinayak Mishra.jpg",    shortBio: "Core Member of Techtronica Society.",
     longBio:[
-      { text: "Nitin Singh is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+      { text: "Vinayak Mishra is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
-    linkedin: "https://www.linkedin.com/in/nitin-singh-60895737b",
+    linkedin: "https://www.linkedin.com/in/vinayak-mishra-b31a72298",
   },
 
+  // first year core members
 
   {
-    id: 25,
-    name: "Bhumika",
-     roles: ["Core Member"],
-    categories: ["core-member"],
-    image: "/ourTeam/coreMembers/Bhumika kumari.jpg",    shortBio: "Core Member of Techtronica Society.",
-    longBio:[
-      { text: "Bhumika is a Core Member of Techtronica Society, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
-    whatsApp: "wa.me/+910000000000",
-    linkedin: "https://www.linkedin.com/in/bhumika-kumari-4a6050386",
-  },
-
-   {
     id: 26,
     name: "Adamya Vishwas Sharma",
     roles: ["Core Member"],
@@ -412,19 +429,6 @@ export const members: Member[] = [
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://linkedin.com/in/username",
   },
-
-  {
-    id: 27,
-    name: "Narayan",
-     roles: ["Core Member"],
-    categories: ["core-member"],
-    image: "/ourTeam/coreMembers/Narayan.jpg",    shortBio: "Core Member of Techtronica Society.",
-    longBio:[
-      { text: "Narayan is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
-    whatsApp: "wa.me/+910000000000",
-    linkedin: "https://linkedin.com/in/username",
-  },
-
 
   {
     id: 28,
@@ -439,6 +443,8 @@ export const members: Member[] = [
     linkedin: "https://www.linkedin.com/in/aman-saraswat-22b685309",
   },
 
+  
+
 
   {
     id: 29,
@@ -452,239 +458,57 @@ export const members: Member[] = [
     linkedin: "https://www.linkedin.com/in/anurag-sharma-756a713a1",
   },
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
   
 
- 
-
-
-
   
-
-
-
-
-  
-
-
-
-
-   
-
 
    {
-    id: 31,
-    name: "Ankit Rawat",
-     roles: ["Design Team"],
-    categories: ["Design Team"],
-    image: "/ourTeam/coreMembers/ankit rawat.jpeg",    
-    shortBio: "Design Head of Techtronica Society.",
-    longBio:[
-      { text: "I’m Ankit Rawat, the Design and Media Head at Techtronica. I believe that every great tech innovation needs a great story. My mission is to translate complex technical concepts into stunning visuals that inspire and engage our college community."}],
-    whatsApp: "wa.me/+910000000000",
-    linkedin: "https://www.linkedin.com/in/ankit-rawat-25b3b3278",
-  },
-
-
-
-  
-
-
- 
-
-   
-
-
-
-  
-
-
-
-   
-
-
-
-   {
-    id: 32,
-    name: "Ayushman",
-    roles: ["Core Member"],
-    categories: ["core-member"],
-    image: "/ourTeam/coreMembers/user4.jpg",    shortBio: "Core Member of Techtronica Society.",
-    longBio:[
-      { text: "Ayushman is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
-    whatsApp: "wa.me/+910000000000",
-    linkedin: "https://www.linkedin.com/in/",
-  },
-
-
-
-   {
-    id: 33,
-    name: "Ayushman Mishra",
-    roles: ["Core Member"],
-    categories: ["core-member"],
-   image: "/ourTeam/coreMembers/Ayushman Mishra.jpg",    shortBio: "Core Member of Techtronica Society.",
-    longBio:[
-      { text: "Ayushman Mishra is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
-    whatsApp: "wa.me/+910000000000",
-    linkedin: "https://www.linkedin.com/in/ayushman-mishra-a45676309",
-  },
-
-
-
-   {
-    id: 34,
-    name: "Ayushi Ricchariya",
+    id: 25,
+    name: "Bhumika",
      roles: ["Core Member"],
     categories: ["core-member"],
-    image: "/ourTeam/coreMembers/ayushi.jpeg",    
-    shortBio: "Core Member of Techtronica Society.",
+    image: "/ourTeam/coreMembers/Bhumika kumari.jpg",    shortBio: "Core Member of Techtronica Society.",
     longBio:[
-      { text: "Ayushi Ricchariya is a Core Member of Techtronica Society, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+      { text: "Bhumika is a Core Member of Techtronica Society, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
-    linkedin: "https://www.linkedin.com/in/ayushi-richhariya-96a268306",
+    linkedin: "https://www.linkedin.com/in/bhumika-kumari-4a6050386",
   },
 
 
-
-
-   
-
-
-
-  
-
-
-   
-
-
-   
-
-
-  //  {
-  //   id: 35,
-  //   name: "Dheeraj Rajput",
-  //    roles: ["Core Member"],
-  //   categories: ["core-member"],
-  //  image: "/ourTeam/coreMembers/designAndMediaHead.jpg",    shortBio: "Core Member of Techtronica Society.",
-  //   longBio:
-  //     "Dheeraj Rajput is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth.",
-  //   whatsApp: "wa.me/+910000000000",
-  //   linkedin: "https://www.linkedin.com/in/dheeraj-rajput-62ab03285",
-  // },
-
-
-
-   
-
-
-
- 
-
-   
-
-
-
-   
-
-
-   
-
-
-   
-
-
-
-   
-
-   
-
-
-
-   
-
-
-
-   
-
-
-  
-
   
 
 
 
- 
+  
+  
+
+  
+  {
+    id: 27,
+    name: "Narayan",
+     roles: ["Core Member"],
+    categories: ["core-member"],
+    image: "/ourTeam/coreMembers/Narayan.jpg",    shortBio: "Core Member of Techtronica Society.",
+    longBio:[
+      { text: "Narayan is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+    whatsApp: "wa.me/+910000000000",
+    linkedin: "https://linkedin.com/in/username",
+  },
+
+  {
+    id: 24,
+    name: "Nitin Singh",
+     roles: ["Core Member"],
+    categories: ["core-member"],
+    image: "/ourTeam/coreMembers/Nitin Singh.jpg",    shortBio: "Core Member of Techtronica Society.",
+    longBio:[
+      { text: "Nitin Singh is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+    whatsApp: "wa.me/+910000000000",
+    linkedin: "https://www.linkedin.com/in/nitin-singh-60895737b",
+  },
 
 
-
-
-   
-
-
-
-
-   
-
-
-   
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-
-
-   
-
-
-
-   
-
-
-
-   {
+  {
     id: 36,
     name: "Vaibhav kaushik",
      roles: ["Core Member"],
@@ -699,29 +523,26 @@ export const members: Member[] = [
 
 
 
+  // gmc members
 
 
 
 
+   
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   {
+    id: 34,
+    name: "Ayushi Ricchariya",
+     roles: ["GMC"],
+    categories: ["GMC"],
+    image: "/ourTeam/coreMembers/ayushi.jpeg",    
+    shortBio: "General member council of Techtronica Society.",
+    longBio:[
+      { text: "Ayushi Ricchariya is a General member council of Techtronica Society, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+    whatsApp: "wa.me/+910000000000",
+    linkedin: "https://www.linkedin.com/in/ayushi-richhariya-96a268306",
+  },
 
 
 
