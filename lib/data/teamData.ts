@@ -12,6 +12,7 @@ export type MemberCategory =
 
   export type BioParagraph = {
   text: string;
+  
   bold?: boolean;
 };
 
@@ -212,12 +213,12 @@ export const members: Member[] = [
   {
     id: 5,
     name: "Tushar Sharma",
-     roles: ["Vice President", "Code-e-phobia"],
+     roles: ["Vice President", "Technovation"],
     categories: ["Vice President"],
     image: "/ourTeam/coreMembers/Tushar.jpg",    
-    shortBio: "Leads Code-e-phobia and core club initiatives.",
+    shortBio: "Leads Technovation and core club initiatives.",
     longBio:[
-      { text: "Tushar Sharma serves as the Vice President of Code-e-phobia, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+      { text: "Tushar Sharma serves as the Vice President of Technovation, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/tushar-sharma-009860359",
   },
@@ -277,11 +278,11 @@ export const members: Member[] = [
    {
     id: 6,
     name: "Utkarsh Singhal",
-     roles: ["General Secratory", "Code-e-phobia"],
+     roles: ["General Secratory", "Technovation"],
     categories: ["General Secratory"],
-    image: "/ourTeam/coreMembers/Utkarsh.jpeg",    shortBio: "Leads Code-e-phobia and core club initiatives.",
+    image: "/ourTeam/coreMembers/Utkarsh.jpeg",    shortBio: "Leads Technovation and core club initiatives.",
     longBio:[
-      { text: "Utkarsh Singhal serves as the General Secratory of Code-e-phobia, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+      { text: "Utkarsh Singhal serves as the General Secratory of Technovation, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
     linkedin: "https://www.linkedin.com/in/utkarsh-singhal-b89b55343",
   },
@@ -344,7 +345,7 @@ export const members: Member[] = [
   {
     id: 21,
     name: "Gargi pal",
-     roles: ["Core"],
+     roles: ["Core Member"],
     categories: ["core-member"],
     image: "/ourTeam/coreMembers/Gargi pal.jpg",    shortBio: "Core Member of Techtronica Society.",
     longBio:[
@@ -651,7 +652,7 @@ export const members: Member[] = [
    {
     id: 34,
     name: "Ayushi Ricchariya",
-     roles: ["GMC"],
+     roles: ["General member council"],
     categories: ["GMC"],
     image: "/ourTeam/coreMembers/ayushi.jpeg",    
     shortBio: "General member council of Techtronica Society.",
