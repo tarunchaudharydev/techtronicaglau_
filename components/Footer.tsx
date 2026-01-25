@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import LastUpdated from "./features/LastUpdate";
 
 function Footer() {
   return (
@@ -204,6 +205,7 @@ function Footer() {
             <div className="relative mx-auto max-w-6xl px-4 py-8 text-[11px] text-slate-500 text-center sm:text-left">
               © {new Date().getFullYear()} Techtronica • GLA University •
               Electronics & Communication Engineering
+              <LastUpdated />
             </div>
           </div>
         </div>
