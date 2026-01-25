@@ -309,7 +309,7 @@ export const members: Member[] = [
     name: "Anshi",
      roles: ["Core Member"],
     categories: ["core-member"],
-   image: "/ourTeam/coreMembers/user3.jpg",    shortBio: "Core Member of Techtronica Society.",
+   image: "/ourTeam/coreMembers/anshi.jpeg",    shortBio: "Core Member of Techtronica Society.",
     longBio:[
       { text: "Anshi serves is a Core Member of Techtronica Society, where he leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
     whatsApp: "wa.me/+910000000000",
