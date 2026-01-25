@@ -39,7 +39,7 @@ export const members: Member[] = [
     name: "Abhishek Sharma",
     roles: ["President", "Techtronica Society"],
     categories: ["President"],
-    image: "/ourTeam/coreMembers/Abhishek Sharma.jpg",
+    image: "/ourTeam/coreMembers/abhisheksir.jpeg",
     shortBio: "President of Techtronica Society.",
     longBio: [
       { text: "I currently lead Techtronica ( Group of 5 Clubs), the technical society of ECE at GLA University, where I focus on building an environment that encourages hands-on learning, innovation, and student-driven growth in core domains like VLSI, Embedded Systems, and AI/ML.", bold: false },
