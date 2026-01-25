@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { events } from "@/lib/data/upcomingEvents";
 import EventCountdown from "@/components/events/EventCountdown";
 import EventGallery from "@/components/events/EventGallery";
+import RegisterButton from "@/components/events/RegisterButton";
 
 import { FiArrowLeft, FiCalendar, FiClock, FiMapPin } from "react-icons/fi";
 
@@ -32,9 +33,8 @@ export default async function EventDetailPage({ params }: PageProps) {
       </div>
 
       <section className="max-w-6xl mx-auto grid lg:grid-cols-[380px_1fr] gap-8">
-        {/* LEFT COLUMN */}
+        {/* LEFT */}
         <aside className="space-y-6">
-          {/* Poster */}
           <div className="rounded-2xl overflow-hidden shadow-lg">
             <Image
               src={event.coverImage}
@@ -46,16 +46,15 @@ export default async function EventDetailPage({ params }: PageProps) {
             />
           </div>
 
-          {/* Host */}
           <div className="rounded-xl bg-white p-4 shadow-sm">
             <p className="text-xs text-slate-500 mb-2">Hosted By</p>
             <p className="font-semibold text-slate-800">{event.club}</p>
           </div>
         </aside>
 
-        {/* RIGHT COLUMN */}
+        {/* RIGHT */}
         <div className="space-y-6">
-          {/* Title Section */}
+          {/* Title */}
           <div>
             <h1 className="text-3xl md:text-4xl font-bold text-emerald-900 mb-3">
               {event.title}
@@ -63,16 +62,13 @@ export default async function EventDetailPage({ params }: PageProps) {
 
             <div className="space-y-2 text-sm text-emerald-900/80">
               <p className="flex items-center gap-2">
-                <FiCalendar />
-                {event.date}
+                <FiCalendar /> {event.date}
               </p>
               <p className="flex items-center gap-2">
-                <FiClock />
-                {event.time}
+                <FiClock /> {event.time}
               </p>
               <p className="flex items-center gap-2">
-                <FiMapPin />
-                {event.location}
+                <FiMapPin /> {event.location}
               </p>
             </div>
           </div>
@@ -88,19 +84,11 @@ export default async function EventDetailPage({ params }: PageProps) {
                 <EventCountdown deadline={event.registrationDeadline} />
               )}
 
-              {/* <p className="text-sm text-slate-600">
-                The join button will be shown when the event is about to start.
-              </p> */}
-
               <div className="flex flex-wrap gap-3">
-                <a
-                  href={event.registrationLink}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="rounded-full bg-emerald-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-emerald-700 transition"
-                >
-                  Register / Join
-                </a>
+                <RegisterButton
+                  registrationLink={event.registrationLink}
+                  registrationDeadline={event.registrationDeadline}
+                />
 
                 <button className="rounded-full border border-emerald-200 px-5 py-2.5 text-sm font-medium text-emerald-700 hover:bg-emerald-50">
                   Add to Calendar
@@ -118,7 +106,7 @@ export default async function EventDetailPage({ params }: PageProps) {
             ))}
           </div>
 
-          {/* PAST EVENT CONTENT */}
+          {/* PAST EVENT */}
           {!isUpcoming && (
             <div className="space-y-6">
               {event.outcome && (
