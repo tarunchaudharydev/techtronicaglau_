@@ -99,6 +99,16 @@ export const notes: Note[] = [
     pdfUrl: "/notes/micro.pdf",
   },
 
+  {
+    id: "digitalelectronics",
+    title: "Digital Electronics",
+    subject: "Electronics",
+    category: "Notes",
+    year: "2nd Year",
+    slug: "digital-electronics",
+    pdfUrl: "/notes/digitalelectronics.pdf",
+  },
+
 
 
 ];
