@@ -3,11 +3,11 @@
 import { MessageCircle } from "lucide-react";
 
 export default function WhatsAppFloat() {
-  const whatsappNumber = "916398551317"; // country code + number
+  const whatsappNumber = "+918006420039"; // country code + number
   const defaultMessage = "Hello Techtronica Team! I would like to connect.";
 
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-    defaultMessage
+    defaultMessage,
   )}`;
 
   return (
