@@ -24,8 +24,8 @@ export default function Projects() {
   // 📅 Expected Launch: 25 Jan (current year)
   const launchDate = new Date(
     new Date().getFullYear(),
-    0, // January (0-based)
-    28,
+    1, // January (0-based)
+    2,
     0,
     0,
     0,
@@ -69,7 +69,7 @@ export default function Projects() {
         {/* Launch Date */}
         <p className="mt-4 text-sm font-medium text-slate-700">
           Expected Launch:{" "}
-          <span className="font-semibold text-slate-900">28 January</span>
+          <span className="font-semibold text-slate-900">2 February</span>
         </p>
 
         {/* Countdown */}
