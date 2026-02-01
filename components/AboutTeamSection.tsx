@@ -39,6 +39,9 @@ const colorVariants = [
   },
 ];
 
+const mentors = members.filter((m) => m.roleType === "mentor");
+const teamMembers = members.filter((m) => m.roleType === "team");
+
 export default function AboutTeamSection() {
   const [selected, setSelected] = useState<{
     member: Member;
@@ -47,6 +50,50 @@ export default function AboutTeamSection() {
 
   return (
     <section className="py-20 bg-gradient-to-br from-sky-50 via-cyan-50 to-blue-50">
+      {/* Mentors */}
+      <div className="mb-20">
+        <h3 className="text-2xl font-semibold text-gray-900 text-center mb-10">
+          Our Mentors
+        </h3>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          {mentors.map((m, index) => {
+            const color = colorVariants[index % colorVariants.length];
+
+            return (
+              <button
+                key={m.id}
+                onClick={() => setSelected({ member: m, colorIndex: index })}
+                className={`group p-6 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all text-center ${color.card}`}
+              >
+                <div className="relative w-32 h-32 mx-auto rounded-full overflow-hidden mb-4">
+                  <Image
+                    src={m.image}
+                    alt={m.name}
+                    fill
+                    className="object-cover group-hover:scale-105 transition"
+                  />
+                </div>
+
+                <h3 className="font-semibold text-gray-900 text-lg">
+                  {m.name}
+                </h3>
+
+                <p className={`text-sm mt-1 font-medium ${color.role}`}>
+                  {m.roles.join(" • ")}
+                </p>
+
+                <p className="text-xs text-gray-600 mt-2">{m.shortBio}</p>
+
+                <span className="mt-3 inline-block text-xs font-medium text-gray-700">
+                  View profile →
+                </span>
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
       <div className="mx-auto max-w-6xl px-6">
         {/* Heading */}
         <div className="text-center mb-14">

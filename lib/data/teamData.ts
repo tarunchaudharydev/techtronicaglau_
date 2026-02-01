@@ -16,17 +16,32 @@ export type MemberCategory =
   bold?: boolean;
 };
 
+// export interface Member {
+//   categories: MemberCategory[];
+//   id: number;
+//   name: string;
+//   roles: string[];
+//   image: string;
+//   shortBio: string;
+//   longBio: BioParagraph[];
+//   linkedin?: string;
+//   whatsApp?: string;
+// }
+
+
 export interface Member {
-  categories: MemberCategory[];
   id: number;
   name: string;
-  roles: string[];
   image: string;
+  roles: string[];
   shortBio: string;
   longBio: BioParagraph[];
+  categories: string[];
   linkedin?: string;
   whatsApp?: string;
+  roleType: "mentor" | "team";
 }
+
 
 export const members: Member[] = [
 
@@ -37,6 +52,7 @@ export const members: Member[] = [
    {
     id: 30,
     name: "Abhishek Sharma",
+    roleType: "team",
     roles: ["President", "Techtronica Society"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/abhisheksir.jpeg",
@@ -70,6 +86,7 @@ export const members: Member[] = [
   {
     id: 2,
     name: "Astitva",
+    roleType: "team",
     roles: ["Vice President", "Unnati"],
     categories: ["Vice President"],
     image: "/ourTeam/coreMembers/Astitva.jpg",    
@@ -85,6 +102,7 @@ export const members: Member[] = [
    {
     id: 1,
     name: "Dheeraj Rajput",
+    roleType: "team",
     roles: ["Vice President", "Techtronica Society, Code-e-phobia"],
     categories: ["Vice President"],
     image: "/ourTeam/coreMembers/Dheeraj Rajput.jpg",
@@ -105,6 +123,7 @@ export const members: Member[] = [
    {
     id: 4,
     name: "Brijesh Maurya",
+    roleType: "team",
      roles: ["President", "Technovation"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/Brijesh.jpg",    
@@ -120,6 +139,7 @@ export const members: Member[] = [
   {
     id: 9,
     name: "Puspendra",
+    roleType: "team",
     roles: ["President", "Gizmo"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/Pyush.jpg",    shortBio: "Leads Gizmo and core club initiatives.",
@@ -133,6 +153,7 @@ export const members: Member[] = [
   {
     id: 12,
     name: "Mukul",
+    roleType: "team",
      roles: ["President", "Mindboggler"],
     categories: ["President"],
     image: "/ourTeam/coreMembers/Mukul.jpg",    shortBio: "Leads Mindboggler and core club initiatives.",
@@ -148,6 +169,7 @@ export const members: Member[] = [
   {
     id: 3,
     name: "Harshit Tiwari",
+    roleType: "team",
      roles: ["General Secratory", "Techtronica Society"],
     categories: ["General Secratory"],
    image: "/ourTeam/coreMembers/Harsh.jpg",    
@@ -162,6 +184,7 @@ export const members: Member[] = [
   {
     id: 31,
     name: "Ankit Rawat",
+    roleType: "team",
      roles: ["Design Team"],
     categories: ["Design Team"],
     image: "/ourTeam/coreMembers/ankit rawat.jpeg",    
@@ -175,6 +198,7 @@ export const members: Member[] = [
    {
     id: 10,
     name: "Vaibhav Jain",
+    roleType: "team",
      roles: ["Vice President", "Gizmo"],
     categories: ["Vice President"],
     image: "/ourTeam/coreMembers/Vaibhav jain.jpg",    shortBio: "Leads Gizmo and core club initiatives.",
@@ -187,6 +211,7 @@ export const members: Member[] = [
   {
     id: 13,
     name: "Vikram Singh",
+    roleType: "team",
      roles: ["Vice President", "Mindboggler"],
     categories: ["Vice President"],
     image: "/ourTeam/coreMembers/Vikram Singh.jpg",    shortBio: "Leads Mindboggler and core club initiatives.",
@@ -199,6 +224,7 @@ export const members: Member[] = [
   {
     id: 7,
     name: "Nandini Agarwal",
+    roleType: "team",
      roles: ["Vice President", "Unnati"],
     categories: ["Vice President"],
     image: "/ourTeam/coreMembers/Nandini.jpg",    shortBio: "Leads Unnati and core club initiatives.",
@@ -213,6 +239,7 @@ export const members: Member[] = [
   {
     id: 5,
     name: "Tushar Sharma",
+    roleType: "team",
      roles: ["Vice President", "Technovation"],
     categories: ["Vice President"],
     image: "/ourTeam/coreMembers/Tushar.jpg",    
@@ -227,6 +254,7 @@ export const members: Member[] = [
   {
     id: 15,
     name: "Utkarsh Saxena",
+    roleType: "team",
      roles: ["Vice President", "Code-e-phobia"],
     categories: ["Vice President"],
     image: "/ourTeam/coreMembers/Utkarsh.jpg",    shortBio: "Leads Code-e-phobia and core club initiatives.",
@@ -239,6 +267,7 @@ export const members: Member[] = [
   {
     id: 11,
     name: "Avantika",
+    roleType: "team",
     roles: ["General Secratory", "Gizmo"],
     categories: ["General Secratory"],
    image: "/clubs/gizmo/team/GS.jpeg",
@@ -252,6 +281,7 @@ export const members: Member[] = [
   {
     id: 16,
     name: "Samriddhi Gaur",
+    roleType: "team",
      roles: ["General Secratory", "Code-e-phobia"],
     categories: ["General Secratory"],
     image: "/ourTeam/coreMembers/Samriddhi Gaur.jpg",    shortBio: "Leads Code-e-phobia and core club initiatives.",
@@ -265,6 +295,7 @@ export const members: Member[] = [
   {
     id: 8,
     name: "Ridhima Srivastava",
+    roleType: "team",
     roles: ["General Secratory", "Unnati"],
     categories: ["General Secratory"],
     image: "/ourTeam/coreMembers/Ridhima.jpeg",    shortBio: "Leads Unnati and core club initiatives.",
@@ -278,6 +309,7 @@ export const members: Member[] = [
    {
     id: 6,
     name: "Utkarsh Singhal",
+    roleType: "team",
      roles: ["General Secratory", "Technovation"],
     categories: ["General Secratory"],
     image: "/ourTeam/coreMembers/Utkarsh.jpeg",    shortBio: "Leads Technovation and core club initiatives.",
@@ -290,6 +322,7 @@ export const members: Member[] = [
   {
     id: 14,
     name: "Harshit Ramrakhiyani",
+    roleType: "team",
      roles: ["General Secratory", "Mindboggler"],
     categories: ["General Secratory"],
     image: "/ourTeam/coreMembers/harshit ramrakhyani.jpg",    shortBio: "Leads Mindboggler and core club initiatives.",
@@ -308,6 +341,7 @@ export const members: Member[] = [
     id: 20,
     name: "Anshi",
      roles: ["Core Member"],
+     roleType: "team",
     categories: ["core-member"],
    image: "/ourTeam/coreMembers/anshi.jpeg",    shortBio: "Core Member of Techtronica Society.",
     longBio:[
@@ -319,6 +353,7 @@ export const members: Member[] = [
   {
     id: 32,
     name: "Ayushman",
+    roleType: "team",
     roles: ["Core Member"],
     categories: ["core-member"],
     image: "/ourTeam/coreMembers/user4.jpg",    shortBio: "Core Member of Techtronica Society.",
@@ -332,6 +367,7 @@ export const members: Member[] = [
   {
     id: 33,
     name: "Ayushman Mishra",
+    roleType: "team",
     roles: ["Core Member"],
     categories: ["core-member"],
    image: "/ourTeam/coreMembers/Ayushman Mishra.jpg",    shortBio: "Core Member of Techtronica Society.",
@@ -345,6 +381,7 @@ export const members: Member[] = [
   {
     id: 21,
     name: "Gargi pal",
+    roleType: "team",
      roles: ["Core Member"],
     categories: ["core-member"],
     image: "/ourTeam/coreMembers/Gargi pal.jpg",    shortBio: "Core Member of Techtronica Society.",
@@ -357,6 +394,7 @@ export const members: Member[] = [
   {
     id: 17,
     name: "Jeet Sinha",
+    roleType: "team",
      roles: ["Core Member"],
     categories: ["core-member"],
     image: "/ourTeam/coreMembers/Jeet Sinha.jpg",    
@@ -370,6 +408,7 @@ export const members: Member[] = [
   {
     id: 19,
     name: "Muskan Singh",
+    roleType: "team",
      roles: ["Core Member"],
     categories: ["core-member"],
     image: "/ourTeam/coreMembers/Muskan.jpg",    shortBio: "Core Member of Techtronica Society.",
@@ -381,7 +420,8 @@ export const members: Member[] = [
 
    {
     id: 18,
-    name: "Stuti Shukla",
+    name: "Stuti Shukla", 
+    roleType: "team",
      roles: ["Core Member"],
     categories: ["core-member"],
     image: "/ourTeam/coreMembers/Stuti Shukla.jpg",    shortBio: "Core Member of Techtronica Society.",
@@ -394,6 +434,7 @@ export const members: Member[] = [
   {
     id: 23,
     name: "Tarun",
+    roleType: "team",
      roles: ["Core Member"],
     categories: ["core-member"],
     image: "/ourTeam/coreMembers/user11.jpg",    shortBio: "Core Member of Techtronica Society.",
@@ -407,6 +448,7 @@ export const members: Member[] = [
    {
     id: 22,
     name: "Vinayak Mishra",
+    roleType: "team",
      roles: ["Core Member"],
     categories: ["core-member"],
     image: "/ourTeam/coreMembers/Vinayak Mishra.jpg",    shortBio: "Core Member of Techtronica Society.",
@@ -421,6 +463,7 @@ export const members: Member[] = [
   {
     id: 26,
     name: "Adamya Vishwas Sharma",
+    roleType: "team",
     roles: ["Core Member"],
     categories: ["core-member"],
     image: "/ourTeam/coreMembers/Adamya Vishwas sharma.jpg",
@@ -434,6 +477,7 @@ export const members: Member[] = [
   {
     id: 28,
     name: "Aman Saraswat",
+    roleType: "team",
      roles: ["Core Member"],
     categories: ["core-member"],
     image: "/ourTeam/coreMembers/AMAN SARASHWAT.jpg",    
@@ -450,6 +494,7 @@ export const members: Member[] = [
   {
     id: 29,
     name: "Anurag Sharma",
+    roleType: "team",
     roles: [ "Core Member"],
     categories: ["core-member"],
     image: "/ourTeam/coreMembers/Anurag sharma.jpg",    shortBio: "Core Member of Techtronica Society.",
@@ -466,6 +511,7 @@ export const members: Member[] = [
    {
     id: 25,
     name: "Bhumika",
+    roleType: "team",
      roles: ["Core Member"],
     categories: ["core-member"],
     image: "/ourTeam/coreMembers/Bhumika kumari.jpg",    shortBio: "Core Member of Techtronica Society.",
@@ -487,6 +533,7 @@ export const members: Member[] = [
   {
     id: 27,
     name: "Narayan",
+    roleType: "team",
      roles: ["Core Member"],
     categories: ["core-member"],
     image: "/ourTeam/coreMembers/Narayan.jpg",    shortBio: "Core Member of Techtronica Society.",
@@ -499,6 +546,7 @@ export const members: Member[] = [
   {
     id: 24,
     name: "Nitin Singh",
+    roleType: "team",
      roles: ["Core Member"],
     categories: ["core-member"],
     image: "/ourTeam/coreMembers/Nitin Singh.jpg",    shortBio: "Core Member of Techtronica Society.",
@@ -512,6 +560,7 @@ export const members: Member[] = [
   {
     id: 36,
     name: "Vaibhav kaushik",
+    roleType: "team",
      roles: ["Core Member"],
     categories: ["core-member"],
    image: "/ourTeam/coreMembers/Vaibhav kaushik.jpg",    shortBio: "Core Member of Techtronica Society.",
@@ -531,6 +580,7 @@ export const members: Member[] = [
   {
     id: 38,
     name: "Aditya Kumar",
+    roleType: "team",
     roles: ["General member council"],
     categories: ["GMC"],
     image: "/ourTeam/coreMembers/Aditya Kumar(GMC).jpg",
@@ -545,6 +595,7 @@ export const members: Member[] = [
   {
     id: 41,
     name: "Devang Shukla",
+    roleType: "team",
      roles: ["General member council"],
     categories: ["GMC"],
    image: "/ourTeam/coreMembers/Devang Shukla(GMC).jpg",    shortBio: "General member council of Techtronica Society.",
@@ -558,6 +609,7 @@ export const members: Member[] = [
   {
     id: 46,
     name: "Yogesh",
+    roleType: "team",
      roles: ["General member council"],
     categories: ["GMC"],
     image: "/ourTeam/coreMembers/Yogesh(GMC).jpg",    shortBio: "General member council of Techtronica Society.",
@@ -572,6 +624,7 @@ export const members: Member[] = [
    {
     id: 42,
     name: "HARSH SHARMA",
+    roleType: "team",
      roles: ["General member council"],
     categories: ["GMC"],
     image: "/ourTeam/coreMembers/HARSH SHARMA(GMC).jpg",    shortBio: "General member council of Techtronica Society.",
@@ -586,6 +639,7 @@ export const members: Member[] = [
   {
     id: 39,
     name: "Anshul Gupta",
+    roleType: "team",
      roles: ["General member council"],
     categories: ["GMC"],
     image: "/ourTeam/coreMembers/Anshul Gupta(GMC).jpg",    shortBio: "General member council of Techtronica Society.",
@@ -599,6 +653,7 @@ export const members: Member[] = [
   {
     id: 40,
     name: "Charvi Vijay",
+    roleType: "team",
      roles: ["General member council"],
     categories: ["GMC"],
     image: "/ourTeam/coreMembers/Charvi vijay(GMC).jpg",    shortBio: "General member council of Techtronica Society.",
@@ -613,6 +668,7 @@ export const members: Member[] = [
    {
     id: 43,
     name: "Krishna Gupta",
+    roleType: "team",
      roles: ["General member council"],
     categories: ["GMC"],
     image: "/ourTeam/coreMembers/Krishna Gupta(GMC).jpg",    shortBio: "General member council of Techtronica Society.",
@@ -625,6 +681,7 @@ export const members: Member[] = [
   {
     id: 37,
     name: "Aaditya Hridaya",
+    roleType: "team",
     roles: ["General member council"],
     categories: ["GMC"],
     image: "/ourTeam/coreMembers/user1.jpg",
@@ -638,6 +695,7 @@ export const members: Member[] = [
   {
     id: 44,
     name: "Sameeraj",
+    roleType: "team",
      roles: ["General member council"],
     categories: ["GMC"],
     image: "/ourTeam/coreMembers/user9.jpg",    shortBio: "General member council of Techtronica Society.",
@@ -652,6 +710,7 @@ export const members: Member[] = [
    {
     id: 34,
     name: "Ayushi Ricchariya",
+    roleType: "team",
      roles: ["General member council"],
     categories: ["GMC"],
     image: "/ourTeam/coreMembers/ayushi.jpeg",    
@@ -682,6 +741,7 @@ export const members: Member[] = [
   {
     id: 45,
     name: "Shourya Pratap Singh",
+    roleType: "team",
      roles: ["General member council"],
     categories: ["GMC"],
     image: "/ourTeam/coreMembers/user10.jpg",    shortBio: "General member council of Techtronica Society.",
@@ -722,4 +782,160 @@ export const members: Member[] = [
 
 
 
+
+  
+  // Mentors
+  // =======================
+  {
+    id: 100,
+    name: "Dr. Manish Kumar",
+    roleType: "mentor",
+    image: "/ourTeam/mentors/Dr. Manish Kumar.jpg",
+    roles: ["Faculty Advisor", "VLSI & Embedded Systems"],
+    shortBio:
+      "Guides students in core electronics, research methodology, and system-level thinking.",
+    longBio: [
+      {
+        text:
+          "Dr. Manish Kumar is a faculty advisor for Techtronica Society with over a decade of academic and research experience in VLSI design and embedded systems.",
+        bold: true,
+      },
+      {
+        text:
+          "He actively mentors students in translating theoretical concepts into practical projects and encourages participation in research, patents, and technical competitions.",
+      },
+    ],
+    categories: ["Electronics", "Networks", "Research", "Academics"],
+    linkedin: "https://www.linkedin.com/in/dr-manish-kumar-693787238/",
+  },
+
+  {
+    id: 101,
+    name: "Dr. Saurabh Singh",
+    roleType: "mentor",
+    image: "/ourTeam/mentors/Dr. Saurabh Singh.jpg",
+    roles: ["Industry Mentor", "IoT & Product Design"],
+    shortBio:
+      "Supports students in building real-world IoT and product-oriented solutions.",
+    longBio: [
+      {
+        text:
+          "Dr. Saurabh Singh brings industry experience in IoT product development and system integration.",
+        bold: true,
+      },
+      {
+        text:
+          "He mentors students on designing scalable solutions, documentation best practices, and bridging the gap between prototypes and deployable products.",
+      },
+    ],
+    categories: ["IoT", "Product Design", "Startups"],
+    linkedin: "",
+  },
+
+  {
+    id: 102,
+    name: "Dr. Namrita Mendiratta",
+    roleType: "mentor",
+    image: "/ourTeam/mentors/Dr. Namrita Mendiratta.jpg",
+    roles: ["Technical Mentor", "Web & Cloud"],
+    shortBio:
+      "Helps students build modern web applications and understand scalable architectures.",
+    longBio: [
+      {
+        text:
+          "Dr. Namrita Mendiratta works as a full-stack engineer and cloud consultant, guiding students in modern web technologies.",
+        bold: true,
+      },
+      {
+        text:
+          "His focus is on clean architecture, performance, and preparing students for industry-level development workflows.",
+      },
+    ],
+    categories: ["Web Development", "Cloud", "Open Source"],
+    linkedin: "",
+  },
+
+
+
+  {
+    id: 103,
+    name: "Mrs. Shweta",
+    roleType: "mentor",
+    image: "/ourTeam/mentors/Mrs. Shweta.jpg",
+    roles: ["Technical Mentor", "Web & Cloud"],
+    shortBio:
+      "Helps students build modern web applications and understand scalable architectures.",
+    longBio: [
+      {
+        text:
+          "Mrs. Shweta works as a full-stack engineer and cloud consultant, guiding students in modern web technologies.",
+        bold: true,
+      },
+      {
+        text:
+          "Her focus is on clean architecture, performance, and preparing students for industry-level development workflows.",
+      },
+    ],
+    categories: ["Web Development", "Cloud", "Open Source"],
+    linkedin: "",
+  },
+
+
+  {
+    id: 104,
+    name: "Dr. Manish Kalra",
+    roleType: "mentor",
+    image: "/ourTeam/mentors/Dr. Manish Kalra.webp",
+    roles: ["Technical Mentor", "Web & Cloud"],
+    shortBio:
+      "Helps students build modern web applications and understand scalable architectures.",
+    longBio: [
+      {
+        text:
+          "Dr. Manish Kalra works as a full-stack engineer and cloud consultant, guiding students in modern web technologies.",
+        bold: true,
+      },
+      {
+        text:
+          "Her focus is on clean architecture, performance, and preparing students for industry-level development workflows.",
+      },
+    ],
+    categories: ["Web Development", "Cloud", "Open Source"],
+    linkedin: "https://www.linkedin.com/in/manishkalra2/",
+  },
+
+  {
+    id: 105,
+    name: "Dr. Jharna Agarwal",
+    roleType: "mentor",
+    image: "/ourTeam/mentors/Dr. Jharna Agarwal.webp",
+    roles: ["Technical Mentor", "Web & Cloud"],
+    shortBio:
+      "Helps students build modern web applications and understand scalable architectures.",
+    longBio: [
+      {
+        text:
+          "Dr. Jharna Agarwal works as a full-stack engineer and cloud consultant, guiding students in modern web technologies.",
+        bold: true,
+      },
+      {
+        text:
+          "Her focus is on clean architecture, performance, and preparing students for industry-level development workflows.",
+      },
+    ],
+    categories: ["Web Development", "Cloud", "Open Source"],
+    linkedin: "",
+  },
+
+
+
+  
+
+
+
+
 ];
+
+
+
+
