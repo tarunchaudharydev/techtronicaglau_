@@ -21,11 +21,11 @@ function getTimeLeft(targetDate: Date) {
 }
 
 export default function Projects() {
-  // 📅 Expected Launch: 25 Jan (current year)
+  // 📅 Expected Launch: 5 Feb (current year)
   const launchDate = new Date(
     new Date().getFullYear(),
-    1, // January (0-based)
-    2,
+    1, // February (0-based)
+    5,
     0,
     0,
     0,
@@ -56,7 +56,7 @@ export default function Projects() {
 
         {/* Title */}
         <h1 className="mt-6 text-xl sm:text-2xl font-extrabold text-slate-900">
-          We’re building this project
+          We’re working on this page.
         </h1>
 
         {/* Description */}
@@ -69,7 +69,11 @@ export default function Projects() {
         {/* Launch Date */}
         <p className="mt-4 text-sm font-medium text-slate-700">
           Expected Launch:{" "}
-          <span className="font-semibold text-slate-900">2 February</span>
+          <span className="font-semibold text-slate-900">5 February</span>
+        </p>
+
+        <p className="mt-4 text-sm font-medium text-slate-700">
+          Sorry for the delay, we are working on it.
         </p>
 
         {/* Countdown */}
