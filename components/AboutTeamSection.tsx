@@ -94,6 +94,92 @@ export default function AboutTeamSection() {
         </div>
       </div>
 
+      {/* PROFILE MODAL */}
+      {selected &&
+        (() => {
+          const { member, colorIndex } = selected;
+          const color = colorVariants[colorIndex % colorVariants.length];
+
+          return (
+            <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center px-4">
+              <div className="bg-white rounded-3xl max-w-3xl w-full p-6 relative max-h-[90vh] overflow-y-auto">
+                {/* Close */}
+                <button
+                  onClick={() => setSelected(null)}
+                  className="absolute top-4 right-4 text-gray-500 hover:text-gray-900"
+                >
+                  ✕
+                </button>
+
+                <div className="flex flex-col md:flex-row gap-6">
+                  {/* Image */}
+                  <div className="flex-shrink-0">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      width={200}
+                      height={200}
+                      className="rounded-2xl object-cover"
+                    />
+                  </div>
+
+                  {/* Content */}
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-gray-900">
+                      {member.name}
+                    </h3>
+
+                    <p className={`text-lg font-medium mt-1 ${color.role}`}>
+                      {member.roles.join(" • ")}
+                    </p>
+
+                    <p className="text-gray-600 mt-4">{member.shortBio}</p>
+
+                    {/* Long Bio */}
+                    <div className="mt-6 space-y-4">
+                      {member.longBio.map((p, i) => (
+                        <p
+                          key={i}
+                          className={`text-gray-700 leading-relaxed ${
+                            p.bold ? "font-semibold" : ""
+                          }`}
+                        >
+                          {p.text}
+                        </p>
+                      ))}
+                    </div>
+
+                    {/* Socials */}
+                    <div className="mt-6 flex gap-3">
+                      {member.linkedin && (
+                        <a
+                          href={member.linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="p-2 rounded-full bg-blue-50 hover:bg-blue-100 text-blue-600 transition"
+                        >
+                          <Linkedin size={20} />
+                        </a>
+                      )}
+
+                      {member.whatsApp && (
+                        <a
+                          href={member.whatsApp}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="p-2 rounded-full bg-green-50 hover:bg-green-100 text-green-600 transition"
+                        >
+                          <MessageCircle size={20} />
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })()}
+
       <div className="mx-auto max-w-6xl px-6">
         {/* Heading */}
         <div className="text-center mb-14">
