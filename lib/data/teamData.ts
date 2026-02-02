@@ -786,146 +786,146 @@ export const members: Member[] = [
   
   // Mentors
   // =======================
-  {
-    id: 100,
-    name: "Dr. Manish Kumar",
-    roleType: "mentor",
-    image: "/ourTeam/mentors/Dr. Manish Kumar.jpg",
-    roles: ["Faculty Advisor", "VLSI & Embedded Systems"],
-    shortBio:
-      "Guides students in core electronics, research methodology, and system-level thinking.",
-    longBio: [
-      {
-        text:
-          "Dr. Manish Kumar is a faculty advisor for Techtronica Society with over a decade of academic and research experience in VLSI design and embedded systems.",
-        bold: true,
-      },
-      {
-        text:
-          "He actively mentors students in translating theoretical concepts into practical projects and encourages participation in research, patents, and technical competitions.",
-      },
-    ],
-    categories: ["Electronics", "Networks", "Research", "Academics"],
-    linkedin: "https://www.linkedin.com/in/dr-manish-kumar-693787238/",
-  },
+  // {
+  //   id: 100,
+  //   name: "Dr. Manish Kumar",
+  //   roleType: "mentor",
+  //   image: "/ourTeam/mentors/Dr. Manish Kumar.jpg",
+  //   roles: ["Faculty Advisor", "VLSI & Embedded Systems"],
+  //   shortBio:
+  //     "Guides students in core electronics, research methodology, and system-level thinking.",
+  //   longBio: [
+  //     {
+  //       text:
+  //         "Dr. Manish Kumar is a faculty advisor for Techtronica Society with over a decade of academic and research experience in VLSI design and embedded systems.",
+  //       bold: true,
+  //     },
+  //     {
+  //       text:
+  //         "He actively mentors students in translating theoretical concepts into practical projects and encourages participation in research, patents, and technical competitions.",
+  //     },
+  //   ],
+  //   categories: ["Electronics", "Networks", "Research", "Academics"],
+  //   linkedin: "https://www.linkedin.com/in/dr-manish-kumar-693787238/",
+  // },
 
-  {
-    id: 101,
-    name: "Dr. Saurabh Singh",
-    roleType: "mentor",
-    image: "/ourTeam/mentors/Dr. Saurabh Singh.jpg",
-    roles: ["Industry Mentor", "IoT & Product Design"],
-    shortBio:
-      "Supports students in building real-world IoT and product-oriented solutions.",
-    longBio: [
-      {
-        text:
-          "Dr. Saurabh Singh brings industry experience in IoT product development and system integration.",
-        bold: true,
-      },
-      {
-        text:
-          "He mentors students on designing scalable solutions, documentation best practices, and bridging the gap between prototypes and deployable products.",
-      },
-    ],
-    categories: ["IoT", "Product Design", "Startups"],
-    linkedin: "",
-  },
+  // {
+  //   id: 101,
+  //   name: "Dr. Saurabh Singh",
+  //   roleType: "mentor",
+  //   image: "/ourTeam/mentors/Dr. Saurabh Singh.jpg",
+  //   roles: ["Industry Mentor", "IoT & Product Design"],
+  //   shortBio:
+  //     "Supports students in building real-world IoT and product-oriented solutions.",
+  //   longBio: [
+  //     {
+  //       text:
+  //         "Dr. Saurabh Singh brings industry experience in IoT product development and system integration.",
+  //       bold: true,
+  //     },
+  //     {
+  //       text:
+  //         "He mentors students on designing scalable solutions, documentation best practices, and bridging the gap between prototypes and deployable products.",
+  //     },
+  //   ],
+  //   categories: ["IoT", "Product Design", "Startups"],
+  //   linkedin: "",
+  // },
 
-  {
-    id: 102,
-    name: "Dr. Namrita Mendiratta",
-    roleType: "mentor",
-    image: "/ourTeam/mentors/Dr. Namrita Mendiratta.jpg",
-    roles: ["Technical Mentor", "Web & Cloud"],
-    shortBio:
-      "Helps students build modern web applications and understand scalable architectures.",
-    longBio: [
-      {
-        text:
-          "Dr. Namrita Mendiratta works as a full-stack engineer and cloud consultant, guiding students in modern web technologies.",
-        bold: true,
-      },
-      {
-        text:
-          "His focus is on clean architecture, performance, and preparing students for industry-level development workflows.",
-      },
-    ],
-    categories: ["Web Development", "Cloud", "Open Source"],
-    linkedin: "",
-  },
-
-
-
-  {
-    id: 103,
-    name: "Mrs. Shweta",
-    roleType: "mentor",
-    image: "/ourTeam/mentors/Mrs. Shweta.jpg",
-    roles: ["Technical Mentor", "Web & Cloud"],
-    shortBio:
-      "Helps students build modern web applications and understand scalable architectures.",
-    longBio: [
-      {
-        text:
-          "Mrs. Shweta works as a full-stack engineer and cloud consultant, guiding students in modern web technologies.",
-        bold: true,
-      },
-      {
-        text:
-          "Her focus is on clean architecture, performance, and preparing students for industry-level development workflows.",
-      },
-    ],
-    categories: ["Web Development", "Cloud", "Open Source"],
-    linkedin: "",
-  },
+  // {
+  //   id: 102,
+  //   name: "Dr. Namrita Mendiratta",
+  //   roleType: "mentor",
+  //   image: "/ourTeam/mentors/Dr. Namrita Mendiratta.jpg",
+  //   roles: ["Technical Mentor", "Web & Cloud"],
+  //   shortBio:
+  //     "Helps students build modern web applications and understand scalable architectures.",
+  //   longBio: [
+  //     {
+  //       text:
+  //         "Dr. Namrita Mendiratta works as a full-stack engineer and cloud consultant, guiding students in modern web technologies.",
+  //       bold: true,
+  //     },
+  //     {
+  //       text:
+  //         "His focus is on clean architecture, performance, and preparing students for industry-level development workflows.",
+  //     },
+  //   ],
+  //   categories: ["Web Development", "Cloud", "Open Source"],
+  //   linkedin: "",
+  // },
 
 
-  {
-    id: 104,
-    name: "Dr. Manish Kalra",
-    roleType: "mentor",
-    image: "/ourTeam/mentors/Dr. Manish Kalra.webp",
-    roles: ["Technical Mentor", "Web & Cloud"],
-    shortBio:
-      "Helps students build modern web applications and understand scalable architectures.",
-    longBio: [
-      {
-        text:
-          "Dr. Manish Kalra works as a full-stack engineer and cloud consultant, guiding students in modern web technologies.",
-        bold: true,
-      },
-      {
-        text:
-          "Her focus is on clean architecture, performance, and preparing students for industry-level development workflows.",
-      },
-    ],
-    categories: ["Web Development", "Cloud", "Open Source"],
-    linkedin: "https://www.linkedin.com/in/manishkalra2/",
-  },
 
-  {
-    id: 105,
-    name: "Dr. Jharna Agarwal",
-    roleType: "mentor",
-    image: "/ourTeam/mentors/Dr. Jharna Agarwal.webp",
-    roles: ["Technical Mentor", "Web & Cloud"],
-    shortBio:
-      "Helps students build modern web applications and understand scalable architectures.",
-    longBio: [
-      {
-        text:
-          "Dr. Jharna Agarwal works as a full-stack engineer and cloud consultant, guiding students in modern web technologies.",
-        bold: true,
-      },
-      {
-        text:
-          "Her focus is on clean architecture, performance, and preparing students for industry-level development workflows.",
-      },
-    ],
-    categories: ["Web Development", "Cloud", "Open Source"],
-    linkedin: "",
-  },
+  // {
+  //   id: 103,
+  //   name: "Mrs. Shweta",
+  //   roleType: "mentor",
+  //   image: "/ourTeam/mentors/Mrs. Shweta.jpg",
+  //   roles: ["Technical Mentor", "Web & Cloud"],
+  //   shortBio:
+  //     "Helps students build modern web applications and understand scalable architectures.",
+  //   longBio: [
+  //     {
+  //       text:
+  //         "Mrs. Shweta works as a full-stack engineer and cloud consultant, guiding students in modern web technologies.",
+  //       bold: true,
+  //     },
+  //     {
+  //       text:
+  //         "Her focus is on clean architecture, performance, and preparing students for industry-level development workflows.",
+  //     },
+  //   ],
+  //   categories: ["Web Development", "Cloud", "Open Source"],
+  //   linkedin: "",
+  // },
+
+
+  // {
+  //   id: 104,
+  //   name: "Dr. Manish Kalra",
+  //   roleType: "mentor",
+  //   image: "/ourTeam/mentors/Dr. Manish Kalra.webp",
+  //   roles: ["Technical Mentor", "Web & Cloud"],
+  //   shortBio:
+  //     "Helps students build modern web applications and understand scalable architectures.",
+  //   longBio: [
+  //     {
+  //       text:
+  //         "Dr. Manish Kalra works as a full-stack engineer and cloud consultant, guiding students in modern web technologies.",
+  //       bold: true,
+  //     },
+  //     {
+  //       text:
+  //         "Her focus is on clean architecture, performance, and preparing students for industry-level development workflows.",
+  //     },
+  //   ],
+  //   categories: ["Web Development", "Cloud", "Open Source"],
+  //   linkedin: "https://www.linkedin.com/in/manishkalra2/",
+  // },
+
+  // {
+  //   id: 105,
+  //   name: "Dr. Jharna Agarwal",
+  //   roleType: "mentor",
+  //   image: "/ourTeam/mentors/Dr. Jharna Agarwal.webp",
+  //   roles: ["Technical Mentor", "Web & Cloud"],
+  //   shortBio:
+  //     "Helps students build modern web applications and understand scalable architectures.",
+  //   longBio: [
+  //     {
+  //       text:
+  //         "Dr. Jharna Agarwal works as a full-stack engineer and cloud consultant, guiding students in modern web technologies.",
+  //       bold: true,
+  //     },
+  //     {
+  //       text:
+  //         "Her focus is on clean architecture, performance, and preparing students for industry-level development workflows.",
+  //     },
+  //   ],
+  //   categories: ["Web Development", "Cloud", "Open Source"],
+  //   linkedin: "",
+  // },
 
 
 
