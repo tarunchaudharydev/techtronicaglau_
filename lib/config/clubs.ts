@@ -107,6 +107,14 @@ export const clubs: Club[] = [
     ],
 
     team: [
+
+      {
+        name: "Dr. Manish Kalra",
+        role: "Mentor",
+        image: "/ourTeam/mentors/Dr. Manish Kalra.webp",
+      },
+
+
       {
         name: "Dheeraj Rajput",
         role: "President",
@@ -130,7 +138,7 @@ export const clubs: Club[] = [
     },
   },
 
-  // 🔁 ADD OTHER CLUBS SAME WAY (Gizmo, Unnati, etc.)
+
 
   {
     slug: "gizmo",
@@ -190,6 +198,12 @@ export const clubs: Club[] = [
     ],
 
     team: [
+
+      {
+        name: "Dr. Namrita Mendiratta",
+        role: "Mentor",
+        image: "/ourTeam/mentors/Dr. Namrita Mendiratta.jpg",
+      },
       
 
       {
@@ -281,7 +295,7 @@ export const clubs: Club[] = [
       {
         name: "Dr. Saurabh Singh",
         role: "Faculty Mentor",
-        image: "/clubs/technovation/team/mentor.jpg",
+        image: "/ourTeam/mentors/Dr. Saurabh Singh.jpg",
       },
 
 
@@ -369,9 +383,9 @@ export const clubs: Club[] = [
     team: [
 
       {
-        name: "Dr. Shweta",
+        name: "Mrs. Shweta",
         role: "Faculty Mentor",
-        image: "/clubs/unnati/team/mentor.jpg",
+        image: "/ourTeam/mentors/Mrs. Shweta.jpg",
       },
 
       {
@@ -464,9 +478,9 @@ export const clubs: Club[] = [
     team: [
 
       {
-        name: "Mrs. Jharna Agarwal",
+        name: "Dr. Jharna Agarwal",
         role: "Faculty Mentor",
-        image: "/clubs/mindbogglers/team/mentor.jpg",
+        image: "/ourTeam/mentors/Dr. Jharna Agarwal.webp",
       },
 
       {
