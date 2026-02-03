@@ -1,5 +1,6 @@
 "use client";
 
+//  this is the first thing which user see the home page with slider and welcoming message or text.
 import { RefObject } from "react";
 import Link from "next/link";
 import HomeSlider from "@/components/HomeSlider";

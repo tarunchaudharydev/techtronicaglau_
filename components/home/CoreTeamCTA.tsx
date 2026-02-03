@@ -1,5 +1,7 @@
 "use client";
 
+// this is the button to join the society and this is not implemented yet because we are not hiring for the core team yet.
+
 import Link from "next/link";
 
 const CoreTeamCTA = () => {

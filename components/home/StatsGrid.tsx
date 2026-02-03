@@ -1,4 +1,7 @@
-"use client";
+// "use client";
+
+// StatsGrid for home page
+// this do not need to be changed.
 
 import { RefObject } from "react";
 

@@ -1,4 +1,5 @@
-"use client";
+// "use client";
+// do not need to change this.
 
 const HowToGetInvolved = () => {
   return (

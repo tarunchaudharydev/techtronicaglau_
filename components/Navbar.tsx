@@ -11,10 +11,11 @@ const navLinks = [
   { href: "/about", label: "About us" },
   { href: "/events", label: "Events" },
   // { href: "/academics", label: "Academics" },
+  // { href: "/home", label: "Sidebar" },
   {
     href: "/library",
     label: "Library",
-    badge: "NEW", // added
+    badge: "NEW",
   },
   // { href: "/research", label: "Research & Patents" },
   { href: "/alumni", label: "Alumni" },
