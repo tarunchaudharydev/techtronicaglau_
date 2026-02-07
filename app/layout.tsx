@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
-import EventPopup from "@/components/EventPopup";
+import EventPopup from "@/components/features/events/EventPopup";
 import { upcomingEvent } from "@/lib/data/upcomingEvents";
 
 export default function RootLayout({

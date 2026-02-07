@@ -4,6 +4,9 @@ import { useEffect, useState } from "react";
 import { Event } from "@/types/event";
 import Image from "next/image";
 import Link from "next/link";
+import EventCountdown from "../../events/EventCountdown";
+import RegisterButton from "@/components/features/events/RegisterButton";
+import { parse12HourTime } from "@/lib/utils/eventUtils";
 
 interface Props {
   event: Event;
@@ -13,13 +16,29 @@ interface Props {
 export default function EventPopup({ event }: Props) {
   const [open, setOpen] = useState(false);
 
+  // Convert event date + time to Date object
+  const eventDateTime = parse12HourTime(event.date, event.time);
+
+  // 24 hours before event start
+  const popupCutoffTime = new Date(
+    eventDateTime.getTime() - 24 * 60 * 60 * 1000,
+  );
+
   useEffect(() => {
     const shown = sessionStorage.getItem("event-popup-shown");
     if (shown) return;
 
+    const now = new Date();
+
+    // ❌ Don't show popup if event already started
+    if (now >= eventDateTime) return;
+
+    // ❌ Don't show popup if within 24 hours of event
+    if (now >= popupCutoffTime) return;
+
     const timer = setTimeout(() => setOpen(true), 2000);
     return () => clearTimeout(timer);
-  }, []);
+  }, [eventDateTime, popupCutoffTime]);
 
   const closePopup = () => {
     sessionStorage.setItem("event-popup-shown", "true");
@@ -42,7 +61,6 @@ export default function EventPopup({ event }: Props) {
           ✕
         </button>
 
-        {/* Image */}
         {/* Image */}
         <div className="relative h-40 sm:h-48 w-full bg-black">
           <Image
@@ -71,29 +89,36 @@ export default function EventPopup({ event }: Props) {
             ))}
           </ul>
 
-          {/* Actions */}
-          <div className="flex flex-col sm:flex-row gap-3 pt-3">
-            {event.registrationLink && (
-              <a
-                href={event.registrationLink}
-                target="_blank"
-                className="flex-1 rounded-xl bg-gradient-to-r from-amber-400 to-yellow-500 py-2 text-center text-sm font-semibold text-black
-                           transition-all duration-300
-                           hover:-translate-y-0.5 hover:shadow-[0_10px_30px_rgba(251,191,36,0.6)]"
-              >
-                Register
-              </a>
-            )}
+          {/* Countdown & Actions */}
+          <div className="pt-3">
+            {eventDateTime >= new Date() && (
+              <div className="rounded-2xl bg-white p-6 shadow-sm space-y-4">
+                <p className="text-lg font-semibold text-emerald-900">
+                  Time Left
+                </p>
 
-            <Link
-              href={`/events/${event.id}`}
-              onClick={closePopup}
-              className="flex-1 rounded-xl border border-slate-600 py-2 text-center text-sm font-medium text-white
-                         transition-all duration-300
-                         hover:bg-slate-800 hover:-translate-y-0.5 hover:border-sky-400 hover:shadow-md"
-            >
-              Read More
-            </Link>
+                {event.registrationDeadline && (
+                  <EventCountdown deadline={event.registrationDeadline} />
+                )}
+
+                <div className="flex flex-wrap gap-3">
+                  <RegisterButton
+                    registrationLink={event.registrationLink}
+                    registrationDeadline={event.registrationDeadline}
+                  />
+
+                  <Link
+                    href={`/events/${event.id}`}
+                    onClick={closePopup}
+                    className="flex-1 rounded-xl border border-slate-600 py-2 text-center text-sm font-medium text-black
+                               transition-all duration-300
+                               hover:-translate-y-0.5 hover:shadow-md"
+                  >
+                    Read More
+                  </Link>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>

@@ -4,77 +4,105 @@ export type { Event, ClubEvent };
 
 
 export const events: Event[] = [
-  {
-    id: "udan",
-    title: "TECHTRONICA SOCIETY PRESENTS — IDEA UDAAN",
-    club: "code-e-phobia",
-    date: "2026-02-07",
-    time: "10:00 AM",
-    location: "Seminar Hall A",
-    coverImage: "/clubs/code-e-phobia/events/poster.jpeg",
-       description: [
-        "Something meaningful. Something impactful.",
+  // {
+  //   id: "udan",
+  //   title: "TECHTRONICA SOCIETY PRESENTS — IDEA UDAAN",
+  //   club: "code-e-phobia",
+  //   date: "2026-02-07",
+  //   time: "10:00 AM",
+  //   location: "Seminar Hall A",
+  //   coverImage: "/clubs/code-e-phobia/events/poster.jpeg",
+  //      description: [
+  //       "Something meaningful. Something impactful.",
 
 
-        "🌱⚙️ ECOVATION  ",
-        "A Sustainability-Focused Tech Competition  ",
-
-
-
-        "Where technology meets responsibility and ideas turn into action.",
+  //       "🌱⚙️ ECOVATION  ",
+  //       "A Sustainability-Focused Tech Competition  ",
 
 
 
-        "💡 What is ECOVATION?  ",
+  //       "Where technology meets responsibility and ideas turn into action.",
 
 
 
-        "ECOVATION is a technology-driven competition built purely around the theme of Sustainability.  ",
-
-
-        "It’s a platform to present innovative, practical, and future-ready solutions for real-world ",
-        "problems using technology.",
+  //       "💡 What is ECOVATION?  ",
 
 
 
-        "📌 Event Structure  ",
+  //       "ECOVATION is a technology-driven competition built purely around the theme of Sustainability.  ",
+
+
+  //       "It’s a platform to present innovative, practical, and future-ready solutions for real-world ",
+  //       "problems using technology.",
 
 
 
-        "• Round 1: Online PPT Submission  ",
-        "• Round 2: Offline Exhibition (Final Round)  ",
+  //       "📌 Event Structure  ",
 
 
 
-
-        "🗓 Online PPT Submission Starts: 28th January 2026  ",
-        "🗓 Final Offline Exhibition: 7th February 2026  ",
+  //       "• Round 1: Online PPT Submission  ",
+  //       "• Round 2: Offline Exhibition (Final Round)  ",
 
 
 
 
-        "👥 Who Can Participate?  ",
-
-        "• Any student from any year  ",
-        "• Team-based participation (3–5 members)  ",
-        "• Teams can include students from different years  ",
-        "• Teams can include students from different courses  ",
-        "• Outside college participants are not allowed  ",
-
-
-        "⚠️ Important Guidelines  ",
-
-        "• The theme Sustainability must be strictly followed  ",
-        "• Original ideas only — copied or AI-generated content is not allowed  ",
-        "• One team can submit only one idea",
-       ],
+  //       "🗓 Online PPT Submission Starts: 28th January 2026  ",
+  //       "🗓 Final Offline Exhibition: 7th February 2026  ",
 
 
 
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeW5pXjVxfEVG0h8rvFKkDyFT8aTIILiC5KvcZJVaWs_8llwQ/viewform",
-    registrationDeadline: "2026-01-28",
+
+  //       "👥 Who Can Participate?  ",
+
+  //       "• Any student from any year  ",
+  //       "• Team-based participation (3–5 members)  ",
+  //       "• Teams can include students from different years  ",
+  //       "• Teams can include students from different courses  ",
+  //       "• Outside college participants are not allowed  ",
+
+
+  //       "⚠️ Important Guidelines  ",
+
+  //       "• The theme Sustainability must be strictly followed  ",
+  //       "• Original ideas only — copied or AI-generated content is not allowed  ",
+  //       "• One team can submit only one idea",
+  //      ],
+
+
+
+  //   registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeW5pXjVxfEVG0h8rvFKkDyFT8aTIILiC5KvcZJVaWs_8llwQ/viewform",
+  //   registrationDeadline: "2026-01-28",
     
+  // },
+
+
+
+
+
+
+  {
+    id: "idea-udan",
+    title: "IDEA UDAAN",
+    club: "code-e-phobia",
+    date: "2022-04-11",
+    time: "10:00 AM",
+    location: "Seminar Hall AB-II",
+    coverImage: "/clubs/code-e-phobia/events/poster.jpeg",
+    description: ["ECOVATION is a technology-driven competition built purely around the theme of Sustainability.  ",
+            "It’s a platform to present innovative, practical, and future-ready solutions for real-world ",
+        "problems using technology."],
+    
+    outcome: "Successful",
+    winners: [
+      { name: "Team Alpha", position: "1st" },
+      { name: "Team Beta", position: "2nd" },
+    ],
+    gallery: [
+      "/clubs/code-e-phobia/images/css.jpg",
+    ],
   },
+
 
 
 
