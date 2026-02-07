@@ -26,6 +26,8 @@ export interface Event {
   winners?: {
     name: string;
     position: string;
+    members?: string[];
   }[];
+  
   gallery?: string[];
 }

@@ -10,6 +10,8 @@ import BackButton from "@/components/events/BackButton";
 
 import { FiArrowLeft, FiCalendar, FiClock, FiMapPin } from "react-icons/fi";
 
+import { FiAward, FiUsers, FiUser } from "react-icons/fi";
+
 type PageProps = {
   params: Promise<{ id: string }>;
 };
@@ -120,15 +122,69 @@ export default async function EventDetailPage({ params }: PageProps) {
               )}
 
               {event.winners && (
-                <div className="rounded-2xl bg-white p-5 sm:p-6 shadow-sm">
-                  <h2 className="text-xl font-semibold mb-2">Winners</h2>
-                  <ul className="list-disc ml-6 text-slate-700 space-y-1">
-                    {event.winners.map((w) => (
-                      <li key={w.name}>
-                        {w.position} — {w.name}
-                      </li>
-                    ))}
-                  </ul>
+                <div className="rounded-2xl bg-white p-5 sm:p-6 shadow-sm space-y-5">
+                  <h2 className="text-xl font-semibold flex items-center gap-2">
+                    <FiAward className="text-emerald-600" />
+                    Winners
+                  </h2>
+
+                  <div className="space-y-4">
+                    {event.winners.map((team) => {
+                      const isWinner =
+                        team.position.toLowerCase().includes("winner") &&
+                        !team.position.toLowerCase().includes("runner");
+
+                      return (
+                        <div
+                          key={team.name}
+                          className={`
+              rounded-xl p-4 space-y-2 border
+              ${
+                isWinner
+                  ? "bg-gradient-to-br from-yellow-50 via-amber-50 to-white border-amber-300 shadow-md ring-2 ring-amber-200"
+                  : "bg-white border-emerald-100"
+              }
+            `}
+                        >
+                          {/* Position */}
+                          <p
+                            className={`flex items-center gap-2 font-semibold ${
+                              isWinner ? "text-amber-800" : "text-emerald-900"
+                            }`}
+                          >
+                            <FiAward
+                              className={
+                                isWinner ? "text-amber-500" : "text-emerald-600"
+                              }
+                            />
+                            {team.position}
+                            {isWinner && <span className="ml-1">🥇</span>}
+                          </p>
+
+                          {/* Team Name */}
+                          <p className="flex items-center gap-2 font-medium text-slate-800">
+                            <FiUsers className="text-slate-500" />
+                            Team: {team.name}
+                          </p>
+
+                          {/* Members */}
+                          {team.members && team.members.length > 0 && (
+                            <ul className="mt-2 ml-6 space-y-1 text-sm text-slate-700">
+                              {team.members.map((member) => (
+                                <li
+                                  key={member}
+                                  className="flex items-center gap-2"
+                                >
+                                  <FiUser className="text-slate-400" />
+                                  {member}
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
               )}
 
