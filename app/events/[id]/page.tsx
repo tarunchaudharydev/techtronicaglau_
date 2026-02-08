@@ -167,19 +167,35 @@ export default async function EventDetailPage({ params }: PageProps) {
                             Team: {team.name}
                           </p>
 
-                          {/* Members */}
                           {team.members && team.members.length > 0 && (
-                            <ul className="mt-2 ml-6 space-y-1 text-sm text-slate-700">
+                            <div className="mt-3 space-y-3">
                               {team.members.map((member) => (
-                                <li
-                                  key={member}
-                                  className="flex items-center gap-2"
+                                <div
+                                  key={member.rollNo}
+                                  className="rounded-lg border border-slate-200 bg-slate-50 p-3 text-sm"
                                 >
-                                  <FiUser className="text-slate-400" />
-                                  {member}
-                                </li>
+                                  <p className="flex items-center gap-2 font-medium text-slate-800">
+                                    <FiUser className="text-slate-500" />
+                                    {member.name}
+                                  </p>
+
+                                  <div className="mt-1 ml-6 space-y-0.5 text-slate-600">
+                                    <p>
+                                      <span className="font-medium text-slate-700">
+                                        Roll No:
+                                      </span>{" "}
+                                      {member.rollNo}
+                                    </p>
+                                    <p>
+                                      <span className="font-medium text-slate-700">
+                                        Course:
+                                      </span>{" "}
+                                      {member.course}
+                                    </p>
+                                  </div>
+                                </div>
                               ))}
-                            </ul>
+                            </div>
                           )}
                         </div>
                       );

@@ -24,10 +24,15 @@ export interface Event {
   // PAST only
   outcome?: string;
   winners?: {
+  name: string; // team name
+  position: string;
+  members: {
     name: string;
-    position: string;
-    members?: string[];
+    rollNo: string;
+    course: string;
   }[];
-  
+}[];
+
+
   gallery?: string[];
 }

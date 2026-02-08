@@ -96,11 +96,68 @@ export const events: Event[] = [
 "The presentations were evaluated by Dr. P. Bachhan and Dr. Devarshi Shukla, Assistant Professors, ensuring fair and unbiased judgment 📝. Three winning teams were announced, and the trophy distribution ceremony was graced by Dr. Vinay Kumar Deolia, HOD, and Dr. Manish Gupta, Associate Head 🏆."],
     
     outcome: "Successful",
+   
     winners: [
-      { name: "Alt-Era", position: "WINNERS", members: ["Kasib Ali" , "Krati Gupta"] },
-      { name: "Aero Sync", position: "RUNNER-UP", members: [" Utkarsh Saxena" , "Vaibhav Jain"] },
-      { name: "Thinkoholics", position: "2nd RUNNER-UP", members: ["Girish Kumar Saraswat" , "Madhav Sharma", "Divyanshu goyal", "Utkarsh Singhal"] },
+  {
+    name: "Alt-Era",
+    position: "WINNERS",
+    members: [
+      {
+        name: "Kasib",
+        rollNo: "2315001090",
+        course: "B.Tech (CSE)",
+      },
+      {
+        name: "Krati",
+        rollNo: "2315001156",
+        course: "B.Tech (CSE)",
+      },
     ],
+  },
+  {
+    name: "Aero Sync",
+    position: "RUNNER-UP",
+    members: [
+      {
+        name: "Utkarsh Saxena",
+        rollNo: "2313000027",
+        course: "B.Tech (ECE)",
+      },
+      {
+        name: "Vaibhav Jain",
+        rollNo: "2313000028",
+        course: "B.Tech (ECE)",
+      },
+    ],
+  },
+  {
+    name: "Thinkoholics",
+    position: "2nd RUNNER-UP",
+    members: [
+      {
+        name: "Girish Kumar Saraswat",
+        rollNo: "2413300019",
+        course: "B.Tech (ECSE)",
+      },
+      {
+        name: "Madhav Sharma",
+        rollNo: "2413300025",
+        course: "B.Tech (ECSE)",
+      },
+      {
+        name: "Divyanshu Goyal",
+        rollNo: "2413300017",
+        course: "B.Tech (ECSE)",
+      },
+      {
+        name: "Utkarsh Singhal",
+        rollNo: "2513300053",
+        course: "B.Tech (ECSE)",
+      },
+    ],
+  },
+],
+
     gallery: [
       "/clubs/code-e-phobia/events/udan/all.JPG",
       "/clubs/code-e-phobia/events/udan/class.JPG",
@@ -171,10 +228,10 @@ export const events: Event[] = [
     description: ["A multi-round competitive coding event where participants raced to solve problem statements first. Speed and accuracy decided the winners."],
     
     outcome: "",
-    winners: [
-      { name: "Team Alpha", position: "1st" },
-      { name: "Team Beta", position: "2nd" },
-    ],
+    // winners: [
+    //   { name: "Team Alpha", position: "1st" },
+    //   { name: "Team Beta", position: "2nd" },
+    // ],
     gallery: [
       "/clubs/code-e-phobia/images/css.jpg",
     ],
@@ -193,10 +250,10 @@ export const events: Event[] = [
     description: ["A daily GitHub-based coding challenge where correct, original solutions earned points, while AI-generated code resulted in penalties."],
     
     outcome: "",
-    winners: [
-      { name: "Team Alpha", position: "1st" },
-      { name: "Team Beta", position: "2nd" },
-    ],
+    // winners: [
+    //   { name: "Team Alpha", position: "1st" },
+    //   { name: "Team Beta", position: "2nd" },
+    // ],
     gallery: [
       "/clubs/code-e-phobia/images/newtworking.jpg",
       
@@ -335,10 +392,10 @@ export const events: Event[] = [
     location: "Innovation Lab",
     coverImage: "/clubs/technovation/events/cadenceworkshop.jpeg",
     description: ["A hands-on workshop introducing students to Cadence EDA tools, covering circuit design, simulation, layout, and verification for real-world VLSI applications."],
-    winners: [
-      { name: "Team Alpha", position: "1st" },
-      { name: "Team Beta", position: "2nd" },
-    ],
+    // winners: [
+    //   { name: "Team Alpha", position: "1st" },
+    //   { name: "Team Beta", position: "2nd" },
+    // ],
     gallery: [
       "/clubs/technovation/events/cadenceworkshop.jpeg",
       "/clubs/technovation/events/cadencework.jpeg",
@@ -388,10 +445,10 @@ export const events: Event[] = [
     location: "Innovation Lab",
     coverImage: "/clubs/unnati/events/udan.jpeg",
     description: ["A creative competition featuring Painting, Nail Art, Mehendi, and Rangoli, celebrating artistic expression and skill."],
-    winners: [
-      { name: "Team Alpha", position: "1st" },
-      { name: "Team Beta", position: "2nd" },
-    ],
+    // winners: [
+    //   { name: "Team Alpha", position: "1st" },
+    //   { name: "Team Beta", position: "2nd" },
+    // ],
     gallery: [
       "/clubs/unnati/events/udan.jpeg",
       
@@ -413,10 +470,10 @@ export const events: Event[] = [
     location: "Innovation Lab",
     coverImage: "/clubs/unnati/images/kratikala25.jpg",
     description: ["A creative competition featuring Painting, Nail Art, Mehendi, and Rangoli, celebrating artistic expression and skill."],
-    winners: [
-      { name: "Team Alpha", position: "1st" },
-      { name: "Team Beta", position: "2nd" },
-    ],
+    // winners: [
+    //   { name: "Team Alpha", position: "1st" },
+    //   { name: "Team Beta", position: "2nd" },
+    // ],
     gallery: [
       "/clubs/unnati/images/1.jpg",
       "/clubs/unnati/images/2.jpg",
