@@ -39,6 +39,18 @@ const colorVariants = [
   },
 ];
 
+/* 🎂 Birthday checker */
+const isBirthdayToday = (dob?: string) => {
+  if (!dob) return false;
+  const today = new Date();
+  const birthDate = new Date(dob);
+
+  return (
+    today.getDate() === birthDate.getDate() &&
+    today.getMonth() === birthDate.getMonth()
+  );
+};
+
 const mentors = members.filter((m) => m.roleType === "mentor");
 const teamMembers = members.filter((m) => m.roleType === "team");
 
@@ -49,54 +61,7 @@ export default function AboutTeamSection() {
   } | null>(null);
 
   return (
-    <section className="py-20 bg-gradient-to-br from-sky-50 via-cyan-50 to-blue-50">
-      {/* Mentors */}
-      {/* <div className="mb-20">
-        <h3 className="text-2xl font-semibold text-gray-900 text-center mb-10">
-          Our Mentors
-        </h3>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          {mentors.map((m, index) => {
-            const color = colorVariants[index % colorVariants.length];
-
-            return (
-              <button
-                key={m.id}
-                onClick={() => setSelected({ member: m, colorIndex: index })}
-                className={`group p-6 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all text-center ${color.card}`}
-              >
-
-                <div className="relative w-32 h-32 mx-auto rounded-full overflow-hidden mb-4">
-                  <Image
-                    src={m.image}
-                    alt={m.name}
-                    fill
-                    className="object-cover group-hover:scale-105 transition"
-                  />
-                </div>
-
-                <h3 className="font-semibold text-gray-900 text-lg">
-                  {m.name}
-                </h3>
-
-                <p className={`text-sm mt-1 font-medium ${color.role}`}>
-                  {m.roles.join(" • ")}
-                </p>
-
-                <p className="text-xs text-gray-600 mt-2">{m.shortBio}</p>
-
-                <span className="mt-3 inline-block text-xs font-medium text-gray-700">
-                  View profile →
-                </span>
-              </button>
-            );
-          })}
-        </div>
-      </div> */}
-
-      {/* Team modal */}
-
+    <section className="py-20 bg-gradient-to-br from-sky-50 via-cyan-50 to-blue-50 pt-28 -mt-25">
       <div className="mx-auto max-w-6xl px-6">
         {/* Heading */}
         <div className="text-center mb-14">
@@ -112,13 +77,21 @@ export default function AboutTeamSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {members.map((m, index) => {
             const color = colorVariants[index % colorVariants.length];
+            const isBirthday = isBirthdayToday(m.dob);
 
             return (
               <button
                 key={m.id}
                 onClick={() => setSelected({ member: m, colorIndex: index })}
-                className={`group p-5 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all text-center ${color.card}`}
+                className={`relative group p-5 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all text-center ${color.card}`}
               >
+                {isBirthday && (
+                  <div className="mt-3 p-3 rounded-xl bg-pink-50 text-pink-700 text-sm">
+                    🎉 The Techtronica Society wishes {m.name.split(" ")[0]} a
+                    very happy birthday!
+                  </div>
+                )}
+
                 {/* Avatar */}
                 <div className="relative w-28 h-28 mx-auto rounded-full overflow-hidden mb-4">
                   <Image
@@ -151,6 +124,7 @@ export default function AboutTeamSection() {
         (() => {
           const { member, colorIndex } = selected;
           const color = colorVariants[colorIndex % colorVariants.length];
+          const isBirthday = isBirthdayToday(member.dob);
 
           return (
             <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center px-4">
@@ -177,18 +151,29 @@ export default function AboutTeamSection() {
 
                   {/* Content */}
                   <div>
-                    <h3 className="text-2xl font-semibold text-gray-900">
+                    <h3 className="text-2xl font-semibold text-gray-900 flex items-center gap-2">
                       {member.name}
+                      {isBirthday && (
+                        <span className="text-xs px-2 py-1 rounded-full bg-pink-100 text-pink-700">
+                          🎂 Birthday
+                        </span>
+                      )}
                     </h3>
 
                     <p className={`mt-1 font-medium ${color.role}`}>
                       {member.roles.join(" • ")}
                     </p>
 
+                    {isBirthday && (
+                      <p className="mt-2 text-sm font-medium text-pink-600">
+                        🎉 Today is {member.name.split(" ")[0]}'s birthday!
+                      </p>
+                    )}
+
                     {member.longBio.map((para, index) => (
                       <p
                         key={index}
-                        className={`text-sm leading-relaxed ${
+                        className={`mt-3 text-sm leading-relaxed ${
                           para.bold
                             ? "font-semibold text-slate-900"
                             : "text-gray-700"

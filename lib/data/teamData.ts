@@ -39,6 +39,7 @@ export interface Member {
   categories: string[];
   linkedin?: string;
   whatsApp?: string;
+  dob?: string;
   roleType: "mentor" | "team";
 }
 
@@ -52,6 +53,7 @@ export const members: Member[] = [
    {
     id: 30,
     name: "Abhishek Sharma",
+    dob: "",
     roleType: "team",
     roles: ["President", "Techtronica Society"],
     categories: ["President"],
@@ -695,6 +697,7 @@ export const members: Member[] = [
   {
     id: 44,
     name: "Sameeraj",
+    dob: "2002-02-08",
     roleType: "team",
      roles: ["General member council"],
     categories: ["GMC"],

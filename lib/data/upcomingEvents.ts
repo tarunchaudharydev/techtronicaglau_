@@ -101,6 +101,7 @@ export const events: Event[] = [
   {
     name: "Alt-Era",
     position: "WINNERS",
+    image: "/clubs/code-e-phobia/events/udan/all.JPG",
     members: [
       {
         name: "Kasib",
@@ -117,6 +118,7 @@ export const events: Event[] = [
   {
     name: "Aero Sync",
     position: "RUNNER-UP",
+    image: "/clubs/code-e-phobia/events/udan/all.JPG",
     members: [
       {
         name: "Utkarsh Saxena",
@@ -133,6 +135,7 @@ export const events: Event[] = [
   {
     name: "Thinkoholics",
     position: "2nd RUNNER-UP",
+    image: "/clubs/code-e-phobia/events/udan/all.JPG",
     members: [
       {
         name: "Girish Kumar Saraswat",
@@ -181,8 +184,8 @@ export const events: Event[] = [
       "/clubs/code-e-phobia/events/udan/9.JPG",
       "/clubs/code-e-phobia/events/udan/1.JPG",
       "/clubs/code-e-phobia/events/udan/2.JPG",
-      "/clubs/code-e-phobia/events/udan/9.JPG",
-      "/clubs/code-e-phobia/events/udan/10.JPG",
+      // "/clubs/code-e-phobia/events/udan/9.JPG",
+      // "/clubs/code-e-phobia/events/udan/10.JPG",
        "/clubs/code-e-phobia/events/udan/11.JPG",
         "/clubs/code-e-phobia/events/udan/12.JPG",
          "/clubs/code-e-phobia/events/udan/13.JPG",
@@ -191,17 +194,15 @@ export const events: Event[] = [
             "/clubs/code-e-phobia/events/udan/16.JPG",
              "/clubs/code-e-phobia/events/udan/17.JPG",
               "/clubs/code-e-phobia/events/udan/18.JPG",
-               "/clubs/code-e-phobia/events/udan/19.JPG",
+              //  "/clubs/code-e-phobia/events/udan/19.JPG",
                 "/clubs/code-e-phobia/events/udan/23.JPG",
                  "/clubs/code-e-phobia/events/udan/24.JPG",
                   "/clubs/code-e-phobia/events/udan/25.JPG",
-                   "/clubs/code-e-phobia/events/udan/26.JPG",
+                  //  "/clubs/code-e-phobia/events/udan/26.JPG",
                     "/clubs/code-e-phobia/events/udan/28.JPG",
                      "/clubs/code-e-phobia/events/udan/30.JPG",
                       "/clubs/code-e-phobia/events/udan/2n.JPG",
                       "/clubs/code-e-phobia/events/udan/other.JPG",
-
-
 
 
     ],
