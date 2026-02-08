@@ -11,21 +11,25 @@ interface EventGalleryProps {
 export default function EventGallery({ images }: EventGalleryProps) {
   const [index, setIndex] = useState<number | null>(null);
   const [playing, setPlaying] = useState(false);
+  const [scale, setScale] = useState(1);
 
   const isOpen = index !== null;
 
   /* ---------- NAVIGATION ---------- */
   const next = useCallback(() => {
     setIndex((i) => (i === null ? 0 : (i + 1) % images.length));
+    setScale(1);
   }, [images.length]);
 
   const prev = useCallback(() => {
     setIndex((i) => (i === null ? 0 : (i - 1 + images.length) % images.length));
+    setScale(1);
   }, [images.length]);
 
   /* ---------- CLOSE ---------- */
   const closeGallery = useCallback(() => {
     setPlaying(false);
+    setScale(1);
     setIndex(null);
   }, []);
 
@@ -46,7 +50,6 @@ export default function EventGallery({ images }: EventGalleryProps) {
   /* ---------- SLIDESHOW ---------- */
   useEffect(() => {
     if (!playing || !isOpen) return;
-
     const id = setInterval(next, 3000);
     return () => clearInterval(id);
   }, [playing, isOpen, next]);
@@ -55,26 +58,33 @@ export default function EventGallery({ images }: EventGalleryProps) {
   const downloadImage = async (src: string) => {
     const res = await fetch(src);
     const blob = await res.blob();
-    const url = window.URL.createObjectURL(blob);
+    const url = URL.createObjectURL(blob);
 
     const a = document.createElement("a");
     a.href = url;
     a.download = src.split("/").pop() || "image.jpg";
     a.click();
 
-    window.URL.revokeObjectURL(url);
+    URL.revokeObjectURL(url);
+  };
+
+  /* ---------- ZOOM ---------- */
+  const handleWheel = (e: React.WheelEvent) => {
+    e.preventDefault();
+    setScale((s) => Math.min(3, Math.max(1, s + e.deltaY * -0.001)));
   };
 
   return (
     <>
-      {/* 🎨 WALL-STYLE MASONRY */}
-      <div className="columns-2 sm:columns-3 lg:columns-4 gap-4 space-y-4">
+      {/* 🖼️ WALL-STYLE MASONRY */}
+      <div className="columns-2 sm:columns-3 xl:columns-4 gap-4 space-y-4">
         {images.map((img, i) => (
           <motion.div
             key={`${img}-${i}`}
-            whileHover={{ y: -6, rotateZ: -0.4 }}
-            transition={{ type: "spring", stiffness: 200, damping: 18 }}
-            className="relative break-inside-avoid cursor-pointer rounded-xl overflow-hidden shadow-[0_12px_30px_rgba(0,0,0,0.18)] bg-neutral-900"
+            whileHover={{ y: -8, rotateZ: -0.6 }}
+            transition={{ type: "spring", stiffness: 180, damping: 18 }}
+            className="relative break-inside-avoid cursor-pointer overflow-hidden rounded-xl 
+                       bg-neutral-900 shadow-[0_12px_30px_rgba(0,0,0,0.25)]"
             onClick={() => setIndex(i)}
           >
             <Image
@@ -82,13 +92,17 @@ export default function EventGallery({ images }: EventGalleryProps) {
               alt=""
               width={600}
               height={800}
-              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+              sizes="(max-width:640px) 50vw, (max-width:1280px) 33vw, 25vw"
               className="w-full h-auto object-cover"
             />
 
-            {/* Glass hover */}
-            <div className="absolute inset-0 bg-black/30 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span className="text-white text-sm tracking-wide">View</span>
+            <div
+              className="absolute inset-0 bg-black/30 opacity-0 hover:opacity-100 
+                            transition-opacity flex items-center justify-center"
+            >
+              <span className="text-white text-xs tracking-widest uppercase">
+                View
+              </span>
             </div>
           </motion.div>
         ))}
@@ -101,7 +115,8 @@ export default function EventGallery({ images }: EventGalleryProps) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 bg-black/90 backdrop-blur-sm flex items-center justify-center"
+            className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md 
+                       flex items-center justify-center"
             onPointerDown={closeGallery}
           >
             <motion.div
@@ -109,8 +124,10 @@ export default function EventGallery({ images }: EventGalleryProps) {
               animate={{ scale: 1 }}
               exit={{ scale: 0.96 }}
               transition={{ duration: 0.25 }}
-              className="relative w-full h-full flex items-center justify-center px-4 sm:px-10"
+              className="relative w-full h-full flex items-center justify-center 
+                         px-3 sm:px-6 lg:px-12"
               onPointerDown={(e) => e.stopPropagation()}
+              onWheel={handleWheel}
               drag="x"
               dragConstraints={{ left: 0, right: 0 }}
               onDragEnd={(_, info) => {
@@ -119,31 +136,40 @@ export default function EventGallery({ images }: EventGalleryProps) {
               }}
             >
               {/* IMAGE */}
-              <Image
-                src={images[index]}
-                alt=""
-                width={1800}
-                height={1200}
-                priority
-                className="max-h-[85vh] w-auto object-contain rounded-xl shadow-[0_20px_60px_rgba(0,0,0,0.5)]"
-              />
+              <motion.div style={{ scale }}>
+                <Image
+                  src={images[index]}
+                  alt=""
+                  width={2000}
+                  height={1400}
+                  priority
+                  className="max-h-[82vh] w-auto object-contain rounded-xl 
+                             shadow-[0_25px_70px_rgba(0,0,0,0.55)]"
+                />
+              </motion.div>
 
-              {/* NAV */}
+              {/* NAV BUTTONS */}
               <button
                 onClick={prev}
-                className="absolute left-3 sm:left-6 text-white text-4xl opacity-70 hover:opacity-100 select-none"
+                className="absolute left-2 sm:left-6 text-white text-4xl 
+                           opacity-70 hover:opacity-100 select-none"
               >
                 ‹
               </button>
+
               <button
                 onClick={next}
-                className="absolute right-3 sm:right-6 text-white text-4xl opacity-70 hover:opacity-100 select-none"
+                className="absolute right-2 sm:right-6 text-white text-4xl 
+                           opacity-70 hover:opacity-100 select-none"
               >
                 ›
               </button>
 
               {/* TOP CONTROLS */}
-              <div className="absolute top-4 right-4 sm:top-6 sm:right-6 flex gap-2 text-white text-xs sm:text-sm">
+              <div
+                className="absolute top-3 right-3 sm:top-6 sm:right-6 
+                              flex flex-wrap gap-2 text-white text-xs sm:text-sm"
+              >
                 <button
                   onClick={() => setPlaying((p) => !p)}
                   className="px-3 py-1 bg-white/10 rounded hover:bg-white/20"
@@ -167,7 +193,7 @@ export default function EventGallery({ images }: EventGalleryProps) {
               </div>
 
               {/* COUNTER */}
-              <div className="absolute bottom-4 sm:bottom-6 text-white text-sm opacity-80">
+              <div className="absolute bottom-3 sm:bottom-6 text-white text-xs sm:text-sm opacity-80">
                 {index + 1} / {images.length}
               </div>
             </motion.div>
