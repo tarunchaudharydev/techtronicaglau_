@@ -142,6 +142,7 @@ export const events: Event[] = [
                     "/clubs/code-e-phobia/events/udan/28.JPG",
                      "/clubs/code-e-phobia/events/udan/30.JPG",
                       "/clubs/code-e-phobia/events/udan/2n.JPG",
+                      "/clubs/code-e-phobia/events/udan/other.JPG",
 
 
 
