@@ -85,7 +85,7 @@ export const events: Event[] = [
     id: "idea-udan",
     title: "IDEA UDAAN",
     club: "code-e-phobia",
-    date: "2022-04-11",
+    date: "2026-02-07",
     time: "10:00 AM",
     location: "Seminar Hall AB-II",
     coverImage: "/clubs/code-e-phobia/events/poster.jpeg",
