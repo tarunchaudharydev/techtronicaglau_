@@ -420,7 +420,7 @@ export const clubs: Club[] = [
 
   {
     slug: "mindboggler",
-    name: "MindBlogglers",
+    name: "MindBogglers",
     tagline: "The Quest for Zero Defeat.",
     shortDescription:
       "Mind Bogglers is a quiz club which is to encourage the students to look beyond the textual knowledge, so that it will be helpful to relate between theory and application of the learnt concept.Its aim to promote fun way learning and improves ones general knowledge.It promotes a healthy debate amongst participants in order to learn from each other.The main purpose of club is to update the knowledge of students in various fields like academics, G.K, analytical abilities etc.These are conducted for the betterment of participants.",

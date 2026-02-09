@@ -8,7 +8,6 @@ export default function BirthdayBanner() {
 
   if (birthdayMembers.length === 0) return null;
 
-  // First names only (cleaner, friendlier)
   const names = birthdayMembers.map((m) => m.name.split(" ")[0]);
 
   const isMultiple = names.length > 1;
