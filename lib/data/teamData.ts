@@ -710,19 +710,19 @@ export const members: Member[] = [
    
 
 
-   {
-    id: 34,
-    name: "Ayushi Ricchariya",
-    roleType: "team",
-     roles: ["General member council"],
-    categories: ["GMC"],
-    image: "/ourTeam/coreMembers/ayushi.jpeg",    
-    shortBio: "General member council of Techtronica Society.",
-    longBio:[
-      { text: "Ayushi Ricchariya is a General member council of Techtronica Society, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
-    whatsApp: "wa.me/+910000000000",
-    linkedin: "https://www.linkedin.com/in/ayushi-richhariya-96a268306",
-  },
+  //  {
+  //   id: 34,
+  //   name: "Ayushi Ricchariya",
+  //   roleType: "team",
+  //    roles: ["General member council"],
+  //   categories: ["GMC"],
+  //   image: "/ourTeam/coreMembers/ayushi.jpeg",    
+  //   shortBio: "General member council of Techtronica Society.",
+  //   longBio:[
+  //     { text: "Ayushi Ricchariya is a General member council of Techtronica Society, where she leads the society’s vision, strategy, and overall direction with a strong focus on innovation, collaboration, and student growth."}],
+  //   whatsApp: "wa.me/+910000000000",
+  //   linkedin: "https://www.linkedin.com/in/ayushi-richhariya-96a268306",
+  // },
 
 
 
