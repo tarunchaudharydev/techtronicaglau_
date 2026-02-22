@@ -91,11 +91,11 @@ export default function ResearchAndPatentSection() {
   /* 🔄 LOADING VIEW */
   if (loading) {
     return (
-      <section className="min-h-[60vh] flex flex-col items-center justify-center bg-gradient-to-br from-white via-sky-50 to-purple-100">
+      <section className="min-h-[60vh] flex flex-col items-center justify-center bg-gradient-to-br from-white dark:from-slate-950 via-sky-50 dark:via-slate-900 to-purple-100 dark:to-black">
         <div className="w-64">
           <Lottie animationData={researchLoading} loop autoplay />
         </div>
-        <p className="mt-4 text-sm font-medium text-slate-600">
+        <p className="mt-4 text-sm font-medium text-muted">
           Preparing Research & Patent Cell…
         </p>
       </section>
@@ -104,7 +104,7 @@ export default function ResearchAndPatentSection() {
 
   /* ✅ MAIN CONTENT (UNCHANGED) */
   return (
-    <section className="bg-gradient-to-br from-white via-sky-50 to-purple-100 py-16 lg:py-20">
+    <section className="bg-gradient-to-br from-white dark:from-slate-950 via-sky-50 dark:via-slate-900 to-purple-100 dark:to-black py-16 lg:py-20">
       <div className="max-w-6xl mx-auto px-4 space-y-14">
         {/* Header */}
         <motion.div
@@ -112,7 +112,7 @@ export default function ResearchAndPatentSection() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center max-w-3xl mx-auto space-y-3"
         >
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground dark:text-white">
             Research & Patent Cell
           </h2>
           <p className="text-sm sm:text-base text-slate-700">
@@ -140,12 +140,12 @@ export default function ResearchAndPatentSection() {
                 <motion.div
                   key={i}
                   variants={item}
-                  className="rounded-2xl bg-white/90 border border-slate-200 px-4 py-4 text-center shadow-sm"
+                  className="rounded-2xl bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 px-4 py-4 text-center shadow-sm"
                 >
                   <div className="text-xl text-purple-600 mb-1">
                     {stat.icon}
                   </div>
-                  <p className="text-lg font-bold text-slate-900">
+                  <p className="text-lg font-bold text-foreground dark:text-white">
                     {stat.value}
                   </p>
                   <p className="text-[11px] uppercase tracking-wide text-slate-500">
@@ -156,7 +156,7 @@ export default function ResearchAndPatentSection() {
             </div>
 
             <div className="space-y-4">
-              <h3 className="text-base sm:text-lg font-semibold text-slate-900">
+              <h3 className="text-base sm:text-lg font-semibold text-foreground dark:text-white">
                 Recent Patents & Research
               </h3>
 
@@ -164,16 +164,16 @@ export default function ResearchAndPatentSection() {
                 <motion.div
                   key={index}
                   variants={item}
-                  className="flex gap-4 rounded-2xl bg-white/95 border border-slate-200 px-5 py-4 shadow-sm"
+                  className="flex gap-4 rounded-2xl bg-white dark:bg-slate-900/95 border border-slate-200 dark:border-slate-800 px-5 py-4 shadow-sm"
                 >
                   <div className="mt-1 text-purple-600">
                     {work.type === "Patent" ? <FiAward /> : <FiFileText />}
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-slate-900">
+                    <p className="text-sm font-semibold text-foreground dark:text-white">
                       {work.title}
                     </p>
-                    <p className="text-xs text-slate-600">
+                    <p className="text-xs text-muted">
                       {work.domain} • {work.year}
                     </p>
                   </div>
@@ -186,9 +186,9 @@ export default function ResearchAndPatentSection() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="rounded-3xl bg-white/95 backdrop-blur border border-slate-200 shadow-lg px-6 py-7 lg:px-8"
+            className="rounded-3xl bg-white dark:bg-slate-900/95 backdrop-blur border border-slate-200 dark:border-slate-800 shadow-lg px-6 py-7 lg:px-8"
           >
-            <h3 className="text-base sm:text-lg font-semibold text-slate-900 mb-5">
+            <h3 className="text-base sm:text-lg font-semibold text-foreground dark:text-white mb-5">
               Submit your research or patent idea
             </h3>
 

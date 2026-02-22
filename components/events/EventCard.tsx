@@ -46,7 +46,7 @@ export default function EventCard({
   return (
     <Link href={`/events/${event.id}`} className="block">
       <article
-        className={`rounded-3xl overflow-hidden bg-white border shadow-md transition hover:-translate-y-1 hover:shadow-xl ${
+        className={`rounded-3xl overflow-hidden bg-white dark:bg-slate-900 border shadow-md transition hover:-translate-y-1 hover:shadow-xl ${
           past ? "opacity-90" : ""
         }`}
       >
@@ -65,13 +65,11 @@ export default function EventCard({
             {event.club}
           </p>
 
-          <h3 className="text-lg font-semibold text-slate-900">
+          <h3 className="text-lg font-semibold text-foreground dark:text-white">
             {event.title}
           </h3>
 
-          <p className="text-sm text-slate-600 line-clamp-3">
-            {event.description}
-          </p>
+          <p className="text-sm text-muted line-clamp-3">{event.description}</p>
 
           <p className="text-xs text-slate-500">
             📅 {event.date} &nbsp; ⏰ {event.time}

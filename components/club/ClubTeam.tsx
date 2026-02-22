@@ -5,7 +5,7 @@ export default function ClubTeam({ club }: { club: Club }) {
   return (
     <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
       {/* spacing above heading */}
-      <h2 className="pt-20 text-lg sm:text-2xl font-bold mb-10 text-center text-slate-900">
+      <h2 className="pt-20 text-lg sm:text-2xl font-bold mb-10 text-center text-foreground dark:text-white">
         Club Team
       </h2>
 
@@ -29,7 +29,7 @@ export default function ClubTeam({ club }: { club: Club }) {
                 text-center
                 flex flex-col items-center
                 space-y-2
-                bg-white
+                bg-white dark:bg-slate-900
                 rounded-2xl
                 shadow-md
                 px-6 py-6
@@ -48,10 +48,10 @@ export default function ClubTeam({ club }: { club: Club }) {
                 />
               </div>
 
-              <p className="font-semibold text-xs sm:text-sm text-slate-900">
+              <p className="font-semibold text-xs sm:text-sm text-foreground dark:text-white">
                 {m.name}
               </p>
-              <p className="text-[11px] sm:text-xs text-slate-600">{m.role}</p>
+              <p className="text-[11px] sm:text-xs text-muted">{m.role}</p>
             </div>
           ))}
         </div>

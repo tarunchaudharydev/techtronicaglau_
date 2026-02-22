@@ -34,7 +34,7 @@ export default function FAQ() {
             <div
               key={index}
               className="border border-gray-200 rounded-xl p-5 transition-all duration-300
-                         hover:border-indigo-500 hover:shadow-md bg-white"
+                         hover:border-indigo-500 hover:shadow-md bg-white dark:bg-slate-900"
             >
               <button
                 onClick={() => setOpenIndex(isOpen ? null : index)}

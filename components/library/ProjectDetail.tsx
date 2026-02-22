@@ -10,7 +10,7 @@
 //         <div>
 //           <Link
 //             href="/projects"
-//             className="inline-flex items-center gap-2 text-sm font-medium text-slate-600 hover:text-sky-600 transition"
+//             className="inline-flex items-center gap-2 text-sm font-medium text-muted hover:text-sky-600 transition"
 //           >
 //             ← Back to Projects
 //           </Link>
@@ -18,10 +18,10 @@
 
 //         {/* Header */}
 //         <div>
-//           <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900">
+//           <h1 className="text-3xl md:text-4xl font-extrabold text-foreground dark:text-white">
 //             {project.title}
 //           </h1>
-//           <p className="mt-2 text-slate-600">{project.year}</p>
+//           <p className="mt-2 text-muted">{project.year}</p>
 //         </div>
 
 //         {/* Cover */}
@@ -96,7 +96,7 @@
 //             <a
 //               href={project.liveDemo}
 //               target="_blank"
-//               className="rounded-full border border-slate-300 px-5 py-2 text-sm font-semibold hover:bg-white transition"
+//               className="rounded-full border border-slate-300 dark:border-slate-700 px-5 py-2 text-sm font-semibold hover:bg-white dark:bg-slate-900 transition"
 //             >
 //               Live Demo
 //             </a>

@@ -15,7 +15,9 @@ export default function ClubHero({ club }: { club: Club }) {
           </span>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight">
-            <span className="block text-slate-900">{club.name}</span>
+            <span className="block text-foreground dark:text-white">
+              {club.name}
+            </span>
             <span className="bg-gradient-to-r from-sky-500 via-purple-500 to-yellow-400 bg-clip-text text-transparent">
               {club.tagline}
             </span>
@@ -36,7 +38,7 @@ export default function ClubHero({ club }: { club: Club }) {
 
             <Link
               href={`/clubs/${club.slug}/events`}
-              className="inline-flex items-center justify-center px-6 sm:px-7 py-2.5 sm:py-3 rounded-full text-sm sm:text-base font-semibold text-purple-700 border border-purple-300 bg-white hover:bg-purple-50 transition-colors shadow-sm"
+              className="inline-flex items-center justify-center px-6 sm:px-7 py-2.5 sm:py-3 rounded-full text-sm sm:text-base font-semibold text-purple-700 border border-purple-300 bg-white dark:bg-slate-900 hover:bg-purple-50 transition-colors shadow-sm"
             >
               View events
             </Link>

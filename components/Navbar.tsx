@@ -5,6 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
+// import ThemeToggle from "@/components/features/ThemeToggle";
+
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/clubs", label: "Clubs" },
@@ -20,6 +22,7 @@ const navLinks = [
   // { href: "/research", label: "Research & Patents" },
   { href: "/alumni", label: "Alumni" },
   { href: "/contact", label: "Contact us" },
+  // <ThemeToggle />,
 ];
 
 // const academicsItems = [
@@ -79,6 +82,7 @@ export default function Navbar() {
                 className="object-contain"
                 priority
               />
+              {/* <ThemeToggle /> */}
             </div>
           </Link>
 
@@ -101,7 +105,7 @@ export default function Navbar() {
                         className={`transition-colors ${
                           active
                             ? "text-blue-600"
-                            : "text-slate-900 hover:text-yellow-500"
+                            : "text-foreground dark:text-white hover:text-yellow-500"
                         }`}
                       >
                         Clubs
@@ -110,13 +114,13 @@ export default function Navbar() {
                     </div>
 
                     {isClubsOpen && (
-                      <div className="absolute left-1/2 z-50 mt-0 w-60 -translate-x-1/2 rounded-2xl border border-black bg-white shadow-xl">
+                      <div className="absolute left-1/2 z-50 mt-0 w-60 -translate-x-1/2 rounded-2xl border border-black bg-white dark:bg-slate-900 shadow-xl">
                         <ul className="py-2 text-xs text-black">
                           {clubItems.map((club) => (
                             <li key={club.href}>
                               <Link
                                 href={club.href}
-                                className="block px-4 py-2 text-slate-900 hover:text-yellow-500 transition-colors"
+                                className="block px-4 py-2 text-foreground dark:text-white hover:text-yellow-500 transition-colors"
                               >
                                 {club.label}
                               </Link>
@@ -136,7 +140,7 @@ export default function Navbar() {
                   className={`relative inline-flex items-center transition-colors ${
                     active
                       ? "text-blue-600"
-                      : "text-slate-900 hover:text-yellow-500"
+                      : "text-foreground dark:text-white hover:text-yellow-500"
                   }`}
                 >
                   <span>{link.label}</span>
@@ -163,7 +167,7 @@ export default function Navbar() {
           {/* Mobile hamburger */}
           <button
             onClick={() => setIsMobileOpen((v) => !v)}
-            className="md:hidden inline-flex items-center justify-center rounded-full p-2 text-black hover:bg-white/20 transition-colors"
+            className="md:hidden inline-flex items-center justify-center rounded-full p-2 text-black hover:bg-white dark:bg-slate-900/20 transition-colors"
             aria-label="Toggle menu"
           >
             <div className="space-y-1.5">
@@ -177,13 +181,13 @@ export default function Navbar() {
         {/* ✅ FIXED Mobile menu */}
         <div
           className={`
-            md:hidden mt-2 rounded-3xl border border-slate-200
-            bg-white shadow-lg
+            md:hidden mt-2 rounded-3xl border border-slate-200 dark:border-slate-800
+            bg-white dark:bg-slate-900 shadow-lg
             transition-all duration-300 overflow-hidden
             ${isMobileOpen ? "max-h-[80vh] opacity-100" : "max-h-0 opacity-0"}
           `}
         >
-          <nav className="flex flex-col px-4 py-3 space-y-2 text-sm font-medium text-slate-900 overflow-y-auto">
+          <nav className="flex flex-col px-4 py-3 space-y-2 text-sm font-medium text-foreground dark:text-white overflow-y-auto">
             {navLinks.map((link) => {
               if (link.href === "/clubs") {
                 return (
@@ -195,7 +199,7 @@ export default function Navbar() {
                     >
                       Clubs
                     </Link>
-                    <div className="ml-3 border-l border-slate-200 pl-3 space-y-1 text-[13px] text-slate-700">
+                    <div className="ml-3 border-l border-slate-200 dark:border-slate-800 pl-3 space-y-1 text-[13px] text-slate-700">
                       {clubItems.map((club) => (
                         <Link
                           key={club.href}

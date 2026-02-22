@@ -51,7 +51,7 @@ export default function ClientEventDetails({
               />
             </div>
 
-            <div className="rounded-xl bg-white p-4 shadow-sm">
+            <div className="rounded-xl bg-white dark:bg-slate-900 p-4 shadow-sm">
               <p className="text-xs text-slate-500 mb-1">Hosted By</p>
               <p className="font-semibold text-slate-800">{event.club}</p>
             </div>
@@ -97,7 +97,7 @@ export default function ClientEventDetails({
             )}
 
             {/* DESCRIPTION */}
-            <div className="rounded-2xl bg-white p-6 shadow-sm space-y-3">
+            <div className="rounded-2xl bg-white dark:bg-slate-900 p-6 shadow-sm space-y-3">
               {event.description.map((line: string, i: number) => (
                 <p key={i} className="text-slate-700 text-sm sm:text-base">
                   {line}
@@ -107,7 +107,7 @@ export default function ClientEventDetails({
 
             {/* PAST EVENT – WINNERS */}
             {!isUpcoming && event.winners && (
-              <div className="rounded-2xl bg-white p-6 shadow-sm space-y-6">
+              <div className="rounded-2xl bg-white dark:bg-slate-900 p-6 shadow-sm space-y-6">
                 <h2 className="text-xl font-semibold flex items-center gap-2">
                   <FaMedal className="text-emerald-600" />
                   Winners
@@ -137,7 +137,7 @@ export default function ClientEventDetails({
                       <div className="flex items-center gap-4">
                         <button
                           onClick={() => setPreviewImage(team.image)}
-                          className="relative h-16 w-16 overflow-hidden rounded-lg border bg-white"
+                          className="relative h-16 w-16 overflow-hidden rounded-lg border bg-white dark:bg-slate-900"
                         >
                           <Image
                             src={team.image || "/placeholder-team.png"}
@@ -166,13 +166,13 @@ export default function ClientEventDetails({
                         {team.members.map((member: any) => (
                           <div
                             key={member.rollNo}
-                            className="rounded-lg border border-slate-200 bg-slate-50 p-3 text-sm"
+                            className="rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 p-3 text-sm"
                           >
                             <p className="flex items-center gap-2 font-medium text-slate-800">
                               <FiUser className="text-slate-500" />
                               {member.name}
                             </p>
-                            <div className="mt-1 ml-6 text-slate-600 space-y-0.5">
+                            <div className="mt-1 ml-6 text-muted space-y-0.5">
                               <p>
                                 <span className="font-medium">Roll No:</span>{" "}
                                 {member.rollNo}
@@ -193,7 +193,7 @@ export default function ClientEventDetails({
 
             {/* GALLERY */}
             {event.gallery?.length > 0 && (
-              <div className="rounded-2xl bg-white p-6 shadow-sm">
+              <div className="rounded-2xl bg-white dark:bg-slate-900 p-6 shadow-sm">
                 <h2 className="text-xl font-semibold mb-4">Event Gallery</h2>
                 <EventGallery images={event.gallery} />
               </div>

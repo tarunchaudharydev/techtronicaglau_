@@ -54,7 +54,7 @@ export default function EventPopup({ event }: Props) {
         <button
           onClick={closePopup}
           aria-label="Close popup"
-          className="absolute right-3 top-3 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-lg text-white cursor-pointer
+          className="absolute right-3 top-3 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-white dark:bg-slate-900/10 text-lg text-white cursor-pointer
                      transition-all duration-300
                      hover:bg-red-500 hover:rotate-90 hover:scale-110 hover:shadow-lg"
         >
@@ -92,7 +92,7 @@ export default function EventPopup({ event }: Props) {
           {/* Countdown & Actions */}
           <div className="pt-3">
             {eventDateTime >= new Date() && (
-              <div className="rounded-2xl bg-white p-6 shadow-sm space-y-4">
+              <div className="rounded-2xl bg-white dark:bg-slate-900 p-6 shadow-sm space-y-4">
                 <p className="text-lg font-semibold text-emerald-900">
                   Time Left
                 </p>

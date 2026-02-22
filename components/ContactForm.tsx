@@ -52,7 +52,7 @@ export default function ContactSection() {
   const [error, setError] = useState("");
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => setForm({ ...form, [e.target.name]: e.target.value });
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -80,7 +80,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="bg-gradient-to-br from-white via-sky-50 to-purple-100 py-16 lg:py-20">
+    <section className="bg-gradient-to-br from-white dark:from-slate-950 via-sky-50 dark:via-slate-900 to-purple-100 dark:to-black py-16 lg:py-20">
       <div className="max-w-6xl mx-auto px-4 space-y-16">
         {/* Header */}
         <motion.div
@@ -89,10 +89,10 @@ export default function ContactSection() {
           animate="show"
           className="text-center max-w-3xl mx-auto space-y-3"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground dark:text-white">
             Contact
           </h2>
-          <p className="text-sm md:text-base text-slate-600">
+          <p className="text-sm md:text-base text-muted">
             Have a question, idea, or collaboration proposal? Send us a message
             and we’ll get back to you.
           </p>
@@ -103,7 +103,7 @@ export default function ContactSection() {
           variants={fadeUp}
           initial="hidden"
           animate="show"
-          className="grid gap-10 lg:grid-cols-2 items-center bg-white rounded-3xl shadow-xl border border-slate-200 p-6 sm:p-10"
+          className="grid gap-10 lg:grid-cols-2 items-center bg-white dark:bg-slate-900 rounded-3xl shadow-xl border border-slate-200 dark:border-slate-800 p-6 sm:p-10"
         >
           {/* Lottie Animation */}
           <div className="hidden lg:block">
@@ -117,7 +117,7 @@ export default function ContactSection() {
 
           {/* Form */}
           <form onSubmit={handleSubmit} className="space-y-6">
-            <h3 className="text-xl font-semibold text-slate-900">
+            <h3 className="text-xl font-semibold text-foreground dark:text-white">
               Leave Us a Message
             </h3>
 
@@ -214,7 +214,9 @@ export default function ContactSection() {
             <div key={i} className="flex gap-3 items-start">
               <div className="text-sky-600 text-lg">{item.icon}</div>
               <div>
-                <p className="font-medium text-slate-900">{item.label}</p>
+                <p className="font-medium text-foreground dark:text-white">
+                  {item.label}
+                </p>
                 <p className="text-slate-500 text-xs">{item.value}</p>
               </div>
             </div>
@@ -244,7 +246,7 @@ export default function ContactSection() {
               className="
             h-10 w-10 flex items-center justify-center rounded-full
             bg-slate-100 text-slate-700
-            hover:bg-slate-200 hover:text-slate-900
+            hover:bg-slate-200 hover:text-foreground dark:text-white
             transition
           "
             >

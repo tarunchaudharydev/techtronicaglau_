@@ -19,7 +19,7 @@ export default function ClubCTA({ club }: { club: Club }) {
         <div className="flex justify-center md:justify-end">
           <Link
             href={`/clubs/${club.slug}/join`}
-            className="inline-flex items-center justify-center bg-white text-purple-900 px-6 sm:px-7 md:px-8 py-2.5 sm:py-3 rounded-full font-semibold text-xs sm:text-sm shadow-md hover:bg-slate-100 transition-colors"
+            className="inline-flex items-center justify-center bg-white dark:bg-slate-900 text-purple-900 px-6 sm:px-7 md:px-8 py-2.5 sm:py-3 rounded-full font-semibold text-xs sm:text-sm shadow-md hover:bg-slate-100 transition-colors"
           >
             Join {club.name}
           </Link>

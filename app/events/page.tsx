@@ -34,7 +34,7 @@ function Section({ title, children }: any) {
 
 function EventCard({ event }: any) {
   return (
-    <article className="rounded-2xl bg-white shadow transition hover:-translate-y-1 hover:shadow-xl overflow-hidden flex flex-col">
+    <article className="rounded-2xl bg-white dark:bg-slate-900 shadow transition hover:-translate-y-1 hover:shadow-xl overflow-hidden flex flex-col">
       {/* Cover Image */}
       <div className="relative h-48 w-full">
         <Image

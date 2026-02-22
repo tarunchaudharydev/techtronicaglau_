@@ -49,14 +49,14 @@ const clubs = [
 
 export default function ClubsPage() {
   return (
-    <main className="min-h-screen flex justify-center bg-gradient-to-br from-white via-sky-50 to-purple-100">
+    <main className="min-h-screen flex justify-center bg-gradient-to-br from-white dark:from-slate-950 via-sky-50 dark:via-slate-900 to-purple-100 dark:to-black">
       <section className="w-full max-w-5xl pb-16">
         {/* Top text section */}
         <header className="mb-8 text-center">
           <p className="text-xs uppercase tracking-[0.3em] text-sky-600 mb-2">
             Techtronica • Clubs
           </p>
-          <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-2">
+          <h1 className="text-2xl sm:text-3xl font-extrabold text-foreground dark:text-white mb-2">
             Explore our clubs
           </h1>
           <p className="text-sm sm:text-base text-slate-700 max-w-2xl mx-auto">
@@ -74,7 +74,7 @@ export default function ClubsPage() {
               className="
                 group
                 rounded-3xl bg-sky-50
-                border border-slate-200/80
+                border border-slate-200 dark:border-slate-800/80
                 shadow-sm
                 overflow-hidden
                 transition-all
@@ -102,7 +102,9 @@ export default function ClubsPage() {
                   {club.tag}
                 </p>
 
-                <h2 className="font-semibold text-slate-900">{club.name}</h2>
+                <h2 className="font-semibold text-foreground dark:text-white">
+                  {club.name}
+                </h2>
 
                 <p className="text-sm text-slate-700 mt-1 flex-1">
                   {club.description}

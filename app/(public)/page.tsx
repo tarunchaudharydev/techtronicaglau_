@@ -8,7 +8,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { aboutSociety } from "../../lib/data/home-data";
 // import HomeComponent from "../components/SocietyText";
 
-
 gsap.registerPlugin(ScrollTrigger);
 
 function Home() {
@@ -24,7 +23,7 @@ function Home() {
   // useEffect(() => { ... }, []);
 
   return (
-    <main className="min-h-screen pt-28 px-4 flex items-start justify-center bg-linear-to-br from-white via-sky-50 to-purple-100">
+    <main className="min-h-screen pt-28 px-4 flex items-start justify-center bg-linear-to-br from-white dark:from-slate-950 via-sky-50 dark:via-slate-900 to-purple-100 dark:to-black">
       <section className="w-full max-w-5xl text-black space-y-20 pb-20">
         {/* <HomeComponent /> */}
         {/* HERO */}
@@ -56,7 +55,7 @@ function Home() {
 
             <Link
               href="/about"
-              className="inline-flex items-center justify-center px-6 py-2.5 rounded-full text-sm font-semibold border border-purple-200 text-sky-900 bg-white/70 hover:bg-white transition-colors shadow-sm"
+              className="inline-flex items-center justify-center px-6 py-2.5 rounded-full text-sm font-semibold border border-purple-200 text-sky-900 bg-white dark:bg-slate-900/70 hover:bg-white dark:bg-slate-900 transition-colors shadow-sm"
             >
               Learn More
             </Link>
@@ -68,25 +67,25 @@ function Home() {
           ref={statsRef}
           className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs sm:text-sm mb-8"
         >
-          <div className="rounded-2xl border border-purple-100 bg-white/80 shadow-sm p-4">
+          <div className="rounded-2xl border border-purple-100 bg-white dark:bg-slate-900/80 shadow-sm p-4">
             <p className="font-semibold text-sky-900">5 Clubs</p>
             <p className="text-[11px] sm:text-xs text-slate-700">
               Technovation, Code-E-Phobia, Gizmo, Unnati, Mindblogger.
             </p>
           </div>
-          <div className="rounded-2xl border border-purple-100 bg-white/80 shadow-sm p-4">
+          <div className="rounded-2xl border border-purple-100 bg-white dark:bg-slate-900/80 shadow-sm p-4">
             <p className="font-semibold text-sky-900">20+ Events</p>
             <p className="text-[11px] sm:text-xs text-slate-700">
               Fests, hackathons, workshops, and competitions.
             </p>
           </div>
-          <div className="rounded-2xl border border-purple-100 bg-white/80 shadow-sm p-4">
+          <div className="rounded-2xl border border-purple-100 bg-white dark:bg-slate-900/80 shadow-sm p-4">
             <p className="font-semibold text-sky-900">100+ Members</p>
             <p className="text-[11px] sm:text-xs text-slate-700">
               Active students from all departments.
             </p>
           </div>
-          <div className="rounded-2xl border border-purple-100 bg-white/80 shadow-sm p-4">
+          <div className="rounded-2xl border border-purple-100 bg-white dark:bg-slate-900/80 shadow-sm p-4">
             <p className="font-semibold text-sky-900">Mentors</p>
             <p className="text-[11px] sm:text-xs text-slate-700">
               Guided by experienced faculty coordinators.
@@ -95,53 +94,49 @@ function Home() {
         </div>
 
         {/* 1. Clubs overview */}
-       <div className="max-w-6xl mx-auto px-4">
-  <div
-    ref={(el) => setSectionRef(el, 0)}
-    className="
+        <div className="max-w-6xl mx-auto px-4">
+          <div
+            ref={(el) => setSectionRef(el, 0)}
+            className="
       flex flex-col
       md:flex-row
       gap-8
       items-center
     "
-  >
-    {/* LEFT: text */}
-    <div className="w-full md:w-1/2 space-y-3 mb-8">
-      <h2 className="text-xl sm:text-4xl font-bold text-sky-900">
-        {aboutSociety.title}
-      </h2>
+          >
+            {/* LEFT: text */}
+            <div className="w-full md:w-1/2 space-y-3 mb-8">
+              <h2 className="text-xl sm:text-4xl font-bold text-sky-900">
+                {aboutSociety.title}
+              </h2>
 
-      {aboutSociety.description.map((para, index) => (
-        <p
-          key={index}
-          className="text-sm sm:text-base text-slate-700 leading-relaxed"
-        >
-          {para}
-        </p>
-      ))}
+              {aboutSociety.description.map((para, index) => (
+                <p
+                  key={index}
+                  className="text-sm sm:text-base text-slate-700 leading-relaxed"
+                >
+                  {para}
+                </p>
+              ))}
+            </div>
 
-      
-    </div>
-
-    {/* RIGHT: image */}
-    <div className="w-full md:w-1/2">
-      <Image
-        src="/images/overview/team.jpg"
-        alt="Students collaborating in different clubs"
-        width={800}
-        height={500}
-        className="
+            {/* RIGHT: image */}
+            <div className="w-full md:w-1/2">
+              <Image
+                src="/images/overview/team.jpg"
+                alt="Students collaborating in different clubs"
+                width={800}
+                height={500}
+                className="
           w-full h-52 sm:h-64 md:h-72
           rounded-3xl object-cover
           shadow-[0_18px_60px_rgba(15,23,42,0.25)]
         "
-        priority
-      />
-    </div>
-  </div>
-</div>
-
-
+                priority
+              />
+            </div>
+          </div>
+        </div>
 
         {/* 2. Technical club */}
         <div
@@ -345,7 +340,7 @@ function Home() {
         </div>
 
         {/* CTA STRIP */}
-        <div className="rounded-3xl border border-sky-100 bg-white/80 shadow-md px-5 py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div className="rounded-3xl border border-sky-100 bg-white dark:bg-slate-900/80 shadow-md px-5 py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div>
             <h2 className="text-base sm:text-lg font-semibold text-sky-900">
               Ready to be part of the core team?

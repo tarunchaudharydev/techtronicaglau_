@@ -9,17 +9,17 @@ export default function AlumniTeamSection() {
   const [selected, setSelected] = useState<Alumni | null>(null);
 
   return (
-    <section className=" bg-linear-to-br from-white via-sky-50 to-purple-100">
+    <section className=" bg-linear-to-br from-white dark:from-slate-950 via-sky-50 dark:via-slate-900 to-purple-100 dark:to-black">
       <div className="max-w-6xl mx-auto px-6">
         {/* Heading */}
         <div className="text-center mb-14">
           <p className="text-[11px] uppercase tracking-[0.25em] text-sky-600 mb-2">
             Techtronica • Alumni
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-3">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground dark:text-white mb-3">
             Our Alumni
           </h2>
-          <p className="text-sm md:text-base text-slate-600 max-w-3xl mx-auto">
+          <p className="text-sm md:text-base text-muted max-w-3xl mx-auto">
             Alumni who shaped Techtronica and are now making an impact in the
             industry.
           </p>
@@ -31,7 +31,7 @@ export default function AlumniTeamSection() {
             <button
               key={a.id}
               onClick={() => setSelected(a)}
-              className="group bg-white p-5 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all text-center"
+              className="group bg-white dark:bg-slate-900 p-5 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all text-center"
             >
               <div className="relative w-28 h-28 mx-auto rounded-full overflow-hidden mb-4">
                 <Image
@@ -42,13 +42,15 @@ export default function AlumniTeamSection() {
                 />
               </div>
 
-              <h3 className="font-semibold text-slate-900">{a.name}</h3>
+              <h3 className="font-semibold text-foreground dark:text-white">
+                {a.name}
+              </h3>
 
               <p className="text-indigo-600 text-xs mt-1">
                 {a.roleInSociety} • {a.session}
               </p>
 
-              <p className="text-xs text-slate-600 mt-2">
+              <p className="text-xs text-muted mt-2">
                 {a.currentRole}
                 {a.currentCompany && ` @ ${a.currentCompany}`}
               </p>
@@ -64,11 +66,11 @@ export default function AlumniTeamSection() {
       {/* Alumni Profile Modal */}
       {selected && (
         <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center px-4">
-          <div className="bg-white rounded-3xl max-w-3xl w-full p-6 relative max-h-[90vh] overflow-y-auto">
+          <div className="bg-white dark:bg-slate-900 rounded-3xl max-w-3xl w-full p-6 relative max-h-[90vh] overflow-y-auto">
             {/* Close */}
             <button
               onClick={() => setSelected(null)}
-              className="absolute top-4 right-4 text-slate-500 hover:text-slate-900"
+              className="absolute top-4 right-4 text-slate-500 hover:text-foreground dark:text-white"
             >
               ✕
             </button>
@@ -87,7 +89,7 @@ export default function AlumniTeamSection() {
 
               {/* Content */}
               <div>
-                <h3 className="text-2xl font-semibold text-slate-900">
+                <h3 className="text-2xl font-semibold text-foreground dark:text-white">
                   {selected.name}
                 </h3>
 
@@ -96,7 +98,7 @@ export default function AlumniTeamSection() {
                 </p>
 
                 {selected.club && (
-                  <p className="text-sm text-slate-600 mt-1">
+                  <p className="text-sm text-muted mt-1">
                     Club: {selected.club}
                   </p>
                 )}

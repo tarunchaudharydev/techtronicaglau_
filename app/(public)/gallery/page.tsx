@@ -59,7 +59,7 @@ export default function GalleryPage() {
         root: null,
         rootMargin: "200px",
         threshold: 0.1,
-      }
+      },
     );
 
     observerRef.current.observe(loadMoreRef.current);
@@ -69,7 +69,7 @@ export default function GalleryPage() {
 
   return (
     <section
-      className="max-w-7xl mx-auto px-4 pb-12 bg-linear-to-br from-white via-sky-50 to-purple-100"
+      className="max-w-7xl mx-auto px-4 pb-12 bg-linear-to-br from-white dark:from-slate-950 via-sky-50 dark:via-slate-900 to-purple-100 dark:to-black"
       style={{ paddingTop: "calc(8rem + 29px)" }}
     >
       {/* ================= HEADER ================= */}

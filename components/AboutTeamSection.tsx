@@ -42,7 +42,7 @@ const getRoleColor = (role: string) => {
 const getCardStyle = (categories: string[]) => {
   if (categories.includes("President")) {
     return `
-      bg-white
+      bg-white dark:bg-slate-900
       border-2 border-yellow-300
       shadow-[0_0_40px_rgba(255,200,0,0.4)]
       hover:shadow-[0_0_60px_rgba(255,200,0,0.6)]
@@ -51,7 +51,7 @@ const getCardStyle = (categories: string[]) => {
 
   if (categories.includes("mentor")) {
     return `
-      bg-white
+      bg-white dark:bg-slate-900
       border border-emerald-200
       shadow-[0_0_30px_rgba(16,185,129,0.4)]
       hover:shadow-[0_0_45px_rgba(16,185,129,0.6)]
@@ -60,7 +60,7 @@ const getCardStyle = (categories: string[]) => {
 
   if (categories.includes("Vice President")) {
     return `
-      bg-white
+      bg-white dark:bg-slate-900
       border border-blue-200
       shadow-[0_0_20px_rgba(59,130,246,0.3)]
       hover:shadow-[0_0_35px_rgba(59,130,246,0.5)]
@@ -84,7 +84,7 @@ const getCardStyle = (categories: string[]) => {
     `;
   }
 
-  return "bg-white shadow-xl hover:shadow-2xl";
+  return "bg-white dark:bg-slate-900 shadow-xl hover:shadow-2xl";
 };
 
 export default function AboutTeamSection() {
@@ -202,7 +202,7 @@ export default function AboutTeamSection() {
       {/* Modal */}
       {selected && (
         <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center px-4">
-          <div className="bg-white rounded-3xl max-w-3xl w-full p-6 relative max-h-[90vh] overflow-y-auto shadow-2xl">
+          <div className="bg-white dark:bg-slate-900 rounded-3xl max-w-3xl w-full p-6 relative max-h-[90vh] overflow-y-auto shadow-2xl">
             <button
               onClick={() => setSelected(null)}
               className="absolute top-4 right-4 text-gray-500 hover:text-gray-900 text-lg cursor-pointer transition"
@@ -244,7 +244,7 @@ export default function AboutTeamSection() {
                     key={index}
                     className={`mt-3 text-sm leading-relaxed ${
                       para.bold
-                        ? "font-semibold text-slate-900"
+                        ? "font-semibold text-foreground dark:text-white"
                         : "text-gray-700"
                     }`}
                   >

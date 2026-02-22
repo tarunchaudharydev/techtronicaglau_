@@ -172,21 +172,21 @@ export default function EventGallery({ images }: EventGalleryProps) {
               >
                 <button
                   onClick={() => setPlaying((p) => !p)}
-                  className="px-3 py-1 bg-white/10 rounded hover:bg-white/20"
+                  className="px-3 py-1 bg-white dark:bg-slate-900/10 rounded hover:bg-white dark:bg-slate-900/20"
                 >
                   {playing ? "Pause" : "Play"}
                 </button>
 
                 <button
                   onClick={() => downloadImage(images[index])}
-                  className="px-3 py-1 bg-white/10 rounded hover:bg-white/20"
+                  className="px-3 py-1 bg-white dark:bg-slate-900/10 rounded hover:bg-white dark:bg-slate-900/20"
                 >
                   Download
                 </button>
 
                 <button
                   onClick={closeGallery}
-                  className="px-3 py-1 bg-white/10 rounded hover:bg-white/20"
+                  className="px-3 py-1 bg-white dark:bg-slate-900/10 rounded hover:bg-white dark:bg-slate-900/20"
                 >
                   Close
                 </button>

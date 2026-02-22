@@ -15,7 +15,7 @@ export default function TeamCard({ member }: TeamCardProps) {
   return (
     <div
       className="
-        relative bg-white
+        relative bg-white dark:bg-slate-900
         rounded-2xl shadow-sm
         hover:shadow-lg
         transition-all duration-300

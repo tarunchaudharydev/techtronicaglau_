@@ -36,7 +36,7 @@ const HomeSlider = () => {
         >
           {sliderItems.map((item) => (
             <SwiperSlide key={item.id}>
-              <div className="group relative h-72 sm:h-80 md:h-[22rem] rounded-3xl overflow-hidden shadow-[0_18px_60px_rgba(15,23,42,0.35)] bg-white">
+              <div className="group relative h-72 sm:h-80 md:h-[22rem] rounded-3xl overflow-hidden shadow-[0_18px_60px_rgba(15,23,42,0.35)] bg-white dark:bg-slate-900">
                 <Image
                   src={item.image}
                   alt={item.title}
@@ -58,7 +58,7 @@ const HomeSlider = () => {
                   <Link href={`/events?club=${encodeURIComponent(item.club)}`}>
                     <button
                       type="button"
-                      className="mt-3 inline-flex items-center px-4 py-1.5 rounded-full bg-white text-[11px] sm:text-xs font-semibold text-slate-900 shadow-sm group-hover:bg-sky-500 group-hover:text-white transition-colors"
+                      className="mt-3 inline-flex items-center px-4 py-1.5 rounded-full bg-white dark:bg-slate-900 text-[11px] sm:text-xs font-semibold text-foreground dark:text-white shadow-sm group-hover:bg-sky-500 group-hover:text-white transition-colors"
                     >
                       View more
                     </button>

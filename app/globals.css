@@ -1,4 +1,4 @@
-@import "tailwindcss";
+/* @import "tailwindcss";
 
 @import "swiper/css";
 @import "swiper/css/navigation";
@@ -31,26 +31,171 @@ body {
 }
 
 .footer-link {
-  @apply text-slate-600 hover:text-sky-700 transition-colors;
+  @apply text-muted hover:text-sky-700 transition-colors;
 }
 
 .input {
-  @apply w-full rounded-lg border border-slate-300 bg-white px-3 py-2
-  text-sm text-slate-900 shadow-sm
+  @apply w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-3 py-2
+  text-sm text-foreground dark:text-white shadow-sm
   focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500;
 }
 
 .contact-input {
-  @apply w-full rounded-xl border border-slate-300 bg-slate-50
-  px-4 py-3 text-sm text-slate-900
+  @apply w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50
+  px-4 py-3 text-sm text-foreground dark:text-white
   focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition;
 }
 
 .floating-label {
   @apply absolute left-4 top-3 text-slate-500 text-sm pointer-events-none
   transition-all peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-sm
-  peer-focus:-top-2 peer-focus:text-xs peer-focus:text-sky-600 bg-white px-1;
+  peer-focus:-top-2 peer-focus:text-xs peer-focus:text-sky-600 bg-white dark:bg-slate-900 px-1;
 }
+
+.marquee {
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
+@import "tailwindcss";
+
+/* Enable class-based dark mode (Tailwind v4) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Swiper */
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+@import "swiper/css/effect-coverflow";
+
+/* ===============================
+   THEME VARIABLES
+================================ */
+
+/* Light Mode */
+:root {
+  --background: #ffffff;
+  --foreground: #111827; /* slightly softer than pure black */
+  --muted: #64748b;
+  --card: #ffffff;
+  --border: #e2e8f0;
+}
+
+/* Dark Mode */
+.dark {
+  --background: #020617; /* slate-950 */
+  --foreground: #f8fafc; /* near white */
+  --muted: #94a3b8; /* slate-400 */
+  --card: #0f172a; /* slate-900 */
+  --border: #1e293b; /* slate-800 */
+}
+
+/* Make Tailwind aware of our custom tokens */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-card: var(--card);
+  --color-border: var(--border);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* ===============================
+   GLOBAL BASE STYLES
+================================ */
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Smooth transitions everywhere */
+* {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* ===============================
+   REUSABLE UTILITY CLASSES
+================================ */
+
+.theme-bg {
+  @apply bg-background;
+}
+
+.theme-text {
+  @apply text-foreground;
+}
+
+.theme-muted {
+  @apply text-muted;
+}
+
+.theme-card {
+  @apply bg-card border border-border;
+}
+
+/* ===============================
+   COMPONENT UTILITIES
+================================ */
+
+.footer-link {
+  @apply text-muted hover:text-sky-600 transition-colors;
+}
+
+.input {
+  @apply w-full rounded-lg border border-border
+  bg-card px-3 py-2 text-sm text-foreground shadow-sm
+  focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500;
+}
+
+.contact-input {
+  @apply w-full rounded-xl border border-border
+  bg-card px-4 py-3 text-sm text-foreground
+  focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500;
+}
+
+.floating-label {
+  @apply absolute left-4 top-3 text-muted text-sm pointer-events-none
+  transition-all peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-sm
+  peer-focus:-top-2 peer-focus:text-xs peer-focus:text-sky-500
+  bg-card px-1;
+}
+
+/* ===============================
+   ANIMATIONS
+================================ */
 
 .marquee {
   width: max-content;

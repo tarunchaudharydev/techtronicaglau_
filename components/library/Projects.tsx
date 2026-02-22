@@ -26,14 +26,14 @@ const statusStyles: Record<string, string> = {
 
 export default function Projects() {
   return (
-    <section className="bg-gradient-to-br from-white via-sky-50 to-purple-100 py-20">
+    <section className="bg-gradient-to-br from-white dark:from-slate-950 via-sky-50 dark:via-slate-900 to-purple-100 dark:to-black py-20">
       <div className="max-w-6xl mx-auto px-4 space-y-12">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto space-y-3">
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground dark:text-white">
             Projects by Techtronica
           </h2>
-          <p className="text-sm sm:text-base text-slate-600">
+          <p className="text-sm sm:text-base text-muted">
             A glimpse of innovation, engineering, and research driven by our
             members.
           </p>
@@ -50,7 +50,7 @@ export default function Projects() {
             <motion.div
               key={project.id}
               variants={item}
-              className="group rounded-3xl bg-white border border-slate-200 shadow-sm overflow-hidden hover:shadow-xl transition"
+              className="group rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden hover:shadow-xl transition"
             >
               {/* Image */}
               <div className="relative h-44 w-full bg-slate-100">
@@ -76,7 +76,7 @@ export default function Projects() {
                   <span className="text-xs text-slate-500">{project.year}</span>
                 </div>
 
-                <h3 className="text-base font-semibold text-slate-900">
+                <h3 className="text-base font-semibold text-foreground dark:text-white">
                   {project.title}
                 </h3>
 

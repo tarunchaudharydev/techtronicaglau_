@@ -27,7 +27,7 @@ export default async function EventDetailPage({
         </Link>
 
         {/* Header Card */}
-        <section className="rounded-3xl bg-white shadow-sm overflow-hidden">
+        <section className="rounded-3xl bg-white dark:bg-slate-900 shadow-sm overflow-hidden">
           {/* Cover */}
           {event.coverImage && (
             <div className="relative h-72 w-full">
@@ -47,7 +47,7 @@ export default async function EventDetailPage({
               {event.title}
             </h1>
 
-            <p className="text-sm text-slate-600">
+            <p className="text-sm text-muted">
               {event.date} • {event.time} • {event.location}
             </p>
           </div>
@@ -55,19 +55,19 @@ export default async function EventDetailPage({
 
         {/* Countdown Card */}
         {event.registrationDeadline && (
-          <section className="rounded-2xl bg-white p-6 shadow-sm">
+          <section className="rounded-2xl bg-white dark:bg-slate-900 p-6 shadow-sm">
             <p className="text-lg font-semibold text-emerald-900 mb-2">
               Event Status
             </p>
             <EventCountdown deadline={event.registrationDeadline} />
-            <p className="text-sm text-slate-600 mt-2">
+            <p className="text-sm text-muted mt-2">
               Stay tuned — actions will unlock as the event approaches.
             </p>
           </section>
         )}
 
         {/* Description */}
-        <section className="rounded-2xl bg-white p-6 shadow-sm space-y-3">
+        <section className="rounded-2xl bg-white dark:bg-slate-900 p-6 shadow-sm space-y-3">
           {event.description.map((line, index) => (
             <p key={index} className="text-slate-700">
               {line}
@@ -77,7 +77,7 @@ export default async function EventDetailPage({
 
         {/* Winners */}
         {event.winners && event.winners.length > 0 && (
-          <section className="rounded-2xl bg-white p-6 shadow-sm">
+          <section className="rounded-2xl bg-white dark:bg-slate-900 p-6 shadow-sm">
             <h2 className="text-xl font-semibold mb-3 text-emerald-900">
               Winners
             </h2>
@@ -93,7 +93,7 @@ export default async function EventDetailPage({
 
         {/* Gallery */}
         {event.gallery && event.gallery.length > 0 && (
-          <section className="rounded-2xl bg-white p-6 shadow-sm">
+          <section className="rounded-2xl bg-white dark:bg-slate-900 p-6 shadow-sm">
             <h2 className="text-xl font-semibold mb-4 text-emerald-900">
               Event Gallery
             </h2>

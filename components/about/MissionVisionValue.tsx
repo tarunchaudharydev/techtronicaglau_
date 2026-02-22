@@ -20,7 +20,7 @@ const cardVariants: Variants = {
 
 export default function MissionVisionValue() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white dark:bg-slate-900">
       <div className="mx-auto max-w-6xl px-6 grid md:grid-cols-3 gap-8 text-center">
         {[
           {

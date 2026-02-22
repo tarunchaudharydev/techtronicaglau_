@@ -65,7 +65,7 @@ export default function AboutPage() {
       </section>
 
       {/* MISSION / VISION / VALUES */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white dark:bg-slate-900">
         <MissionVisionValue />
       </section>
 

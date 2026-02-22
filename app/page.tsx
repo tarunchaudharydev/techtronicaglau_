@@ -28,7 +28,7 @@
 //   };
 
 //   return (
-//     <main className="min-h-screen flex items-start justify-center bg-gradient-to-br from-white via-sky-50 to-purple-100">
+//     <main className="min-h-screen flex items-start justify-center bg-gradient-to-br from-white dark:from-slate-950 via-sky-50 dark:via-slate-900 to-purple-100 dark:to-black">
 //       <section className="w-full max-w-6xl text-black space-y-16 sm:space-y-20 pb-20 px-3 sm:px-4 pt-8 sm:pt-10">
 //         {/* HERO SWIPER + TEXT */}
 //         <div
@@ -63,7 +63,7 @@
 
 //               <Link
 //                 href="/about"
-//                 className="inline-flex items-center justify-center px-6 py-2.5 rounded-full text-xs sm:text-sm font-semibold border border-purple-200 text-sky-900 bg-white/70 hover:bg-white transition-colors shadow-sm"
+//                 className="inline-flex items-center justify-center px-6 py-2.5 rounded-full text-xs sm:text-sm font-semibold border border-purple-200 text-sky-900 bg-white dark:bg-slate-900/70 hover:bg-white dark:bg-slate-900 transition-colors shadow-sm"
 //               >
 //                 Learn More
 //               </Link>
@@ -78,25 +78,25 @@
 //           ref={statsRef}
 //           className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs sm:text-sm mb-4 sm:mb-8"
 //         >
-//           <div className="rounded-2xl border border-purple-100 bg-white/80 shadow-sm p-4">
+//           <div className="rounded-2xl border border-purple-100 bg-white dark:bg-slate-900/80 shadow-sm p-4">
 //             <p className="font-semibold text-sky-900">5 Clubs</p>
 //             <p className="text-[11px] sm:text-xs text-slate-700">
 //               Technovation, Code-E-Phobia, Gizmo, Unnati, Mindblogger.
 //             </p>
 //           </div>
-//           <div className="rounded-2xl border border-purple-100 bg-white/80 shadow-sm p-4">
+//           <div className="rounded-2xl border border-purple-100 bg-white dark:bg-slate-900/80 shadow-sm p-4">
 //             <p className="font-semibold text-sky-900">20+ Events</p>
 //             <p className="text-[11px] sm:text-xs text-slate-700">
 //               Fests, hackathons, workshops, and competitions.
 //             </p>
 //           </div>
-//           <div className="rounded-2xl border border-purple-100 bg-white/80 shadow-sm p-4">
+//           <div className="rounded-2xl border border-purple-100 bg-white dark:bg-slate-900/80 shadow-sm p-4">
 //             <p className="font-semibold text-sky-900">100+ Members</p>
 //             <p className="text-[11px] sm:text-xs text-slate-700">
 //               Active students from all departments.
 //             </p>
 //           </div>
-//           <div className="rounded-2xl border border-purple-100 bg-white/80 shadow-sm p-4">
+//           <div className="rounded-2xl border border-purple-100 bg-white dark:bg-slate-900/80 shadow-sm p-4">
 //             <p className="font-semibold text-sky-900">Mentors</p>
 //             <p className="text-[11px] sm:text-xs text-slate-700">
 //               Guided by experienced faculty coordinators.
@@ -366,7 +366,7 @@
 //         </div>
 
 //         {/* CTA STRIP */}
-//         <div className="rounded-3xl border border-sky-100 bg-white/80 shadow-md px-5 py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+//         <div className="rounded-3xl border border-sky-100 bg-white dark:bg-slate-900/80 shadow-md px-5 py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
 //           <div>
 //             <h2 className="text-base sm:text-lg font-semibold text-sky-900">
 //               Ready to be part of the core team?
@@ -414,7 +414,7 @@ function Home() {
   };
 
   return (
-    <main className="min-h-screen flex items-start justify-center bg-gradient-to-br from-white via-sky-50 to-purple-100">
+    <main className="min-h-screen flex items-start justify-center bg-gradient-to-br from-white dark:from-slate-950 via-sky-50 dark:via-slate-900 to-purple-100 dark:to-black">
       <section className="w-full max-w-6xl text-black space-y-16 sm:space-y-20 pb-20 px-3 sm:px-4 pt-8 sm:pt-10">
         <HomeHero heroRef={heroRef} />
 

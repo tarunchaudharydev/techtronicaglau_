@@ -21,7 +21,7 @@ export default async function NotePage({ params }: PageProps) {
       <div className="mb-4">
         <Link
           href="/academics"
-          className="inline-flex items-center gap-2 rounded-full bg-slate-100 px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-200 hover:text-slate-900 transition"
+          className="inline-flex items-center gap-2 rounded-full bg-slate-100 px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-200 hover:text-foreground dark:text-white transition"
         >
           <FiArrowLeft />
           Back to Academics
@@ -29,18 +29,18 @@ export default async function NotePage({ params }: PageProps) {
       </div>
 
       {/* Title */}
-      <h1 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-2">
+      <h1 className="text-2xl sm:text-3xl font-bold text-foreground dark:text-white mb-2">
         {note.title}
       </h1>
 
       {/* Meta */}
-      <p className="text-sm text-slate-600 mb-6">
+      <p className="text-sm text-muted mb-6">
         {note.subject} • {note.year} • {note.category}
       </p>
 
       {/* PDF Viewer */}
       {/* PDF Viewer */}
-      {/* <div className="rounded-2xl border bg-white shadow-sm overflow-hidden">
+      {/* <div className="rounded-2xl border bg-white dark:bg-slate-900 shadow-sm overflow-hidden">
         <div className="relative w-full aspect-[1/1.4142]">
           <iframe
             src={`${note.pdfUrl}#zoom=page-width`}
@@ -51,7 +51,7 @@ export default async function NotePage({ params }: PageProps) {
       </div> */}
 
       {/* PDF Viewer – embedded in page */}
-      {/* <div className="rounded-2xl border bg-white shadow-sm overflow-hidden">
+      {/* <div className="rounded-2xl border bg-white dark:bg-slate-900 shadow-sm overflow-hidden">
         <div className="relative w-full aspect-[1/1.4142]">
           <iframe
             src={`${note.pdfUrl}#zoom=page-width`}
@@ -62,7 +62,7 @@ export default async function NotePage({ params }: PageProps) {
       </div> */}
 
       {/* PDF Viewer – stays on same page */}
-      <div className="rounded-2xl border bg-white shadow-sm overflow-hidden">
+      <div className="rounded-2xl border bg-white dark:bg-slate-900 shadow-sm overflow-hidden">
         <div className="relative w-full aspect-[1/1.4142]">
           <iframe
             src={`${note.pdfUrl}#zoom=page-width`}

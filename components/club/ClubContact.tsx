@@ -41,13 +41,13 @@ export default function ClubContact({ club }: { club: Club }) {
   }
 
   return (
-    <section className="relative py-24 pt-28 px-4 bg-gradient-to-br from-indigo-50 via-sky-50 to-purple-100">
+    <section className="relative py-24 pt-28 px-4 bg-gradient-to-br from-indigo-50 via-sky-50 dark:via-slate-900 to-purple-100 dark:to-black">
       {/* Header */}
       <div className="max-w-4xl mx-auto text-center mb-14">
-        <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900">
+        <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-foreground dark:text-white">
           Contact <span className="text-indigo-600">"{club.name}"</span>
         </h2>
-        <p className="mt-4 text-sm sm:text-base text-slate-600">
+        <p className="mt-4 text-sm sm:text-base text-muted">
           Reach us at{" "}
           <span className="font-medium text-slate-800">
             {club.contact.instagram}
@@ -60,14 +60,14 @@ export default function ClubContact({ club }: { club: Club }) {
         {/* glow */}
         <div className="absolute -inset-1 rounded-3xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 blur opacity-25"></div>
 
-        <div className="relative bg-white rounded-3xl shadow-2xl p-8 sm:p-12">
+        <div className="relative bg-white dark:bg-slate-900 rounded-3xl shadow-2xl p-8 sm:p-12">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid gap-5 sm:grid-cols-2">
               <input
                 name="name"
                 required
                 placeholder="Your name"
-                className="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm text-slate-900
+                className="w-full rounded-xl border border-slate-300 dark:border-slate-700 px-4 py-3 text-sm text-foreground dark:text-white
                            focus:outline-none focus:ring-4 focus:ring-indigo-500/20 focus:border-indigo-500"
               />
 
@@ -76,7 +76,7 @@ export default function ClubContact({ club }: { club: Club }) {
                 type="email"
                 required
                 placeholder="Your email"
-                className="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm text-slate-900
+                className="w-full rounded-xl border border-slate-300 dark:border-slate-700 px-4 py-3 text-sm text-foreground dark:text-white
                            focus:outline-none focus:ring-4 focus:ring-indigo-500/20 focus:border-indigo-500"
               />
             </div>
@@ -84,7 +84,7 @@ export default function ClubContact({ club }: { club: Club }) {
             <input
               name="topic"
               placeholder="Topic (optional)"
-              className="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm text-slate-900
+              className="w-full rounded-xl border border-slate-300 dark:border-slate-700 px-4 py-3 text-sm text-foreground dark:text-white
                          focus:outline-none focus:ring-4 focus:ring-indigo-500/20 focus:border-indigo-500"
             />
 
@@ -93,7 +93,7 @@ export default function ClubContact({ club }: { club: Club }) {
               rows={5}
               required
               placeholder={`Write your message to ${club.name}`}
-              className="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm text-slate-900 resize-none
+              className="w-full rounded-xl border border-slate-300 dark:border-slate-700 px-4 py-3 text-sm text-foreground dark:text-white resize-none
                          focus:outline-none focus:ring-4 focus:ring-indigo-500/20 focus:border-indigo-500"
             />
 

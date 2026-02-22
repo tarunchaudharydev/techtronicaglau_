@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import LastUpdated from "./features/LastUpdate";
+import Version from "./features/Version";
 
 function Footer() {
   return (
@@ -10,7 +11,7 @@ function Footer() {
       {/* OUTER BACKGROUND (page separation) */}
       <div className="bg-slate-100 px-4">
         {/* INNER ROUNDED FOOTER CARD */}
-        <div className="mx-auto max-w-7xl rounded-t-3xl bg-white shadow-[0_-12px_40px_rgba(0,0,0,0.08)]">
+        <div className="mx-auto max-w-7xl rounded-t-3xl bg-white dark:bg-slate-900 shadow-[0_-12px_40px_rgba(0,0,0,0.08)]">
           {/* Top */}
           <div className="mx-auto max-w-6xl px-4 py-14">
             <div className="flex flex-col gap-12 lg:flex-row ">
@@ -187,24 +188,25 @@ function Footer() {
           </div>
 
           {/* Bottom */}
-          <div className="relative overflow-hidden border-t border-slate-200 bg-slate-50">
+          <div className="relative overflow-hidden border-t border-slate-200 dark:border-slate-800 bg-slate-50">
             {/* BIG BACKGROUND BRAND */}
             <div className="pointer-events-none absolute inset-x-0 bottom-0 flex flex-col items-center">
               {/* YEAR (attached + readable) */}
-              <span className="select-none rounded-full bg-white/80 px-4 py-1 text-[12px] sm:text-sm font-semibold tracking-wide text-slate-400 shadow-sm mb-2">
+              {/* <span className="select-none rounded-full bg-white dark:bg-slate-900/80 px-4 py-1 text-[12px] sm:text-sm font-semibold tracking-wide text-slate-400 shadow-sm mb-2">
                 {new Date().getFullYear()}
-              </span>
+              </span> */}
 
               {/* BRAND NAME */}
               <span className="select-none text-[22vw] sm:text-[18vw] md:text-[16vw] font-extrabold tracking-tight text-slate-200 leading-none -mb-8">
                 Techtronica
               </span>
             </div>
-
             {/* FOREGROUND COPYRIGHT */}
-            <div className="relative mx-auto max-w-6xl px-4 py-8 text-[11px] text-slate-500 text-center sm:text-left">
+
+            <div className="relative mx-auto max-w-6xl px-4 py-8 text-[11px] text-muted text-center sm:text-left">
               © {new Date().getFullYear()} Techtronica • GLA University •
               Electronics & Communication Engineering
+              <Version />
               <LastUpdated />
             </div>
           </div>

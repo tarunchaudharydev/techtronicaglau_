@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
-import { motion } from "framer-motion";
-import { Folder } from "lucide-react";
-import FolderModal from "./FolderModal";
+import { useEffect, useMemo, useState } from "react";
+import { useRouter } from "next/navigation";
+import { motion, AnimatePresence } from "framer-motion";
+import { Folder, Search } from "lucide-react";
 
 type Status = "active" | "ongoing" | "archived";
 
@@ -13,125 +13,175 @@ type FolderItem = {
   color: string;
   status: Status;
   href: string;
-  files: string[];
+  files: number;
+  updated: string;
 };
 
 const folders: FolderItem[] = [
   {
     title: "Academics",
     subtitle: "Subjects & fundamentals",
-    color: "bg-yellow-300",
+    color: "from-yellow-400 to-yellow-300",
     status: "active",
     href: "/academics",
-    files: ["VLSI Notes.pdf", "Signals.md", "DSA Cheatsheet.pdf"],
+    files: 12,
+    updated: "2 days ago",
   },
   {
     title: "Research",
     subtitle: "Papers & experiments",
-    color: "bg-blue-300",
+    color: "from-blue-400 to-blue-300",
     status: "ongoing",
     href: "/research",
-    files: ["Paper Draft v2.pdf", "Simulation Results.xlsx"],
+    files: 6,
+    updated: "1 week ago",
   },
   {
     title: "Patents",
     subtitle: "Filed innovations",
-    color: "bg-orange-300",
+    color: "from-orange-400 to-orange-300",
     status: "ongoing",
     href: "/patents",
-    files: ["Patent Abstract.docx", "Block Diagram.png"],
+    files: 3,
+    updated: "3 days ago",
   },
   {
     title: "Projects",
     subtitle: "Builds & systems",
-    color: "bg-green-300",
+    color: "from-green-400 to-green-300",
     status: "active",
     href: "/projects",
-    files: ["ESP32 Line Follower", "Portfolio Website"],
+    files: 9,
+    updated: "Today",
   },
 ];
 
-const statusColor = {
-  active: "bg-green-500",
-  ongoing: "bg-yellow-500",
-  archived: "bg-neutral-400",
-};
-
 export default function LibrarySection() {
-  const [selected, setSelected] = useState<FolderItem | null>(null);
+  const router = useRouter();
+  const [search, setSearch] = useState("");
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [paletteOpen, setPaletteOpen] = useState(false);
+
+  const filtered = useMemo(() => {
+    return folders.filter((f) =>
+      f.title.toLowerCase().includes(search.toLowerCase()),
+    );
+  }, [search]);
+
+  const openFolder = (href: string) => {
+    router.push(href);
+  };
+
+  /* ---------------- Keyboard Navigation ---------------- */
+
+  useEffect(() => {
+    const handleKey = (e: KeyboardEvent) => {
+      if (paletteOpen) return;
+
+      if (e.key === "ArrowRight") {
+        setSelectedIndex((prev) =>
+          prev < filtered.length - 1 ? prev + 1 : prev,
+        );
+      }
+
+      if (e.key === "ArrowLeft") {
+        setSelectedIndex((prev) => (prev > 0 ? prev - 1 : prev));
+      }
+
+      if (e.key === "Enter" && filtered[selectedIndex]) {
+        openFolder(filtered[selectedIndex].href);
+      }
+
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
+        e.preventDefault();
+        setPaletteOpen(true);
+      }
+    };
+
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  }, [filtered, selectedIndex, paletteOpen]);
 
   return (
-    <section className="py-20">
-      <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-4xl text-center font-extrabold mb-20">
-          Library Section
-        </h2>
+    <section className="relative  bg-gradient-to-br from-white via-slate-50 to-purple-50 transition-colors duration-300">
+      {/* Header */}
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="flex justify-between items-center mb-10">
+          <h2 className="text-4xl font-extrabold">Library OS</h2>
+        </div>
 
-        {/* MOBILE: vertical | DESKTOP: stacked */}
-        <div className="relative">
-          <div
-            className="
-              grid grid-cols-1 gap-6
-              sm:block sm:h-[320px]
-            "
-          >
-            {folders.map((folder, i) => (
-              <motion.div
-                key={folder.title}
-                whileHover={{
-                  y: -18,
-                  scale: 1.03,
-                  zIndex: 20,
-                }}
-                transition={{ type: "spring", stiffness: 280, damping: 22 }}
-                className={`
-                  cursor-pointer
-                  sm:absolute
-                `}
-                style={{
-                  left: i * 120,
-                  top: 0,
-                }}
-                onClick={() => setSelected(folder)}
+        {/* Search */}
+        <div className="relative max-w-md mb-12">
+          <Search className="absolute left-3 top-3 w-4 h-4 text-neutral-400" />
+          <input
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            placeholder="Search folders... (⌘K)"
+            className="w-full pl-10 pr-4 py-2 rounded-xl border bg-white"
+          />
+        </div>
+
+        {/* Grid */}
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {filtered.map((folder, index) => (
+            <motion.div
+              key={folder.title}
+              onClick={() => openFolder(folder.href)}
+              whileHover={{ y: -6 }}
+              className={`relative p-6 rounded-2xl cursor-pointer border shadow transition
+                ${selectedIndex === index ? "ring-2 ring-purple-500" : ""}
+                bg-white`}
+            >
+              <div
+                className={`w-12 h-12 rounded-xl bg-gradient-to-br ${folder.color} flex items-center justify-center mb-4`}
               >
-                <div
-                  className={`relative
-                  w-full sm:w-[260px]
-                  h-[160px] sm:h-[180px]
-                  rounded-xl shadow-xl
-                  ${folder.color}`}
-                >
-                  {/* Folder tab */}
-                  <div
-                    className={`absolute -top-4 left-5 w-24 h-5 
-                    rounded-t-md ${folder.color} shadow`}
-                  />
+                <Folder className="w-6 h-6 text-neutral-800" />
+              </div>
 
-                  {/* Status */}
-                  <span
-                    className={`absolute top-3 right-3 w-3 h-3 rounded-full 
-                    ${statusColor[folder.status]}`}
-                  />
+              <h3 className="text-xl font-semibold">{folder.title}</h3>
+              <p className="text-sm text-neutral-500 mt-1">{folder.subtitle}</p>
 
-                  <div className="p-5 flex gap-4">
-                    <Folder className="w-8 h-8 text-neutral-800" />
-                    <div>
-                      <h3 className="font-semibold text-lg">{folder.title}</h3>
-                      <p className="text-sm text-neutral-700 mt-1">
-                        {folder.subtitle}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+              <div className="mt-4 text-xs text-neutral-400">
+                {folder.files} files • Updated {folder.updated}
+              </div>
+            </motion.div>
+          ))}
         </div>
       </div>
 
-      {selected && (
-        <FolderModal folder={selected} onClose={() => setSelected(null)} />
-      )}
+      {/* ---------------- Command Palette ---------------- */}
+      <AnimatePresence>
+        {paletteOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center z-50"
+            onClick={() => setPaletteOpen(false)}
+          >
+            <motion.div
+              initial={{ scale: 0.9 }}
+              animate={{ scale: 1 }}
+              className="bg-white p-6 rounded-2xl w-full max-w-md"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <h3 className="font-semibold mb-4">Quick Open</h3>
+
+              <div className="space-y-2">
+                {folders.map((f) => (
+                  <div
+                    key={f.title}
+                    onClick={() => openFolder(f.href)}
+                    className="p-2 rounded-lg hover:bg-slate-100 cursor-pointer text-sm"
+                  >
+                    {f.title}
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }

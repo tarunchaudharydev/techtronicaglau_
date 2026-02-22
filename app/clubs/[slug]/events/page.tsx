@@ -17,12 +17,13 @@ export default async function ClubEventsPage({
 
   const upcoming = clubEvents.filter(
     (e) =>
-      e.registrationDeadline && deadlineIST(e.registrationDeadline) > nowIST()
+      e.registrationDeadline && deadlineIST(e.registrationDeadline) > nowIST(),
   );
 
   const past = clubEvents.filter(
     (e) =>
-      !e.registrationDeadline || deadlineIST(e.registrationDeadline) <= nowIST()
+      !e.registrationDeadline ||
+      deadlineIST(e.registrationDeadline) <= nowIST(),
   );
 
   return (
@@ -40,7 +41,7 @@ export default async function ClubEventsPage({
             {upcoming.map((e) => (
               <div
                 key={e.id}
-                className="border rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-md transition"
+                className="border rounded-2xl overflow-hidden bg-white dark:bg-slate-900 shadow-sm hover:shadow-md transition"
               >
                 <div className="relative h-44">
                   <Image
@@ -79,7 +80,7 @@ export default async function ClubEventsPage({
                     {/* 👇 View Details */}
                     <Link
                       href={`/clubs/${slug}/events/${e.id}`}
-                      className="block text-center rounded-full border border-slate-300 py-2 text-sm font-medium hover:bg-slate-50 transition"
+                      className="block text-center rounded-full border border-slate-300 dark:border-slate-700 py-2 text-sm font-medium hover:bg-slate-50 transition"
                     >
                       View Details →
                     </Link>
@@ -101,7 +102,7 @@ export default async function ClubEventsPage({
               <Link
                 key={e.id}
                 href={`/clubs/${slug}/events/${e.id}`}
-                className="border rounded-2xl overflow-hidden hover:shadow-md transition bg-white"
+                className="border rounded-2xl overflow-hidden hover:shadow-md transition bg-white dark:bg-slate-900"
               >
                 <div className="relative h-44">
                   <Image

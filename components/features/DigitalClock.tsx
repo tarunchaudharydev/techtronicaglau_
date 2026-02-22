@@ -28,7 +28,7 @@ export default function DigitalClock() {
       {/* <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-sky-600">
         IST • Asia/Kolkata
       </p> */}
-      <p className="text-xs text-slate-900 leading-tight">
+      <p className="text-xs text-foreground dark:text-white leading-tight">
         {time || "--:--:--"}
       </p>
     </div>
