@@ -207,9 +207,9 @@ export default function ContactSection() {
             {
               icon: <FiMail />,
               label: "Email",
-              value: "techtronica@gla.ac.in",
+              value: "techtronica_ece@gla.ac.in",
             },
-            { icon: <FiPhone />, label: "Phone", value: "+91 9XXXXXXXXX" },
+            { icon: <FiPhone />, label: "Phone", value: "+91 7088337100" },
           ].map((item, i) => (
             <div key={i} className="flex gap-3 items-start">
               <div className="text-sky-600 text-lg">{item.icon}</div>
