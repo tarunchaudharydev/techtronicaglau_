@@ -6,11 +6,17 @@ type Sponsor = {
 };
 
 const sponsors: Sponsor[] = [
-  { name: "Sponsor One", logo: "/sponsors/google.jpg" },
-  { name: "Sponsor Two", logo: "/sponsors/microsoft.jpg" },
-  { name: "Sponsor Three", logo: "/sponsors/apple.jpg" },
-  { name: "Sponsor Four", logo: "/sponsors/nvidia.jpg" },
-  { name: "Sponsor Five", logo: "/sponsors/tesla.jpg" },
+  { name: "Sponsor One", logo: "/sponsors/adani.png" },
+  { name: "Sponsor Two", logo: "/sponsors/amber.jpg" },
+  { name: "Sponsor Three", logo: "/sponsors/Cadence-Logo.png" },
+  { name: "Sponsor Four", logo: "/sponsors/capgenmini.png" },
+  { name: "Sponsor Five", logo: "/sponsors/euler.png" },
+  { name: "Sponsor Six", logo: "/sponsors/lg.png" },
+  { name: "Sponsor Seven", logo: "/sponsors/ni.png" },
+  { name: "Sponsor Eight", logo: "/sponsors/silicon_labs.png" },
+  { name: "Sponsor Nine", logo: "/sponsors/sony.png" },
+  { name: "Sponsor Ten", logo: "/sponsors/synopsys.jpg" },
+  { name: "Sponsor Eleven", logo: "/sponsors/uno_minda.png" },
 ];
 
 export default function SponsorsMarquee() {

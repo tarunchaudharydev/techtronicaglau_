@@ -16,17 +16,7 @@ export type MemberCategory =
   bold?: boolean;
 };
 
-// export interface Member {
-//   categories: MemberCategory[];
-//   id: number;
-//   name: string;
-//   roles: string[];
-//   image: string;
-//   shortBio: string;
-//   longBio: BioParagraph[];
-//   linkedin?: string;
-//   whatsApp?: string;
-// }
+
 
 
 export interface Member {
