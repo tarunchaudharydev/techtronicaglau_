@@ -18,12 +18,15 @@ function Footer() {
               {/* Brand */}
               <div className="flex-1 space-y-5">
                 <div className="relative h-14 w-40 sm:h-16 sm:w-48">
-                  <Image
-                    src="/logo.png"
-                    alt="Techtronica Logo"
-                    fill
-                    className="object-contain"
-                  />
+                  <Link href="/">
+                    <Image
+                      src="/logo.png"
+                      alt="Techtronica Logo"
+                      
+                      fill
+                      className="object-contain"
+                    />
+                  </Link>
                 </div>
 
                 <div className="space-y-2 text-xs sm:text-sm max-w-md">
@@ -187,6 +190,9 @@ function Footer() {
             </div>
           </div>
 
+
+
+
           {/* Bottom */}
           <div className="relative overflow-hidden border-t border-slate-200 dark:border-slate-800 bg-slate-50">
             {/* BIG BACKGROUND BRAND */}
@@ -204,8 +210,9 @@ function Footer() {
             {/* FOREGROUND COPYRIGHT */}
 
             <div className="relative mx-auto max-w-6xl px-4 py-8 text-[11px] text-muted text-center sm:text-left">
-              © {new Date().getFullYear()} Techtronica • GLA University •
-              Electronics & Communication Engineering
+              © {new Date().getFullYear()} Techtronica 
+              {/* • GLA University • */}
+              {/* Electronics & Communication Engineering */}
               <Version />
               <LastUpdated />
             </div>

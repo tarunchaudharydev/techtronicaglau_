@@ -24,7 +24,7 @@ export default function DigitalClock() {
   }, []);
 
   return (
-    <div className="fixed bottom-4 left-4 z-50 rounded-2xl border border-sky-200 bg-transparent px-2 py-1 shadow-md shadow-sky-200/60 backdrop-blur-sm">
+    <div className="fixed bottom-1 right-3 z-50 rounded-2xl border border-sky-200 bg-transparent px-2 py-1 shadow-md shadow-sky-200/60 backdrop-blur-sm">
       {/* <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-sky-600">
         IST • Asia/Kolkata
       </p> */}
