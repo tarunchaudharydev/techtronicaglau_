@@ -60,6 +60,7 @@
 
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+// @ts-expect-error CSS module declarations missing for globals.css
 import "./globals.css";
 
 import Navbar from "../components/Navbar";

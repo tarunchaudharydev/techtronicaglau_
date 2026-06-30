@@ -2,84 +2,57 @@ import { Event, ClubEvent } from "@/types/event";
 
 export type { Event, ClubEvent };
 
-
 export const events: Event[] = [
   // {
-  //   id: "udan",
+  //   id: "udaan",
   //   title: "TECHTRONICA SOCIETY PRESENTS — IDEA UDAAN",
   //   club: "code-e-phobia",
-  //   date: "2026-02-07",
+  //   date: "2026-08-07",
   //   time: "10:00 AM",
   //   location: "Seminar Hall A",
   //   coverImage: "/clubs/code-e-phobia/events/poster.jpeg",
-  //      description: [
-  //       "Something meaningful. Something impactful.",
+  //   description: [
+  //     "Something meaningful. Something impactful.",
 
+  //     "🌱⚙️ ECOVATION  ",
+  //     "A Sustainability-Focused Tech Competition  ",
 
-  //       "🌱⚙️ ECOVATION  ",
-  //       "A Sustainability-Focused Tech Competition  ",
+  //     "Where technology meets responsibility and ideas turn into action.",
 
+  //     "💡 What is ECOVATION?  ",
 
+  //     "ECOVATION is a technology-driven competition built purely around the theme of Sustainability.  ",
 
-  //       "Where technology meets responsibility and ideas turn into action.",
+  //     "It’s a platform to present innovative, practical, and future-ready solutions for real-world ",
+  //     "problems using technology.",
 
+  //     "📌 Event Structure  ",
 
+  //     "• Round 1: Online PPT Submission  ",
+  //     "• Round 2: Offline Exhibition (Final Round)  ",
 
-  //       "💡 What is ECOVATION?  ",
+  //     "🗓 Online PPT Submission Starts: 28th January 2026  ",
+  //     "🗓 Final Offline Exhibition: 7th February 2026  ",
 
+  //     "👥 Who Can Participate?  ",
 
+  //     "• Any student from any year  ",
+  //     "• Team-based participation (3–5 members)  ",
+  //     "• Teams can include students from different years  ",
+  //     "• Teams can include students from different courses  ",
+  //     "• Outside college participants are not allowed  ",
 
-  //       "ECOVATION is a technology-driven competition built purely around the theme of Sustainability.  ",
+  //     "⚠️ Important Guidelines  ",
 
+  //     "• The theme Sustainability must be strictly followed  ",
+  //     "• Original ideas only — copied or AI-generated content is not allowed  ",
+  //     "• One team can submit only one idea",
+  //   ],
 
-  //       "It’s a platform to present innovative, practical, and future-ready solutions for real-world ",
-  //       "problems using technology.",
-
-
-
-  //       "📌 Event Structure  ",
-
-
-
-  //       "• Round 1: Online PPT Submission  ",
-  //       "• Round 2: Offline Exhibition (Final Round)  ",
-
-
-
-
-  //       "🗓 Online PPT Submission Starts: 28th January 2026  ",
-  //       "🗓 Final Offline Exhibition: 7th February 2026  ",
-
-
-
-
-  //       "👥 Who Can Participate?  ",
-
-  //       "• Any student from any year  ",
-  //       "• Team-based participation (3–5 members)  ",
-  //       "• Teams can include students from different years  ",
-  //       "• Teams can include students from different courses  ",
-  //       "• Outside college participants are not allowed  ",
-
-
-  //       "⚠️ Important Guidelines  ",
-
-  //       "• The theme Sustainability must be strictly followed  ",
-  //       "• Original ideas only — copied or AI-generated content is not allowed  ",
-  //       "• One team can submit only one idea",
-  //      ],
-
-
-
-  //   registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeW5pXjVxfEVG0h8rvFKkDyFT8aTIILiC5KvcZJVaWs_8llwQ/viewform",
+  //   registrationLink:
+  //     "https://docs.google.com/forms/d/e/1FAIpQLSeW5pXjVxfEVG0h8rvFKkDyFT8aTIILiC5KvcZJVaWs_8llwQ/viewform",
   //   registrationDeadline: "2026-01-28",
-    
   // },
-
-
-
-
-
 
   {
     id: "idea-udan",
@@ -89,77 +62,79 @@ export const events: Event[] = [
     time: "10:00 AM",
     location: "Seminar Hall AB-II",
     coverImage: "/clubs/code-e-phobia/events/poster.jpeg",
-    description: ["On 7th February 2026, Techtronica Society successfully organized ECOVATION, themed Sustainability and AI. 🌱🤖 A total of 10 selected teams presented their innovative projects and PPTs, demonstrating creativity and technical excellence aligned with the theme.",
+    description: [
+      "On 7th February 2026, Techtronica Society successfully organized ECOVATION, themed Sustainability and AI. 🌱🤖 A total of 10 selected teams presented their innovative projects and PPTs, demonstrating creativity and technical excellence aligned with the theme.",
 
-"The event began with an inspiring address by Dr. Asheesh Shukla, Associate Dean of Academics, followed by a motivating session by our mentor Dr. Manish Kumar, Associate Professor.",
+      "The event began with an inspiring address by Dr. Asheesh Shukla, Associate Dean of Academics, followed by a motivating session by our mentor Dr. Manish Kumar, Associate Professor.",
 
-"The presentations were evaluated by Dr. P. Bachhan and Dr. Devarshi Shukla, Assistant Professors, ensuring fair and unbiased judgment 📝. Three winning teams were announced, and the trophy distribution ceremony was graced by Dr. Vinay Kumar Deolia, HOD, and Dr. Manish Gupta, Associate Head 🏆."],
-    
+      "The presentations were evaluated by Dr. P. Bachhan and Dr. Devarshi Shukla, Assistant Professors, ensuring fair and unbiased judgment 📝. Three winning teams were announced, and the trophy distribution ceremony was graced by Dr. Vinay Kumar Deolia, HOD, and Dr. Manish Gupta, Associate Head 🏆.",
+    ],
+
     outcome: "Successful",
-   
+
     winners: [
-  {
-    name: "Alt-Era",
-    position: "WINNERS",
-    image: "/clubs/code-e-phobia/events/udan/all.JPG",
-    members: [
       {
-        name: "Kasib",
-        rollNo: "2315001090",
-        course: "B.Tech (CSE)",
+        name: "Alt-Era",
+        position: "WINNERS",
+        image: "/clubs/code-e-phobia/events/udan/all.JPG",
+        members: [
+          {
+            name: "Kasib",
+            rollNo: "2315001090",
+            course: "B.Tech (CSE)",
+          },
+          {
+            name: "Krati",
+            rollNo: "2315001156",
+            course: "B.Tech (CSE)",
+          },
+        ],
       },
       {
-        name: "Krati",
-        rollNo: "2315001156",
-        course: "B.Tech (CSE)",
+        name: "Aero Sync",
+        position: "RUNNER-UP",
+        image: "/clubs/code-e-phobia/events/udan/all.JPG",
+        members: [
+          {
+            name: "Utkarsh Saxena",
+            rollNo: "2313000027",
+            course: "B.Tech (ECE)",
+          },
+          {
+            name: "Vaibhav Jain",
+            rollNo: "2313000028",
+            course: "B.Tech (ECE)",
+          },
+        ],
+      },
+      {
+        name: "Thinkoholics",
+        position: "2nd RUNNER-UP",
+        image: "/clubs/code-e-phobia/events/udan/all.JPG",
+        members: [
+          {
+            name: "Girish Kumar Saraswat",
+            rollNo: "2413300019",
+            course: "B.Tech (ECSE)",
+          },
+          {
+            name: "Madhav Sharma",
+            rollNo: "2413300025",
+            course: "B.Tech (ECSE)",
+          },
+          {
+            name: "Divyanshu Goyal",
+            rollNo: "2413300017",
+            course: "B.Tech (ECSE)",
+          },
+          {
+            name: "Utkarsh Singhal",
+            rollNo: "2513300053",
+            course: "B.Tech (ECSE)",
+          },
+        ],
       },
     ],
-  },
-  {
-    name: "Aero Sync",
-    position: "RUNNER-UP",
-    image: "/clubs/code-e-phobia/events/udan/all.JPG",
-    members: [
-      {
-        name: "Utkarsh Saxena",
-        rollNo: "2313000027",
-        course: "B.Tech (ECE)",
-      },
-      {
-        name: "Vaibhav Jain",
-        rollNo: "2313000028",
-        course: "B.Tech (ECE)",
-      },
-    ],
-  },
-  {
-    name: "Thinkoholics",
-    position: "2nd RUNNER-UP",
-    image: "/clubs/code-e-phobia/events/udan/all.JPG",
-    members: [
-      {
-        name: "Girish Kumar Saraswat",
-        rollNo: "2413300019",
-        course: "B.Tech (ECSE)",
-      },
-      {
-        name: "Madhav Sharma",
-        rollNo: "2413300025",
-        course: "B.Tech (ECSE)",
-      },
-      {
-        name: "Divyanshu Goyal",
-        rollNo: "2413300017",
-        course: "B.Tech (ECSE)",
-      },
-      {
-        name: "Utkarsh Singhal",
-        rollNo: "2513300053",
-        course: "B.Tech (ECSE)",
-      },
-    ],
-  },
-],
 
     gallery: [
       "/clubs/code-e-phobia/events/udan/all.JPG",
@@ -186,37 +161,25 @@ export const events: Event[] = [
       "/clubs/code-e-phobia/events/udan/2.JPG",
       // "/clubs/code-e-phobia/events/udan/9.JPG",
       // "/clubs/code-e-phobia/events/udan/10.JPG",
-       "/clubs/code-e-phobia/events/udan/11.JPG",
-        "/clubs/code-e-phobia/events/udan/12.JPG",
-         "/clubs/code-e-phobia/events/udan/13.JPG",
-          "/clubs/code-e-phobia/events/udan/14.JPG",
-          //  "/clubs/code-e-phobia/events/udan/15.JPG",
-            "/clubs/code-e-phobia/events/udan/16.JPG",
-             "/clubs/code-e-phobia/events/udan/17.JPG",
-              "/clubs/code-e-phobia/events/udan/18.JPG",
-              //  "/clubs/code-e-phobia/events/udan/19.JPG",
-                "/clubs/code-e-phobia/events/udan/23.JPG",
-                 "/clubs/code-e-phobia/events/udan/24.JPG",
-                  "/clubs/code-e-phobia/events/udan/25.JPG",
-                  //  "/clubs/code-e-phobia/events/udan/26.JPG",
-                    "/clubs/code-e-phobia/events/udan/28.JPG",
-                     "/clubs/code-e-phobia/events/udan/30.JPG",
-                      "/clubs/code-e-phobia/events/udan/2n.JPG",
-                      "/clubs/code-e-phobia/events/udan/other.JPG",
-
-
+      "/clubs/code-e-phobia/events/udan/11.JPG",
+      "/clubs/code-e-phobia/events/udan/12.JPG",
+      "/clubs/code-e-phobia/events/udan/13.JPG",
+      "/clubs/code-e-phobia/events/udan/14.JPG",
+      //  "/clubs/code-e-phobia/events/udan/15.JPG",
+      "/clubs/code-e-phobia/events/udan/16.JPG",
+      "/clubs/code-e-phobia/events/udan/17.JPG",
+      "/clubs/code-e-phobia/events/udan/18.JPG",
+      //  "/clubs/code-e-phobia/events/udan/19.JPG",
+      "/clubs/code-e-phobia/events/udan/23.JPG",
+      "/clubs/code-e-phobia/events/udan/24.JPG",
+      "/clubs/code-e-phobia/events/udan/25.JPG",
+      //  "/clubs/code-e-phobia/events/udan/26.JPG",
+      "/clubs/code-e-phobia/events/udan/28.JPG",
+      "/clubs/code-e-phobia/events/udan/30.JPG",
+      "/clubs/code-e-phobia/events/udan/2n.JPG",
+      "/clubs/code-e-phobia/events/udan/other.JPG",
     ],
   },
-
-
-
-
-
-
-
-
-
-
 
   {
     id: "CodeX",
@@ -226,21 +189,19 @@ export const events: Event[] = [
     time: "10:00 AM",
     location: "Seminar Hall A",
     coverImage: "/clubs/code-e-phobia/images/CodeX.jpg",
-    description: ["A multi-round competitive coding event where participants raced to solve problem statements first. Speed and accuracy decided the winners."],
-    
+    description: [
+      "A multi-round competitive coding event where participants raced to solve problem statements first. Speed and accuracy decided the winners.",
+    ],
+
     outcome: "",
     // winners: [
     //   { name: "Team Alpha", position: "1st" },
     //   { name: "Team Beta", position: "2nd" },
     // ],
-    gallery: [
-      "/clubs/code-e-phobia/images/css.jpg",
-    ],
+    gallery: ["/clubs/code-e-phobia/images/css.jpg"],
   },
 
-
-
-   {
+  {
     id: "CodeQuest",
     title: "Code Quest",
     club: "code-e-phobia",
@@ -248,28 +209,19 @@ export const events: Event[] = [
     time: "10:00 AM",
     location: "Seminar Hall A",
     coverImage: "/clubs/code-e-phobia/images/CodeQuest.jpg",
-    description: ["A daily GitHub-based coding challenge where correct, original solutions earned points, while AI-generated code resulted in penalties."],
-    
+    description: [
+      "A daily GitHub-based coding challenge where correct, original solutions earned points, while AI-generated code resulted in penalties.",
+    ],
+
     outcome: "",
     // winners: [
     //   { name: "Team Alpha", position: "1st" },
     //   { name: "Team Beta", position: "2nd" },
     // ],
-    gallery: [
-      "/clubs/code-e-phobia/images/newtworking.jpg",
-      
-    ],
+    gallery: ["/clubs/code-e-phobia/images/newtworking.jpg"],
   },
 
-
-
-
-
-
   // gizmo
-
-
-
 
   {
     id: "iotWorkshop",
@@ -279,23 +231,18 @@ export const events: Event[] = [
     time: "10:00 AM",
     location: "Seminar Hall A",
     coverImage: "/clubs/gizmo/events/iothome.jpg",
-    description: ["A workshop on Internet of Things. this workshop is about how to make a smart home using IoT."],
-    
+    description: [
+      "A workshop on Internet of Things. this workshop is about how to make a smart home using IoT.",
+    ],
+
     outcome: "Learn how to make a smart home using IoT.",
     // winners: [
     //   { name: "Team Alpha", position: "1st" },
     //   { name: "Team Beta", position: "2nd" },
     // ],
-    gallery: [
-      "/clubs/gizmo/events/iotworkshop.jpeg",
-      
-    ],
+    gallery: ["/clubs/gizmo/events/iotworkshop.jpeg"],
   },
 
-
-
-
-  
   // {
   //   id: "Robotics Bootcamp",
   //   title: "Robotics Bootcamp",
@@ -318,12 +265,6 @@ export const events: Event[] = [
   //   ],
   // },
 
-
-
- 
-
-
-
   {
     id: "pcbworkshop",
     title: "PCB Workshop",
@@ -332,22 +273,17 @@ export const events: Event[] = [
     time: "02:00 PM",
     location: "Innovation Lab",
     coverImage: "/clubs/gizmo/events/pcbhome.jpg",
-    description: ["Learn PCB design, circuit simulation, and practical electronics by building real-world electronic modules from scratch."],
+    description: [
+      "Learn PCB design, circuit simulation, and practical electronics by building real-world electronic modules from scratch.",
+    ],
     // winners: [
     //   { name: "Team Alpha", position: "1st" },
     //   { name: "Team Beta", position: "2nd" },
     // ],
-    gallery: [
-      "/clubs/gizmo/events/pcbworkshop.jpeg",
-      
-    ],
+    gallery: ["/clubs/gizmo/events/pcbworkshop.jpeg"],
   },
 
-
-
   // mindboggler
-
-
 
   {
     id: "testing",
@@ -362,27 +298,7 @@ export const events: Event[] = [
     gallery: [],
   },
 
-
-  
-
-
-
-
-  
- 
-
-
-
-
-
-  
-  
-
-
-
   // technovation
-
-
 
   {
     id: "CadenceWorkshop",
@@ -392,7 +308,9 @@ export const events: Event[] = [
     time: "02:00 PM",
     location: "Innovation Lab",
     coverImage: "/clubs/technovation/events/cadenceworkshop.jpeg",
-    description: ["A hands-on workshop introducing students to Cadence EDA tools, covering circuit design, simulation, layout, and verification for real-world VLSI applications."],
+    description: [
+      "A hands-on workshop introducing students to Cadence EDA tools, covering circuit design, simulation, layout, and verification for real-world VLSI applications.",
+    ],
     // winners: [
     //   { name: "Team Alpha", position: "1st" },
     //   { name: "Team Beta", position: "2nd" },
@@ -400,18 +318,8 @@ export const events: Event[] = [
     gallery: [
       "/clubs/technovation/events/cadenceworkshop.jpeg",
       "/clubs/technovation/events/cadencework.jpeg",
-      
     ],
   },
-
-
-  
-
-  
-  
-
-
-
 
   // {
   //   id: "InnovationExpo",
@@ -428,14 +336,11 @@ export const events: Event[] = [
   //   ],
   //   gallery: [
   //     "/clubs/technovation/images/technovation3.jpg",
-    
+
   //   ],
   // },
 
-
-
   // unnati
-
 
   {
     id: "udan",
@@ -445,22 +350,15 @@ export const events: Event[] = [
     time: "02:00 PM",
     location: "Innovation Lab",
     coverImage: "/clubs/unnati/events/udan.jpeg",
-    description: ["A creative competition featuring Painting, Nail Art, Mehendi, and Rangoli, celebrating artistic expression and skill."],
+    description: [
+      "A creative competition featuring Painting, Nail Art, Mehendi, and Rangoli, celebrating artistic expression and skill.",
+    ],
     // winners: [
     //   { name: "Team Alpha", position: "1st" },
     //   { name: "Team Beta", position: "2nd" },
     // ],
-    gallery: [
-      "/clubs/unnati/events/udan.jpeg",
-      
-      
-
-    ],
+    gallery: ["/clubs/unnati/events/udan.jpeg"],
   },
-
-
-
-
 
   {
     id: "Kratikala",
@@ -470,7 +368,9 @@ export const events: Event[] = [
     time: "02:00 PM",
     location: "Innovation Lab",
     coverImage: "/clubs/unnati/images/kratikala25.jpg",
-    description: ["A creative competition featuring Painting, Nail Art, Mehendi, and Rangoli, celebrating artistic expression and skill."],
+    description: [
+      "A creative competition featuring Painting, Nail Art, Mehendi, and Rangoli, celebrating artistic expression and skill.",
+    ],
     // winners: [
     //   { name: "Team Alpha", position: "1st" },
     //   { name: "Team Beta", position: "2nd" },
@@ -549,40 +449,8 @@ export const events: Event[] = [
       "/clubs/unnati/images/71.jpg",
       "/clubs/unnati/images/72.jpg",
       "/clubs/unnati/images/73.jpg",
-      
-
     ],
   },
-
-
-
-
-
-
-
-  
-
-
-  
-
-
-
-
- 
-  
-
-
-
-
-  
-
-
-  
-
-
-
-
-
 ];
 
 export const upcomingEvent = events[0];
