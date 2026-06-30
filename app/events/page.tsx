@@ -1,13 +1,21 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import { events } from "@/lib/data/upcomingEvents";
 import { splitEvents } from "@/lib/utils/eventUtils";
+import EventShowcase from "@/components/events/EventsShowcase";
+import { useState } from "react";
 
 export default function EventsPage() {
   const { upcoming, past } = splitEvents(events);
 
+  const [visiblePast, setVisiblePast] = useState(6);
+
   return (
     <main className="text-center px-6 max-w-7xl mx-auto space-y-20">
+      <EventShowcase />
+
       <Section title="Upcoming Events">
         {upcoming.map((e) => (
           <EventCard key={e.id} event={e} />
@@ -15,9 +23,20 @@ export default function EventsPage() {
       </Section>
 
       <Section title="Past Events">
-        {past.map((e) => (
+        {past.slice(0, visiblePast).map((e) => (
           <EventCard key={e.id} event={e} />
         ))}
+
+        {past.length > visiblePast && (
+          <div className="col-span-full flex justify-center mt-6">
+            <button
+              onClick={() => setVisiblePast((prev) => prev + 6)}
+              className="px-6 py-3 rounded-lg bg-sky-600 text-white font-medium hover:bg-sky-700 transition"
+            >
+              Load More
+            </button>
+          </div>
+        )}
       </Section>
     </main>
   );
