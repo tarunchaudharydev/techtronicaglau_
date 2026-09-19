@@ -120,7 +120,7 @@
 // };
 
 // export default async function ProjectPage({ params }: PageProps) {
-//   const { id } = await params; // ✅ REQUIRED in Next.js 14
+//   const { id } = await params; 
 
 //   const project = projects.find((p) => p.id === id);
 

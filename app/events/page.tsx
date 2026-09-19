@@ -54,7 +54,7 @@ function Section({ title, children }: any) {
 function EventCard({ event }: any) {
   return (
     <article className="rounded-2xl bg-white dark:bg-slate-900 shadow transition hover:-translate-y-1 hover:shadow-xl overflow-hidden flex flex-col">
-      {/* Cover Image */}
+     
       <div className="relative h-48 w-full">
         <Image
           src={event.coverImage}
@@ -65,7 +65,7 @@ function EventCard({ event }: any) {
         />
       </div>
 
-      {/* Content */}
+   
       <div className="p-4 space-y-2 flex flex-col flex-1">
         <p className="text-xs text-sky-600 font-medium">{event.club}</p>
 
@@ -75,7 +75,7 @@ function EventCard({ event }: any) {
           {event.date} • {event.time}
         </p>
 
-        {/* CTA */}
+       
         <div className="mt-auto pt-4">
           <Link
             href={`/events/${event.id}`}

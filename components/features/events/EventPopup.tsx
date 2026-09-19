@@ -16,10 +16,9 @@ interface Props {
 export default function EventPopup({ event }: Props) {
   const [open, setOpen] = useState(false);
 
-  // Convert event date + time to Date object
+  // converting in to object
   const eventDateTime = parse12HourTime(event.date, event.time);
 
-  // 24 hours before event start
   const popupCutoffTime = new Date(
     eventDateTime.getTime() - 24 * 60 * 60 * 1000,
   );
@@ -30,10 +29,8 @@ export default function EventPopup({ event }: Props) {
 
     const now = new Date();
 
-    // ❌ Don't show popup if event already started
     if (now >= eventDateTime) return;
 
-    // ❌ Don't show popup if within 24 hours of event
     if (now >= popupCutoffTime) return;
 
     const timer = setTimeout(() => setOpen(true), 2000);
@@ -50,7 +47,7 @@ export default function EventPopup({ event }: Props) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm px-4">
       <div className="relative w-full max-w-md rounded-2xl bg-gradient-to-br from-slate-900 via-slate-800 to-black text-white shadow-[0_30px_80px_rgba(56,189,248,0.25)] overflow-hidden transition-transform duration-300 hover:-translate-y-1">
-        {/* ❌ Close Button */}
+
         <button
           onClick={closePopup}
           aria-label="Close popup"
@@ -61,7 +58,6 @@ export default function EventPopup({ event }: Props) {
           ✕
         </button>
 
-        {/* Image */}
         <div className="relative h-40 sm:h-48 w-full bg-black">
           <Image
             src={event.coverImage}
@@ -73,7 +69,6 @@ export default function EventPopup({ event }: Props) {
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent pointer-events-none" />
         </div>
 
-        {/* Content */}
         <div className="p-4 sm:p-6 space-y-3">
           <h2 className="text-lg sm:text-xl font-bold text-sky-400">
             {event.title}
@@ -89,7 +84,6 @@ export default function EventPopup({ event }: Props) {
             ))}
           </ul>
 
-          {/* Countdown & Actions */}
           <div className="pt-3">
             {eventDateTime >= new Date() && (
               <div className="rounded-2xl bg-white dark:bg-slate-900 p-6 shadow-sm space-y-4">

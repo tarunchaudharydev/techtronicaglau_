@@ -1,0 +1,2 @@
+// no longer in use
+// this is only for reference purpose only but in production grad project this type of files are worst so avoid using empty files or static data files in production grad project because it will make your project heavy and slow so avoid using static data files in production grad project.

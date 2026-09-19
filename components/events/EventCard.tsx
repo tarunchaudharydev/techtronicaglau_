@@ -50,7 +50,6 @@ export default function EventCard({
           past ? "opacity-90" : ""
         }`}
       >
-        {/* Image */}
         <div className="relative h-44 w-full">
           <Image
             src={event.coverImage}
@@ -86,7 +85,6 @@ export default function EventCard({
               {past ? "Completed" : "Upcoming"}
             </span>
 
-            {/* ⏳ Registration Countdown */}
             {!past && timeLeft && (
               <p className="text-xs text-red-600 font-medium">
                 Registration closes in{" "}

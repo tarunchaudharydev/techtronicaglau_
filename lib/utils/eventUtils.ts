@@ -28,7 +28,6 @@ export function splitEvents(events: Event[]) {
 
 
 function getISTTimeLeft(deadline: string) {
-  // Convert deadline (YYYY-MM-DD) to IST end-of-day
   const deadlineIST = new Date(`${deadline}T23:59:59+05:30`).getTime();
 
   const nowUTC = Date.now();

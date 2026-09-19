@@ -4,12 +4,10 @@ import { Club } from "@/lib/config/clubs";
 export default function ClubTeam({ club }: { club: Club }) {
   return (
     <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-      {/* spacing above heading */}
       <h2 className="pt-20 text-lg sm:text-2xl font-bold mb-10 text-center text-foreground dark:text-white">
         Club Team
       </h2>
 
-      {/* space-between layout */}
       <div className="flex justify-center">
         <div
           className="

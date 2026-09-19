@@ -11,7 +11,6 @@ export default function AlumniTeamSection() {
   return (
     <section className=" bg-linear-to-br from-white dark:from-slate-950 via-sky-50 dark:via-slate-900 to-purple-100 dark:to-black">
       <div className="max-w-6xl mx-auto px-6">
-        {/* Heading */}
         <div className="text-center mb-14">
           <p className="text-[11px] uppercase tracking-[0.25em] text-sky-600 mb-2">
             Techtronica • Alumni
@@ -25,7 +24,6 @@ export default function AlumniTeamSection() {
           </p>
         </div>
 
-        {/* Alumni Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {alumni.map((a) => (
             <button
@@ -63,11 +61,9 @@ export default function AlumniTeamSection() {
         </div>
       </div>
 
-      {/* Alumni Profile Modal */}
       {selected && (
         <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center px-4">
           <div className="bg-white dark:bg-slate-900 rounded-3xl max-w-3xl w-full p-6 relative max-h-[90vh] overflow-y-auto">
-            {/* Close */}
             <button
               onClick={() => setSelected(null)}
               className="absolute top-4 right-4 text-slate-500 hover:text-foreground dark:text-white"
@@ -76,7 +72,6 @@ export default function AlumniTeamSection() {
             </button>
 
             <div className="flex flex-col md:flex-row gap-6">
-              {/* Image */}
               <div className="flex-shrink-0">
                 <Image
                   src={selected.image}
@@ -87,7 +82,6 @@ export default function AlumniTeamSection() {
                 />
               </div>
 
-              {/* Content */}
               <div>
                 <h3 className="text-2xl font-semibold text-foreground dark:text-white">
                   {selected.name}
@@ -119,7 +113,6 @@ export default function AlumniTeamSection() {
                   </p>
                 )}
 
-                {/* Achievements */}
                 {selected.achievements && (
                   <div className="mt-4">
                     <p className="text-xs uppercase tracking-wide text-sky-700 mb-1">
@@ -133,14 +126,12 @@ export default function AlumniTeamSection() {
                   </div>
                 )}
 
-                {/* Message */}
                 {selected.message && (
                   <div className="mt-4 rounded-xl bg-sky-50 p-4 text-sm text-slate-700">
                     “{selected.message}”
                   </div>
                 )}
 
-                {/* LinkedIn */}
                 <div className="mt-5">
                   <a
                     href={selected.linkedin}

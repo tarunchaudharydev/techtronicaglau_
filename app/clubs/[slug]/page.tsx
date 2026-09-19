@@ -24,7 +24,7 @@ export default async function ClubPage({ params }: Props) {
 
   return (
     <>
-      {/* <ClubHero club={club} /> */}
+      
       <ClubSessions club={club} />
       <ClubPurpose club={club} />
       <ClubTracks club={club} />

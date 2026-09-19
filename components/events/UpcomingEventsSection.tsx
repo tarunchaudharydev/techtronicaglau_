@@ -10,7 +10,6 @@ export default function UpcomingEventsSection() {
 
   return (
     <section className="py-20">
-      {/* Upcoming */}
       <h2 className="text-3xl font-bold mb-6">Upcoming Events</h2>
 
       {upcoming.length === 0 ? (
@@ -23,7 +22,6 @@ export default function UpcomingEventsSection() {
         </div>
       )}
 
-      {/* Past */}
       <h2 className="text-3xl font-bold mt-20 mb-6">Past Events</h2>
 
       {past.length === 0 ? (

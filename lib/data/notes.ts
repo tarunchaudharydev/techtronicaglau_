@@ -1,3 +1,7 @@
+// This file is no longer in production mode and is only kept for reference purposes. It contains static data that is not used in the current implementation of the project. In a production-grade project, it is advisable to avoid using static data files as they can make the project heavy and slow. Instead, consider using a database or other dynamic data sources for managing such information.
+
+
+
 export type Note = {
   id: string;
   title: string;

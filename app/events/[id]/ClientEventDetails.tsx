@@ -33,13 +33,13 @@ export default function ClientEventDetails({
   return (
     <>
       <main className="min-h-screen bg-emerald-50 -mt-28 pt-25 pb-20 px-4">
-        {/* Back */}
+       
         <div className="max-w-6xl mx-auto mb-6">
           <BackButton />
         </div>
 
         <section className="max-w-6xl mx-auto grid gap-8 lg:grid-cols-[380px_1fr]">
-          {/* LEFT */}
+          
           <aside className="space-y-6 lg:sticky lg:top-28 self-start">
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <Image
@@ -58,9 +58,8 @@ export default function ClientEventDetails({
             </div>
           </aside>
 
-          {/* RIGHT */}
           <div className="space-y-6">
-            {/* Title */}
+            
             <div>
               <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-emerald-900 mb-4">
                 {event.title}
@@ -79,7 +78,6 @@ export default function ClientEventDetails({
               </div>
             </div>
 
-            {/* UPCOMING */}
             {isUpcoming && (
               <div className="rounded-2xl bg-gradient-to-br from-emerald-50 to-white p-6 shadow-sm space-y-4 border border-emerald-100">
                 <p className="text-lg font-semibold text-emerald-900">
@@ -97,7 +95,6 @@ export default function ClientEventDetails({
               </div>
             )}
 
-            {/* DESCRIPTION */}
             <div className="rounded-2xl bg-white dark:bg-slate-900 p-6 shadow-sm space-y-3">
               {event.description.map((line: string, i: number) => (
                 <p key={i} className="text-slate-700 text-sm sm:text-base">
@@ -105,8 +102,6 @@ export default function ClientEventDetails({
                 </p>
               ))}
             </div>
-
-            {/* PAST EVENT – WINNERS */}
             {!isUpcoming && event.winners && (
               <div className="rounded-2xl bg-white dark:bg-slate-900 p-6 shadow-sm space-y-6">
                 <h2 className="text-xl font-semibold flex items-center gap-2">
@@ -134,7 +129,6 @@ export default function ClientEventDetails({
                           : "border-emerald-100"
                       }`}
                     >
-                      {/* HEADER */}
                       <div className="flex items-center gap-4">
                         <button
                           onClick={() => setPreviewImage(team.image)}
@@ -161,8 +155,7 @@ export default function ClientEventDetails({
                           </p>
                         </div>
                       </div>
-
-                      {/* MEMBERS */}
+{/* yha members hai */}
                       <div className="grid gap-3 sm:grid-cols-2">
                         {team.members.map((member: any) => (
                           <div
@@ -192,7 +185,6 @@ export default function ClientEventDetails({
               </div>
             )}
 
-            {/* GALLERY */}
             {event.gallery?.length > 0 && (
               <div className="rounded-2xl bg-white dark:bg-slate-900 p-6 shadow-sm">
                 <h2 className="text-xl font-semibold mb-4">Event Gallery</h2>
@@ -203,7 +195,7 @@ export default function ClientEventDetails({
         </section>
       </main>
 
-      {/* IMAGE PREVIEW MODAL */}
+{/* ye theek feature hai preview image  */}
       {previewImage && (
         <div
           className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"

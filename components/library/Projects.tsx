@@ -28,7 +28,7 @@ export default function Projects() {
   return (
     <section className="bg-gradient-to-br from-white dark:from-slate-950 via-sky-50 dark:via-slate-900 to-purple-100 dark:to-black py-20">
       <div className="max-w-6xl mx-auto px-4 space-y-12">
-        {/* Header */}
+
         <div className="text-center max-w-2xl mx-auto space-y-3">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground dark:text-white">
             Projects by Techtronica
@@ -39,7 +39,6 @@ export default function Projects() {
           </p>
         </div>
 
-        {/* Grid */}
         <motion.div
           variants={container}
           initial="hidden"
@@ -52,7 +51,6 @@ export default function Projects() {
               variants={item}
               className="group rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden hover:shadow-xl transition"
             >
-              {/* Image */}
               <div className="relative h-44 w-full bg-slate-100">
                 <Image
                   src={project.coverImage}
@@ -62,7 +60,6 @@ export default function Projects() {
                 />
               </div>
 
-              {/* Content */}
               <div className="p-5 space-y-3">
                 <div className="flex items-center justify-between">
                   <span
@@ -87,7 +84,6 @@ export default function Projects() {
                   View Details →
                 </Link>
 
-                {/* Domains */}
                 <div className="flex flex-wrap gap-2 pt-1">
                   {project.domain.map((d) => (
                     <span
@@ -99,7 +95,6 @@ export default function Projects() {
                   ))}
                 </div>
 
-                {/* Actions */}
                 <div className="flex gap-3 pt-3">
                   {project.repo && (
                     <a

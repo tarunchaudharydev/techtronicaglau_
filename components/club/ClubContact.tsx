@@ -10,7 +10,6 @@ export default function ClubContact({ club }: { club: Club }) {
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
-    // IMPORTANT: store form reference before await
     const form = e.currentTarget;
 
     setLoading(true);
@@ -32,7 +31,7 @@ export default function ClubContact({ club }: { club: Club }) {
       });
 
       setSent(true);
-      form.reset(); // ✅ SAFE
+      form.reset(); 
     } catch (error) {
       console.error("Submit error:", error);
     } finally {
@@ -55,9 +54,8 @@ export default function ClubContact({ club }: { club: Club }) {
         </p>
       </div>
 
-      {/* Form Card */}
       <div className="relative max-w-3xl mx-auto">
-        {/* glow */}
+  
         <div className="absolute -inset-1 rounded-3xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 blur opacity-25"></div>
 
         <div className="relative bg-white dark:bg-slate-900 rounded-3xl shadow-2xl p-8 sm:p-12">
@@ -97,7 +95,6 @@ export default function ClubContact({ club }: { club: Club }) {
                          focus:outline-none focus:ring-4 focus:ring-indigo-500/20 focus:border-indigo-500"
             />
 
-            {/* CTA BUTTON */}
             <button
               type="submit"
               disabled={loading}

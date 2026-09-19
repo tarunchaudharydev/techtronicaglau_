@@ -15,7 +15,6 @@ export default function EventGallery({ images }: EventGalleryProps) {
 
   const isOpen = index !== null;
 
-  /* ---------- NAVIGATION ---------- */
   const next = useCallback(() => {
     setIndex((i) => (i === null ? 0 : (i + 1) % images.length));
     setScale(1);
@@ -26,14 +25,12 @@ export default function EventGallery({ images }: EventGalleryProps) {
     setScale(1);
   }, [images.length]);
 
-  /* ---------- CLOSE ---------- */
   const closeGallery = useCallback(() => {
     setPlaying(false);
     setScale(1);
     setIndex(null);
   }, []);
 
-  /* ---------- KEYBOARD ---------- */
   useEffect(() => {
     if (!isOpen) return;
 
@@ -47,14 +44,13 @@ export default function EventGallery({ images }: EventGalleryProps) {
     return () => window.removeEventListener("keydown", handler);
   }, [isOpen, next, prev, closeGallery]);
 
-  /* ---------- SLIDESHOW ---------- */
   useEffect(() => {
     if (!playing || !isOpen) return;
     const id = setInterval(next, 3000);
     return () => clearInterval(id);
   }, [playing, isOpen, next]);
 
-  /* ---------- DOWNLOAD ---------- */
+  // iss feature main login krne ke baad hi download ka option show ho essa karna hoga for security purpose
   const downloadImage = async (src: string) => {
     const res = await fetch(src);
     const blob = await res.blob();
@@ -68,7 +64,6 @@ export default function EventGallery({ images }: EventGalleryProps) {
     URL.revokeObjectURL(url);
   };
 
-  /* ---------- ZOOM ---------- */
   const handleWheel = (e: React.WheelEvent) => {
     e.preventDefault();
     setScale((s) => Math.min(3, Math.max(1, s + e.deltaY * -0.001)));
@@ -76,7 +71,6 @@ export default function EventGallery({ images }: EventGalleryProps) {
 
   return (
     <>
-      {/* 🖼️ WALL-STYLE MASONRY */}
       <div className="columns-2 sm:columns-3 xl:columns-4 gap-4 space-y-4">
         {images.map((img, i) => (
           <motion.div
@@ -108,7 +102,6 @@ export default function EventGallery({ images }: EventGalleryProps) {
         ))}
       </div>
 
-      {/* 🔍 LIGHTBOX */}
       <AnimatePresence>
         {isOpen && index !== null && (
           <motion.div
@@ -135,7 +128,6 @@ export default function EventGallery({ images }: EventGalleryProps) {
                 if (info.offset.x > 80) prev();
               }}
             >
-              {/* IMAGE */}
               <motion.div style={{ scale }}>
                 <Image
                   src={images[index]}
@@ -148,7 +140,6 @@ export default function EventGallery({ images }: EventGalleryProps) {
                 />
               </motion.div>
 
-              {/* NAV BUTTONS */}
               <button
                 onClick={prev}
                 className="absolute left-2 sm:left-6 text-white text-4xl 
@@ -165,7 +156,6 @@ export default function EventGallery({ images }: EventGalleryProps) {
                 ›
               </button>
 
-              {/* TOP CONTROLS */}
               <div
                 className="absolute top-3 right-3 sm:top-6 sm:right-6 
                               flex flex-wrap gap-2 text-white text-xs sm:text-sm"
@@ -192,7 +182,6 @@ export default function EventGallery({ images }: EventGalleryProps) {
                 </button>
               </div>
 
-              {/* COUNTER */}
               <div className="absolute bottom-3 sm:bottom-6 text-white text-xs sm:text-sm opacity-80">
                 {index + 1} / {images.length}
               </div>

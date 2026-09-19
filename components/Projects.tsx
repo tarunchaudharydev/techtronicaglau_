@@ -115,7 +115,6 @@ export default function Projects() {
           <span className="font-semibold text-purple-600">{formattedDate}</span>
         </p>
 
-        {/* Countdown */}
         {timeLeft && (
           <div className="mt-6 flex flex-wrap justify-center gap-4">
             {timeBlocks.map((item) => (
@@ -142,25 +141,20 @@ export default function Projects() {
           </div>
         )}
 
-        {/* Animated Progress Bar */}
         <div className="mt-10 space-y-3">
-          {/* Track */}
           <div className="relative h-4 w-full rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden shadow-inner">
-            {/* Glow layer */}
             <motion.div
               className="absolute inset-0 bg-purple-500/20 blur-xl"
               animate={{ opacity: [0.4, 0.8, 0.4] }}
               transition={{ duration: 2, repeat: Infinity }}
             />
 
-            {/* Progress Fill */}
             <motion.div
               className="relative h-full rounded-full overflow-hidden"
               initial={{ width: 0 }}
               animate={{ width: `${progress}%` }}
               transition={{ duration: 0.8, ease: "easeInOut" }}
             >
-              {/* Moving Gradient Background */}
               <motion.div
                 className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-indigo-500"
                 animate={{ backgroundPosition: ["0% 50%", "100% 50%"] }}
@@ -174,7 +168,6 @@ export default function Projects() {
                 }}
               />
 
-              {/* Animated Shine Sweep */}
               <motion.div
                 className="absolute inset-0 bg-white/20"
                 animate={{ x: ["-100%", "100%"] }}
@@ -206,7 +199,7 @@ export default function Projects() {
             animate={{ scale: 1, opacity: 1 }}
             className="mt-6 text-base font-semibold text-green-600"
           >
-            🚀 We’re live!
+             We’re live!
           </motion.p>
         )}
 

@@ -32,7 +32,7 @@ export default async function ClubEventsPage({
         {slug.replace(/-/g, " ")} Events
       </h1>
 
-      {/* ================= UPCOMING EVENTS ================= */}
+      
       {upcoming.length > 0 && (
         <section>
           <h2 className="text-xl font-semibold mb-4">Upcoming Events</h2>
@@ -55,7 +55,6 @@ export default async function ClubEventsPage({
                 <div className="p-4 space-y-3">
                   <h3 className="font-semibold text-lg">{e.title}</h3>
 
-                  {/* Live countdown */}
                   <EventCountdown deadline={e.registrationDeadline} />
 
                   <div className="flex flex-col gap-2">
@@ -77,7 +76,7 @@ export default async function ClubEventsPage({
                       </button>
                     )}
 
-                    {/* 👇 View Details */}
+                    
                     <Link
                       href={`/clubs/${slug}/events/${e.id}`}
                       className="block text-center rounded-full border border-slate-300 dark:border-slate-700 py-2 text-sm font-medium hover:bg-slate-50 transition"
@@ -92,7 +91,7 @@ export default async function ClubEventsPage({
         </section>
       )}
 
-      {/* ================= PAST EVENTS ================= */}
+  {/* yha past event hai */}
       {past.length > 0 && (
         <section>
           <h2 className="text-xl font-semibold mb-4">Past Events</h2>

@@ -1,9 +1,13 @@
+// this is temporary page for research and patent cell, actually this is database driven page, but for now we are using static data, in future we will use database to fetch data
+
+// this page is only for testing purpose only
 "use client";
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Lottie from "lottie-react";
 import researchLoading from "@/public/researchloading.json";
+
 
 import {
   FiBookOpen,
@@ -68,7 +72,6 @@ export default function ResearchAndPatentSection() {
     description: "",
   });
 
-  // ⏳ 2-second loader
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 2000);
     return () => clearTimeout(timer);
@@ -88,7 +91,6 @@ export default function ResearchAndPatentSection() {
     console.log("Submitted:", form);
   };
 
-  /* 🔄 LOADING VIEW */
   if (loading) {
     return (
       <section className="min-h-[60vh] flex flex-col items-center justify-center bg-gradient-to-br from-white dark:from-slate-950 via-sky-50 dark:via-slate-900 to-purple-100 dark:to-black">
@@ -102,11 +104,10 @@ export default function ResearchAndPatentSection() {
     );
   }
 
-  /* ✅ MAIN CONTENT (UNCHANGED) */
   return (
     <section className="bg-gradient-to-br from-white dark:from-slate-950 via-sky-50 dark:via-slate-900 to-purple-100 dark:to-black py-16 lg:py-20">
       <div className="max-w-6xl mx-auto px-4 space-y-14">
-        {/* Header */}
+        
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -121,9 +122,8 @@ export default function ResearchAndPatentSection() {
           </p>
         </motion.div>
 
-        {/* Grid */}
         <div className="grid gap-10 lg:grid-cols-[1.2fr,1.4fr] items-start">
-          {/* LEFT */}
+        
           <motion.div
             variants={container}
             initial="hidden"
@@ -182,7 +182,7 @@ export default function ResearchAndPatentSection() {
             </div>
           </motion.div>
 
-          {/* RIGHT FORM */}
+          
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

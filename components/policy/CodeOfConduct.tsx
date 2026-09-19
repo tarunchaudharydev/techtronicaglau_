@@ -84,7 +84,6 @@ const card = {
 export default function CodeOfConduct() {
   return (
     <PolicyLayout title="Code of Conduct">
-      {/* Intro */}
       <div className="mb-12 max-w-3xl text-gray-700 leading-relaxed">
         <p>
           Techtronica is committed to creating a safe, respectful, and inclusive
@@ -93,7 +92,6 @@ export default function CodeOfConduct() {
         </p>
       </div>
 
-      {/* Grid */}
       <motion.div
         variants={container}
         initial="hidden"
@@ -109,15 +107,12 @@ export default function CodeOfConduct() {
                        p-6 border border-indigo-100 shadow-sm hover:shadow-xl
                        transition-shadow"
           >
-            {/* Icon */}
             <div className="mb-4 text-3xl text-indigo-600">{rule.icon}</div>
 
-            {/* Title */}
             <h3 className="mb-3 text-lg font-semibold text-gray-900">
               {rule.title}
             </h3>
 
-            {/* Points */}
             <ul className="list-disc ml-5 space-y-1 text-sm text-gray-600">
               {rule.points.map((point, i) => (
                 <li key={i}>{point}</li>
@@ -127,7 +122,6 @@ export default function CodeOfConduct() {
         ))}
       </motion.div>
 
-      {/* Footer Note */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

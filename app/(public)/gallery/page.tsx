@@ -20,7 +20,7 @@ export default function GalleryPage() {
   const loadMoreRef = useRef<HTMLDivElement | null>(null);
   const observerRef = useRef<IntersectionObserver | null>(null);
 
-  /* ---------------- FETCH IMAGES ONCE ---------------- */
+//  yha image ko fetch krr rhe hai but ekk bar main 12 show kregha baki show more button click pr show kregha
   useEffect(() => {
     const fetchImages = async () => {
       try {
@@ -40,11 +40,12 @@ export default function GalleryPage() {
     fetchImages();
   }, []);
 
-  /* ---------------- INFINITE SCROLL ---------------- */
+// yha intersection observer ka use kr rhe hai jisse jab user bottom pr scroll kre to baki images load ho jaye
   useEffect(() => {
     if (!loadMoreRef.current) return;
 
-    // disconnect old observer
+  //  yha observer ko disconnect kr rhe hai jisse memory leak na ho
+  // i think main yha kucch galat kr rha hu in memory leak ka issue aa rha hai 
     if (observerRef.current) {
       observerRef.current.disconnect();
     }
@@ -72,7 +73,7 @@ export default function GalleryPage() {
       className="max-w-7xl mx-auto px-4 pb-12 bg-linear-to-br from-white dark:from-slate-950 via-sky-50 dark:via-slate-900 to-purple-100 dark:to-black"
       style={{ paddingTop: "calc(8rem + 29px)" }}
     >
-      {/* ================= HEADER ================= */}
+      {/* yha se header start hota hai */}
       <div className="flex flex-col items-center justify-center mb-12 text-center">
         <p className="text-xs uppercase tracking-[0.25em] text-sky-600 mb-4">
           Techtronica • GLA University
@@ -82,14 +83,13 @@ export default function GalleryPage() {
         </span>
       </div>
 
-      {/* ================= ERROR ================= */}
+      {/* error handel krr rhe hai yha jese koi fetch main error aaya to show kegha */}
       {error && (
         <div className="flex justify-center items-center h-[40vh]">
           <p className="text-red-600">{error}</p>
         </div>
       )}
-
-      {/* ================= INITIAL SKELETON ================= */}
+{/* */}
       {!error && loading && (
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
           {Array.from({ length: SKELETON_COUNT }).map((_, index) => (
@@ -103,12 +103,12 @@ export default function GalleryPage() {
         </div>
       )}
 
-      {/* ================= EMPTY ================= */}
+     {/* yha ekk logical handling hai agar humare pass koi image nhi hai to kucch message ya gif wgera show krr sakte hai */}
       {!error && !loading && images.length === 0 && (
         <p className="text-center text-gray-500">No images available.</p>
       )}
 
-      {/* ================= GALLERY ================= */}
+      {/* yha image show krr rhe hai */}
       {!error && !loading && images.length > 0 && (
         <>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
@@ -130,7 +130,7 @@ export default function GalleryPage() {
             ))}
           </div>
 
-          {/* ================= BOTTOM LOADER ================= */}
+          
           {visibleCount < images.length && (
             <div
               ref={loadMoreRef}
@@ -149,7 +149,7 @@ export default function GalleryPage() {
         </>
       )}
 
-      {/* ================= SHIMMER ANIMATION ================= */}
+      
       <style jsx global>{`
         @keyframes shimmer {
           0% {

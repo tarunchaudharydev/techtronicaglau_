@@ -1,4 +1,4 @@
-
+// this data is static but we are no longer use this data we are using the database for managing the clubs data so this file is no longer in use but we are keeping it for reference purpose
 
 export type ClubSlug =
   | "code-e-phobia"
@@ -14,7 +14,7 @@ export interface Club {
   shortDescription: string;
   purposeTitle: string;
   purposeDescription: string;
-  joinFormUrl?: string;   // for join club form
+  joinFormUrl?: string;   
 
   heroImage: string;
   galleryImage: string;

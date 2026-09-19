@@ -1,4 +1,5 @@
-// lib/data/projects.ts
+// this is demo file
+// not implemented yet
 
 export type ProjectStatus = "ongoing" | "completed" | "upcoming";
 
@@ -18,7 +19,7 @@ export interface Project {
   status: ProjectStatus;
   year: number;
   coverImage: string;
-  images: string[]; // code / working screenshots
+  images: string[]; 
   credits: ProjectCredit[];
   repo?: string;
   liveDemo?: string;

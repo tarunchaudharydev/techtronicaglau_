@@ -22,7 +22,7 @@ export default function AcademicsPage() {
     return text.includes(query.toLowerCase());
   });
 
-  // 🔄 Loading Screen
+  
   if (loading) {
     return (
       <main className="min-h-screen flex flex-col items-center justify-center bg-white dark:bg-slate-900">
@@ -30,7 +30,7 @@ export default function AcademicsPage() {
           <Lottie animationData={bookLoading} loop autoplay />
         </div>
         <p className="mt-4 text-sm font-medium text-muted">
-          Loading academic resources………
+          Loading academic resources.....
         </p>
       </main>
     );
@@ -38,7 +38,7 @@ export default function AcademicsPage() {
 
   return (
     <main className="pt-28 pb-20 px-4 sm:px-6 max-w-6xl mx-auto">
-      {/* Header */}
+      
       <div className="mb-10">
         <h1 className="text-3xl font-extrabold text-foreground dark:text-white mb-2">
           Academics & Resources
@@ -49,7 +49,7 @@ export default function AcademicsPage() {
         </p>
       </div>
 
-      {/* Search Bar */}
+    {/* in future try to implement ai search */}
       <div className="relative mb-8 max-w-md">
         <FiSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
         <input
@@ -61,7 +61,7 @@ export default function AcademicsPage() {
         />
       </div>
 
-      {/* Notes List */}
+      
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {filteredNotes.length > 0 ? (
           filteredNotes.map((note) => (

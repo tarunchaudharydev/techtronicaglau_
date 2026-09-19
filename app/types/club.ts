@@ -1,0 +1,1 @@
+// this page is for testing purpose only, only to define types of data that we are using like string etc, this is not final version of types, we will change it in future when we will use database to fetch data

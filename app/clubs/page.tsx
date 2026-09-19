@@ -66,7 +66,6 @@ export default function ClubsPage() {
           </p>
         </header>
 
-        {/* Cards grid */}
         <div className="grid gap-6 sm:gap-7 sm:grid-cols-2 lg:grid-cols-3">
           {clubs.map((club) => (
             <article
@@ -84,7 +83,7 @@ export default function ClubsPage() {
                 hover:border-sky-200
               "
             >
-              {/* IMAGE */}
+            
               <div style={{ height: "9rem" }} className="relative w-full">
                 <Image
                   src={club.image}

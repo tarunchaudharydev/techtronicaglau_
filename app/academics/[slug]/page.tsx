@@ -17,7 +17,7 @@ export default async function NotePage({ params }: PageProps) {
 
   return (
     <main className="pt-28 pb-20 px-4 max-w-6xl mx-auto">
-      {/* Back Button */}
+      {/* yha back button hoghi for best user experience */}
       <div className="mb-4">
         <Link
           href="/academics"
@@ -28,12 +28,12 @@ export default async function NotePage({ params }: PageProps) {
         </Link>
       </div>
 
-      {/* Title */}
+      {/* sabse phle title hoga jo ki pram se le rhe hai  */}
       <h1 className="text-2xl sm:text-3xl font-bold text-foreground dark:text-white mb-2">
         {note.title}
       </h1>
 
-      {/* Meta */}
+      {/* yha tags hai */}
       <p className="text-sm text-muted mb-6">
         {note.subject} • {note.year} • {note.category}
       </p>
@@ -61,7 +61,7 @@ export default async function NotePage({ params }: PageProps) {
         </div>
       </div> */}
 
-      {/* PDF Viewer – stays on same page */}
+      {/* yha hum third party ya extrnal browser or app use nhi krr rhe for opening notes or any document */}
       <div className="rounded-2xl border bg-white dark:bg-slate-900 shadow-sm overflow-hidden">
         <div className="relative w-full aspect-[1/1.4142]">
           <iframe

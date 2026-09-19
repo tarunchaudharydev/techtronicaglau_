@@ -4,7 +4,7 @@ export async function POST(req: Request) {
   try {
     const { name, email, topic, message, clubName } = await req.json();
 
-    // Validation
+   
     if (!name || !email || !message || !clubName) {
       return Response.json(
         { error: "Missing required fields" },
@@ -12,7 +12,7 @@ export async function POST(req: Request) {
       );
     }
 
-    // Create transporter
+  
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
@@ -21,7 +21,7 @@ export async function POST(req: Request) {
       },
     });
 
-    // Send email to OVERALL mail id
+  
     await transporter.sendMail({
       from: `"Techtronica Website" <${process.env.EMAIL_USER}>`,
       to: process.env.CONTACT_RECEIVER, //  central email

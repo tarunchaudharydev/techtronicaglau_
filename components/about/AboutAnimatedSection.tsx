@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function AboutAnimatedSection() {
   return (
     <div className="mx-auto max-w-6xl px-6 grid md:grid-cols-2 gap-12 items-center">
-      {/* TEXT */}
+     
       <motion.div
         initial={{ opacity: 0, x: -40 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -28,7 +28,6 @@ export default function AboutAnimatedSection() {
         </p>
       </motion.div>
 
-      {/* IMAGE */}
       <motion.div
         initial={{ opacity: 0, x: 40, scale: 0.95 }}
         whileInView={{ opacity: 1, x: 0, scale: 1 }}

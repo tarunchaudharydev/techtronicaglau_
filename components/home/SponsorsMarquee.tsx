@@ -22,7 +22,6 @@ const sponsors: Sponsor[] = [
 export default function SponsorsMarquee() {
   return (
     <section className="space-y-6">
-      {/* Heading */}
       <div className="text-center space-y-2">
         <p className="text-xs uppercase tracking-widest text-sky-600">
           Our Sponsors & Partners
@@ -32,7 +31,6 @@ export default function SponsorsMarquee() {
         </h2>
       </div>
 
-      {/* Marquee */}
       <div className="relative overflow-hidden">
         <div className="marquee flex items-center gap-12">
           {[...sponsors, ...sponsors].map((sponsor, index) => (

@@ -27,7 +27,7 @@ export default function BirthdayBanner() {
       "
     >
       <span className="block">
-        🎉🎂 Today we celebrate{" "}
+         Today we celebrate{" "}
         <span className="font-semibold">{names.join(", ")}</span>
         {isMultiple ? "'s birthdays" : "'s birthday"}!
       </span>

@@ -6,7 +6,6 @@ export default function EventsSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-10 lg:grid-cols-2">
 
-          {/* Content */}
           <div className="text-center lg:text-left">
             <p className="text-lg text-slate-700">
               Participate In Communities With
@@ -25,16 +24,14 @@ export default function EventsSection() {
             </p>
 
             <ul className="mt-8 space-y-3 text-lg text-slate-800">
-              <li>✨ Stay up-to-date on the latest technologies and trends.</li>
-              <li>✨ Meet professionals & experts and build your network.</li>
-              <li>✨ Learn new skills with hands-on experience.</li>
+              <li> Stay up-to-date on the latest technologies and trends.</li>
+              <li> Meet professionals & experts and build your network.</li>
+              <li> Learn new skills with hands-on experience.</li>
             </ul>
           </div>
 
-          {/* Images */}
           <div className="grid grid-cols-3 gap-4">
 
-            {/* Top Row */}
             <div className="overflow-hidden rounded-[28px]">
               <Image
                 src="/homeImages/leadership.jpg"
@@ -65,7 +62,6 @@ export default function EventsSection() {
               />
             </div>
 
-            {/* Bottom Row */}
             <div className="col-span-2 overflow-hidden rounded-[28px]">
               <Image
                 src="/homeImages/team_image.JPG"

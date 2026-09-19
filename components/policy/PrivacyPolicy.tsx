@@ -68,7 +68,6 @@ const card = {
 export default function PrivacyPolicy() {
   return (
     <PolicyLayout title="Privacy Policy">
-      {/* Meta */}
       <div className="mb-10 flex flex-col sm:flex-row gap-4 text-sm text-gray-500">
         <span>
           <strong>Effective Date:</strong> 1 January 2026
@@ -78,7 +77,6 @@ export default function PrivacyPolicy() {
         </span>
       </div>
 
-      {/* Intro */}
       <div className="mb-12 max-w-3xl text-gray-700 leading-relaxed">
         <p>
           Techtronica respects your privacy. This policy explains how we
@@ -87,7 +85,6 @@ export default function PrivacyPolicy() {
         </p>
       </div>
 
-      {/* Grid */}
       <motion.div
         variants={container}
         initial="hidden"
@@ -103,15 +100,12 @@ export default function PrivacyPolicy() {
                        p-6 border border-indigo-100 shadow-sm hover:shadow-xl
                        transition-shadow"
           >
-            {/* Icon */}
             <div className="mb-4 text-3xl text-indigo-600">{section.icon}</div>
 
-            {/* Title */}
             <h3 className="mb-3 text-lg font-semibold text-gray-900">
               {section.title}
             </h3>
 
-            {/* List */}
             <ul className="list-disc ml-5 space-y-1 text-sm text-gray-600">
               {section.items.map((item, i) => (
                 <li key={i}>{item}</li>
@@ -121,7 +115,6 @@ export default function PrivacyPolicy() {
         ))}
       </motion.div>
 
-      {/* Footer Note */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

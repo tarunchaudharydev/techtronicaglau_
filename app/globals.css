@@ -1,3 +1,5 @@
+/* do not touch this file this file is for custom design */
+
 /* @import "tailwindcss";
 
 @import "swiper/css";
@@ -82,23 +84,18 @@ body {
 } */
 @import "tailwindcss";
 
-/* Enable class-based dark mode (Tailwind v4) */
+
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* Swiper */
 @import "swiper/css";
 @import "swiper/css/navigation";
 @import "swiper/css/pagination";
 @import "swiper/css/effect-coverflow";
 
-/* ===============================
-   THEME VARIABLES
-================================ */
-
 /* Light Mode */
 :root {
   --background: #ffffff;
-  --foreground: #111827; /* slightly softer than pure black */
+  --foreground: #111827; 
   --muted: #64748b;
   --card: #ffffff;
   --border: #e2e8f0;

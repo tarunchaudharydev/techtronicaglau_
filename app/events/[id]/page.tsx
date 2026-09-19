@@ -9,7 +9,7 @@ type PageProps = {
 };
 
 export default async function EventDetailPage({ params }: PageProps) {
-  const { id } = await params; // 👈 REQUIRED
+  const { id } = await params; 
 
   const event = events.find((e) => e.id === id);
 

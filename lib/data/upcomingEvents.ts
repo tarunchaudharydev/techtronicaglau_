@@ -1,3 +1,8 @@
+// no longer in production mode
+// only for reference purpose
+
+
+
 import { Event, ClubEvent } from "@/types/event";
 
 export type { Event, ClubEvent };

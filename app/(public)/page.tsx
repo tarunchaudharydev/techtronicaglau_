@@ -19,14 +19,12 @@ function Home() {
     if (el) sectionRefs.current[index] = el;
   };
 
-  // (animations commented out for now – you can re‑enable later)
-  // useEffect(() => { ... }, []);
+  
 
   return (
     <main className="min-h-screen pt-28 px-4 flex items-start justify-center bg-linear-to-br from-white dark:from-slate-950 via-sky-50 dark:via-slate-900 to-purple-100 dark:to-black">
       <section className="w-full max-w-5xl text-black space-y-20 pb-20">
-        {/* <HomeComponent /> */}
-        {/* HERO */}
+        
         <div ref={heroRef} className="text-center md:text-left">
           <p className="text-xs uppercase tracking-[0.25em] text-sky-600 mb-4">
             Techtronica • GLA University
@@ -62,7 +60,7 @@ function Home() {
           </div>
         </div>
 
-        {/* STATS / HIGHLIGHTS */}
+        
         <div
           ref={statsRef}
           className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs sm:text-sm mb-8"
@@ -92,8 +90,7 @@ function Home() {
             </p>
           </div>
         </div>
-
-        {/* 1. Clubs overview */}
+{/* ye thoda tricky hai  */}
         <div className="max-w-6xl mx-auto px-4">
           <div
             ref={(el) => setSectionRef(el, 0)}
@@ -104,7 +101,7 @@ function Home() {
       items-center
     "
           >
-            {/* LEFT: text */}
+            {/* ye left text hai  */}
             <div className="w-full md:w-1/2 space-y-3 mb-8">
               <h2 className="text-xl sm:text-4xl font-bold text-sky-900">
                 {aboutSociety.title}
@@ -120,7 +117,7 @@ function Home() {
               ))}
             </div>
 
-            {/* RIGHT: image */}
+            {/* yha image hai right to the left text  */}
             <div className="w-full md:w-1/2">
               <Image
                 src="/images/overview/team.jpg"
@@ -138,7 +135,7 @@ function Home() {
           </div>
         </div>
 
-        {/* 2. Technical club */}
+        {/* club overview hai i mean technical club */}
         <div
           ref={(el) => setSectionRef(el, 1)}
           className="grid gap-8 md:grid-cols-2 md:items-center"
@@ -169,7 +166,7 @@ function Home() {
           </div>
         </div>
 
-        {/* 3. Cultural & arts */}
+        {/* cultural section hai yha */}
         <div
           ref={(el) => setSectionRef(el, 2)}
           className="grid gap-8 md:grid-cols-2 md:items-center"
@@ -199,7 +196,7 @@ function Home() {
           </div>
         </div>
 
-        {/* 4. Sports & fitness */}
+       {/* sports section hai yha */}
         <div
           ref={(el) => setSectionRef(el, 3)}
           className="grid gap-8 md:grid-cols-2 md:items-center"
@@ -230,7 +227,7 @@ function Home() {
           </div>
         </div>
 
-        {/* 5. Social impact */}
+        {/* social impact section hai yha */}
         <div
           ref={(el) => setSectionRef(el, 4)}
           className="grid gap-8 md:grid-cols-2 md:items-center"
@@ -261,7 +258,7 @@ function Home() {
           </div>
         </div>
 
-        {/* 6. Leadership & core team */}
+        {/* leadership section hai yha */}
         <div
           ref={(el) => setSectionRef(el, 5)}
           className="grid gap-8 md:grid-cols-2 md:items-center"
@@ -339,7 +336,7 @@ function Home() {
           </div>
         </div>
 
-        {/* CTA STRIP */}
+        
         <div className="rounded-3xl border border-sky-100 bg-white dark:bg-slate-900/80 shadow-md px-5 py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div>
             <h2 className="text-base sm:text-lg font-semibold text-sky-900">

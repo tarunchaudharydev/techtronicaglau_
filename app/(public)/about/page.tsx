@@ -14,10 +14,8 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <main className="bg-gray-50 text-gray-700 min-h-screen -mt-28 pt-20">
-      {/* 🎉 BIRTHDAY BANNER */}
       <BirthdayBanner />
 
-      {/* HERO SECTION */}
       <section className="relative h-[100vh] -mt-32">
         <Image
           src="/ourTeam/about.jpg"
@@ -59,17 +57,14 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* WHO WE ARE */}
       <section className="py-20 overflow-hidden">
         <AboutAnimatedSection />
       </section>
 
-      {/* MISSION / VISION / VALUES */}
       <section className="py-20 bg-white dark:bg-slate-900">
         <MissionVisionValue />
       </section>
 
-      {/* MEET THE TEAM */}
       <AboutTeamSection />
     </main>
   );
