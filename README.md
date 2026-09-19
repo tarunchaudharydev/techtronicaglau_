@@ -12,6 +12,59 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black)
 
+
+
+## 📖 Table of Contents
+
+- [📌 About](#-about)
+- [Why This Repository Exists](#why-this-repository-exists)
+- [What Was Used Initially?](#what-was-used-initially)
+- [Getting the Project on Your Computer](#getting-the-project-on-your-computer)
+  - [Prerequisites](#prerequisites)
+  - [Clone the Repository](#clone-the-repository)
+  - [Install Dependencies](#install-dependencies)
+  - [Run the Development Server](#run-the-development-server)
+- [Project Structure](#project-structure)
+- [Understanding the Architecture](#understanding-the-architecture)
+- [`app/`](#1-app)
+- [`app/api/`](#2-appapi)
+- [Dynamic Routes](#3-dynamic-routes)
+- [`components/`](#4-components)
+- [`components/home/`](#5-componentshome)
+- [`lib/`](#6-lib)
+- [`lib/data/`](#7-libdata)
+- [`lib/config/`](#8-libconfig)
+- [`lib/hooks/`](#9-libhooks)
+- [`lib/utils/`](#10-libutils)
+- [`types/`](#11-types)
+- [`public/`](#12-public)
+- [The Asset Structure: What Could Be Better?](#13-the-asset-structure-what-could-be-better)
+- [Mixed Naming Conventions](#14-mixed-naming-conventions)
+- [Route Organization](#16-route-organization)
+- [Files Created for Future Work](#17-files-created-for-future-work)
+- [Is This Architecture Scalable?](#18-is-this-architecture-scalable)
+  - [What was good?](#what-was-good)
+  - [Component-based architecture](#component-based-architecture)
+  - [Feature-based component organization](#feature-based-component-organization)
+  - [Dynamic routes](#dynamic-routes)
+  - [Reusable hooks and utilities](#reusable-hooks-and-utilities)
+- [What Was Not Scalable?](#19-what-was-not-scalable)
+  - [Static data](#static-data)
+  - [Large static asset directory](#large-static-asset-directory)
+  - [Duplicate components](#duplicate-components)
+  - [Mixed conventions](#mixed-conventions)
+  - [Some responsibilities are mixed](#some-responsibilities-are-mixed)
+- [What Would We Change Today?](#20-what-would-we-change-today)
+- [What You Should Learn From This Repository](#21-what-you-should-learn-from-this-repository)
+- [Recommended Way to Explore the Code](#22-recommended-way-to-explore-the-code)
+- [The Most Important Lesson](#23-the-most-important-lesson)
+- [🛠️ Useful Commands](#-useful-commands)
+- [📌 Current Status](#-current-status)
+- [👥 Techtronica GLAU](#-techtronica-glau)
+- [Final Note](#final-note)
+- [📚 Documentation](#-documentation)
+- [📄 License](#-license)
+
 ## 📌 About
 
 This repository contains the **first basic version of the Techtronica GLAU website**.
@@ -111,6 +164,8 @@ Website
 This separation makes it possible to update content without treating every content change as a code change.
 
 ---
+
+
 
 # Getting the Project on Your Computer
 
@@ -1380,6 +1435,17 @@ Then pick another feature.
 After doing this a few times, the entire project becomes much easier to understand.
 
 And remember: **the codebase is a snapshot of a learning process, not a perfect engineering.**
+
+
+
+## 📚 Documentation
+
+If you are new to Next.js, these official resources are useful for understanding the framework used in this project:
+
+- [Next.js Documentation](https://nextjs.org/docs) - Official Next.js documentation
+- [Next.js Learn](https://nextjs.org/learn) - Interactive Next.js learning course
+- [Next.js App Router](https://nextjs.org/docs/app) - Documentation for the App Router used in this project
+- [Next.js Routing](https://nextjs.org/docs/app/building-your-application/routing) - Learn how routing works
 
 ## 📄 License
 
