@@ -1,19 +1,16 @@
 # Techtronica GLAU Website
 
-> The first version of the official website for Techtronica GLAU, built with Next.js and TypeScript. This repository is kept as a reference for understanding the early architecture and development approach.
-
-![GitHub License](https://img.shields.io/github/license/tarunchaudharydev/techtronicaglau)
-![GitHub Stars](https://img.shields.io/github/stars/tarunchaudharydev/techtronicaglau)
-![GitHub Forks](https://img.shields.io/github/forks/tarunchaudharydev/techtronicaglau)
-![GitHub Issues](https://img.shields.io/github/issues/tarunchaudharydev/techtronicaglau)
-![GitHub Last Commit](https://img.shields.io/github/last-commit/tarunchaudharydev/techtronicaglau)
+![GitHub License](https://img.shields.io/github/license/tarunchaudharydev/techtronicaglau_)
+![GitHub Stars](https://img.shields.io/github/stars/tarunchaudharydev/techtronicaglau_)
+![GitHub Forks](https://img.shields.io/github/forks/tarunchaudharydev/techtronicaglau_)
+![GitHub Issues](https://img.shields.io/github/issues/tarunchaudharydev/techtronicaglau_)
+![GitHub Last Commit](https://img.shields.io/github/last-commit/tarunchaudharydev/techtronicaglau_)
 
 ![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black)
-
----
 
 ## 📌 About
 
