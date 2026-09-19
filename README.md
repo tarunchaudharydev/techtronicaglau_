@@ -1,13 +1,25 @@
 # Techtronica GLAU Website
 
-The first basic version of the **Techtronica GLAU website**.
+> The first version of the official website for Techtronica GLAU, built with Next.js and TypeScript. This repository is kept as a reference for understanding the early architecture and development approach.
 
-> **Important:** This is an old version of the website and is **no longer used in production**.
+![GitHub License](https://img.shields.io/github/license/tarunchaudharydev/techtronicaglau)
+![GitHub Stars](https://img.shields.io/github/stars/tarunchaudharydev/techtronicaglau)
+![GitHub Forks](https://img.shields.io/github/forks/tarunchaudharydev/techtronicaglau)
+![GitHub Issues](https://img.shields.io/github/issues/tarunchaudharydev/techtronicaglau)
+![GitHub Last Commit](https://img.shields.io/github/last-commit/tarunchaudharydev/techtronicaglau)
 
-The project is preserved mainly as a **learning and reference project** for Techtronica members. It shows how our website was initially structured, how different pages were connected, how reusable components were created, and how we handled data and assets in the early stage.
+![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black)
 
-The current production website has evolved beyond this architecture.
+---
 
+## 📌 About
+
+This repository contains the **first basic version of the Techtronica GLAU website**.
+
+It is no longer the production version of the website. The project has since been updated and evolved, but this repository is preserved as a reference for juniors and contributors who want to understand how the website was initially structured and developed.
 ---
 
 ## Why This Repository Exists
@@ -1370,6 +1382,12 @@ Then pick another feature.
 
 After doing this a few times, the entire project becomes much easier to understand.
 
-And remember: **the codebase is a snapshot of a learning process, not a museum exhibit of perfect engineering.**
+And remember: **the codebase is a snapshot of a learning process, not a perfect engineering.**
 
+## 📄 License
 
+This project is licensed under the [MIT License](LICENSE).
+
+You are free to use, copy, modify, merge, publish, distribute, sublicense, and sell copies of this software, subject to the conditions of the MIT License.
+
+See the [LICENSE](LICENSE) file for the complete license text.
