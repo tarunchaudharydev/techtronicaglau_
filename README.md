@@ -85,9 +85,7 @@ You will find both:
 * Good architectural decisions that are still useful today
 * Decisions that worked at the beginning but do not scale well
 
-That is intentional.
 
-A real project rarely starts with a perfect architecture. Usually, someone starts building, requirements change, features get added, and suddenly there are 17 folders where there used to be three. Software engineering, apparently, is partly the art of preventing that from becoming 170.
 
 ---
 
